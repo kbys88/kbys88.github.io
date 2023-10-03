@@ -33,9 +33,11 @@ overflow-wrap: break-word;
     <tr style="border:none;" width="300" bgcolor="#ffffff">
       <td style="border:none;" width="300" bgcolor="#ffffff">
         <!-- 5 -->
-        <p>My piece is a textural work that explores the use of smaller dynamic to bring out the maximum possible sound of the ins- trument. The composition was inspired by my previous work, “Time Study in P”, which was composed for a conducting class at the Haute école de musique de Genève. In this piece, certain pitches were derived from the spectral analysis and solution of tam-tam sounds using Orchidea. In my new piece, I aim to synthesize new sounds and construct a “noise” sound as a novel compositional component. I will explore the repe- tition of textures and how changes in our listening can arise due to these changes. Ultimately, my goal is to create a work that challenges the listener‘s perception of sound and encou- rages them to engage with it in a new way.</p></td>
+        <p>My piece is a textural work that explores the use of smaller dynamic to bring out the maximum possible sound of the ins- trument. The composition was inspired by my previous work, “Time Study in P”, which was composed for a conducting class at the Haute école de musique de Genève. In this piece, certain pitches were derived from the spectral analysis and solution of tam-tam sounds using Orchidea. In my new piece, I aim to synthesize new sounds and construct a “noise” sound as a novel compositional component. I will explore the repe- tition of textures and how changes in our listening can arise due to these changes. Ultimately, my goal is to create a work that challenges the listener‘s perception of sound and encou- rages them to engage with it in a new way.</p>
+      </td>
       <td style="border:none;" width="350" bgcolor="#ffffff">
-        <!-- 6 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/10fa2bdd-2a3d-44f4-bce0-0214b7ef1805" width="350" align="left"></td>
+        <!-- 6 -->
+        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/10fa2bdd-2a3d-44f4-bce0-0214b7ef1805" width="350" align="left"></td>
     </tr>
   </tbody>
 </table>
