@@ -44,6 +44,3 @@ overflow-wrap: break-word;
     </tr>
   </tbody>
 </table>
-```
-
-Please double-check the image URLs to ensure they are correct, and adjust the CSS for alignment if needed.
