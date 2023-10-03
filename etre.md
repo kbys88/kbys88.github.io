@@ -24,7 +24,6 @@ overflow-wrap: break-word;
           <p>premiere by <a href="https://ensembleproton.ch/protonwerk/gewinner">Ensemble Proton Bern</a></p>
           <p>1st January 2020</p>
           <p>Paris, France</p>
-          <p><a href="https://youtu.be/atHQ7RAiGXg?si=EOylOpcvxrCkni0T">Youtube</a> <p>
         <p>Elements that will appear on every page across our website, like the banner image we included in our pages in the previous section, form part of the structure of the page: unlike the content specific to each page.</p>
         </body></td>
     </tr>
@@ -32,7 +31,7 @@ overflow-wrap: break-word;
       <td style="border:none;" width="300" bgcolor="#ffffff">
         <!-- 5 --><p>Elements that will appear on every page across our website, like the banner image we included in our pages in the previous section, form part of the structure of the page: unlike the content specific to each page, these structural elements do not change from page to page. As such, although the include tags reduce the pain endured when adjusting that repeated content, it is not good practice</p></td>
       <td style="border:none;" width="300" bgcolor="#ffffff">
-        <!-- 6 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/e4834db3-b2be-4e9c-b1f0-8458be217a95" width="300" height="300"></td>
+        <!-- 6 --><iframe width="300" height="300" src="https://www.youtube.com/embed/atHQ7RAiGXg?si=EOylOpcvxrCkni0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
     </tr>
   </tbody>
 </table>
