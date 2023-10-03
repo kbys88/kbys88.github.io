@@ -4,7 +4,7 @@ title: "works"
 permalink: /works
 ---
 
-<table>
+<table style="border: 0;">
   <tr>
     <td><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1712d49f-1cce-47d9-b1bf-ab21e4d705d5" width="200px" height="200px"></td>
     <td><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/cae87bea-f470-418c-97e2-17018d939009" width="200px" height="200px"></td>
