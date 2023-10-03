@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "I havent"
-permalink: /ihavent
+title: "I haven't known you yet"
+permalink: /Shifting
 overflow-wrap: break-word;
 ---
 
