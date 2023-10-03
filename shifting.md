@@ -18,7 +18,7 @@ overflow-wrap: break-word;
           <!-- 3 -->
         <body><h4><i>Shifting</i> (2022)</h4>
           <p>for 11 musicians</p>
-          <p>premiere by <a href="[https://ensembleproton.ch/protonwerk/gewinner](https://www.klangforum.at/#en)">Klangforum Wien</a></p>
+          <p>premiere by <a href="https://www.klangforum.at/#en">Klangforum Wien</a></p>
           <p>8/2/2023</p>
           <p>impuls . 8th Festival for Contemporary Music, at Helmut List Halle, Graz, Austria</p>
         <p>
@@ -27,7 +27,8 @@ overflow-wrap: break-word;
         </body>
       </td>
       <td style="border:none;" width="350" bgcolor="#ffffff">
-               <!-- 4 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/b56a4d42-8168-4f2c-a2e6-579fa2da8f04" width="350" height="350" align="left"></td>
+               <!-- 4 -->
+        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/60dd8819-1002-4927-8bfa-2d33795b2668" width="350" height="350" align="left"></td>
     </tr>
     <tr style="border:none;" width="300" bgcolor="#ffffff">
       <td style="border:none;" width="300" bgcolor="#ffffff">
