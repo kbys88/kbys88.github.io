@@ -31,7 +31,6 @@ permalink: /works
   </tr>
   <tr>
     <td style="background-color: transparent;"><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/b50e01cb-ea6d-406a-8e21-df57fd2bdb38" width="200px" height="200px"></td>
-    <td style="background-color: transparent;"><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/e4834db3-b2be-4e9c-b1f0-8458be217a95" width="200px" height="200px"></td>
-    <td style="background-color: transparent;"><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/69330b52-8fc4-49ac-a93b-d28322acf67a" width="200px" height="200px"></td>
+        <td style="background-color: transparent;"><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/5dd8dd9f-237a-4051-8523-247fe8ff1358" width="200px" height="200px"></td>
   </tr>
 </table>
