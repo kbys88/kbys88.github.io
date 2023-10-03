@@ -21,6 +21,8 @@ overflow-wrap: break-word;
       <td style="border:none;">
         <!-- 4 --><body><h4>piece title (2020)</h4>
           <p>pour orchestre</p>
+          <p>premiere by</p>
+          <p>1st January 2020</p>
         <p>Elements that will appear on every page across our website, like the banner image we included in our pages in the previous section, form part of the structure of the page: unlike the content specific to each page, these structural elements do not change from page to page. As such, although the include tags reduce the pain endured when adjusting that repeated content, it is not good practice</p>
         </body></td>
     </tr>
