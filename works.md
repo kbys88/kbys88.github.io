@@ -11,7 +11,6 @@ permalink: /works
   }
 </style>
 
-
 <table style="border: 0;">
   <tr>
    <td style="background-color: transparent;">
