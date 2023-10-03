@@ -13,11 +13,11 @@ overflow-wrap: break-word;
       <td style="border:none;">
         <!-- 1 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/e4834db3-b2be-4e9c-b1f0-8458be217a95" width="300" height="300"></td>
       <td style="border:none;">
-        <!-- 2 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/ddbb0642-a47f-4ad4-8b8d-244501c15aba"300" height="300"></td>
+        <!-- 2 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/ddbb0642-a47f-4ad4-8b8d-244501c15aba" width="300" height="300"></td>
     </tr>
     <tr style="border:none;">
       <td style="border:none;" width="300" bgcolor="#ffffff">
-        <!-- 3 --><img src=https://github.com/kbys88/kbys88.github.io/assets/142012962/d7bf0b0b-5dc0-45a4-8583-e7feaf83179a width="300" height="300"></td>
+        <!-- 3 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/d7bf0b0b-5dc0-45a4-8583-e7feaf83179a" width="300" height="300"></td>
       <td style="border:none;" width="300" bgcolor="#ffffff">
         <!-- 4 -->
         <body><h4>être (2022)</h4>
