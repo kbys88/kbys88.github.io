@@ -36,27 +36,37 @@ In Japan, she received her bachelor’s diploma (Cultural Creative Studies) from
 impuls International Composition Competition 2023受賞、Ars Electronica Forum Wallis Selection 2020 Highly commended獲得、2021年ISCM World Music Days（世界音楽の日々）最終選考推薦、2023年にはパリ国立高等美術学校（École nationale supérieure des beaux-arts）のアーティストらとマルチメディアやダンスとのコラボレーションに取り組むなど、数々の共同制作、委嘱、実践に精力的に活動している。
 
 <h2>Education</h2>
-Music education, Master of Arts
-Haute École de Musique de Genève, Switzerland Specialization in music theory
-Composition and music theory, Master of Arts Haute École de Musique de Genève, Switzerland Specialization in composition
-Composition, Bachelor of Arts
-Tokyo University of the Arts, Japan
-Acanthus award and directer of Taito Ward award
-Cultural and Creative Studies, Bachelor of Arts Aoyama Gakuin University, Tokyo, Japan
-Supplementary education
-(2023 ) (2020) (2018 ) (2013 )
-(2021 – 2022 ) Institut de recherche et coordination acoustique/musique, Paris , France
-Computer Music Training program
-Cursus Program on Composition and Computer Music
-<h2>Experience</h2>
-Freelance Composer
-Self employed, Switzerland, France, Japan
-Commitions for composition, sound design and arrangement.
-(2020 – 2023 ) Conservatoire populaire de musique, danse et théâtre / Conservatoire de
-Substitute Teaching
-Musique de Genève, Switzerland
-Music theory and solfège
-Office Assistant
-Magazine House, Japan
-Part time job in the advertisement department.
+ - degree: Master of Arts<br>
+    field: Music education<br>
+    institution: Haute École de Musique de Genève<br>
+    country: Switzerland<br>
+    date: [2020, 2023]<br>
+    comment: "Specialization in music theory"<br>
+  - degree: Master of Arts<br>
+    field: Composition and music theory<br>
+    # field: Composition et théorie musicale avec orientation en Composition<br>
+    institution: Haute École de Musique de Genève<br>
+    country: Switzerland<br>
+    date: [2018, 2020]<br>
+    comment: "Specialization in composition"<br>
+  - degree: Bachelor of Arts<br>
+    field: Composition<br>
+    institution: Tokyo University of the Arts<br>
+    country: Japan<br>
+    date: [2014, 2018]<br>
+    comment: "Acanthus award and directer of Taito Ward award"<br>
+  - degree: Bachelor of Arts<br>
+    field: Cultural and Creative Studies<br>
+    institution: Aoyama Gakuin University, Tokyo<br>
+    country: Japan<br>
+    date: [2009, 2013]<br>
+<h2>Experience</h2><br>
+Freelance Composer<br>
+Self employed, Switzerland, France, Japan<br>
+(2020 – 2023 ) Conservatoire populaire de musique, danse et théâtre / Conservatoire de Musique de Genève <br>
+Substitute Teaching, Switzerland<br>
+Music theory and solfège<br>
+Office Assistant<br>
+Magazine House, Japan<br>
+
 
