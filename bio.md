@@ -60,18 +60,18 @@ impuls International Composition Competition 2023受賞、Ars Electronica Forum 
     country: Japan<br>
     date: [2009, 2013]<br>
 <h3>Experience</h3><br>
-Freelance Composer<br>
+  - Freelance Composer<br>
 Self employed, Switzerland, France, Japan<br>
 <p>
   
 </p>
-(2020 – 2023 ) Conservatoire populaire de musique, danse et théâtre / Conservatoire de Musique de Genève <br>
+  - (2020 – 2023 ) Conservatoire populaire de musique, danse et théâtre / Conservatoire de Musique de Genève <br>
 Substitute Teaching, Switzerland<br>
 Music theory and solfège<br>
 <p>
   
 </p>
-Office Assistant<br>
+  - Office Assistant<br>
 Magazine House, Japan<br>
 
 
