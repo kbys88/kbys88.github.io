@@ -4,8 +4,8 @@ title: "works"
 permalink: /works
 ---
 
-[etre]/etre
-[shifting]/shifting
+[/etre]
+[/shifting]
 
 <table style="border: 0;">
   <tr>
