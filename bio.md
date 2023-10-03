@@ -41,19 +41,19 @@ impuls International Composition Competition 2023受賞、Ars Electronica Forum 
     institution: Haute École de Musique de Genève<br>
     country: Switzerland<br>
     date: [2020, 2023]<br>
-    comment: "Specialization in music theory"<br>
+    Specialization in music theory<br>
   - degree: Master of Arts<br>
     field: Composition and music theory<br>
     institution: Haute École de Musique de Genève<br>
     country: Switzerland<br>
     date: [2018, 2020]<br>
-    comment: "Specialization in composition"<br>
+    Specialization in composition<br>
   - degree: Bachelor of Arts<br>
     field: Composition<br>
     institution: Tokyo University of the Arts<br>
     country: Japan<br>
     date: [2014, 2018]<br>
-    comment: "Acanthus award and directer of Taito Ward award"<br>
+    Acanthus award and directer of Taito Ward award<br>
   - degree: Bachelor of Arts<br>
     field: Cultural and Creative Studies<br>
     institution: Aoyama Gakuin University, Tokyo<br>
@@ -62,9 +62,15 @@ impuls International Composition Competition 2023受賞、Ars Electronica Forum 
 <h3>Experience</h3><br>
 Freelance Composer<br>
 Self employed, Switzerland, France, Japan<br>
+<p>
+  
+</p>
 (2020 – 2023 ) Conservatoire populaire de musique, danse et théâtre / Conservatoire de Musique de Genève <br>
 Substitute Teaching, Switzerland<br>
 Music theory and solfège<br>
+<p>
+  
+</p>
 Office Assistant<br>
 Magazine House, Japan<br>
 
