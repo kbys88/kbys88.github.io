@@ -36,7 +36,7 @@ In Japan, she received her bachelor’s diploma (Cultural Creative Studies) from
 impuls International Composition Competition 2023受賞、Ars Electronica Forum Wallis Selection 2020 Highly commended獲得、2021年ISCM World Music Days（世界音楽の日々）最終選考推薦、2023年にはパリ国立高等美術学校（École nationale supérieure des beaux-arts）のアーティストらとマルチメディアやダンスとのコラボレーションに取り組むなど、数々の共同制作、委嘱、実践に精力的に活動している。
 
 <h3>Education</h3>
-  - <a href="https://www.ircam.fr/transmission/formations-superieures/cursus">Computer Music Training program</a> 
+  - <a href="https://www.ircam.fr/transmission/formations-superieures/cursus">Computer Music Training program</a><br>
     date: [2021, 2022]
     institution: Institut de recherche et coordination acoustique/musique, Paris 
     country: France
