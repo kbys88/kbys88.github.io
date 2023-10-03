@@ -23,7 +23,8 @@ overflow-wrap: break-word;
           <p>pour orchestre</p>
           <p>premiere by</p>
           <p>1st January 2020</p>
-        <p>Elements that will appear on every page across our website, like the banner image we included in our pages in the previous section, form part of the structure of the page: unlike the content specific to each page, these structural elements do not change from page to page. As such, although the include tags reduce the pain endured when adjusting that repeated content, it is not good practice</p>
+          <p>Paris, France</p>
+        <p>Elements that will appear on every page across our website, like the banner image we included in our pages in the previous section, form part of the structure of the page: unlike the content specific to each page.</p>
         </body></td>
     </tr>
     <tr style="border:none;">
