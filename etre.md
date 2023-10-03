@@ -7,7 +7,7 @@ overflow-wrap: break-word;
 
 
 
-<table style="border:none;" width="300" height="300">
+<table style="border:none;" width="300">
   <tbody style="border:none;">
     <tr style="border:none;">
       <td style="border:none;">
