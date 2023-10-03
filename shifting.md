@@ -17,20 +17,13 @@ overflow-wrap: break-word;
       <td style="border:none;" width="350" bgcolor="#ffffff">
           <!-- 3 -->
         <body><h4><i>être</i> (2022)</h4>
-          <p>pour clarinet d’amore et 7 musiciens</p>
-          <p>premiere by <a href="https://ensembleproton.ch/protonwerk/gewinner">Ensemble Proton Bern</a></p>
-          <p>5/15/2022</p>
-          <p>Dampfzentrale Bern, Switzerland</p>
+          <p>for 11 musicians</p>
+          <p>premiere by <a href="[https://ensembleproton.ch/protonwerk/gewinner](https://www.klangforum.at/#en)">Klangforum Wien</a></p>
+          <p>8/2/2023</p>
+          <p>impuls . 8th Festival for Contemporary Music, at Helmut List Halle, Graz, Austria</p>
         <p>
-          Dirigent - Aaron Cassidy
-          Flöte & Bassflöte - Katrin Szamatulski
-          Oboe d'Amore - Martin Bliggenstorfer
-          Klarinette d'Amore - Richard Haynes
-          Fagott - Elise Jacoberger
-          Harfe - Miriam Paschetta
-          Klavier - Samuel Fried
-          Violine - Maximilian Haft
-          Violoncello - Jan-Filip Ťupa</p>
+          Conductor
+          Johannes Kalitzke
         </body>
       </td>
       <td style="border:none;" width="350" bgcolor="#ffffff">
