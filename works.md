@@ -4,6 +4,9 @@ title: "works"
 permalink: /works
 ---
 
+[etre]/etre
+[shifting]/shifting
+
 <table style="border: 0;">
   <tr>
     <td style="background-color: transparent;"><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1712d49f-1cce-47d9-b1bf-ab21e4d705d5" width="200px" height="200px"></td>
