@@ -1,3 +1,8 @@
+---
+layout: page
+title: "Videos"
+permalink: /Videos
+---
 
 
 [![Front Row Seat #20](https://img.youtube.com/vi/BPuq3Up4hzU/0.jpg)](https://www.youtube.com/watch?v=BPuq3Up4hzU)
