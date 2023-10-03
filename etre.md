@@ -21,7 +21,7 @@ overflow-wrap: break-word;
       <td style="border:none;" width="300" bgcolor="#ffffff">
         <!-- 4 -->
         <body><h4>être (2022)</h4>
-          <p>pour orchestre</p>
+          <p>pour clarinet d’amore et 7 musiciens</p>
           <p>premiere by <a href="https://ensembleproton.ch/protonwerk/gewinner">Ensemble Proton Bern</a></p>
           <p>5/15/2022</p>
           <p>Dampfzentrale Bern, Switzerland</p>
