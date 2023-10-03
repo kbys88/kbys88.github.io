@@ -11,7 +11,7 @@ overflow-wrap: break-word;
       <td style="border:none;">
         <!-- 1 --><iframe width="350" height="350" src="https://www.youtube.com/embed/atHQ7RAiGXg?si=EOylOpcvxrCkni0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen align="left"></iframe></td>
       <td style="border:none;">
-        <!-- 2 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/ddbb0642-a47f-4ad4-8b8d-244501c15aba" width="350" height="350"></td>
+        <!-- 2 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/ddbb0642-a47f-4ad4-8b8d-244501c15aba" width="350" height="350" align="left"></td>
     </tr>
     <tr style="border:none;">
       <td style="border:none;" width="350" bgcolor="#ffffff">
@@ -43,7 +43,7 @@ overflow-wrap: break-word;
 the composer's ego. I was also inspired by a conversation about "rebirth" with an artist friend. For this piece, and in my collaboration with the ensemble proton bern, I decided to start with the clarinet d'amour, as an essential instrument.
 Dedicated to Richard Haynes</p></td>
       <td style="border:none;" width="350" bgcolor="#ffffff">
-        <!-- 6 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/a67fdf2c-e40e-4e68-9194-8ded846d9481" width="350"></td>
+        <!-- 6 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/a67fdf2c-e40e-4e68-9194-8ded846d9481" width="350" align="left"></td>
     </tr>
   </tbody>
 </table>
