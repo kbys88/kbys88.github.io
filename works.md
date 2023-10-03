@@ -17,3 +17,4 @@ permalink: /works
 
 ![orch1](https://github.com/kbys88/kbys88.github.io/assets/142012962/f8694c89-d4f3-4eac-a832-20d98e6f949f)
 ![poetry](https://github.com/kbys88/kbys88.github.io/assets/142012962/d311dd8b-abc5-45b6-9822-a9188b77865f")
+<img width="837" alt="spin" src="https://github.com/kbys88/kbys88.github.io/assets/142012962/fcaf3d1c-703b-4a93-8262-aed2481c09b1">
