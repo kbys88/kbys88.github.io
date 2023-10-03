@@ -3,6 +3,15 @@ layout: page
 title: "works"
 permalink: /works
 ---
+<style>
+  /* Style to remove default link decoration */
+  a {
+    text-decoration: none;
+    outline: none;
+  }
+</style>
+
+
 <table style="border: 0;">
   <tr>
    <td style="background-color: transparent;">
