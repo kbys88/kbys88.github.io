@@ -7,7 +7,7 @@ permalink: /works
 ### _Émergences-Résurgences_ (2016-2017)
 #### pour orchestre
 
-
+{% imagesize source:size/2 %}    >> 326x218
 ![impuls](https://github.com/kbys88/kbys88.github.io/assets/142012962/1712d49f-1cce-47d9-b1bf-ab21e4d705d5)
 ![ihavent](https://github.com/kbys88/kbys88.github.io/assets/142012962/cae87bea-f470-418c-97e2-17018d939009)
 ![etre](https://github.com/kbys88/kbys88.github.io/assets/142012962/ddbb0642-a47f-4ad4-8b8d-244501c15aba)
