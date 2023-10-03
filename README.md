@@ -3,7 +3,6 @@
 
 ![image info](https://static.wixstatic.com/media/d50e54_31dc2c22791d432e9a7c989857966e8f~mv2.jpg/v1/fill/w_752,h_424,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Capture%20d%E2%80%99%C3%A9cran%202023-07-14%20%C3%A0%2015_28_edited.jpg)
 (EN)
-
 Sachie Kobayashi (1990) now takes an interest in more intuitive creation and musical expression related to social phenomena. She started her career as a composer while complementing her research as her second master in education of music theory at Haute école de musique de Genève after completed her master's degree in 2020, under Michael Jarrell, Luis Naon and Gilbert Nouno at the same conservatory. 
 
 Born in Kanagawa, Japan, she began studying piano at the age of seven. And she started studying composition at the age of twenty.
@@ -17,9 +16,7 @@ In 2020, « I haven’t known you yet » for orchestra and electronics was premi
 In Japan, she received her bachelor’s diploma (Cultural Creative Studies) from Aoyama Gakuin University. Also, she studied at the Tokyo University of Arts (GEIDAI, bachelor of composition). In 2018, she won the Acanthus Prize and the Taito Mayor Prize.
 
 ​
-
 (JP)
-
 神奈川県生まれ。青山学院大学卒業後、東京藝術大学音楽学部作曲科に入学。卒業時に、アカンサス賞、台東区長賞を受賞。スイス・ジュネーブ高等音楽院（Haute école de musique de Genève）作曲科修士課程にて、作曲と電子音楽を学ぶ。同音楽院音楽教育(理論)修士在籍、音楽教育現場からクリエーションまで、幅広く活動を続けている。
 2022年IRCAM（フランス国立音響音楽研究所）作曲研究課程修了。
 令和元年度文化庁新進芸術家海外研修制度研修員。スイス政府優秀奨学金奨学生。また公益財団法人野村財団、公益財団法人かけはし芸術文化振興財団、Fondation Hans Wilsdorf、Ville de Genève、Fondation Simon I. Patiñoなど数々の助成を国内外より受ける。
