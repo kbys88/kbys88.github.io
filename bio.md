@@ -37,10 +37,10 @@ impuls International Composition Competition 2023受賞、Ars Electronica Forum 
 
 <h3>Education</h3>
   - <a href="https://www.ircam.fr/transmission/formations-superieures/cursus">Computer Music Training program</a><br>
-    date: [2021, 2022]
-    institution: Institut de recherche et coordination acoustique/musique, Paris 
-    country: France
-    Cursus Program on Composition and Computer Music
+    date: [2021, 2022]<br>
+    institution: Institut de recherche et coordination acoustique/musique, Paris <br>
+    country: France<br>
+    Cursus Program on Composition and Computer Music<br>
  -  Master of Arts<br>
     field: Music education<br>
     institution: Haute École de Musique de Genève<br>
