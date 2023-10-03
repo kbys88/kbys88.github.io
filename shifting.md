@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Shifting"
-permalink: /Shifting
+title: "shifting"
+permalink: /shifting
 overflow-wrap: break-word;
 ---
 
