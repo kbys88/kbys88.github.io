@@ -4,7 +4,7 @@ title: "works"
 permalink: /works
 ---
 
-<table style="border: none;">
+<table style="border: none;" style="background-color: transparent;">
   <tr>
    <td style="background-color: transparent;">
       <a href="/shifting">
