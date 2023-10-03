@@ -45,7 +45,7 @@ overflow-wrap: break-word;
 the composer's ego. I was also inspired by a conversation about "rebirth" with an artist friend. For this piece, and in my collaboration with the ensemble proton bern, I decided to start with the clarinet d'amour, as an essential instrument.
 Dedicated to Richard Haynes</p></td>
       <td style="border:none;" width="300" bgcolor="#ffffff">
-        <!-- 6 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/a67fdf2c-e40e-4e68-9194-8ded846d9481" width="300" height="300"></td>
+        <!-- 6 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/a67fdf2c-e40e-4e68-9194-8ded846d9481" width="300"></td>
     </tr>
   </tbody>
 </table>
