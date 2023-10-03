@@ -9,13 +9,13 @@ overflow-wrap: break-word;
   <tbody style="border:none;">
     <tr style="border:none;">
       <td style="border:none;">
-        <!-- 1 --><iframe width="350" height="350" src="https://www.youtube.com/embed/atHQ7RAiGXg?si=EOylOpcvxrCkni0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+        <!-- 1 --><iframe width="350" height="350" src="https://www.youtube.com/embed/atHQ7RAiGXg?si=EOylOpcvxrCkni0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen align="left"></iframe></td>
       <td style="border:none;">
         <!-- 2 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/ddbb0642-a47f-4ad4-8b8d-244501c15aba" width="350" height="350"></td>
     </tr>
     <tr style="border:none;">
       <td style="border:none;" width="350" bgcolor="#ffffff">
-        <!-- 3 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/b56a4d42-8168-4f2c-a2e6-579fa2da8f04" width="350" height="350"></td>
+        <!-- 3 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/b56a4d42-8168-4f2c-a2e6-579fa2da8f04" width="350" height="350" align="left"></td>
       <td style="border:none;" width="350" bgcolor="#ffffff">
         <!-- 4 -->
         <body><h4><i>être</i> (2022)</h4>
