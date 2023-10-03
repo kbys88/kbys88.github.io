@@ -21,9 +21,10 @@ overflow-wrap: break-word;
       <td style="border:none;" width="300" bgcolor="#ffffff">
         <!-- 4 --><body><h4>piece title (2020)</h4>
           <p>pour orchestre</p>
-          <p>premiere by</p>
+          <p>premiere by <a href="https://ensembleproton.ch/protonwerk/gewinner">Ensemble Proton Bern</a></p>
           <p>1st January 2020</p>
           <p>Paris, France</p>
+          <p><a href="https://youtu.be/atHQ7RAiGXg?si=EOylOpcvxrCkni0T">Youtube</a> <p>
         <p>Elements that will appear on every page across our website, like the banner image we included in our pages in the previous section, form part of the structure of the page: unlike the content specific to each page.</p>
         </body></td>
     </tr>
