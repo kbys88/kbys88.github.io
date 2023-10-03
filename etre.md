@@ -11,7 +11,7 @@ overflow-wrap: break-word;
   <tbody style="border:none;">
     <tr style="border:none;">
       <td style="border:none;">
-        <!-- 1 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/e4834db3-b2be-4e9c-b1f0-8458be217a95" width="300" height="300"></td>
+        <!-- 1 --><iframe width="300" height="300" src="https://www.youtube.com/embed/atHQ7RAiGXg?si=EOylOpcvxrCkni0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
       <td style="border:none;">
         <!-- 2 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/ddbb0642-a47f-4ad4-8b8d-244501c15aba" width="300" height="300"></td>
     </tr>
@@ -45,7 +45,7 @@ overflow-wrap: break-word;
 the composer's ego. I was also inspired by a conversation about "rebirth" with an artist friend. For this piece, and in my collaboration with the ensemble proton bern, I decided to start with the clarinet d'amour, as an essential instrument.
 Dedicated to Richard Haynes</p></td>
       <td style="border:none;" width="300" bgcolor="#ffffff">
-        <!-- 6 --><iframe width="300" height="300" src="https://www.youtube.com/embed/atHQ7RAiGXg?si=EOylOpcvxrCkni0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+        <!-- 6 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/a67fdf2c-e40e-4e68-9194-8ded846d9481" width="300" height="300"></td>
     </tr>
   </tbody>
 </table>
