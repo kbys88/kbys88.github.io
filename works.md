@@ -7,9 +7,6 @@ permalink: /works
  _Émergences-Résurgences_ (2016-2017)
 pour orchestre
 
-| ![Kiku](docs/snapshot/home.jpeg)        | ![Kiku](docs/snapshot/sub.jpeg) |
-| --------------------------------------- | --------------------------------------- |
-| ![Kiku](docs/snapshot/user-center.jpeg) |                                         |
 
 
 ![impuls](https://github.com/kbys88/kbys88.github.io/assets/142012962/1712d49f-1cce-47d9-b1bf-ab21e4d705d5){:height="200px" width="200px"}
