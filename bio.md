@@ -20,8 +20,9 @@ In 2020, « I haven’t known you yet » for orchestra and electronics was premi
 
 In Japan, she received her bachelor’s diploma (Cultural Creative Studies) from Aoyama Gakuin University. Also, she studied at the Tokyo University of Arts (GEIDAI, bachelor of composition). In 2018, she won the Acanthus Prize and the Taito Mayor Prize.
 
-<p style="text-align:center;">
+{: align="center"}
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BPuq3Up4hzU?si=EfIqt80eRZmHbLAt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 (JP)
 神奈川県生まれ。青山学院大学卒業後、東京藝術大学音楽学部作曲科に入学。卒業時に、アカンサス賞、台東区長賞を受賞。スイス・ジュネーブ高等音楽院（Haute école de musique de Genève）作曲科修士課程にて、作曲と電子音楽を学ぶ。同音楽院音楽教育(理論)修士在籍、音楽教育現場からクリエーションまで、幅広く活動を続けている。
