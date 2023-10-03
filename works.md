@@ -54,6 +54,3 @@ permalink: /works
     </td>
   </tr>
 </table>
-```
-
-Please make sure the image URLs are correct and complete. Additionally, I've combined the `style` attributes into a single attribute for each `td` element to fix the HTML syntax.
