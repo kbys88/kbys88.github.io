@@ -4,19 +4,7 @@ title: "works"
 permalink: /works
 ---
 
-<style>
-
-  a {
-    text-decoration: none;
-    outline: none;
-  }
-  
-  table {
-    border-collapse: collapse;
-  }
-</style>
-
-<table style="border: 0;">
+<table style="border: none;">
   <tr>
    <td style="background-color: transparent;">
       <a href="/shifting">
