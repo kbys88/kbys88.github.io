@@ -34,3 +34,29 @@ In Japan, she received her bachelor’s diploma (Cultural Creative Studies) from
 2022年IRCAM（フランス国立音響音楽研究所）作曲研究課程修了。
 令和元年度文化庁新進芸術家海外研修制度研修員。スイス政府優秀奨学金奨学生。また公益財団法人野村財団、公益財団法人かけはし芸術文化振興財団、Fondation Hans Wilsdorf、Ville de Genève、Fondation Simon I. Patiñoなど数々の助成を国内外より受ける。
 impuls International Composition Competition 2023受賞、Ars Electronica Forum Wallis Selection 2020 Highly commended獲得、2021年ISCM World Music Days（世界音楽の日々）最終選考推薦、2023年にはパリ国立高等美術学校（École nationale supérieure des beaux-arts）のアーティストらとマルチメディアやダンスとのコラボレーションに取り組むなど、数々の共同制作、委嘱、実践に精力的に活動している。
+
+<h2>Education</h2>
+Music education, Master of Arts
+Haute École de Musique de Genève, Switzerland Specialization in music theory
+Composition and music theory, Master of Arts Haute École de Musique de Genève, Switzerland Specialization in composition
+Composition, Bachelor of Arts
+Tokyo University of the Arts, Japan
+Acanthus award and directer of Taito Ward award
+Cultural and Creative Studies, Bachelor of Arts Aoyama Gakuin University, Tokyo, Japan
+Supplementary education
+(2023 ) (2020) (2018 ) (2013 )
+(2021 – 2022 ) Institut de recherche et coordination acoustique/musique, Paris , France
+Computer Music Training program
+Cursus Program on Composition and Computer Music
+<h2>Experience</h2>
+Freelance Composer
+Self employed, Switzerland, France, Japan
+Commitions for composition, sound design and arrangement.
+(2020 – 2023 ) Conservatoire populaire de musique, danse et théâtre / Conservatoire de
+Substitute Teaching
+Musique de Genève, Switzerland
+Music theory and solfège
+Office Assistant
+Magazine House, Japan
+Part time job in the advertisement department.
+
