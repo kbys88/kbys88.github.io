@@ -3,6 +3,8 @@ layout: page
 title: "videos"
 permalink: /videos
 ---
+<meta name="viewport" content="width=1200, minimum-scale=0.1">
+
 <div style="text-align:center;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ADUAF4ykF_8?si=F6nFNhp6yqKFLp2D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
