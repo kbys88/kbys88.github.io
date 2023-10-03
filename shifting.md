@@ -33,9 +33,7 @@ overflow-wrap: break-word;
     <tr style="border:none;" width="300" bgcolor="#ffffff">
       <td style="border:none;" width="300" bgcolor="#ffffff">
         <!-- 5 -->
-        <p>Between the musical instruments and their extension, I began to think about the incarnation of the instrument and the composer's ego.
-the composer's ego. I was also inspired by a conversation about "rebirth" with an artist friend. For this piece, and in my collaboration with the ensemble proton bern, I decided to start with the clarinet d'amour, as an essential instrument.
-Dedicated to Richard Haynes</p></td>
+        <p>My piece is a textural work that explores the use of smaller dynamic to bring out the maximum possible sound of the ins- trument. The composition was inspired by my previous work, “Time Study in P”, which was composed for a conducting class at the Haute école de musique de Genève. In this piece, certain pitches were derived from the spectral analysis and solution of tam-tam sounds using Orchidea. In my new piece, I aim to synthesize new sounds and construct a “noise” sound as a novel compositional component. I will explore the repe- tition of textures and how changes in our listening can arise due to these changes. Ultimately, my goal is to create a work that challenges the listener‘s perception of sound and encou- rages them to engage with it in a new way.</p></td>
       <td style="border:none;" width="350" bgcolor="#ffffff">
         <!-- 6 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/a67fdf2c-e40e-4e68-9194-8ded846d9481" width="350" align="left"></td>
     </tr>
