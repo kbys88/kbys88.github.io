@@ -15,9 +15,8 @@ overflow-wrap: break-word;
     </tr>
     <tr style="border:none;">
       <td style="border:none;" width="350" bgcolor="#ffffff">
-        <!-- 3 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/b56a4d42-8168-4f2c-a2e6-579fa2da8f04" width="350" height="350" align="left"></td>
       <td style="border:none;" width="350" bgcolor="#ffffff">
-        <!-- 4 -->
+        <!-- 3 -->
         <body><h4><i>être</i> (2022)</h4>
           <p>pour clarinet d’amore et 7 musiciens</p>
           <p>premiere by <a href="https://ensembleproton.ch/protonwerk/gewinner">Ensemble Proton Bern</a></p>
@@ -35,6 +34,7 @@ overflow-wrap: break-word;
           Violoncello - Jan-Filip Ťupa</p>
         </body>
       </td>
+         <!-- 4 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/b56a4d42-8168-4f2c-a2e6-579fa2da8f04" width="350" height="350" align="left"></td>
     </tr>
     <tr style="border:none;" width="300" bgcolor="#ffffff">
       <td style="border:none;" width="300" bgcolor="#ffffff">
