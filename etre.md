@@ -10,7 +10,8 @@ overflow-wrap: break-word;
 <table style="border:none;">
   <tbody style="border:none;">
     <tr style="border:none;">
-      <td style="border:none;"><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/e4834db3-b2be-4e9c-b1f0-8458be217a95" width="300" height="300"></td>
+      <td style="border:none;">
+        <!-- 1 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/e4834db3-b2be-4e9c-b1f0-8458be217a95" width="300" height="300"></td>
       <td style="border:none;"><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/e4834db3-b2be-4e9c-b1f0-8458be217a95" width="300" height="300"></td>
     </tr>
     <tr style="border:none;">
