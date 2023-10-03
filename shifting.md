@@ -9,7 +9,7 @@ overflow-wrap: break-word;
   <tbody style="border:none;">
     <tr style="border:none;">
       <td style="border:none;">
-        <!-- 1 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1712d49f-1cce-47d9-b1bf-ab21e4d705d5" width="350" height="350" align="left"></td>
+        <!-- 1 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1fcf0552-b68e-42ad-a813-e7eb8f983e55" width="350" height="350" align="left"></td>
       <td style="border:none;">
         <!-- 2 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1712d49f-1cce-47d9-b1bf-ab21e4d705d5" width="350" height="350" align="left"></td>
     </tr>
