@@ -64,7 +64,7 @@ impuls International Composition Competition 2023受賞、Ars Electronica Forum 
     institution: Aoyama Gakuin University, Tokyo<br>
     country: Japan<br>
     date: [2009, 2013]<br>
-<h4>Experience</h4><br>
+<h4>Experience</h4>
   - Freelance Composer<br>
 Self employed, Switzerland, France, Japan<br>
 <p>
