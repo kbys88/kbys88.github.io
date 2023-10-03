@@ -1,6 +1,5 @@
 ---
 layout: page
-title: "être"
 permalink: /etre
 overflow-wrap: break-word;
 ---
