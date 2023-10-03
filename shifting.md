@@ -16,7 +16,7 @@ overflow-wrap: break-word;
     <tr style="border:none;">
       <td style="border:none;" width="350" bgcolor="#ffffff">
           <!-- 3 -->
-        <body><h4><i>être</i> (2022)</h4>
+        <body><h4><i>Shifting</i> (2022)</h4>
           <p>for 11 musicians</p>
           <p>premiere by <a href="[https://ensembleproton.ch/protonwerk/gewinner](https://www.klangforum.at/#en)">Klangforum Wien</a></p>
           <p>8/2/2023</p>
