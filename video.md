@@ -4,6 +4,6 @@ title: "videos"
 permalink: /videos
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ADUAF4ykF_8?si=F6nFNhp6yqKFLp2D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-[![Front Row Seat #20](https://img.youtube.com/vi/BPuq3Up4hzU/0.jpg)](https://www.youtube.com/watch?v=BPuq3Up4hzU)
-[![台東区長賞授賞式](https://img.youtube.com/vi/ADUAF4ykF_8/0.jpg)](https://www.youtube.com/watch?v=ADUAF4ykF_8)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BPuq3Up4hzU?si=4YcqKC4BaTlJRVXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
