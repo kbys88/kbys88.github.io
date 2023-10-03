@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Videos"
-permalink: /Videos
+title: "videos"
+permalink: /videos
 ---
 
 
