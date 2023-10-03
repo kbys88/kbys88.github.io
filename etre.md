@@ -2,6 +2,7 @@
 layout: page
 title: "etre"
 permalink: /etre
+overflow-wrap: break-word;
 ---
 
 
