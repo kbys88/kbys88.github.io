@@ -9,7 +9,9 @@ overflow-wrap: break-word;
     <tr style="border:none;">
       <td style="border:none;">
         <!-- 1 -->
+        <div style="text-align:center;" class="youtube-re">
         <iframe width="350" height="350" src="https://www.youtube.com/embed/atHQ7RAiGXg?si=EOylOpcvxrCkni0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
       </td>
       <td style="border:none;">
         <!-- 2 -->
