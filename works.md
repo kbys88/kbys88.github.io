@@ -5,9 +5,14 @@ permalink: /works
 ---
 
 <style>
+
   a {
     text-decoration: none;
     outline: none;
+  }
+  
+  table {
+    border-collapse: collapse;
   }
 </style>
 
