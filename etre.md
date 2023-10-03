@@ -40,7 +40,10 @@ overflow-wrap: break-word;
     </tr>
     <tr style="border:none;" width="300" bgcolor="#ffffff">
       <td style="border:none;" width="300" bgcolor="#ffffff">
-        <!-- 5 --><p>Elements that will appear on every page across our website, like the banner image we included in our pages in the previous section, form part of the structure of the page: unlike the content specific to each page, these structural elements do not change from page to page. As such, although the include tags reduce the pain endured when adjusting that repeated content, it is not good practice</p></td>
+        <!-- 5 -->
+        <p>Between the musical instruments and their extension, I began to think about the incarnation of the instrument and the composer's ego.
+the composer's ego. I was also inspired by a conversation about "rebirth" with an artist friend. For this piece, and in my collaboration with the ensemble proton bern, I decided to start with the clarinet d'amour, as an essential instrument.
+Dedicated to Richard Haynes</p></td>
       <td style="border:none;" width="300" bgcolor="#ffffff">
         <!-- 6 --><iframe width="300" height="300" src="https://www.youtube.com/embed/atHQ7RAiGXg?si=EOylOpcvxrCkni0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
     </tr>
