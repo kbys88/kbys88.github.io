@@ -36,25 +36,30 @@ In Japan, she received her bachelor’s diploma (Cultural Creative Studies) from
 impuls International Composition Competition 2023受賞、Ars Electronica Forum Wallis Selection 2020 Highly commended獲得、2021年ISCM World Music Days（世界音楽の日々）最終選考推薦、2023年にはパリ国立高等美術学校（École nationale supérieure des beaux-arts）のアーティストらとマルチメディアやダンスとのコラボレーションに取り組むなど、数々の共同制作、委嘱、実践に精力的に活動している。
 
 <h3>Education</h3>
- - degree: Master of Arts<br>
+  - field: Computer Music Training program
+    date: [2021, 2022]
+    institution: Institut de recherche et coordination acoustique/musique, Paris 
+    country: France
+    Cursus Program on Composition and Computer Music
+ -  Master of Arts<br>
     field: Music education<br>
     institution: Haute École de Musique de Genève<br>
     country: Switzerland<br>
     date: [2020, 2023]<br>
     Specialization in music theory<br>
-  - degree: Master of Arts<br>
+  - Master of Arts<br>
     field: Composition and music theory<br>
     institution: Haute École de Musique de Genève<br>
     country: Switzerland<br>
     date: [2018, 2020]<br>
     Specialization in composition<br>
-  - degree: Bachelor of Arts<br>
+  - Bachelor of Arts<br>
     field: Composition<br>
     institution: Tokyo University of the Arts<br>
     country: Japan<br>
     date: [2014, 2018]<br>
     Acanthus award and directer of Taito Ward award<br>
-  - degree: Bachelor of Arts<br>
+  - Bachelor of Arts<br>
     field: Cultural and Creative Studies<br>
     institution: Aoyama Gakuin University, Tokyo<br>
     country: Japan<br>
