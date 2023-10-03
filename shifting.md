@@ -5,32 +5,45 @@ permalink: /Shifting
 overflow-wrap: break-word;
 ---
 
-<table style="border:none;" width="300" bgcolor="#ffffff">
+<table style="border:none;" width="350" bgcolor="#ffffff">
   <tbody style="border:none;">
     <tr style="border:none;">
       <td style="border:none;">
-        <!-- 1 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/e4834db3-b2be-4e9c-b1f0-8458be217a95" width="300" height="300"></td>
+        <!-- 1 --><iframe width="350" height="350" src="https://www.youtube.com/embed/atHQ7RAiGXg?si=EOylOpcvxrCkni0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen align="left"></iframe></td>
       <td style="border:none;">
-        <!-- 2 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/d311dd8b-abc5-45b6-9822-a9188b77865f" width="300" height="300"></td>
+        <!-- 2 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/ddbb0642-a47f-4ad4-8b8d-244501c15aba" width="350" height="350" align="left"></td>
     </tr>
     <tr style="border:none;">
-      <td style="border:none;" width="300" bgcolor="#ffffff">
-        <!-- 3 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/e4834db3-b2be-4e9c-b1f0-8458be217a95" width="300" height="300"></td>
-      <td style="border:none;" width="300" bgcolor="#ffffff">
-        <!-- 4 --><body><h4>piece title (2020)</h4>
-          <p>pour orchestre</p>
-          <p>premiere by</p>
-          <p>1st January 2020</p>
-          <p>Paris, France</p>
-        <p>Elements that will appear on every page across our website, like the banner image we included in our pages in the previous section, form part of the structure of the page: unlike the content specific to each page.</p>
-        </body></td>
+      <td style="border:none;" width="350" bgcolor="#ffffff">
+        <!-- 3 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/b56a4d42-8168-4f2c-a2e6-579fa2da8f04" width="350" height="350" align="left"></td>
+      <td style="border:none;" width="350" bgcolor="#ffffff">
+        <!-- 4 -->
+        <body><h4><i>être</i> (2022)</h4>
+          <p>pour clarinet d’amore et 7 musiciens</p>
+          <p>premiere by <a href="https://ensembleproton.ch/protonwerk/gewinner">Ensemble Proton Bern</a></p>
+          <p>5/15/2022</p>
+          <p>Dampfzentrale Bern, Switzerland</p>
+        <p>
+          Dirigent - Aaron Cassidy
+          Flöte & Bassflöte - Katrin Szamatulski
+          Oboe d'Amore - Martin Bliggenstorfer
+          Klarinette d'Amore - Richard Haynes
+          Fagott - Elise Jacoberger
+          Harfe - Miriam Paschetta
+          Klavier - Samuel Fried
+          Violine - Maximilian Haft
+          Violoncello - Jan-Filip Ťupa</p>
+        </body>
+      </td>
     </tr>
     <tr style="border:none;" width="300" bgcolor="#ffffff">
       <td style="border:none;" width="300" bgcolor="#ffffff">
-        <!-- 5 --><p>Elements that will appear on every page across our website, like the banner image we included in our pages in the previous section, form part of the structure of the page: unlike the content specific to each page, these structural elements do not change from page to page. As such, although the include tags reduce the pain endured when adjusting that repeated content, it is not good practice</p></td>
-      <td style="border:none;" width="300" bgcolor="#ffffff">
-        <!-- 6 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/e4834db3-b2be-4e9c-b1f0-8458be217a95" width="300" height="300"></td>
+        <!-- 5 -->
+        <p>Between the musical instruments and their extension, I began to think about the incarnation of the instrument and the composer's ego.
+the composer's ego. I was also inspired by a conversation about "rebirth" with an artist friend. For this piece, and in my collaboration with the ensemble proton bern, I decided to start with the clarinet d'amour, as an essential instrument.
+Dedicated to Richard Haynes</p></td>
+      <td style="border:none;" width="350" bgcolor="#ffffff">
+        <!-- 6 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/a67fdf2c-e40e-4e68-9194-8ded846d9481" width="350" align="left"></td>
     </tr>
   </tbody>
 </table>
-
