@@ -38,3 +38,7 @@ overflow-wrap: break-word;
       <td style="border:none;" width="350" bgcolor="#ffffff">
         <!-- 6 -->
         <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/10fa2bdd-2a3d-44f4-bce0-0214b7ef1805" width="350" align="left"></td>
+     </tr>
+  </tbody>
+</table>
+
