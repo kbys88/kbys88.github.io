@@ -1,6 +1,5 @@
 ---
 layout: page
-title: "shifting"
 permalink: /shifting
 overflow-wrap: break-word;
 ---
