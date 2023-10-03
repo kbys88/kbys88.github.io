@@ -18,7 +18,7 @@ overflow-wrap: break-word;
         <!-- 3 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/b56a4d42-8168-4f2c-a2e6-579fa2da8f04" width="350" height="350"></td>
       <td style="border:none;" width="350" bgcolor="#ffffff">
         <!-- 4 -->
-        <body><h4>_être_ (2022)</h4>
+        <body><h4>*être* (2022)</h4>
           <p>pour clarinet d’amore et 7 musiciens</p>
           <p>premiere by <a href="https://ensembleproton.ch/protonwerk/gewinner">Ensemble Proton Bern</a></p>
           <p>5/15/2022</p>
