@@ -17,7 +17,7 @@ overflow-wrap: break-word;
     </tr>
     <tr style="border:none;">
       <td style="border:none;" width="300" bgcolor="#ffffff">
-        <!-- 3 --><img src="" width="300" height="300"><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/b56a4d42-8168-4f2c-a2e6-579fa2da8f04" width="300" height="300"></td>
+        <!-- 3 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/b56a4d42-8168-4f2c-a2e6-579fa2da8f04" width="300" height="300"></td>
       <td style="border:none;" width="300" bgcolor="#ffffff">
         <!-- 4 -->
         <body><h4>être (2022)</h4>
