@@ -35,7 +35,7 @@ In Japan, she received her bachelor’s diploma (Cultural Creative Studies) from
 令和元年度文化庁新進芸術家海外研修制度研修員。スイス政府優秀奨学金奨学生。また公益財団法人野村財団、公益財団法人かけはし芸術文化振興財団、Fondation Hans Wilsdorf、Ville de Genève、Fondation Simon I. Patiñoなど数々の助成を国内外より受ける。
 impuls International Composition Competition 2023受賞、Ars Electronica Forum Wallis Selection 2020 Highly commended獲得、2021年ISCM World Music Days（世界音楽の日々）最終選考推薦、2023年にはパリ国立高等美術学校（École nationale supérieure des beaux-arts）のアーティストらとマルチメディアやダンスとのコラボレーションに取り組むなど、数々の共同制作、委嘱、実践に精力的に活動している。
 
-<h2>Education</h2>
+<h3>Education</h3>
  - degree: Master of Arts<br>
     field: Music education<br>
     institution: Haute École de Musique de Genève<br>
@@ -44,7 +44,6 @@ impuls International Composition Competition 2023受賞、Ars Electronica Forum 
     comment: "Specialization in music theory"<br>
   - degree: Master of Arts<br>
     field: Composition and music theory<br>
-    # field: Composition et théorie musicale avec orientation en Composition<br>
     institution: Haute École de Musique de Genève<br>
     country: Switzerland<br>
     date: [2018, 2020]<br>
@@ -60,7 +59,7 @@ impuls International Composition Competition 2023受賞、Ars Electronica Forum 
     institution: Aoyama Gakuin University, Tokyo<br>
     country: Japan<br>
     date: [2009, 2013]<br>
-<h2>Experience</h2><br>
+<h3>Experience</h3><br>
 Freelance Composer<br>
 Self employed, Switzerland, France, Japan<br>
 (2020 – 2023 ) Conservatoire populaire de musique, danse et théâtre / Conservatoire de Musique de Genève <br>
