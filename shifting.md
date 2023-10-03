@@ -9,9 +9,9 @@ overflow-wrap: break-word;
   <tbody style="border:none;">
     <tr style="border:none;">
       <td style="border:none;">
-        <!-- 1 --><iframe width="350" height="350" src="https://www.youtube.com/embed/atHQ7RAiGXg?si=EOylOpcvxrCkni0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen align="left"></iframe></td>
+        <!-- 1 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1712d49f-1cce-47d9-b1bf-ab21e4d705d5" width="350" height="350" align="left"></td>
       <td style="border:none;">
-        <!-- 2 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/ddbb0642-a47f-4ad4-8b8d-244501c15aba" width="350" height="350" align="left"></td>
+        <!-- 2 --><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1712d49f-1cce-47d9-b1bf-ab21e4d705d5" width="350" height="350" align="left"></td>
     </tr>
     <tr style="border:none;">
       <td style="border:none;" width="350" bgcolor="#ffffff">
