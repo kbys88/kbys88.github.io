@@ -16,5 +16,5 @@ permalink: /videos
 </div>
 
 <div style="text-align:center;">
-<iframe width="560" height="315" src="https://medias.ircam.fr/getmedia/x56d2a9_day-0-trans-instrumentalism-sachie-kobayas/mp4?resolution=1080" title="ircam" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://medias.ircam.fr/getmedia/x56d2a9_day-0-trans-instrumentalism-sachie-kobayas/mp4?resolution=1080" title="ircam" frameborder="0"></iframe>
 </div>
