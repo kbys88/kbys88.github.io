@@ -5,9 +5,19 @@ permalink: /works
 ---
 <table style="border: 0;">
   <tr>
-    <td style="background-color: transparent;"><a href="/shifting"></a><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1712d49f-1cce-47d9-b1bf-ab21e4d705d5" width="200px" height="200px"></td>
-    <td style="background-color: transparent;"><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/cae87bea-f470-418c-97e2-17018d939009" width="200px" height="200px"></td>
-    <td style="background-color: transparent;"><a href="/etre"></a><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/ddbb0642-a47f-4ad4-8b8d-244501c15aba" width="200px" height="200px"></td>
+   <td style="background-color: transparent;">
+      <a href="/shifting">
+        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1712d49f-1cce-47d9-b1bf-ab21e4d705d5" width="200px" height="200px">
+      </a>
+    </td>
+    <td style="background-color: transparent;">
+      <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/cae87bea-f470-418c-97e2-17018d939009" width="200px" height="200px">
+    </td>
+    <td style="background-color: transparent;">
+      <a href="/etre">
+        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/ddbb0642-a47f-4ad4-8b8d-244501c15aba" width="200px" height="200px">
+      </a>
+    </td>
   </tr>
   <tr>
     <td style="background-color: transparent;"><img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/d7162394-e63d-424e-950c-73a8cf10be2f" width="200px" height="200px"></td>
