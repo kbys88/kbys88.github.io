@@ -83,7 +83,7 @@ permalink: /works
   </tr>
   <tr>
     <td style="border:none; background-color: transparent;">
-      <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/b50e01cb-ea6d-406a-8e21-df57fd2bdb38" width="200px" height="200px">
+      <!--empty-->
     </td>
     <td style="border:none; background-color: transparent;">
       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/5dd8dd9f-237a-4051-8523-247fe8ff1358" width="200px" height="200px">
