@@ -7,6 +7,7 @@ google_site_verification: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 bing_site_verification  :
 yandex_site_verification:
 naver_site_verification :
+footer:
   links:
     - label: "Email"
       icon : "fas fa-fw fa-envelope-square"
