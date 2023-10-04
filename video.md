@@ -20,6 +20,11 @@ permalink: /videos
     height: 100%;
   }
 </style>
+<p>
+<br>
+<br>
+<br>
+</p>
 
 <div class="video-container">
   <iframe src="https://www.youtube.com/embed/ADUAF4ykF_8?si=F6nFNhp6yqKFLp2D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
