@@ -74,11 +74,11 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
     date: [2009, 2013]<br>
 <h4>Experience, Activity</h4>
   - Sound logo design
-<a href="http://aexea.co.jp/">AEXEA Co,ltd</a><br>
+<a href="http://aexea.co.jp/">AEXEA Co,ltd</a>, Tokyo, Japan<br>
 <p>
   
 </p>
-  - Presentation at <a href="https://jjcaas2023.sciencesconf.org/">JJJCAAS (Journées Jeunes Chercheur·se·s en Audition, Acoustique musicale et Signal audio)</a><br>
+  - Presentation at <a href="https://jjcaas2023.sciencesconf.org/">JJCAAS (Journées Jeunes Chercheur·se·s en Audition, Acoustique musicale et Signal audio)</a>, Paris, France<br>
   
 <p>
   
