@@ -82,7 +82,7 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
 <p>
   
 </p>
-  - Music for <a href="https://danielkunzi.ch/tag/pomme-de-discorde">Pomme de discorde – alerte pesticide (2021), Geneva, Switzerland<br>
+  - Music for <a href="https://danielkunzi.ch/tag/pomme-de-discorde">Pomme de discorde – alerte pesticide (2021)</a>, Geneva, Switzerland<br>
 <p>
   
 </p>
