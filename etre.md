@@ -4,6 +4,44 @@ permalink: /etre
 overflow-wrap: break-word;
 ---
 
+table{
+  width: 100%;
+  border-collapse:collapse;
+  text-align: center;
+  font-size: 13px;
+}
+caption{
+  font-weight: 600;
+}
+td ,th{
+  border: solid 1px #000;
+}
+th {
+  background: #000;
+  color: #fff;
+  border-bottom: solid 1px #fff;
+}
+th:m{
+  background: #000;
+  color: #fff;
+  border-bottom: solid 1px #fff;
+}
+
+@media screen and (max-width: 640px) {
+  table {
+    width: 90%;
+    margin: 0 auto;
+  }
+   th, td {
+    display: block;
+  }
+  th{
+    border-bottom: solid 1px #000;
+  }
+  td{
+    border-top: solid 1px #fff;
+  }
+}
 
 <style>
   table {
