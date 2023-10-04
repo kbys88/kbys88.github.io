@@ -57,14 +57,10 @@ overflow-wrap: break-word;
     <tr style="border:none;">
       <td style="border:none;" width="350">
         <!-- 3 -->
-        <h4><i>Day 0 - Transinstrumentalism</i> (2022)</h4>
-        <p>pour performeur, vidéo, capture de mouvement et électronique</p>
-        <p>premiere by <a href="https://www.corentinmarillier.com">Corentin Marillier</a></p>
-        <p>24/9/2022</p>
-        <p>Créations du Cursus</p>
-        <p>Thanks to Pierre Jodlowski, Sébastien Naves,
-Corentin Marillier, Kaya Kolodziejczyk, Emmanuel Fléty,
-Frederik Bous and Pedagogical team at Ircam</p>
+        <h4><i>I haven't known you yet</i> (2020)</h4>
+        <p>pour orchestre et électronique</p>
+        <p>premiere by Orchestre de HEM, cond. buy Pierre Bleuse
+        <p>1/10/2020</p>
       </td>
       <td style="border:none;" width="350">
         <!-- 4 -->
