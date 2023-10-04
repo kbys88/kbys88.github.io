@@ -42,12 +42,6 @@ overflow-wrap: break-word;
 {: align="center"}
 <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/42c56755-6e93-45f2-99cd-4752e961dfff" width="700">
 
-{: align="center"}
-<a href="https://medias.ircam.fr/x56d2a9_day-0-trans-instrumentalism-sachie-kobayas">
-<img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/2c2e241b-b5e2-4a68-9efe-b758d95d6805" width="700">
-</a>
-<p>video on <a href="https://medias.ircam.fr/x56d2a9_day-0-trans-instrumentalism-sachie-kobayas">IRCAM</a></p>
-
 <table style="border:none;" width="350">
   <tbody style="border:none;">
     <tr style="border:none;">
@@ -87,7 +81,7 @@ Je m’aperçois inconsciemment que j’incorpore au processus les pensées boud
       </td>
       <td style="border:none;" width="350">
         <!-- 6 -->
-        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/46e9304f-6421-4b8c-a8e4-9b543b8f8361" width="350">
+        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/d0a721d7-85b5-474b-b41e-756440bb4f3f" width="350">
       </td>
     </tr>
   </tbody>
