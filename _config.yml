@@ -16,3 +16,11 @@ author:
     - label: "Email"
       icon : "far fa-envelope"
       # url: "mailto:info@sachiekobayashi.com"
+
+defaults:  
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: pages
+      author_profile: true
