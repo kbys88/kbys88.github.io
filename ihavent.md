@@ -49,7 +49,7 @@ overflow-wrap: break-word;
         <!-- 1 -->
         <h4><i>I haven't known you yet</i> (2020)</h4>
         <p>pour orchestre et électronique</p>
-        <p>premiere by Orchestre de HEM, cond. buy Pierre Bleuse</p>
+        <p>premiere by Orchestre de HEM, cond. by Pierre Bleuse</p>
         <p>1/10/2020</p>
       </td>
       <td style="border:none;">
