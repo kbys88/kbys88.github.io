@@ -87,7 +87,7 @@ Je m’aperçois inconsciemment que j’incorpore au processus les pensées boud
       </td>
       <td style="border:none;" width="350">
         <!-- 6 -->
-        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/46e9304f-6421-4b8c-a8e4-9b543b8f8361)" width="350">
+        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/46e9304f-6421-4b8c-a8e4-9b543b8f8361" width="350">
       </td>
     </tr>
   </tbody>
