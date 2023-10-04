@@ -8,6 +8,7 @@ overflow-wrap: break-word;
   table {
     border: none;
     background-color: transparent;
+    width: 350px; /* Set the default table width for computers */
   }
 
   td {
@@ -24,16 +25,16 @@ overflow-wrap: break-word;
   /* Media query for smartphones */
   @media (max-width: 768px) {
     table {
-      width: 100%; /* Make the table full-width on small screens */
+      width: 300px; /* Adjust the table width for smaller screens */
     }
 
     td {
-      display: block; /* Stack table cells vertically on small screens */
-      margin-bottom: 20px; /* Add some space between cells */
+      display: block;
+      margin-bottom: 20px;
     }
 
     img {
-      width: 100%; /* Make images full-width within table cells */
+      width: 100%;
     }
   }
 </style>
@@ -44,18 +45,18 @@ overflow-wrap: break-word;
       <td style="border:none;">
         <!-- 1 -->
         <div style="text-align:center;" class="video">
-        <iframe width="350" height="350" src="https://www.youtube.com/embed/atHQ7RAiGXg?si=EOylOpcvxrCkni0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="300" height="300" src="https://www.youtube.com/embed/atHQ7RAiGXg?si=EOylOpcvxrCkni0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </td>
       <td style="border:none;" width="350" bgcolor="#ffffff">
         <!-- 2 -->
-        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/ddbb0642-a47f-4ad4-8b8d-244501c15aba" width="350">
+        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/ddbb0642-a47f-4ad4-8b8d-244501c15aba" width="300">
       </td>
     </tr>
     <tr style="border:none;" width="350" bgcolor="#ffffff">
       <td style="border:none;" width="350" bgcolor="#ffffff">
         <!-- 3 -->
-        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/b56a4d42-8168-4f2c-a2e6-579fa2da8f04" width="350">
+        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/b56a4d42-8168-4f2c-a2e6-579fa2da8f04" width="300">
       </td>
       <td style="border:none;" width="350" bgcolor="#ffffff">
         <!-- 4 -->
@@ -85,7 +86,7 @@ overflow-wrap: break-word;
       </td>
       <td style="border:none;" width="350" bgcolor="#ffffff">
         <!-- 6 -->
-        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/a67fdf2c-e40e-4e68-9194-8ded846d9481" width="350">
+        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/a67fdf2c-e40e-4e68-9194-8ded846d9481" width="300">
       </td>
     </tr>
   </tbody>
