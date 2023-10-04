@@ -83,7 +83,7 @@ permalink: /works
   </tr>
   <tr>
     <td style="border:none; background-color: transparent;">
-      <!--empty-->
+      <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1c3f180d-c851-42e0-ba7b-3a8e9d37f568" width="200px" height="200px">
     </td>
     <td style="border:none; background-color: transparent;">
             <a href="/realite">
