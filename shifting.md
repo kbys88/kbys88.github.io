@@ -61,6 +61,13 @@ overflow-wrap: break-word;
         <p>8/2/2023</p>
         <p>impuls . 8th Festival for Contemporary Music, at Helmut List Halle, Graz, Austria</p>
         <p>Conductor Johannes Kalitzke</p>
+        <p>programm<br>
+Anna Korsun - П О ПІ Л (2022, WP; commissioned by impuls)<br>
+Maurizio Azzan - Wasteland beyond (2022, WP; commissioned by impuls)<br>
+Oren Boneh - Go to the Ant (2022, WP; commissioned by impuls)<br>
+Sachie Kobayashi - Shifting (2022, WP; commissioned by impuls)<br>
+Malin Bång - blooming brume (2020)<br>
+</p>
       </td>
       <td style="border:none;" width="350">
         <!-- 4 -->
