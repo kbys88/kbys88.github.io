@@ -47,11 +47,11 @@ overflow-wrap: break-word;
     <tr style="border:none;">
       <td style="border:none;">
         <!-- 1 -->
-        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/d7461ff9-0e43-4a3c-9699-7d083572fa0c" width="350">
+        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/d7461ff9-0e43-4a3c-9699-7d083572fa0c" width="350" hight="350">
       </td>
       <td style="border:none;">
         <!-- 2 -->
-        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/4eb4dce0-3706-4909-aa0e-c9222f456727" width="350">
+        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/4eb4dce0-3706-4909-aa0e-c9222f456727" width="350" hight="350">
       </td>
     </tr>
     <tr style="border:none;">
