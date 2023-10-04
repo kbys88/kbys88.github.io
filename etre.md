@@ -4,45 +4,6 @@ permalink: /etre
 overflow-wrap: break-word;
 ---
 
-table{
-  width: 100%;
-  border-collapse:collapse;
-  text-align: center;
-  font-size: 13px;
-}
-caption{
-  font-weight: 600;
-}
-td ,th{
-  border: solid 1px #000;
-}
-th {
-  background: #000;
-  color: #fff;
-  border-bottom: solid 1px #fff;
-}
-th:m{
-  background: #000;
-  color: #fff;
-  border-bottom: solid 1px #fff;
-}
-
-@media screen and (max-width: 640px) {
-  table {
-    width: 90%;
-    margin: 0 auto;
-  }
-   th, td {
-    display: block;
-  }
-  th{
-    border-bottom: solid 1px #000;
-  }
-  td{
-    border-top: solid 1px #fff;
-  }
-}
-
 <style>
   table {
     border: none;
@@ -83,7 +44,7 @@ th:m{
       <td style="border:none;">
         <!-- 1 -->
         <div style="text-align:center;" class="video">
-        <iframe width="350" height="350" src="https://www.youtube.com/embed/atHQ7RAiGXg?si=EOylOpcvxrCkni0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="300" height="300" src="https://www.youtube.com/embed/atHQ7RAiGXg?si=EOylOpcvxrCkni0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </td>
       <td style="border:none;" width="350" bgcolor="#ffffff">
