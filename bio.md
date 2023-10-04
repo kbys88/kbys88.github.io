@@ -4,6 +4,23 @@ title: "bio"
 permalink: /bio
 ---
 
+<style>
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for video */
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
 {: align="center"}
 ![image info](https://static.wixstatic.com/media/d50e54_31dc2c22791d432e9a7c989857966e8f~mv2.jpg/v1/fill/w_752,h_424,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Capture%20d%E2%80%99%C3%A9cran%202023-07-14%20%C3%A0%2015_28_edited.jpg)
 
@@ -25,7 +42,7 @@ In 2020, « I haven’t known you yet » for orchestra and electronics was premi
 In Japan, she received her bachelor’s diploma (Cultural Creative Studies) from Aoyama Gakuin University. Also, she studied at the Tokyo University of Arts (GEIDAI, bachelor of composition). In 2018, she won the Acanthus Prize and the Taito Mayor Prize.
 
 
-<div style="text-align:center;">
+<div class="video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/BPuq3Up4hzU?si=EfIqt80eRZmHbLAt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
