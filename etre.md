@@ -8,12 +8,14 @@ overflow-wrap: break-word;
   table {
     border: none;
     background-color: transparent;
+    width: 100%; /* Make the table full-width by default */
   }
 
   td {
     border: none;
     background-color: transparent;
     text-align: center;
+    padding: 10px; /* Add padding to cells for spacing */
   }
 
   img {
@@ -23,13 +25,10 @@ overflow-wrap: break-word;
 
   /* Media query for smartphones */
   @media (max-width: 768px) {
-    table {
-      width: 100%; /* Make the table full-width on small screens */
-    }
-
     td {
       display: block; /* Stack table cells vertically on small screens */
       margin-bottom: 20px; /* Add some space between cells */
+      text-align: left; /* Adjust text alignment */
     }
 
     img {
@@ -44,7 +43,7 @@ overflow-wrap: break-word;
       <td style="border:none;">
         <!-- 1 -->
         <div style="text-align:center;" class="video">
-        <iframe width="350" height="350" src="https://www.youtube.com/embed/atHQ7RAiGXg?si=EOylOpcvxrCkni0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="350" height="350" src="https://www.youtube.com/embed/atHQ7RAiGXg?si=EOylOpcvxrCkni0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </td>
       <td style="border:none;" width="350" bgcolor="#ffffff">
