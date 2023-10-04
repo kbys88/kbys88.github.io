@@ -7,7 +7,12 @@ google_site_verification: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 bing_site_verification  :
 yandex_site_verification:
 naver_site_verification :
-links:
+author:
+  name: "Sachie Kobayashi"
+  avatar: "/assets/img/avatar.png"
+  bio: "Composer"
+  location: "Tokyo, Japan"
+    links:
     - label: "Email"
       icon : "far fa-envelope"
       # url: "mailto:info@sachiekobayashi.com"
