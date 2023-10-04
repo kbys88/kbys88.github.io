@@ -30,10 +30,9 @@ In Japan, she received her bachelor’s diploma (Cultural Creative Studies) from
 </p>
 
 (JP)<br>
-神奈川県生まれ。青山学院大学卒業後、東京藝術大学音楽学部作曲科に入学。卒業時に、アカンサス賞、台東区長賞を受賞。スイス・ジュネーブ高等音楽院（Haute école de musique de Genève）作曲科修士課程にて、作曲と電子音楽を学ぶ。同音楽院音楽教育(理論)修士在籍、音楽教育現場からクリエーションまで、幅広く活動を続けている。
-2022年IRCAM（フランス国立音響音楽研究所）作曲研究課程修了。
-令和元年度文化庁新進芸術家海外研修制度研修員。スイス政府優秀奨学金奨学生。また公益財団法人野村財団、公益財団法人かけはし芸術文化振興財団、Fondation Hans Wilsdorf、Ville de Genève、Fondation Simon I. Patiñoなど数々の助成を国内外より受ける。
-impuls International Composition Competition 2023受賞、Ars Electronica Forum Wallis Selection 2020 Highly commended獲得、2021年ISCM World Music Days（世界音楽の日々）最終選考推薦、2023年にはパリ国立高等美術学校（École nationale supérieure des beaux-arts）のアーティストらとマルチメディアやダンスとのコラボレーションに取り組むなど、数々の共同制作、委嘱、実践に精力的に活動している。
+神奈川県生まれ。音楽教育現場からクリエーションまで、幅広く活動を続けている。2023年にはパリ国立高等美術学校（École nationale supérieure des beaux-arts）のアーティストらとマルチメディアやダンスとのコラボレーションに取り組むなど、数々の共同制作、委嘱、実践に精力的に活動している。令和元年度文化庁新進芸術家海外研修制度研修員。スイス政府優秀奨学金奨学生。また公益財団法人野村財団、公益財団法人かけはし芸術文化振興財団、Fondation Hans Wilsdorf、Ville de Genève、Fondation Simon I. Patiñoなど数々の助成を国内外より受ける。
+impuls International Composition Competition 2023受賞、Ars Electronica Forum Wallis Selection 2020 Highly commended獲得、2021年ISCM World Music Days（世界音楽の日々）最終選考推薦。2022年IRCAM（フランス国立音響音楽研究所）作曲研究課程(Cursus)修了。
+スイス・ジュネーブ高等音楽院（Haute école de musique de Genève）作曲科修士課程および音楽教育科修士課程修了。青山学院大学卒業後、東京藝術大学音楽学部作曲科に入学。卒業時に、アカンサス賞、台東区長賞を受賞。
 
 <h4>Education</h4>
   - <a href="https://www.ircam.fr/transmission/formations-superieures/cursus">Computer Music Training program</a><br>
