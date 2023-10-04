@@ -66,7 +66,7 @@ Anna Korsun - П О ПІ Л (2022, WP)<br>
 Maurizio Azzan - Wasteland beyond (2022, WP)<br>
 Oren Boneh - Go to the Ant (2022, WP)<br>
 Sachie Kobayashi - Shifting (2022, WP)<br>
-Malin Bång - blooming brume (2020, WP)<br>
+Malin Bång - blooming brume (2020)<br>
 </p>
       </td>
       <td style="border:none;" width="350">
