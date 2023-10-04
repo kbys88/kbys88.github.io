@@ -6,36 +6,35 @@ overflow-wrap: break-word;
 
 <style>
   table {
-    border: none;
-    background-color: transparent;
-    width: 100%; /* Make the table full-width by default */
+    width: 100%;
+    border-collapse: collapse;
   }
 
   td {
     border: none;
     background-color: transparent;
     text-align: center;
-    padding: 10px; /* Add padding to cells for spacing */
+    padding: 10px;
+    white-space: nowrap; /* Prevent text from wrapping */
   }
 
   img {
-    max-width: 100%; /* Ensure images don't exceed the container width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
   }
 
   /* Media query for smartphones */
   @media (max-width: 768px) {
     td {
-      display: block; /* Stack table cells vertically on small screens */
-      margin-bottom: 20px; /* Add some space between cells */
-      text-align: left; /* Adjust text alignment */
-    }
-
-    img {
-      width: 100%; /* Make images full-width within table cells */
+      display: block;
+      margin-bottom: 20px;
+      text-align: left;
+      overflow-x: auto; /* Add horizontal scroll for small screens */
+      white-space: normal; /* Allow text to wrap */
     }
   }
 </style>
+
 
 <table style="border:none;" width="350" bgcolor="#ffffff">
   <tbody style="border:none;">
