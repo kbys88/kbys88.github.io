@@ -58,11 +58,11 @@ overflow-wrap: break-word;
     <tr style="border:none;">
       <td style="border:none;" width="350">
         <!-- 3 -->
-        <h4><i>Shifting</i> (2022)</h4>
-        <p>for 11 musicians</p>
-        <p>premiere by <a href="https://www.klangforum.at/#en">Klangforum Wien</a></p>
-        <p>8/2/2023</p>
-        <p>impuls . 8th Festival for Contemporary Music, at Helmut List Halle, Graz, Austria</p>
+        <h4><i>Day 0 - Transinstrumentalism</i> (2022)</h4>
+        <p>pour performeur, vidéo, capture de mouvement et électronique</p>
+        <p>premiere by <a href="https://www.corentinmarillier.com">Corentin Marillier</a></p>
+        <p>24/9/2022</p>
+        <p>Créations du Cursus</p>
         <p>Conductor Johannes Kalitzke</p>
       </td>
       <td style="border:none;" width="350">
@@ -73,7 +73,10 @@ overflow-wrap: break-word;
     <tr style="border:none;" width="300">
       <td style="border:none;" width="300">
         <!-- 5 -->
-        <p>My piece is a textural work that explores the use of smaller dynamics to bring out the maximum possible sound of the instrument. The composition was inspired by my previous work, “Time Study in P”, which was composed for a conducting class at the Haute école de musique de Genève. In this piece, certain pitches were derived from the spectral analysis and solution of tam-tam sounds using Orchidea. In my new piece, I aim to synthesize new sounds and construct a “noise” sound as a novel compositional component. I will explore the repetition of textures and how changes in our listening can arise due to these changes. Ultimately, my goal is to create a work that challenges the listener's perception of sound and encourages them to engage with it in a new way.</p>
+        <p>- Comment cela se manifeste-t-il ?
+J’utilise le capteur R-IoT (développé par l’équipe Interaction son musique mouvement), qui permet de détecter les mouvements du performeur via des accéléromètres et gyroscopes, dont les données sont ensuite appliquées à des paramètres musicaux.<br>
+La vidéo (projetée sur un écran de tulle) permet quant à elle de recréer un décor proche de notre quotidien, lequel décor accueille un jeu dialectique entre des concepts opposés (homme/machine, scène/public, quotidien/extraordinaire, musique/bruit, vie/mort), qui en viennent à fusionner – comme les tendances actuelles tendent à montrer qu’elles pourront le faire à l’avenir.<br>
+Je m’aperçois inconsciemment que j’incorpore au processus les pensées bouddhiste et zen. Tout se passe dans le quotidien : il n’y a là nul dieu spécial, tout juste l’existence de ce monde et celle de performer : « C’est ainsi ! »</p>
       </td>
       <td style="border:none;" width="350">
         <!-- 6 -->
