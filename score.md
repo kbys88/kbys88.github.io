@@ -1,5 +1,9 @@
 ---
 layout: page
 title: "score"
-permalink: https://www.babelscores.com/fr/SachieKobayashi
+permalink: /score
 ---
+
+
+<a href="https://www.babelscores.com/fr/SachieKobayashi">Babelscores</a>
+
