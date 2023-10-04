@@ -75,7 +75,7 @@ permalink: /works
       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/dac5b2d6-3290-406b-a333-1468119f46ee" width="200px" height="200px">
     </td>
     <td style="border:none; background-color: transparent;">
-      <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/fcaf3d1c-703b-4a93-8262-aed2481c09b1" width="200px" height="200px">
+      <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/6542237b-f8a5-40dc-baf0-d948ea38a88e" width="200px" height="200px">
     </td>
     <td style="border:none; background-color: transparent;">
       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/0f6f36ca-38f9-48d5-b43a-a47b5d89f1a8" width="200px" height="200px">
