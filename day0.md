@@ -39,6 +39,7 @@ overflow-wrap: break-word;
   }
 </style>
 
+{: align="center"}
 <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/42c56755-6e93-45f2-99cd-4752e961dfff" width="350">
 
 
