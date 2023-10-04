@@ -7,9 +7,7 @@
 <table style="border:none; background-color: transparent;">
   <tr>
     <td style="border:none; background-color: transparent;">
-      <a href="/new-link">
-        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/new-image.jpg" width="200px" height="200px">
-      </a>
+        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/b9747460-23a8-4a77-9bf9-a44c5a4ae2eb" width="200px" height="200px">
     </td>
     <td style="border:none; background-color: transparent;">
       <a href="/shifting">
