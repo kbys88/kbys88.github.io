@@ -49,7 +49,7 @@ overflow-wrap: break-word;
       </td>
       <td style="border:none;">
         <!-- 2 -->
-        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1712d49f-1cce-47d9-b1bf-ab21e4d705d5" width="350">
+        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/3abe6438-a534-46fe-a147-6064dc801176" width="350">
       </td>
     </tr>
     <tr style="border:none;">
@@ -64,7 +64,7 @@ overflow-wrap: break-word;
       </td>
       <td style="border:none;" width="350">
         <!-- 4 -->
-        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/cfa4f8a9-125f-4c2b-98c2-09900773abf9" width="350" height="350">
+        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/317397c9-cff5-4bcf-b0e1-5d6a5fa08343" width="350">
       </td>
     </tr>
     <tr style="border:none;" width="300">
@@ -74,7 +74,7 @@ overflow-wrap: break-word;
       </td>
       <td style="border:none;" width="350">
         <!-- 6 -->
-        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/10fa2bdd-2a3d-44f4-bce0-0214b7ef1805" width="350">
+        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/46e9304f-6421-4b8c-a8e4-9b543b8f8361)" width="350">
       </td>
     </tr>
   </tbody>
