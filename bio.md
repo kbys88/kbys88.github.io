@@ -79,7 +79,10 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
   
 </p>
   - Presentation at <a href="https://jjcaas2023.sciencesconf.org/">JJCAAS (Journées Jeunes Chercheur·se·s en Audition, Acoustique musicale et Signal audio)</a>, Paris, France<br>
+<p>
   
+</p>
+  - Music for <a href="https://danielkunzi.ch/tag/pomme-de-discorde">Pomme de discorde – alerte pesticide (2021), Geneva, Switzerland<br>
 <p>
   
 </p>
