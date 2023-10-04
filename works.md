@@ -70,5 +70,3 @@ permalink: /works
   </tr>
 </table>
 </body>
-</html>
-
