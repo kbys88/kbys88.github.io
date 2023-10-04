@@ -1,7 +1,6 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <title>Image Table</title>
+  <title>works</title>
 </head>
 <body>
 <table style="border:none; background-color: transparent;">
