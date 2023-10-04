@@ -1,7 +1,4 @@
-<html>
-<head>
-  <title>works</title>
-</head>
+
 <body>
 <table style="border:none; background-color: transparent;">
   <tr>
