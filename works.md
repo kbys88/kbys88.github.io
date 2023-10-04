@@ -1,3 +1,8 @@
+---
+layout: page
+title: "works"
+permalink: /works
+---
 
 <body>
 <table style="border:none; background-color: transparent;">
