@@ -15,7 +15,7 @@ author:
     links:
     - label: "Email"
       icon : "far fa-envelope"
-      # url: "mailto:info@sachiekobayashi.com"
+      url: "mailto:info@sachiekobayashi.com"
 
 defaults:  
   - scope:
