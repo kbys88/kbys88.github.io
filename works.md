@@ -72,7 +72,7 @@ permalink: /works
   </tr>
   <tr>
     <td style="border:none; background-color: transparent;">
-      <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/d311dd8b-abc5-45b6-9822-a9188b77865f" width="200px" height="200px">
+      <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/dac5b2d6-3290-406b-a333-1468119f46ee" width="200px" height="200px">
     </td>
     <td style="border:none; background-color: transparent;">
       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/fcaf3d1c-703b-4a93-8262-aed2481c09b1" width="200px" height="200px">
