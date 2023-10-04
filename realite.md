@@ -47,15 +47,15 @@ overflow-wrap: break-word;
     <tr style="border:none;">
       <td style="border:none;">
         <!-- 1 -->
-        <h4><i>I haven't known you yet</i> (2020)</h4>
-        <p>pour orchestre et électronique</p>
-        <p>premiere by Orchestre de HEM, cond. by Pierre Bleuse</p>
-        <p>1/10/2020</p>
+       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/4eb4dce0-3706-4909-aa0e-c9222f456727" width="350" hight="350">
+      </td>
       </td>
       <td style="border:none;">
         <!-- 2 -->
-        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/4eb4dce0-3706-4909-aa0e-c9222f456727" width="350" hight="350">
-      </td>
+         <h4><i>Réalités</i> (2020)</h4>
+        <p>avec Kinect, Video, vibraphone, chorégraphie et électronique</p>
+        <p>premiere by Ayaka Fukano</p>
+        <p>2/2022</p>
     </tr>
     <tr style="border:none;">
       <td style="border:none;" width="350">
