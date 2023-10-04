@@ -93,3 +93,5 @@ Je m’aperçois inconsciemment que j’incorpore au processus les pensées boud
   </tbody>
 </table>
 
+<p>© Hervé Véronèse-Centre Pompidou</p>
+
