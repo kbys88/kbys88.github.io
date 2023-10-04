@@ -57,8 +57,10 @@ permalink: /works
   </tr>
   <tr>
     <td style="border:none; background-color: transparent;">
+      <a href="/day0">
       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/139592d2-27e8-48be-a746-7fe725b81540" width="200px" height="200px">
-    </td>
+     </a>
+      </td>
     <td style="border:none; background-color: transparent;">
       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1730e04f-c3ee-4ede-af57-9dc57977eaaf" width="200px" height="200px">
     </td>
