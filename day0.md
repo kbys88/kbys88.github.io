@@ -68,7 +68,9 @@ overflow-wrap: break-word;
         <p>premiere by <a href="https://www.corentinmarillier.com">Corentin Marillier</a></p>
         <p>24/9/2022</p>
         <p>Créations du Cursus</p>
-        <p>Conductor Johannes Kalitzke</p>
+        <p>Thanks to Pierre Jodlowski, Sébastien Naves,
+Corentin Marillier, Kaya Kolodziejczyk, Emmanuel Fléty,
+Frederik Bous and Pedagogical team at Ircam</p>
       </td>
       <td style="border:none;" width="350">
         <!-- 4 -->
