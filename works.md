@@ -91,7 +91,7 @@ permalink: /works
             </a>
     </td>
     <td style="border:none; background-color: transparent;">
-      <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/d7162394-e63d-424e-950c-73a8cf10be2f" width="200px" height="200px">
+      <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1705a068-26e3-4375-bded-32095c5f58ca" width="200px" height="200px">
     </td>
   </tr>
 </table>
