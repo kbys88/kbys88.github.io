@@ -72,7 +72,17 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
     institution: Aoyama Gakuin University, Tokyo<br>
     country: Japan<br>
     date: [2009, 2013]<br>
-<h4>Experience</h4>
+<h4>Experience, Activity</h4>
+  - Sound logo design
+<a href="http://aexea.co.jp/">AEXEA Co,ltd</a><br>
+<p>
+  
+</p>
+  - Presentation at <a href="https://jjcaas2023.sciencesconf.org/">JJJCAAS (Journées Jeunes Chercheur·se·s en Audition, Acoustique musicale et Signal audio)</a><br>
+  
+<p>
+  
+</p>
   - Freelance Composer<br>
 Self employed, Switzerland, France, Japan<br>
 <p>
@@ -82,9 +92,3 @@ Self employed, Switzerland, France, Japan<br>
 Substitute Teaching, Switzerland<br>
 Music theory and solfège<br>
 <p>
-  
-</p>
-  - Office Assistant<br>
-Magazine House, Japan<br>
-
-
