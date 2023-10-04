@@ -6,16 +6,14 @@ overflow-wrap: break-word;
 
 <style>
   table {
-    width: 100%;
-    border-collapse: collapse;
+    border: none;
+    background-color: transparent;
   }
 
   td {
     border: none;
     background-color: transparent;
     text-align: center;
-    padding: 10px;
-    white-space: nowrap; /* Prevent text from wrapping */
   }
 
   img {
@@ -25,16 +23,20 @@ overflow-wrap: break-word;
 
   /* Media query for smartphones */
   @media (max-width: 768px) {
+    table {
+      width: 100%; /* Make the table full-width on small screens */
+    }
+
     td {
-      display: block;
-      margin-bottom: 20px;
-      text-align: left;
-      overflow-x: auto; /* Add horizontal scroll for small screens */
-      white-space: normal; /* Allow text to wrap */
+      display: block; /* Stack table cells vertically on small screens */
+      margin-bottom: 20px; /* Add some space between cells */
+    }
+
+    img {
+      width: 100%; /* Make images full-width within table cells */
     }
   }
 </style>
-
 
 <table style="border:none;" width="350" bgcolor="#ffffff">
   <tbody style="border:none;">
@@ -42,7 +44,7 @@ overflow-wrap: break-word;
       <td style="border:none;">
         <!-- 1 -->
         <div style="text-align:center;" class="video">
-          <iframe width="350" height="350" src="https://www.youtube.com/embed/atHQ7RAiGXg?si=EOylOpcvxrCkni0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="350" height="350" src="https://www.youtube.com/embed/atHQ7RAiGXg?si=EOylOpcvxrCkni0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </td>
       <td style="border:none;" width="350" bgcolor="#ffffff">
