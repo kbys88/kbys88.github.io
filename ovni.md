@@ -68,17 +68,5 @@ overflow-wrap: break-word;
        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/495984a2-cac3-450d-9b0b-ce51e9aaf15d" width="350"> 
       </td>
     </tr>
-    <tr style="border:none;" width="300">
-      <td style="border:none;" width="300">
-        <!-- 5 -->
-        <p>
-        </p>
-      </td>
-      <td style="border:none;" width="350">
-        <!-- 6 -->
-        <p>
-        </p>
-      </td>
-    </tr>
   </tbody>
 </table>
