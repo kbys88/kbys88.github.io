@@ -37,6 +37,20 @@ overflow-wrap: break-word;
       width: 100%; /* Make images full-width within table cells */
     }
   }
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for video */
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 </style>
 
 {: align="center"}
