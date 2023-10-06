@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /ovni
+permalink: /spin
 overflow-wrap: break-word;
 ---
 
