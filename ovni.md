@@ -40,7 +40,7 @@ overflow-wrap: break-word;
 </style>
 
 {: align="center"}
-<img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/96ab028e-4a10-4755-8f81-5bb70e076704" width="700">
+<img src="(https://github.com/kbys88/kbys88.github.io/assets/142012962/cd9ea7d7-348d-4723-be51-88b064445368" width="700">
 
 <table style="border:none;" width="350">
   <tbody style="border:none;">
@@ -56,30 +56,28 @@ overflow-wrap: break-word;
       </td>
       <td style="border:none;">
         <!-- 2 -->
-        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/f2dbe73d-4f14-4d97-b4db-d4b69a26676f" width="350" hight="350">
+        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/f9233433-045f-4ac8-ba1c-bb18df981680" width="350" hight="350">
       </td>
     </tr>
     <tr style="border:none;">
       <td style="border:none;" width="350">
         <!-- 3 -->
- <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/32fbd98d-06c8-4b11-89d5-99ad831f830f" width="350" hight="350">
+       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/9ab6ec75-0115-4c4b-bbd7-cf01822c730e" width="350" hight="350">
       </td>
       <td style="border:none;" width="350">
         <!-- 4 -->
-       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/80c721a7-a7e4-482a-8849-ced8b5f7eb8f" width="350"> 
+       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/495984a2-cac3-450d-9b0b-ce51e9aaf15d" width="350"> 
       </td>
     </tr>
     <tr style="border:none;" width="300">
       <td style="border:none;" width="300">
         <!-- 5 -->
         <p>
-Buy the score online By Babelscores<br>
-https://www.babelscores.com/catalogs/instrumental/chamber-ensemble/4258-don-t-hit-me
         </p>
       </td>
       <td style="border:none;" width="350">
         <!-- 6 -->
-          <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/dac9cbd1-7a0d-49c0-9e9e-999ff662d23a" width="350"> 
+          <img src="" width="350"> 
       </td>
     </tr>
   </tbody>
