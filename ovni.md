@@ -40,7 +40,10 @@ overflow-wrap: break-word;
 </style>
 
 {: align="center"}
-https://youtu.be/FRfdAzWP58g
+<div class="video-container">
+  <iframe width="560" height="315" src="https://youtu.be/FRfdAzWP58g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
 
 <table style="border:none;" width="350">
   <tbody style="border:none;">
