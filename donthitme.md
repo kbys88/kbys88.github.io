@@ -74,6 +74,7 @@ overflow-wrap: break-word;
       </td>
       <td style="border:none;" width="350">
         <!-- 6 -->
+          <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/dac9cbd1-7a0d-49c0-9e9e-999ff662d23a" width="350"> 
       </td>
     </tr>
   </tbody>
