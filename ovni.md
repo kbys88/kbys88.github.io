@@ -47,12 +47,11 @@ overflow-wrap: break-word;
     <tr style="border:none;">
       <td style="border:none;">
         <!-- 1 -->
-        <h4><i>Don't Hit Me </i> (2019)</h4>
-        <p>pour 2 percussionists</p>
-        <p>premiere by percussion CYTI - Till Lingenberg & Chiao-Yuan Chang</p>
-        <p>15/09/2019</p>
-       <p> Preisträgerkonzert SCMF 2019, Swiss Chamber Music Festival - Adelboden</p>
-       <p> Video by Katia Kotelskaia</p>
+        <h4><i>O.V.N.I.</i> (2021)</h4>
+        <p>pour handpan</p>
+        <p>premiere by Michaël Tissier</p>
+    <p>at Haute école de musique de Genève</p>
+        <p>June 2021</p>
       </td>
       <td style="border:none;">
         <!-- 2 -->
@@ -77,7 +76,8 @@ overflow-wrap: break-word;
       </td>
       <td style="border:none;" width="350">
         <!-- 6 -->
-          <img src="" width="350"> 
+        <p>
+        </p>
       </td>
     </tr>
   </tbody>
