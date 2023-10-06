@@ -47,10 +47,12 @@ overflow-wrap: break-word;
     <tr style="border:none;">
       <td style="border:none;">
         <!-- 1 -->
-        <h4><i>I haven't known you yet</i> (2020)</h4>
-        <p>pour orchestre et électronique</p>
-        <p>premiere by Orchestre de HEM, cond. by Pierre Bleuse</p>
-        <p>1/10/2020</p>
+        <h4><i>Don't Hit Me </i> (2019)</h4>
+        <p>pour 2 percussionists</p>
+        <p>premiere by percussion CYTI - Till Lingenberg & Chiao-Yuan Chang</p>
+        <p>15/09/2019</p>
+       <p> Preisträgerkonzert SCMF 2019, Swiss Chamber Music Festival - Adelboden</p>
+       <p> Video by Katia Kotelskaia</p>
       </td>
       <td style="border:none;">
         <!-- 2 -->
@@ -70,7 +72,10 @@ overflow-wrap: break-word;
     <tr style="border:none;" width="300">
       <td style="border:none;" width="300">
         <!-- 5 -->
-        <p>My second orchestral work.</p>
+        <p>
+Buy the score online By Babelscores<br>
+https://www.babelscores.com/catalogs/instrumental/chamber-ensemble/4258-don-t-hit-me
+        </p>
       </td>
       <td style="border:none;" width="350">
         <!-- 6 -->
