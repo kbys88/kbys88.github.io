@@ -83,10 +83,10 @@ permalink: /works
     <td style="border:none; background-color: transparent;">
      <a href="/spin">
       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/6542237b-f8a5-40dc-baf0-d948ea38a88e" width="200px" height="200px">
-    </td>
+       </a>
+     </td>
     <td style="border:none; background-color: transparent;">
       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/0f6f36ca-38f9-48d5-b43a-a47b5d89f1a8" width="200px" height="200px">
-    </a>
     </td>
   </tr>
   <tr>
