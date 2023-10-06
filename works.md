@@ -86,12 +86,16 @@ permalink: /works
        </a>
      </td>
     <td style="border:none; background-color: transparent;">
+                       <a href="/taito">
       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/0f6f36ca-38f9-48d5-b43a-a47b5d89f1a8" width="200px" height="200px">
+                                    </a>
     </td>
   </tr>
   <tr>
     <td style="border:none; background-color: transparent;">
+                 <a href="/emergences">
           <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/45d79e30-9287-4523-9dc8-2f37df831696" width="200px" height="200px">
+           </a>
     </td>
     <td style="border:none; background-color: transparent;">
             <a href="/realite">
@@ -99,7 +103,9 @@ permalink: /works
             </a>
     </td>
     <td style="border:none; background-color: transparent;">
+           <a href="/doyou">
       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1705a068-26e3-4375-bded-32095c5f58ca" width="200px" height="200px">
+      </a>
     </td>
   </tr>
 </table>
