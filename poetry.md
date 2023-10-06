@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /ovni
+permalink: /poetry
 overflow-wrap: break-word;
 ---
 
