@@ -69,7 +69,8 @@ overflow-wrap: break-word;
         <!-- 1 -->
         <h4><i>Poetry is whats gets lost in translation</i> (2023)</h4>
         <p>for video installation</p>
-        <p>premiere by Michaël Tissier</p>
+        <p>Collaboration with Lucie Wahl, Margot Bernard, Clara Éon</p>
+        <p>Chapelle des Petits-Augustins, Beaux-Arts de Paris</p>
     <p>IRCAL x Beaux-Arts de Paris: Mixette Master, the Supersonic evening</p>
         <p>May 2023</p>
       </td>
