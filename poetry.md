@@ -57,9 +57,13 @@ overflow-wrap: break-word;
 <div class="video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/dEyQLsmWPXc?si=doEePH0YXlVukU36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
+<p> </p>
 
 ![poetry_top2](https://github.com/kbys88/kbys88.github.io/assets/142012962/a3593e32-1c55-436d-8ac6-4886026b0e03)
+<p> </p>
+
 ![poetry_top1](https://github.com/kbys88/kbys88.github.io/assets/142012962/265e8210-9c38-48c8-93ab-e16af06d0b63)
+<p> </p>
 
 
 <table style="border:none;" width="350">
