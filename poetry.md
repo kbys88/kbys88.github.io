@@ -82,7 +82,7 @@ overflow-wrap: break-word;
     <tr style="border:none;">
       <td style="border:none;" width="350">
         <!-- 3 -->
-       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/9ab6ec75-0115-4c4b-bbd7-cf01822c730e" width="350" hight="350">
+       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/dac5b2d6-3290-406b-a333-1468119f46ee" width="350" hight="350">
       </td>
       <td style="border:none;" width="350">
         <!-- 4 -->
