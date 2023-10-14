@@ -37,23 +37,43 @@ overflow-wrap: break-word;
       width: 100%; /* Make images full-width within table cells */
     }
   }
-  .video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio for video */
-    height: 0;
-    overflow: hidden;
-  }
-
-  .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
 </style>
 
 {: align="center"}
-<div class="video-container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/dEyQLsmWPXc?si=doEePH0YXlVukU36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+<img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/8a65bf61-4400-4188-ba93-2caaba853e53" width="700">
+
+<table style="border:none;" width="350">
+  <tbody style="border:none;">
+    <tr style="border:none;">
+      <td style="border:none;">
+        <!-- 1 -->
+       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1b6289d9-bbfa-47ba-b315-c9df91fb3c85" width="350" height="350">
+      </td>
+      <td style="border:none;">
+        <!-- 2 -->
+         <h4><i>The World: A Stripteaser's Spin </i> (2022)</h4>
+        <p>pour chorégraphie</p>
+        <p>Interpretation by Clara Eon</p>
+        <p>2/2022</p>
+        </td>
+    </tr>
+    <tr style="border:none;">
+      <td style="border:none;" width="350">
+        <!-- 3 -->
+ <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/fe49835a-4b7c-4470-b478-fbaab0f6ba5a" width="350">
+      </td>
+      <td style="border:none;" width="350">
+        <!-- 4 -->
+       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/b1954fd4-8dc0-4229-a16a-bfdb095645cc" width="350"> 
+      </td>
+    </tr>
+    <tr style="border:none;" width="300">
+      <td style="border:none;" width="300">
+        <!-- 5 -->
+      </td>
+      <td style="border:none;" width="350">
+        <!-- 6 -->
+      </td>
+    </tr>
+  </tbody>
+</table>
