@@ -41,7 +41,7 @@ overflow-wrap: break-word;
 
 {: align="center"}
 <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/00c4df6b-da3a-49f3-8304-6f6dae2e6ef7" width="700">
-
+{: align="center"}
 <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/894787d5-f66d-44b5-893b-810c8d569b68" width="700">
 
 <table style="border:none;" width="350">
@@ -49,7 +49,7 @@ overflow-wrap: break-word;
     <tr style="border:none;">
       <td style="border:none;">
         <!-- 1 -->
-       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1b6289d9-bbfa-47ba-b315-c9df91fb3c85" width="350" height="350">
+       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/ddf61b01-75de-4a09-b304-74eceb5b336b" width="350" height="350">
       </td>
       <td style="border:none;">
         <!-- 2 -->
