@@ -4,7 +4,6 @@ permalink: /spin
 overflow-wrap: break-word;
 ---
 
-
 <style>
   table {
     border: none;
@@ -37,7 +36,23 @@ overflow-wrap: break-word;
       width: 100%; /* Make images full-width within table cells */
     }
   }
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for video */
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 </style>
+
+
 
 
 <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/00c4df6b-da3a-49f3-8304-6f6dae2e6ef7" width="700">
@@ -46,7 +61,7 @@ overflow-wrap: break-word;
 <p> </p>
 {: align="center"}
 <div class="video-container">
-  <iframe width="700" src="https://www.youtube.com/embed/dEyQLsmWPXc?si=doEePH0YXlVukU36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/dEyQLsmWPXc?si=doEePH0YXlVukU36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 <p> </p>
 
