@@ -51,10 +51,12 @@ overflow-wrap: break-word;
       </td>
       <td style="border:none;">
         <!-- 2 -->
-         <h4><i>The World: A Stripteaser's Spin </i> (2022)</h4>
+         <h4><i>The World: A Stripteaser's Spin </i> (2023)</h4>
         <p>pour chorégraphie</p>
         <p>Interpretation by Clara Eon</p>
-        <p>2/2022</p>
+<p>Conception by Circé Lac</p>
+        <p>Chapelle des Petits-Augustins, Beaux-Arts de Paris</p>
+    <p>IRCAL x Beaux-Arts de Paris: Mixette Master, the Supersonic evening</p>
         </td>
     </tr>
     <tr style="border:none;">
