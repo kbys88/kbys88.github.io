@@ -41,8 +41,14 @@ overflow-wrap: break-word;
 
 
 <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/00c4df6b-da3a-49f3-8304-6f6dae2e6ef7" width="700">
-
+<p> </p>
 <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/894787d5-f66d-44b5-893b-810c8d569b68" width="700">
+<p> </p>
+{: align="center"}
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/dEyQLsmWPXc?si=doEePH0YXlVukU36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<p> </p>
 
 <table style="border:none;" width="350">
   <tbody style="border:none;">
