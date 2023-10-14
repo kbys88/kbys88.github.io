@@ -46,7 +46,7 @@ overflow-wrap: break-word;
 <p> </p>
 {: align="center"}
 <div class="video-container">
-  <iframe width="700" height="315" src="https://www.youtube.com/embed/dEyQLsmWPXc?si=doEePH0YXlVukU36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="700" src="https://www.youtube.com/embed/dEyQLsmWPXc?si=doEePH0YXlVukU36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 <p> </p>
 
