@@ -40,7 +40,7 @@ overflow-wrap: break-word;
 </style>
 
 {: align="center"}
-<img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/8a65bf61-4400-4188-ba93-2caaba853e53" width="700">
+<img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/00c4df6b-da3a-49f3-8304-6f6dae2e6ef7" width="700">
 
 <table style="border:none;" width="350">
   <tbody style="border:none;">
