@@ -64,7 +64,7 @@ overflow-wrap: break-word;
     <tr style="border:none;">
       <td style="border:none;" width="350">
         <!-- 3 -->
- <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/fe49835a-4b7c-4470-b478-fbaab0f6ba5a" width="350">
+ <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/4e99eb0c-2a84-4bac-a75d-f72bbb398f97" width="350">
       </td>
       <td style="border:none;" width="350">
         <!-- 4 -->
