@@ -20,8 +20,8 @@ permalink: /taito
     height: 100%;
   }
 </style>
+<a href="https://www.culture.city.taito.lg.jp/ja/taito_kuchosho/h29/1">Web site of The 1st Taito Ward Mayor Award</a>
 
-<a href=“https://www.culture.city.taito.lg.jp/ja/taito_kuchosho/h29/1”>Web site of The 1st Taito Ward Mayor Award</a>
 
 
 
