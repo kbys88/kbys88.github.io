@@ -89,9 +89,11 @@ layout: page
           </p>
         </td>
       {% elsif image.video %}
-        <div style="text-align:center;" class="video">
-          <iframe width="350" height="350" src="{{ image.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
+        <td style="border:none;" width="300">
+          <div style="text-align:center;" class="video">
+            <iframe width="350" height="350" src="{{ image.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </td>
       {% else %}
         <td style="border:none;">
           <img src="{{ image }}" width="350">
@@ -107,7 +109,9 @@ layout: page
   </tbody>
 </table>
 
-<p>© {{ work.copyright }}</p>
+{% if work.copyright %}
+  <p>© {{ work.copyright }}</p>
+{% endif %}
 
 {{ page.content }}
 
