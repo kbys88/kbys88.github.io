@@ -38,7 +38,23 @@ layout: page
   }
 </style>
 
-{{ page.content }}
+{% if work.topimages %}
+  <div style="text-align:center">
+    {% for elem in topimages %}
+      {% if elem.link %}
+        <a href="{{ elem.link }}">
+          {% if elem.image %}
+            <img src="{{ elem.image }}" width=600>
+          {% else %}
+            elem.text
+          {% endif %}
+        </a>
+      {% else %}
+        <img src="{{ elem }}" width=600>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}
 
 <table style="border:none;" width="350">
   <tbody style="border:none;">
@@ -88,5 +104,8 @@ layout: page
 </table>
 
 <p>© {{ work.copyright }}</p>
+
+{{ page.content }}
+
 
 
