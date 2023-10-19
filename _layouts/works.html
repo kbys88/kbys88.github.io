@@ -53,9 +53,15 @@ layout: page
           <!-- 3 -->
           <h4>{{ work.title }}</h4>
           <p>{{ work.subtitle }}</p>
-          <p>premiere by <a href="{{ work.player.link }}">
-            {{ work.player.name }}
-          </a></p>
+          <p>
+            premiere by 
+            {% if work.player.link == "" %}
+              {{ work.player }}
+            {% else %}
+              <a href="{{ work.player.link }}">
+                {{ work.player.name }}
+              </a></p>
+            {% endif %}
           <p>{{ work.date }}</p>
           <p>{{ work.place }}</p>
           <p>Thanks to {{ work.thanks }}</p>

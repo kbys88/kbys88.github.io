@@ -1,5 +1,5 @@
 ---
 layout: works
 work: ihavent
-permalink: test/ihavent
+permalink: works/ihavent
 ---
