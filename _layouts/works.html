@@ -40,7 +40,7 @@ layout: page
 
 {% if work.topimages %}
   <div style="text-align:center">
-    {% for elem in topimages %}
+    {% for elem in work.topimages %}
       {% if elem.link %}
         <a href="{{ elem.link }}">
           {% if elem.image %}
