@@ -77,8 +77,8 @@ overflow-wrap: break-word;
     <tr style="border:none;">
       <td style="border:none;" width="350">
         <!-- 3 -->
-        <h4><i>Day 0 - Transinstrumentalism</i> (2022)</h4>
-        <p>pour performeur, vidéo, capture de mouvement et électronique</p>
+        <h4>{{ site.data.works.day0.title }}</h4>
+        <p>{{ site.data.works.day0.subtitle }}</p>
         <p>premiere by <a href="https://www.corentinmarillier.com">Corentin Marillier</a></p>
         <p>24/9/2022</p>
         <p>Créations du Cursus</p>
