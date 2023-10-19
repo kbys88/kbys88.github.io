@@ -1,7 +1,7 @@
 ---
 layout: works
 work: day0
-permalink: test/day0
+permalink: works/day0
 ---
 
 <!--{: align="center"}-->
