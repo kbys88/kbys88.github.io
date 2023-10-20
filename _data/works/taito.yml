@@ -12,7 +12,8 @@ description: >
   https://www.culture.city.taito.lg.jp/ja/taito_kuchosho/about
 images :
   - title
+  - https://github.com/kbys88/kbys88.github.io/assets/142012962/7d8ea320-ccda-4793-9d5f-f4ee857cfdbe
+  - https://github.com/kbys88/kbys88.github.io/assets/142012962/8bfaf6e0-0611-4c4e-850c-0ba796476cde
+
 topimages:
   - video: https://www.youtube.com/embed/ADUAF4ykF_8?si=F6nFNhp6yqKFLp2D
-  - image: https://github.com/kbys88/kbys88.github.io/assets/142012962/7d8ea320-ccda-4793-9d5f-f4ee857cfdbe
-  - image: https://github.com/kbys88/kbys88.github.io/assets/142012962/8bfaf6e0-0611-4c4e-850c-0ba796476cde
