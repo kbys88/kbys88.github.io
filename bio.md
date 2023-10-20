@@ -90,6 +90,34 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
     institution: Aoyama Gakuin University, Tokyo<br>
     country: Japan<br>
     date: [2009, 2013]<br>
+
+
+<h4>Prizes, Scholarships </h4>
+
+- Leenaards Springboard Prize 2023 / HEM
+  
+- impuls. International Composition Competition (2023) impuls Festival 2023, Graz, Austria
+  
+- Artist Grant (2021) City of Geneva and Simon I. Patiño Foundation, Geneva, Switzerland
+  
+- Finalist for Swiss Section (2021) International Society for Contemporary Music (ISCM) World Music Days, Switzerland
+  
+- Artist Grant (2021-2023) Nomura Foundation, Japan
+ 
+- Protonwerk No.11, Ensemble Proton Bern, Switzerland
+  
+- Study Grant (2021) Kakehashi Foundation, Japan
+  
+- Special Mention (2020) Selection for the Forum Wallis at Ars Electronica 2020 for acousmatic works, Switzerland
+  
+- Artist Study Grant (2019) Swiss Government Excellence Scholarship, Switzerland
+  
+- Artist Grant (2019) Fellowship through the Program for Emerging Artists Abroad, sponsored by the Agency for Cultural Affairs, Japan
+  
+- Taito City Mayor Award (2018)
+  
+- Acunthus Award (2018)
+    
 <h4>Experience, Activity</h4>
   - Sound logo design
 <a href="http://aexea.co.jp/">AEXEA Co,ltd</a>, Tokyo, Japan<br>

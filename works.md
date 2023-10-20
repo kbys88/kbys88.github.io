@@ -93,7 +93,7 @@ permalink: /works
   </tr>
   <tr>
     <td style="border:none; background-color: transparent;">
-                 <a href="/emergences">
+                 <a href="/works/emergences">
           <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/45d79e30-9287-4523-9dc8-2f37df831696" width="200px" height="200px">
            </a>
     </td>
@@ -103,7 +103,7 @@ permalink: /works
             </a>
     </td>
     <td style="border:none; background-color: transparent;">
-           <a href="/doyou">
+           <a href="works/doyou">
       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1705a068-26e3-4375-bded-32095c5f58ca" width="200px" height="200px">
       </a>
     </td>
