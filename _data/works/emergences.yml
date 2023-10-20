@@ -7,7 +7,6 @@ player:
 date: 18/5/2017
 place: Morning concert 2017, Tokyo University of the Arts, Japan
 description: >
-
 (JP)この作品は、20世紀のフランス・ベルギーの画家、詩人であるアンリ・ミショーの著作「Émergences-Résurgences」 (邦訳 噴出するもの=湧出するもの)を拠り所として作曲されたものである。 
 彼はメスカリン体験を経て書き落とした言葉や、墨汁によるドローイングなどを多数残している。
 [...]
@@ -36,5 +35,6 @@ images:
   - description
   - https://github.com/kbys88/kbys88.github.io/assets/142012962/46e9304f-6421-4b8c-a8e4-9b543b8f8361
 topimages:
+
   - link: http://arcmusic.geidai.ac.jp/8665
     text: GEIDAI MUSIC ARCHIVE
