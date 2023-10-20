@@ -44,6 +44,6 @@ permalink: /taito
   Taking the opportunity of the reopening in November 2008 of the former Tokyo Music School, Sogakudo, which serves as the starting point for the cultural administration of Taito City, we added the field of music to the Taito City Mayor’s Prize.
   This prize had previously been awarded only in the field of fine arts. The award is given annually to two practical arts majors from the field of music at the Tokyo University of the Arts.
 
-  <a href=" https://www.culture.city.taito.lg.jp/ja/taito_kuchosho/about">Taito City Mayor's Prize</a>
+[Taito City Mayor's Prize](https://www.culture.city.taito.lg.jp/ja/taito_kuchosho/about)
 
  
