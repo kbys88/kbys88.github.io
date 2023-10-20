@@ -61,13 +61,15 @@ layout: page
           {% if elem.image %}
             <img src="{{ elem.image }}" width=600>
           {% else %}
-            {{ elem.text }}
+            <p>{{ elem.text }}</p>
           {% endif %}
         </a>
       {% elsif elem.video %}
-          <div class="video-container">
-            <iframe width="560" height="315" src="{{ elem.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
+        <div class="video-container">
+          <iframe width="560" height="315" src="{{ elem.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      {% elsif elem.image %}
+        <img src="{{ elem.image }}" width=600>
       {% else %}
         <img src="{{ elem }}" width=600>
       {% endif %}
