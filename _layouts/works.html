@@ -54,7 +54,7 @@ layout: page
           {% if elem.image %}
             <img src="{{ elem.image }}" width=600>
           {% else %}
-            elem.text
+            {{ elem.text }}
           {% endif %}
         </a>
       {% elsif elem.video %}
