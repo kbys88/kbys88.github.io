@@ -87,7 +87,6 @@ layout: page
       {% endif %}
       {% if image == "title" %}
         <td style="border:none;" width="350">
-          <!-- 3 -->
           <h4><i>{{ work.title }}</i> ({{ work.year }}) </h4>
           <p>{{ work.subtitle }}</p>
           <p>
@@ -107,6 +106,12 @@ layout: page
           <p>{{ work.place }}</p>
           {% if work.thanks %}
             <p>Thanks to {{ work.thanks }}</p>
+          {% endif %}
+          <p>{{ work.place }}</p>
+          {% if work.programme %}
+            {% for piece in work.programme %}
+              <p>{{ piece }}</p>
+            {% endfor %}
           {% endif %}
         </td>
       {% elsif image == "description" %}
