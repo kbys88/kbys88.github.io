@@ -43,4 +43,7 @@ permalink: /taito
   On the occasion of the relocation and restoration of the former Tokyo Music School, Sogakudo, Taito City has been awarding the Taito City Mayor’s Prize to the creator of an outstanding graduation work among art majors (Japanese painting, oil painting, printmaking) at the Tokyo University of the Arts since 1981, in support of the development of young artists.
   Taking the opportunity of the reopening in November 2008 of the former Tokyo Music School, Sogakudo, which serves as the starting point for the cultural administration of Taito City, we added the field of music to the Taito City Mayor’s Prize.
   This prize had previously been awarded only in the field of fine arts. The award is given annually to two practical arts majors from the field of music at the Tokyo University of the Arts.
-  https://www.culture.city.taito.lg.jp/ja/taito_kuchosho/about
+
+  <a href=" https://www.culture.city.taito.lg.jp/ja/taito_kuchosho/about">Taito City Mayor's Prize</a>
+
+ 
