@@ -82,17 +82,21 @@ layout: page
           <h4><i>{{ work.title }}</i> ({{ work.year }}) </h4>
           <p>{{ work.subtitle }}</p>
           <p>
-            premiere by 
-            {% if work.player.link == "" %}
-              {{ work.player }}
-            {% else %}
-              <a href="{{ work.player.link }}">
-                {{ work.player.name }}
-              </a></p>
+            {% if work.player %}
+              premiere by 
+              {% if work.player.link == "" %}
+                {{ work.player }}
+              {% else %}
+                <a href="{{ work.player.link }}">
+                  {{ work.player.name }}
+                </a></p>
+              {% endif %}
             {% endif %}
           <p>{{ work.date }}</p>
           <p>{{ work.place }}</p>
-          <p>Thanks to {{ work.thanks }}</p>
+          {% if work.thanks %}
+            <p>Thanks to {{ work.thanks }}</p>
+          {% endif %}
         </td>
       {% elsif image == "description" %}
         <td style="border:none;" width="300">
