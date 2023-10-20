@@ -4,6 +4,8 @@ subtitle: pour piano et électronique
 player: Hristeya Markova 
 date: April 2022
 place: PREMIÈRE ÉPREUVE - 15e CONCOURS INTERNATIONAL DE PIANO D’ORLÉANS
+description : >
+  Inspired by Peter Ablinger’s Talking Piano and Jonathan Harvey’s Speakings, this piece was created using Max/msp to create patches that generate the some piano parts, along with electronics.
 images:
   - title
   - https://github.com/kbys88/kbys88.github.io/assets/142012962/40230c40-c405-4172-8a3c-1bef67060d0d
