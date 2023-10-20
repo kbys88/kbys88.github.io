@@ -19,6 +19,13 @@ permalink: /taito
     height: 100%;
   }
 </style>
+
+
+![taito_top2](https://github.com/kbys88/kbys88.github.io/assets/142012962/7d8ea320-ccda-4793-9d5f-f4ee857cfdbe)
+![taito_top1](https://github.com/kbys88/kbys88.github.io/assets/142012962/8bfaf6e0-0611-4c4e-850c-0ba796476cde)
+
+
+
 <a href="https://www.culture.city.taito.lg.jp/ja/taito_kuchosho/h29/1">Web site of The 1st Taito Ward Mayor Award</a>
 
 
