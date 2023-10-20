@@ -93,12 +93,14 @@ layout: page
           <p>
             {% if work.player %}
               premiere by 
-              {% if work.player.link == "" %}
-                {{ work.player }}
-              {% else %}
+              {% if work.player.link %}
                 <a href="{{ work.player.link }}">
                   {{ work.player.name }}
                 </a></p>
+              {% if work.player.name %}
+                {{ work.player.name }}
+              {% else %}
+                {{ work.player }}
               {% endif %}
             {% endif %}
           <p>{{ work.date }}</p>
