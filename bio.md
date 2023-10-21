@@ -106,7 +106,9 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
  
 - Protonwerk No.11, Ensemble Proton Bern, Switzerland
   
-- Study Grant (2021) Kakehashi Foundation, Japan
+- Scholarship (2021) Kakehashi Foundation, Japan
+
+- Scholarship Fondation Hans Wilsdorf (2020), Switzerland
   
 - Special Mention (2020) Selection for the Forum Wallis at Ars Electronica 2020 for acousmatic works, Switzerland
   
