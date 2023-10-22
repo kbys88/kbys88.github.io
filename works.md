@@ -98,7 +98,7 @@ permalink: /works
            </a>
     </td>
     <td style="border:none; background-color: transparent;">
-            <a href="works/realite">
+            <a href="works/realites">
       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/5dd8dd9f-237a-4051-8523-247fe8ff1358" width="200px" height="200px">
             </a>
     </td>
