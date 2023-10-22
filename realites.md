@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /realite
+permalink: /realites
 overflow-wrap: break-word;
 ---
 
