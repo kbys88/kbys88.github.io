@@ -123,11 +123,11 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
 - Acunthus Award (2018)
     
 <h4>Experience, Activity</h4>
-  - <a href="https://www.impuls.cc/competition/composers-2023"></a>impuls Composition Competition and Commission<br>, Graz, Austria
+  - <a href="https://www.impuls.cc/competition/composers-2023">impuls Composition Competition and Commission</a>, Graz, Austria<br>
 <p>
 
 </p>
-  - <a href="https://www.ircam.fr/article/ircam-x-beaux-arts-de-paris-la-soiree-supersonique-mixette-master-en-ligne"></a>the "Supersonique" chair, Collaboration with Beaux-Arts de Paris, France <br>
+  - <a href="https://www.ircam.fr/article/ircam-x-beaux-arts-de-paris-la-soiree-supersonique-mixette-master-en-ligne">the "Supersonique" chair, Collaboration with Beaux-Arts de Paris, France</a> <br>
 <p>
 
 </p>
