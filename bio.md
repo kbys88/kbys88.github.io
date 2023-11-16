@@ -94,7 +94,9 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
 
 <h4>Prizes, Scholarships </h4>
 
-- Leenaards Springboard Prize 2023 / HEM
+- Conseil d'État Prize, Geneva, Switzerland
+
+- Leenaards Springboard Prize 2023 / HEM, project with Clara Eon
   
 - impuls. International Composition Competition (2023) impuls Festival 2023, Graz, Austria
   
