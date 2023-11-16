@@ -123,16 +123,13 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
 - Acunthus Award (2018)
     
 <h4>Experience, Activity</h4>
-  - impuls Composition Competition and Commission
-<a href="https://www.impuls.cc/competition/composers-2023"></a>, Graz, Austria<br>
+  - <a href="https://www.impuls.cc/competition/composers-2023"></a>impuls Composition Competition and Commission<br>, Graz, Austria
 <p>
 
 </p>
-  
-  - the "Supersonique" chair, Collaboration with Beaux-Arts de Paris . 
-<a href="https://www.ircam.fr/article/ircam-x-beaux-arts-de-paris-la-soiree-supersonique-mixette-master-en-ligne"></a>
+  - <a href="https://www.ircam.fr/article/ircam-x-beaux-arts-de-paris-la-soiree-supersonique-mixette-master-en-ligne"></a>the "Supersonique" chair, Collaboration with Beaux-Arts de Paris, France <br>
 <p>
-  
+
 </p>
   - Sound logo design
 <a href="http://aexea.co.jp/">AEXEA Co,ltd</a>, Tokyo, Japan<br>
