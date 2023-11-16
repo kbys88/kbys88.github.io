@@ -127,7 +127,7 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
 <p>
 
 </p>
-  - <a href="https://www.ircam.fr/article/ircam-x-beaux-arts-de-paris-la-soiree-supersonique-mixette-master-en-ligne">the "Supersonique" chair, Collaboration with Beaux-Arts de Paris,</a>France<br>
+  - <a href="https://www.ircam.fr/article/ircam-x-beaux-arts-de-paris-la-soiree-supersonique-mixette-master-en-ligne">the "Supersonique" chair, Collaboration with Beaux-Arts de Paris</a>,France<br>
 <p>
 
 </p>
