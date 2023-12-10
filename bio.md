@@ -94,39 +94,24 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
 <h4>Experience, Project, Activity</h4>
 
 - <a href="https://www.lefresnoy.net/">Le Fresnoy/Ircam </a>, France<br>
-<p>
 
-</p>
 - <a href="https://www.impuls.cc/competition/composers-2023">impuls Composition Competition and Commission</a>, Graz, Austria<br>
-<p>
 
-</p>
 - <a href="https://www.ircam.fr/article/ircam-x-beaux-arts-de-paris-la-soiree-supersonique-mixette-master-en-ligne">the "Supersonique" chair, Collaboration with Beaux-Arts de Paris</a>, France<br>
-<p>
 
-</p>
 - Sound logo design
 <a href="http://aexea.co.jp/">AEXEA Co,ltd</a>, Tokyo, Japan<br>
-<p>
-  
-</p>
+
 - Presentation at <a href="https://jjcaas2023.sciencesconf.org/">JJCAAS (Journées Jeunes Chercheur·se·s en Audition, Acoustique musicale et Signal audio)</a>, Paris, France<br>
-<p>
-  
-</p>
+
 - Music for <a href="https://danielkunzi.ch/tag/pomme-de-discorde">Pomme de discorde – alerte pesticide (2021)</a>, Geneva, Switzerland<br>
-<p>
-  
-</p>
+
 - Freelance Composer<br>
 Self employed, Switzerland, France, Japan<br>
-<p>
-  
-</p>
+
 - (2020 – 2023 ) Conservatoire populaire de musique, danse et théâtre / Conservatoire de Musique de Genève <br>
 Substitute Teaching, Switzerland<br>
 Music theory and solfège<br>
-<p>
 
 <h4>Education</h4>
 - <a href="https://www.ircam.fr/transmission/formations-superieures/cursus">Computer Music Training program</a><br>
