@@ -93,65 +93,65 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
     
 <h4>Experience, Project, Activity</h4>
 
-  - <a href="https://www.lefresnoy.net/">Le Fresnoy/Ircam </a>, France<br>
+- <a href="https://www.lefresnoy.net/">Le Fresnoy/Ircam </a>, France<br>
 <p>
 
-  - <a href="https://www.impuls.cc/competition/composers-2023">impuls Composition Competition and Commission</a>, Graz, Austria<br>
-<p>
-
-</p>
-  - <a href="https://www.ircam.fr/article/ircam-x-beaux-arts-de-paris-la-soiree-supersonique-mixette-master-en-ligne">the "Supersonique" chair, Collaboration with Beaux-Arts de Paris</a>,France<br>
+- <a href="https://www.impuls.cc/competition/composers-2023">impuls Composition Competition and Commission</a>, Graz, Austria<br>
 <p>
 
 </p>
-  - Sound logo design
+- <a href="https://www.ircam.fr/article/ircam-x-beaux-arts-de-paris-la-soiree-supersonique-mixette-master-en-ligne">the "Supersonique" chair, Collaboration with Beaux-Arts de Paris</a>,France<br>
+<p>
+
+</p>
+- Sound logo design
 <a href="http://aexea.co.jp/">AEXEA Co,ltd</a>, Tokyo, Japan<br>
 <p>
   
 </p>
-  - Presentation at <a href="https://jjcaas2023.sciencesconf.org/">JJCAAS (Journées Jeunes Chercheur·se·s en Audition, Acoustique musicale et Signal audio)</a>, Paris, France<br>
+- Presentation at <a href="https://jjcaas2023.sciencesconf.org/">JJCAAS (Journées Jeunes Chercheur·se·s en Audition, Acoustique musicale et Signal audio)</a>, Paris, France<br>
 <p>
   
 </p>
-  - Music for <a href="https://danielkunzi.ch/tag/pomme-de-discorde">Pomme de discorde – alerte pesticide (2021)</a>, Geneva, Switzerland<br>
+- Music for <a href="https://danielkunzi.ch/tag/pomme-de-discorde">Pomme de discorde – alerte pesticide (2021)</a>, Geneva, Switzerland<br>
 <p>
   
 </p>
-  - Freelance Composer<br>
+- Freelance Composer<br>
 Self employed, Switzerland, France, Japan<br>
 <p>
   
 </p>
-  - (2020 – 2023 ) Conservatoire populaire de musique, danse et théâtre / Conservatoire de Musique de Genève <br>
+- (2020 – 2023 ) Conservatoire populaire de musique, danse et théâtre / Conservatoire de Musique de Genève <br>
 Substitute Teaching, Switzerland<br>
 Music theory and solfège<br>
 <p>
 
 <h4>Education</h4>
-  - <a href="https://www.ircam.fr/transmission/formations-superieures/cursus">Computer Music Training program</a><br>
+- <a href="https://www.ircam.fr/transmission/formations-superieures/cursus">Computer Music Training program</a><br>
     date: [2021, 2022]<br>
     institution: Institut de recherche et coordination acoustique/musique, Paris <br>
     country: France<br>
     Cursus Program on Composition and Computer Music<br>
- -  Master of Arts<br>
+- Master of Arts<br>
     field: Music education<br>
     institution: Haute École de Musique de Genève<br>
     country: Switzerland<br>
     date: [2020, 2023]<br>
     Specialization in music theory<br>
-  - Master of Arts<br>
+- Master of Arts<br>
     field: Composition and music theory<br>
     institution: Haute École de Musique de Genève<br>
     country: Switzerland<br>
     date: [2018, 2020]<br>
     Specialization in composition<br>
-  - Bachelor of Arts<br>
+- Bachelor of Arts<br>
     field: Composition<br>
     institution: Tokyo University of the Arts<br>
     country: Japan<br>
     date: [2014, 2018]<br>
     Acanthus award and directer of Taito Ward award<br>
-  - Bachelor of Arts<br>
+- Bachelor of Arts<br>
     field: Cultural and Creative Studies<br>
     institution: Aoyama Gakuin University, Tokyo<br>
     country: Japan<br>
