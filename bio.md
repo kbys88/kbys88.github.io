@@ -96,6 +96,7 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
 - <a href="https://www.lefresnoy.net/">Le Fresnoy/Ircam </a>, France<br>
 <p>
 
+</p>
 - <a href="https://www.impuls.cc/competition/composers-2023">impuls Composition Competition and Commission</a>, Graz, Austria<br>
 <p>
 
