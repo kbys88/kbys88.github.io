@@ -61,37 +61,6 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
 
 スイス・ジュネーブ高等音楽院（Haute école de musique de Genève）作曲科修士課程および音楽教育科修士課程修了。青山学院大学、東京藝術大学音楽学部作曲科卒。卒業時に、アカンサス賞、台東区長賞を受賞。
 
-<h4>Education</h4>
-  - <a href="https://www.ircam.fr/transmission/formations-superieures/cursus">Computer Music Training program</a><br>
-    date: [2021, 2022]<br>
-    institution: Institut de recherche et coordination acoustique/musique, Paris <br>
-    country: France<br>
-    Cursus Program on Composition and Computer Music<br>
- -  Master of Arts<br>
-    field: Music education<br>
-    institution: Haute École de Musique de Genève<br>
-    country: Switzerland<br>
-    date: [2020, 2023]<br>
-    Specialization in music theory<br>
-  - Master of Arts<br>
-    field: Composition and music theory<br>
-    institution: Haute École de Musique de Genève<br>
-    country: Switzerland<br>
-    date: [2018, 2020]<br>
-    Specialization in composition<br>
-  - Bachelor of Arts<br>
-    field: Composition<br>
-    institution: Tokyo University of the Arts<br>
-    country: Japan<br>
-    date: [2014, 2018]<br>
-    Acanthus award and directer of Taito Ward award<br>
-  - Bachelor of Arts<br>
-    field: Cultural and Creative Studies<br>
-    institution: Aoyama Gakuin University, Tokyo<br>
-    country: Japan<br>
-    date: [2009, 2013]<br>
-
-
 <h4>Prizes, Scholarships </h4>
 
 - Conseil d'État Prize, Geneva, Switzerland
@@ -122,7 +91,11 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
   
 - Acunthus Award (2018)
     
-<h4>Experience, Activity</h4>
+<h4>Experience, Project, Activity</h4>
+
+  - <a href="https://www.lefresnoy.net/">Le Fresnoy/Ircam </a>, France<br>
+<p>
+
   - <a href="https://www.impuls.cc/competition/composers-2023">impuls Composition Competition and Commission</a>, Graz, Austria<br>
 <p>
 
@@ -153,3 +126,34 @@ Self employed, Switzerland, France, Japan<br>
 Substitute Teaching, Switzerland<br>
 Music theory and solfège<br>
 <p>
+
+<h4>Education</h4>
+  - <a href="https://www.ircam.fr/transmission/formations-superieures/cursus">Computer Music Training program</a><br>
+    date: [2021, 2022]<br>
+    institution: Institut de recherche et coordination acoustique/musique, Paris <br>
+    country: France<br>
+    Cursus Program on Composition and Computer Music<br>
+ -  Master of Arts<br>
+    field: Music education<br>
+    institution: Haute École de Musique de Genève<br>
+    country: Switzerland<br>
+    date: [2020, 2023]<br>
+    Specialization in music theory<br>
+  - Master of Arts<br>
+    field: Composition and music theory<br>
+    institution: Haute École de Musique de Genève<br>
+    country: Switzerland<br>
+    date: [2018, 2020]<br>
+    Specialization in composition<br>
+  - Bachelor of Arts<br>
+    field: Composition<br>
+    institution: Tokyo University of the Arts<br>
+    country: Japan<br>
+    date: [2014, 2018]<br>
+    Acanthus award and directer of Taito Ward award<br>
+  - Bachelor of Arts<br>
+    field: Cultural and Creative Studies<br>
+    institution: Aoyama Gakuin University, Tokyo<br>
+    country: Japan<br>
+    date: [2009, 2013]<br>
+
