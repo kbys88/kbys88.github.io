@@ -114,6 +114,7 @@ Substitute Teaching, Switzerland<br>
 Music theory and solfège<br>
 
 <h4>Education</h4>
+
 - <a href="https://www.ircam.fr/transmission/formations-superieures/cursus">Computer Music Training program</a><br>
     date: [2021, 2022]<br>
     institution: Institut de recherche et coordination acoustique/musique, Paris <br>
