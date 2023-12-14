@@ -58,6 +58,7 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
 また、スイスの映像作家Daniel Kunzi のドキュメンタリー映画『pomme de discorde』への音楽提供や、ヴィデオアーティスト、エカテリーナ・コステルスカヤとのコラボレーションも行っている。近年は、コンサートでの映像演出などにも携わるようになり、2023年にはパリ国立高等美術学校（École nationale supérieure des beaux-arts）のアーティストらとマルチメディアやダンスとのコラボレーションに取り組むなど、数々の共同制作、委嘱、実践に精力的に活動している。
 <p align="justify">
 スイス・ジュネーブ高等音楽院（Haute école de musique de Genève）作曲科修士課程および音楽教育科修士課程修了。青山学院大学、東京藝術大学音楽学部作曲科卒。卒業時に、アカンサス賞、台東区長賞を受賞。
+</p>
 
 <h4>Prizes, Scholarships </h4>
 
