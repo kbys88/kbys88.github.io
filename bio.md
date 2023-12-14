@@ -20,14 +20,13 @@ permalink: /bio
   }
 </style>
 
-{: align="center"}
 ![sachie](https://github.com/kbys88/kbys88.github.io/assets/142012962/4a01933e-4277-4ab5-a45c-577b7b8dc2cd)
 
  <!-- {: align="center"}
 ![sachie_bio2](https://github.com/kbys88/kbys88.github.io/assets/142012962/1eb19f1a-fe90-4929-af8a-679029ab9762)
 --> 
 
-{: align="center"} 
+<p align="justify">
 (EN)<br>
 Sachie Kobayashi (1990) now takes an interest in more intuitive creation and musical expression related to social phenomena. She started her career as a composer while complementing her research as her second master in education of music theory at Haute école de musique de Genève after completed her master's degree in 2020 at the same conservatory. 
 
