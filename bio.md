@@ -27,7 +27,7 @@ permalink: /bio
 --> 
 
 <p align="justify">
-(EN)<br>
+(EN)
 Sachie Kobayashi (1990) now takes an interest in more intuitive creation and musical expression related to social phenomena. She started her career as a composer while complementing her research as her second master in education of music theory at Haute école de musique de Genève after completed her master's degree in 2020 at the same conservatory. 
 <p align="justify">
 Born in Kanagawa, Japan, she began studying piano at the age of seven. And she started studying composition at the age of twenty.
