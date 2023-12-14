@@ -3,6 +3,7 @@ layout: page
 title: "bio"
 permalink: /bio
 ---
+text-align: justify;
 
 <style>
   .video-container {
