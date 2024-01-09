@@ -2,13 +2,5 @@
 <meta name="google-site-verification" content="PSs9FycpZSwgFYAEa__dkr-CMIQub8WbZzzVl6XYPN8">
 
 
-![RandomImage][https://raw.githubusercontent.com/kbys88/images/master/random_image.png]
-
-
-<!-- ![sachie_top](https://github.com/kbys88/kbys88.github.io/assets/142012962/8d3a8ccb-1468-4116-aa63-af1c6d8d54cc) -->
-©︎sachie kobayashi
-
-
-  
-</script>
-
+![sachie_top](https://github.com/kbys88/kbys88.github.io/assets/142012962/8d3a8ccb-1468-4116-aa63-af1c6d8d54cc)
+©︎Sachie Kobayashi
