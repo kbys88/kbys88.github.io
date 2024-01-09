@@ -2,7 +2,7 @@
 <meta name="google-site-verification" content="PSs9FycpZSwgFYAEa__dkr-CMIQub8WbZzzVl6XYPN8">
 
 
-
+<script type=”text/javascript”>
 
 var randomList = new Array(
   "https://github.com/kbys88/kbys88.github.io/assets/142012962/8d3a8ccb-1468-4116-aa63-af1c6d8d54cc",
@@ -17,3 +17,8 @@ document.write(printHtml);
 
 <!-- ![sachie_top](https://github.com/kbys88/kbys88.github.io/assets/142012962/8d3a8ccb-1468-4116-aa63-af1c6d8d54cc) -->
 ©︎sachie kobayashi
+
+
+  
+</script>
+
