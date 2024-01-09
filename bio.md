@@ -107,7 +107,7 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
 - Freelance Composer<br>
 Self employed, Switzerland, France, Japan<br>
 
-- (2020 – 2023 ) Conservatoire populaire de musique, danse et théâtre / Conservatoire de Musique de Genève <br>
+- Conservatoire populaire de musique, danse et théâtre / Conservatoire de Musique de Genève (2020 – 2023) <br>
 Substitute Teaching, Switzerland<br>
 Music theory and solfège<br>
 
