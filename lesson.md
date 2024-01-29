@@ -21,14 +21,14 @@ permalink: /lesson
 </style>
 
 Superprof<br>
--Piano
-  <a href="https://www.superprof.fr/niveaux-diplomee-master-pedagogie-composition-haute-ecole-suisse-enseignant-styles-musique"></a>
+-Piano<br>
+  <a href="https://www.superprof.fr/niveaux-diplomee-master-pedagogie-composition-haute-ecole-suisse-enseignant-styles-musique"></a><br>
   
--Composition
-  <a href="https://www.superprof.fr/cours-composition-niveaux-diplomee-master-pedagogie-composition-haute-ecole-suisse-enseignant"></a>
+-Composition<br>
+  <a href="https://www.superprof.fr/cours-composition-niveaux-diplomee-master-pedagogie-composition-haute-ecole-suisse-enseignant"></a><br>
   
--Solfège
-  <a href="https://www.superprof.fr/solfege-niveaux-diplomee-master-pedagogie-composition-haute-ecole-suisse-enseignant"></a>
+-Solfège<br>
+  <a href="https://www.superprof.fr/solfege-niveaux-diplomee-master-pedagogie-composition-haute-ecole-suisse-enseignant"></a><br>
 
 現在パリでの音楽個人レッスンを行なっています。
 作曲、ピアノ、ソルフェージュ、DTM、電子音楽、リトミックなど、また場所、レベル、レッスン料もお気軽にご相談ください。
