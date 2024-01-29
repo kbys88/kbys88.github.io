@@ -20,8 +20,7 @@ permalink: /lesson
   }
 </style>
 
-Superprof<br>
-
+...Superprof...<br>
   <a href="https://www.superprof.fr/niveaux-diplomee-master-pedagogie-composition-haute-ecole-suisse-enseignant-styles-musique">-Piano</a><br>
   <a href="https://www.superprof.fr/cours-composition-niveaux-diplomee-master-pedagogie-composition-haute-ecole-suisse-enseignant">-Composition</a><br>
   <a href="https://www.superprof.fr/solfege-niveaux-diplomee-master-pedagogie-composition-haute-ecole-suisse-enseignant">-Solfège</a><br>
