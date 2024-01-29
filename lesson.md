@@ -29,3 +29,7 @@ Superprof
   
 -Solfège
   https://www.superprof.fr/solfege-niveaux-diplomee-master-pedagogie-composition-haute-ecole-suisse-enseignant.html
+
+現在パリでの音楽個人レッスンを行なっています。
+作曲、ピアノ、ソルフェージュ、DTM、電子音楽、リトミックなど、また場所、レベル、レッスン料もお気軽にご相談ください。
+パリ在住の方はSuperprofウェブサイトもご確認ください。
