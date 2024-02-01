@@ -1,5 +1,5 @@
 ---
 layout: page
-permalink: /day1
+permalink: works/day1
 overflow-wrap: break-word;
 ---
