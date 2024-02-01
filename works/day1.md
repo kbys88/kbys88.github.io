@@ -1,5 +1,5 @@
 ---
 layout: works
-work: day0
-permalink: works/day0
+work: day1
+permalink: works/day1
 ---
