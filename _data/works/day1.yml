@@ -4,26 +4,20 @@ subtitle: pour performeur, vidéo, capture de mouvement et électronique
 player:
   name: Sachie Kobayashi
   link: ""
-date: 22/12/2023
+date: 22/12/2024
 place: RS#5 IRCAM
 thanks: >
-  Pierre Jodlowski, Sébastien Naves,
-  Corentin Marillier, Kaya Kolodziejczyk, Emmanuel Fléty,
+  Emmanuel Fléty,
   Frederik Bous and Pedagogical team at Ircam
 description: >
   Comment cela se manifeste-t-il ?
   J’utilise le capteur R-IoT (développé par l’équipe Interaction son musique mouvement), qui permet de détecter les mouvements du performeur via des accéléromètres et gyroscopes, dont les données sont ensuite appliquées à des paramètres musicaux.
   La vidéo (projetée sur un écran de tulle) permet quant à elle de recréer un décor proche de notre quotidien, lequel décor accueille un jeu dialectique entre des concepts opposés (homme/machine, scène/public, quotidien/extraordinaire, musique/bruit, vie/mort), qui en viennent à fusionner – comme les tendances actuelles tendent à montrer qu’elles pourront le faire à l’avenir.
   Je m’aperçois inconsciemment que j’incorpore au processus les pensées bouddhiste et zen. Tout se passe dans le quotidien : il n’y a là nul dieu spécial, tout juste l’existence de ce monde et celle de performer : « C’est ainsi ! »
-copyright: Hervé Véronèse-Centre Pompidou
+copyright: ""
 images:
   - https://github.com/kbys88/kbys88.github.io/assets/142012962/139592d2-27e8-48be-a746-7fe725b81540
-  - https://github.com/kbys88/kbys88.github.io/assets/142012962/3abe6438-a534-46fe-a147-6064dc801176
-  - title
-  - https://github.com/kbys88/kbys88.github.io/assets/142012962/317397c9-cff5-4bcf-b0e1-5d6a5fa08343
-  - description
-  - https://github.com/kbys88/kbys88.github.io/assets/142012962/46e9304f-6421-4b8c-a8e4-9b543b8f8361
-topimages:
+
   - link: https://medias.ircam.fr/x56d2a9_day-0-trans-instrumentalism-sachie-kobayas
     image: https://github.com/kbys88/kbys88.github.io/assets/142012962/42c56755-6e93-45f2-99cd-4752e961dfff
   - link: https://medias.ircam.fr/x56d2a9_day-0-trans-instrumentalism-sachie-kobayas
