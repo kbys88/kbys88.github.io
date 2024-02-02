@@ -40,3 +40,9 @@ overflow-wrap: break-word;
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hE1Ofbja7V8?si=GrVGaghziEHGa3Sv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+
+<img width="982" alt="スクリーンショット 2024-02-02 10 58 06" src="https://github.com/kbys88/kbys88.github.io/assets/142012962/09c88d29-ca5d-49af-b91b-2ac99dcb8f46">
+ 
+ <img width="4900" alt="day1_3" src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1c524c6e-00b5-4318-bc13-576bb3f3a5bb">
+
+
