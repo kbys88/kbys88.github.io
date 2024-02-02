@@ -10,21 +10,8 @@ thanks: >
   Emmanuel Fléty,
   Frederik Bous and Pedagogical team at Ircam
 description: >
-  Comment cela se manifeste-t-il ?
-  J’utilise le capteur R-IoT (développé par l’équipe Interaction son musique mouvement), qui permet de détecter les mouvements du performeur via des accéléromètres et gyroscopes, dont les données sont ensuite appliquées à des paramètres musicaux.
-  La vidéo (projetée sur un écran de tulle) permet quant à elle de recréer un décor proche de notre quotidien, lequel décor accueille un jeu dialectique entre des concepts opposés (homme/machine, scène/public, quotidien/extraordinaire, musique/bruit, vie/mort), qui en viennent à fusionner – comme les tendances actuelles tendent à montrer qu’elles pourront le faire à l’avenir.
-  Je m’aperçois inconsciemment que j’incorpore au processus les pensées bouddhiste et zen. Tout se passe dans le quotidien : il n’y a là nul dieu spécial, tout juste l’existence de ce monde et celle de performer : « C’est ainsi ! »
-copyright: ""
+
 images:
   - https://github.com/kbys88/kbys88.github.io/assets/142012962/139592d2-27e8-48be-a746-7fe725b81540
-
-  - link: https://medias.ircam.fr/x56d2a9_day-0-trans-instrumentalism-sachie-kobayas
-    image: https://github.com/kbys88/kbys88.github.io/assets/142012962/42c56755-6e93-45f2-99cd-4752e961dfff
-  - link: https://medias.ircam.fr/x56d2a9_day-0-trans-instrumentalism-sachie-kobayas
-    image: https://github.com/kbys88/kbys88.github.io/assets/142012962/2c2e241b-b5e2-4a68-9efe-b758d95d6805
-  - link: https://medias.ircam.fr/x56d2a9_day-0-trans-instrumentalism-sachie-kobayas
-    image: https://github.com/kbys88/kbys88.github.io/assets/142012962/51d9cdfe-cddb-4d55-9bff-a2fc422057b0
-  - link: https://medias.ircam.fr/x56d2a9_day-0-trans-instrumentalism-sachie-kobayas
-    image: https://github.com/kbys88/kbys88.github.io/assets/142012962/ebfb3e54-6973-44b6-9837-6e0ae81701d3
-  - link: https://medias.ircam.fr/x56d2a9_day-0-trans-instrumentalism-sachie-kobayas
-    text: video in the IRCAM Médiathèque
+topimages:
+  - video: https://youtu.be/hE1Ofbja7V8
