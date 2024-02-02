@@ -64,9 +64,9 @@ permalink: /works
      </a>
       </td>
     <td style="border:none; background-color: transparent;">
-      <a href="works/donthitme">
-      <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/dac9cbd1-7a0d-49c0-9e9e-999ff662d23a" width="200px" height="200px">
-     </a>
+      <a href="works/day1">
+        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/83902dc0-1d27-40f7-8dfd-9ec12f2dbe37" width="200px" height="200px">
+      </a>
     </td>
     <td style="border:none; background-color: transparent;">
        <a href="works/ovni">
@@ -110,9 +110,9 @@ permalink: /works
   </tr>
    <tr>
     <td style="border:none; background-color: transparent;">
-      <a href="works/day1">
-        <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/83902dc0-1d27-40f7-8dfd-9ec12f2dbe37" width="200px" height="200px">
-      </a>
+      <a href="works/donthitme">
+      <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/dac9cbd1-7a0d-49c0-9e9e-999ff662d23a" width="200px" height="200px">
+     </a>
     </td>
     <td style="border:none; background-color: transparent;">
      <a href="">
