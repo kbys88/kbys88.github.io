@@ -55,8 +55,7 @@ She started her career as a composer while complementing her research as her sec
 impuls International Composition Competition 2023受賞、Ars Electronica Forum Wallis Selection 2020 Highly commended獲得、2021年ISCM World Music Days（世界音楽の日々）最終選考推薦。2022年IRCAM（フランス国立音響音楽研究所）作曲研究課程(Cursus)修了。
 Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi Ensemble, percussion CYTi, Orchestre de la HEM, Ensemble 21,The Geidai Philharmonia Orchestraなど共演。</p>
 <p align="justify">
-また、スイスの映像作家Daniel Kunzi のドキュメンタリー映画『pomme de discorde』への音楽提供や、ヴィデオアーティスト、エカテリーナ・コステルスカヤとのコラボレーションも行っている。近年は、コンサートでの映像演出などにも携わるようになり、2023年にはパリ国立高等美術学校（École nationale supérieure des beaux-arts）のアーティストらとマルチメディアやダンスとのコラボレーションに取り組む。
-2024年、フランスのLe Fresnoy - Studio national des arts contemporainsとIRCAMのコラボレーションにて、Robin Touchard監修作品のサウンドデザインに参加。また、Clara Eonとのパフォーマンス作品のサウンド制作など、数々の共同制作、委嘱、実践に精力的に活動している。</p>
+また、スイスの映像作家Daniel Kunzi のドキュメンタリー映画『pomme de discorde』への音楽提供や、ヴィデオアーティスト、エカテリーナ・コステルスカヤとのコラボレーションも行っている。2023年にはパリ国立高等美術学校（École nationale supérieure des beaux-arts）のアーティストらとマルチメディアやダンスとのコラボレーションに取り組み、2024年、フランスのLe Fresnoy - Studio national des arts contemporainsとIRCAMのコラボレーションにて、Robin Touchard監修作品のサウンドデザインに参加。また、Clara Eonとのパフォーマンス作品のサウンド制作など、数々の共同制作、委嘱、実践に精力的に活動している。</p>
 <p align="justify">
 スイス・ジュネーブ高等音楽院（Haute école de musique de Genève）作曲科修士課程および音楽教育科修士課程修了。Conseil d'État賞、Prix Tremplin Leenaards/HEMを受賞。青山学院大学、東京藝術大学音楽学部作曲科卒。卒業時に、アカンサス賞、台東区長賞を受賞。Pierre Jodlowski, Michael Jarrell, Luis Naon, Gilbert Nouno,　安良岡章夫、寺嶋陸也の各氏に師事。</p>
 
