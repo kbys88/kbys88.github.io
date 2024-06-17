@@ -20,7 +20,9 @@ permalink: /bio
   }
 </style>
 
-![sachie](https://github.com/kbys88/kbys88.github.io/assets/142012962/4a01933e-4277-4ab5-a45c-577b7b8dc2cd)
+ <!--![sachie](https://github.com/kbys88/kbys88.github.io/assets/142012962/4a01933e-4277-4ab5-a45c-577b7b8dc2cd)--> 
+ ![C656F0EE-2A30-448A-9CD3-FAEFCC4BB0F9](https://github.com/kbys88/kbys88.github.io/assets/142012962/6dc13d9b-4caa-42e7-bb2f-dcdd3b649513)
+
 
  <!-- {: align="center"}
 ![sachie_bio2](https://github.com/kbys88/kbys88.github.io/assets/142012962/1eb19f1a-fe90-4929-af8a-679029ab9762)
