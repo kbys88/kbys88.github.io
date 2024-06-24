@@ -65,7 +65,7 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
 
 - Conseil d'État Prize, Geneva, Switzerland
 
-- Leenaards Springboard Prize 2023 / HEM, project with <a href="https://eon-clara.com/">Clara Eon</a>
+- Leenaards Springboard Prize 2023 / HEM
  
 - impuls. International Composition Competition (2023) impuls Festival 2023, Graz, Austria
   
@@ -90,28 +90,6 @@ Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi E
 - Taito City Mayor Award (2018)
   
 - Acunthus Award (2018)
-    
-<h4>Experience, Project, Activity</h4>
-
-- <a href="https://www.lefresnoy.net/">Le Fresnoy/Ircam </a>, France<br>
-
-- <a href="https://www.impuls.cc/competition/composers-2023">impuls Composition Competition and Commission</a>, Graz, Austria<br>
-
-- <a href="https://www.ircam.fr/article/ircam-x-beaux-arts-de-paris-la-soiree-supersonique-mixette-master-en-ligne">the "Supersonique" chair, Collaboration with Beaux-Arts de Paris</a>, France<br>
-
-- Sound logo design
-<a href="http://aexea.co.jp/">AEXEA Co,ltd</a>, Tokyo, Japan<br>
-
-- Presentation at <a href="https://jjcaas2023.sciencesconf.org/">JJCAAS (Journées Jeunes Chercheur·se·s en Audition, Acoustique musicale et Signal audio)</a>, Paris, France<br>
-
-- Music for <a href="https://danielkunzi.ch/tag/pomme-de-discorde">Pomme de discorde – alerte pesticide (2021)</a>, Geneva, Switzerland<br>
-
-- Freelance Composer<br>
-Self employed, Switzerland, France, Japan<br>
-
-- Conservatoire populaire de musique, danse et théâtre / Conservatoire de Musique de Genève (2020 – 2023) <br>
-Substitute Teaching, Switzerland<br>
-Music theory and solfège<br>
 
 <h4>Education</h4>
 
