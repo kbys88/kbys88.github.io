@@ -77,16 +77,16 @@ permalink: /works
     </td>
   </tr>
   <tr>
-    <td style="border:none; background-color: transparent;">
-      <a href="works/poetry">
-      <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/dac5b2d6-3290-406b-a333-1468119f46ee" width="200px" height="200px">
+     <td style="border:none; background-color: transparent;">
+           <a href="works/doyou">
+      <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1705a068-26e3-4375-bded-32095c5f58ca" width="200px" height="200px">
       </a>
     </td>
     <td style="border:none; background-color: transparent;">
-     <a href="works/spin">
-      <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/6542237b-f8a5-40dc-baf0-d948ea38a88e" width="200px" height="200px">
-       </a>
-     </td>
+      <a href="works/donthitme">
+      <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/dac9cbd1-7a0d-49c0-9e9e-999ff662d23a" width="200px" height="200px">
+     </a>
+    </td>
     <td style="border:none; background-color: transparent;">
                        <a href="works/taito">
       <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/0f6f36ca-38f9-48d5-b43a-a47b5d89f1a8" width="200px" height="200px">
@@ -105,18 +105,6 @@ permalink: /works
             </a>
     </td>
     <td style="border:none; background-color: transparent;">
-           <a href="works/doyou">
-      <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1705a068-26e3-4375-bded-32095c5f58ca" width="200px" height="200px">
-      </a>
-    </td>
-  </tr>
-   <tr>
-    <td style="border:none; background-color: transparent;">
-      <a href="works/donthitme">
-      <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/dac9cbd1-7a0d-49c0-9e9e-999ff662d23a" width="200px" height="200px">
-     </a>
-    </td>
-    <td style="border:none; background-color: transparent;">
      <a href="">
       <img src="" width="200px" height="200px">
       </a>
@@ -128,3 +116,5 @@ permalink: /works
     </td>
   </tr>
 </table>
+
+
