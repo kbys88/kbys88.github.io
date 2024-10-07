@@ -3,13 +3,7 @@ layout: page
 title: "works"
 permalink: /works
 ---
-<style>
-  img {
-    max-width: 100%; /* Ensure images don't exceed the container width */
-    height: auto; /* Maintain aspect ratio */
-  }
 
-</style>
 
 <!--![sachie_une_autre_reg](https://github.com/kbys88/kbys88.github.io/assets/142012962/31a3a4e3-9e08-47f1-acd5-341a2f1e05f8) -->
 
