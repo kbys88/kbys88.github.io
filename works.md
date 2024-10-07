@@ -4,18 +4,6 @@ title: "works"
 permalink: /works
 ---
 
-<style>
-  table {
-    border: none;
-    background-color: transparent;
-  }
-
-  td {
-    border: none;
-    background-color: transparent;
-    text-align: center;
-  }
-
   img {
     max-width: 100%; /* Ensure images don't exceed the container width */
     height: auto; /* Maintain aspect ratio */
