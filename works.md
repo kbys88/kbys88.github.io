@@ -13,18 +13,19 @@ The Cosmic Microwaves Background - Film</a><br>
 
 ![VISUEL_CMB_Touchard (大)](https://github.com/user-attachments/assets/526c43a6-46b2-47f4-9243-54a3f84f078e)
 
-
+<div align="center">
 <p>
   Portfolio - PDF ***Coming soon***
 </p>
+</div>
 
 <p>
+
+
  
 </p>
 Others :
-<p>
- 
-</p>
+
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; justify-items: center;"> 
   <a href="works/shifting">
     <img src="https://github.com/kbys88/kbys88.github.io/assets/142012962/1712d49f-1cce-47d9-b1bf-ab21e4d705d5" width="200px" height="200px">
