@@ -8,6 +8,10 @@ overflow-wrap: break-word;
 
 <p>info at sachiekobayashi.com</p>
 
+
+![sachie_studio_ircam](https://github.com/user-attachments/assets/8728a333-35a1-4f60-986c-0a6d0a9a5833)
+
+
 作曲委嘱、サウンドデザイン、ライブパフォーマンス、アレンジメント(DTM,、オーケストレーション、合唱など)、音楽レッスン、こちらからお気軽にご連絡ください。近日中にお返事させていただきます。
 <p>
   
