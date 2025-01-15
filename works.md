@@ -7,26 +7,23 @@ permalink: /works
 
 <!--![sachie_une_autre_reg](https://github.com/kbys88/kbys88.github.io/assets/142012962/31a3a4e3-9e08-47f1-acd5-341a2f1e05f8) -->
 
+<div align="center">
+  Portfolio - PDF ***Coming soon***
+</div>
+![Sachie_Kobayashi_Portofolio](https://github.com/user-attachments/assets/e81859ef-0a3a-4f1d-b777-304da4994352)
+ <br>
+ <br>
+ <br>
+ <br>
 Latest Work :
  <a href="https://www.lefresnoy.net/en/exposition/2207/oeuvre/2256/">	Robin Touchard
 The Cosmic Microwaves Background - Film</a><br>
 
 ![VISUEL_CMB_Touchard (大)](https://github.com/user-attachments/assets/526c43a6-46b2-47f4-9243-54a3f84f078e)
-
-<div align="center">
-
-
-
-
- 
-  Portfolio - PDF ***Coming soon***
-
-
-
-  
-
-</div>
-
+ <br>
+ <br>
+ <br>
+ <br>
 Others :
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; justify-items: center;"> 
