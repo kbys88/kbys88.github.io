@@ -1,5 +1,16 @@
 ---
 layout: none
 title: "Redirecting to Instagram"
-permalink: /instagram/
+permalink: https://www.instagram.com/sachie_kbys_comp/
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;url=https://www.instagram.com/sachie_kbys_comp/">
+    <title>Redirecting...</title>
+</head>
+<body>
+    <p>Redirecting to <a href="https://www.instagram.com/sachie_kbys_comp/">Instagram</a>...</p>
+</body>
+</html>
