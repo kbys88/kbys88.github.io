@@ -34,7 +34,7 @@ Sachie Kobayashi (1990) now takes an interest in more intuitive creation and mus
 <p align="justify">
 Born in Kanagawa, Japan, she began studying piano at the age of seven. And she started studying composition at the age of twenty.</p>
 <p align="justify">
-Currently she is based in Paris, she received some scholarships and grants, especially the Swiss Confederation Excellence Scholarship, the fellowship by the Program of Overseas Study for Upcoming Artists sponsored by the Agency for Cultural Affairs, Nomura Fondation and Kakehashi Foundation. Immediately after her arrival in Europe, her works were presented worldwide and she participated in several festivals. She worked with numerous ensembles and musicians including Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi Ensemble, percussion CYTi, Orchestre de la HEM, Ensemble 21, The Geidai Philharmonia Orchestra.</p>
+She received some scholarships and grants, especially the Swiss Confederation Excellence Scholarship, the fellowship by the Program of Overseas Study for Upcoming Artists sponsored by the Agency for Cultural Affairs, Nomura Fondation and Kakehashi Foundation. Immediately after her arrival in Europe, her works were presented worldwide and she participated in several festivals. She worked with numerous ensembles and musicians including Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi Ensemble, percussion CYTi, Orchestre de la HEM, Ensemble 21, The Geidai Philharmonia Orchestra.</p>
 <p align="justify">
 In 2021 to 2022 she participated in the Cursus de composition et d'informatique musicale by IRCAM (Paris, France), supervised by Pierre Jodlowski. Also, she is a shortlisted for the « World New Music Days 2021 » by ISCM and selected « Protonwerk no. 11. » by ensemble Proton Bern (Switzerland).  She got « Special Mention » by Ars Electronica Forum Wallis Selection 2020 with her acousmatic works. She also collaborated with Daniel Künzi, film director, with his documentary film « pomme de discorde ». For the video art she collaborated with Ekaterina Kostelskaya, multidisciplinary artist who explores the correlation between the physical space and the physicality of sound. In recent years, she began her involvement in stage production with videos in the concert.</p>
 <p align="justify">
@@ -52,8 +52,8 @@ She started her career as a composer while complementing her research as her sec
 </p>
 <p align="justify">
 (JP)
-神奈川県生まれ。20歳より作曲を学び、音楽教育現場からクリエーションまで、幅広く活動を続けている。
-現在、パリを中心にヨーロッパにて活動。令和元年度文化庁新進芸術家海外研修制度研修員。スイス政府優秀奨学金奨学生。また公益財団法人野村財団、公益財団法人かけはし芸術文化振興財団、Fondation Hans Wilsdorf、Ville de Genève、Fondation Simon I. Patiñoなど数々の助成を国内外より受ける。
+神奈川県生まれ。20歳より作曲を学び、その後フランスにてアーティストビザを取得し、ヨーロッパを中心に音楽教育現場からクリエーションまで、幅広く活動を続けている。
+令和元年度文化庁新進芸術家海外研修制度研修員。スイス政府優秀奨学金奨学生。また公益財団法人野村財団、公益財団法人かけはし芸術文化振興財団、Fondation Hans Wilsdorf、Ville de Genève、Fondation Simon I. Patiñoなど数々の助成を国内外より受ける。
 impuls International Composition Competition 2023受賞、Ars Electronica Forum Wallis Selection 2020 Highly commended獲得、2021年ISCM World Music Days（世界音楽の日々）最終選考推薦。2022年IRCAM（フランス国立音響音楽研究所）作曲研究課程(Cursus)修了。
 Klangforum Wien, Ensemble Modern, Ensemble Reconcil, Ensemble Proton Bern, mdi Ensemble, percussion CYTi, Orchestre de la HEM, Ensemble 21,The Geidai Philharmonia Orchestraなど共演。</p>
 <p align="justify">
