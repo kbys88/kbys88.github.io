@@ -10,7 +10,9 @@ permalink: /works
 <div align="center">
   Portfolio - PDF ***Coming soon***
 </div>
+
 ![Sachie_Kobayashi_Portofolio](https://github.com/user-attachments/assets/e81859ef-0a3a-4f1d-b777-304da4994352)
+
  <br>
  <br>
  <br>
