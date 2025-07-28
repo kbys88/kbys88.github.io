@@ -7,6 +7,7 @@ categories: [collaboration, sound design, movie]
 tags: [works]
 comments: false
 ---
+![image](https://media.lefresnoy.net/?url=https://api.lefresnoy.net/media/production/film/2024/08/robin_touchard_1ad2c_YHB.tif&w=1360&h=600&fmt=jpg)
 
 ## *The Cosmic Microwaves Background*  
 **Collaboration with Robin Touchard**  
