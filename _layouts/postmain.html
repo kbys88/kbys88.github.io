@@ -5,48 +5,7 @@
     {% include nav.html %}
 
     <div id="main" role="main" class="wrapper-content">
-      {% for post in site.posts %}
-        <article class="post-preview">
-          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-
-          <div class="meta">
-            <span class="date">{{ post.date | date: "%Y-%m" }}</span>
-            <ul class="tags">
-              {% for tag in post.tags %}
-                <li><a href="{{ site.baseurl }}/tags#{{ tag }}">{{ tag }}</a></li>
-              {% endfor %}
-            </ul>
-          </div>
-
-          {% assign image_rendered = false %}
-          {% assign lines = post.content | split: '\n' %}
-          {% for line in lines %}
-            {% if image_rendered == false and line contains '![', and line contains '](' %}
-              <div class="post-thumbnail">
-                {{ line | markdownify }}
-              </div>
-              {% assign image_rendered = true %}
-            {% endif %}
-          {% endfor %}
-
-          <div class="post-excerpt">
-            {% assign excerpt = "" %}
-            {% assign count = 0 %}
-            {% for line in lines %}
-              {% unless line contains '![', or line contains '](' %}
-                {% assign excerpt = excerpt | append: line | append: ' ' %}
-                {% assign count = count | plus: 1 %}
-              {% endunless %}
-              {% if count >= 2 %}
-                {% break %}
-              {% endif %}
-            {% endfor %}
-            {{ excerpt | markdownify }}
-          </div>
-
-          <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
-        </article>
-      {% endfor %}
+      {{ content }}
     </div>
 
     {% include analytics.html %}
@@ -56,4 +15,6 @@
     <footer class="footer">
       {% include footer.html %}
     </footer>
+
+
 </html>
