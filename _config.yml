@@ -22,10 +22,11 @@ navigation:
     url: /
   - name: About
     url: /about
-  - name: Archive
-    url: /archive
   - name: Works
     url: /works
+  - name: Lesson
+    url: /lesson
+
 # 每页的文章数
 paginate: 8
 
