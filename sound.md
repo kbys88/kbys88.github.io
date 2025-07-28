@@ -5,13 +5,6 @@ permalink: /sound/
 ---
 
 <!-- SoundCloud Player -->
----
-layout: page
-title: Sound
-permalink: /sound/
----
-
-<!-- SoundCloud Player -->
 <iframe 
   width="100%" 
   height="450" 
