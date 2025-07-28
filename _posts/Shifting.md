@@ -1,3 +1,13 @@
+---
+layout: post
+title: Shifting
+date: 2025-07-28
+Author: Sachie
+categories: 
+tags: [Grand Ensemble]
+comments: false
+---
+
 ## 🎼 impuls Festival 2023 – Klangforum Wien  
 [🎥 Watch on Klangforum.at](https://en.klangforum.at/videos/impuls-festival-2023-preistragerkonzert)
 
@@ -9,3 +19,9 @@ The composition reflects my ongoing interest in **fragility, friction, and tempo
 **Commissioned by:** impuls & AVL Cultural Foundation  
 **Performed by:** *Klangforum Wien*  
 **Premiere:** impuls Festival 2023, Graz
+
+Maurizio Azzan (Italy) - Wasteland_beyond (2022, UA)
+Oren Boneh (Poland/USA/Israel) - Go to the Ant (2022, UA)
+**Sachie Kobayashi (Japan) - Shifting (2022, UA)**
+Anna Korsun (Ukraine) - П О П І Л (2022, UA)
+Malin Bång (Sweden) - blooming brume (2020)
