@@ -4,7 +4,7 @@ title: Day 0 – Trans-Instrumentalism
 date: 2025-07-28
 Author: Sachie
 categories: 
-tags: [multimedia]
+tags: [Multimedia]
 comments: false
 ---
 # Day 0 – Trans-Instrumentalism  
