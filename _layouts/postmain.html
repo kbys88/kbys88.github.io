@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
-<div id="main" role="main" class="wrapper-content">
-  {% for post in site.posts %}
-    <article class="post-preview">
-      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-      
-      <!-- Extract first 2 lines of plain text -->
-      {% capture text_only %}
-        {{ content_html | strip_html | strip_newlines | truncatewords: 40 }}
-      {% endcapture %}
-      <div class="post-excerpt">
-        {{ text_only }}
-      </div>
+  {% include head.html %}
+  <body>
+    {% include nav.html %}
 
-      <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
-    </article>
-  {% endfor %}
-</div>
+    <div id="main" role="main" class="wrapper-content">
+      {{ content }}
+    </div>
+
+    {% include analytics.html %}
+  </body>
+
+  <div class="wrapper-footer-mobile">
+    <footer class="footer">
+      {% include footer.html %}
+    </footer>a
+
 
 </html>
