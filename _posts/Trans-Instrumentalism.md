@@ -7,9 +7,6 @@ categories:
 tags: [Multimedia]
 comments: false
 ---
-# Day 0 – Trans-Instrumentalism  
-**Sachie Kobayashi**  
-
 [📎 View the project on Brahms (IRCAM)](https://brahms.ircam.fr/fr/media/x56d2a9_day-0-trans-instrumentalism-sachie-kobayas)
 
 ---
