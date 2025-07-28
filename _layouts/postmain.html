@@ -4,17 +4,7 @@
   {% for post in site.posts %}
     <article class="post-preview">
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-
-      {% assign content_html = post.content | markdownify %}
       
-      <!-- Extract first image -->
-      {% capture first_image %}
-        {{ content_html | split: '<img' | slice: 1, 1 | first | prepend: '<img' | split: '>' | first | append: '>' }}
-      {% endcapture %}
-      <div class="post-thumbnail">
-        {{ first_image | strip }}
-      </div>
-
       <!-- Extract first 2 lines of plain text -->
       {% capture text_only %}
         {{ content_html | strip_html | strip_newlines | truncatewords: 40 }}
