@@ -9,7 +9,6 @@ tags: [Sound Design]
 
 ![LIVEN Ambient](https://i.shgcdn.com/49f1c750-4c49-4547-bdc5-1d2c487259ca/-/format/auto/-/preview/3000x3000/-/quality/lighter/)
 
-🎛️ Excited to share my sound design work for the **LIVEN Ambient** synthesizer by Sonicware!
 🎛️ Excited to share my sound design work for the **LIVEN Ambient Ø** synthesizer by Sonicware.
 
 I created original sound presets specially tailored for this new ambient-focused instrument.  
