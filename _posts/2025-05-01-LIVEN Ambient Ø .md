@@ -1,8 +1,11 @@
 ---
 layout: post
+title: Don't Hit Me – for two percussionists
+date: 2019-9-15
+tags: [Sound Design]
 ---
 
-🎛️ Excited to share my sound design work for the **LIVEN Ambient** synthesizer by Sonicware!
+🎛️ Excited to share my sound design work for the **LIVEN Ambient Ø** synthesizer by Sonicware.
 
 I created original sound presets specially tailored for this new ambient-focused instrument.  
 It’s a beautiful synth designed for rich, evolving textures — and I’m honored to have contributed to its sound palette.
