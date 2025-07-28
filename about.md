@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/about.jpeg" alt="About" width="100%">
+<img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/about.jpeg" alt="About" width="50%">
 
 ## English
 
