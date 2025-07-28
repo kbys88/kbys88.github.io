@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Day 0 – Trans-Instrumentalism 
-date: 2025-07-28
+date: 2022-9
 Author: Sachie
 categories: 
 tags: [Multimedia]
@@ -22,14 +22,10 @@ The composition integrates:
 - **Live electronics** and **gesture-based interaction**
 - **Video and visual augmentation**
 - A strong dramaturgical axis around **transformation, fragmentation, and hybrid identity**
-
-"Day 0" was premiered in 2024 as part of the **Cursus de composition et d'informatique musicale** at IRCAM, with technical support from the *Pôle interprétation* and collaboration with performer-dancer **[Insert name if needed]**.
-
+- 
 ---
 
 **Credits**  
 Composition, sound design, programming: *Sachie Kobayashi*  
-Produced at: *IRCAM / Le Fresnoy*  
-Support: *Cursus IRCAM 2023–24, Le Fresnoy – Studio national*  
-
+Produced at: *IRCAM*  
 [🔗 Watch / listen / learn more](https://brahms.ircam.fr/fr/media/x56d2a9_day-0-trans-instrumentalism-sachie-kobayas)
