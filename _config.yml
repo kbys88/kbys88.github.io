@@ -13,9 +13,9 @@ description: Compsoer/Compositrice/作曲家
 #
 
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px
-avatar: ![sachiehome](https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/sachiehome.png)
+avatar: <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/sachiehome.png" />
 # 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
-favicon: https://github.com/kbys88/kbys88.github.io/blob/630084d30dcae631d4e2172d86b6ce9cf2c08389/images/sachie-pic.jpeg
+favicon: 
 # 菜单中的按钮
 navigation:
   - name: Home
