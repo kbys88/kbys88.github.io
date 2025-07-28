@@ -4,7 +4,7 @@ title: New Work in Progress for Contrechamps
 date: 2025-07-28
 author: Sachie
 categories: 
-tags: [news]
+tags: [Multimedia]
 comments: false
 ---
 <img src="https://cdn.sanity.io/images/0egjiwmm/production/8dfa024be62aea314022cf39cb0e75ec235b3347-727x1080.jpg?w=828&q=75&fit=clip&auto=format" alt="image" width="300">
