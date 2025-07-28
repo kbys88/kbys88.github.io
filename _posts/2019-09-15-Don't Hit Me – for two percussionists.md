@@ -2,7 +2,7 @@
 layout: post
 title: Don't Hit Me – for two percussionists
 date: 2019-9-15
-tags: [percussion, chamber-music, live-performance, score]
+tags: [Small Ensemble]
 ---
 
 [![Don't Hit Me – excerpt (YouTube)](https://img.youtube.com/vi/fjrhLMT3Ctk/maxresdefault.jpg)](https://www.youtube.com/watch?v=fjrhLMT3Ctk)
