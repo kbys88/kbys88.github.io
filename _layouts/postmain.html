@@ -1,39 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <div id="main" role="main" class="wrapper-content">
+<div id="main" role="main" class="wrapper-content">
   {% for post in site.posts %}
     <article class="post-preview">
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
 
-      {% assign image_rendered = false %}
-      {% assign lines = post.content | split: '\n' %}
-
+      {% assign content_html = post.content | markdownify %}
+      
+      <!-- Extract first image -->
+      {% capture first_image %}
+        {{ content_html | split: '<img' | slice: 1, 1 | first | prepend: '<img' | split: '>' | first | append: '>' }}
+      {% endcapture %}
       <div class="post-thumbnail">
-        {% for line in lines %}
-          {% if image_rendered == false and line contains '![', and line contains '](' %}
-            {{ line | markdownify }}
-            {% assign image_rendered = true %}
-          {% endif %}
-        {% endfor %}
+        {{ first_image | strip }}
       </div>
 
+      <!-- Extract first 2 lines of plain text -->
+      {% capture text_only %}
+        {{ content_html | strip_html | strip_newlines | truncatewords: 40 }}
+      {% endcapture %}
       <div class="post-excerpt">
-        {% assign excerpt = "" %}
-        {% assign count = 0 %}
-        {% for line in lines %}
-          {% unless line contains '![', or line contains '](' %}
-            {% assign excerpt = excerpt | append: line | append: ' ' %}
-            {% assign count = count | plus: 1 %}
-          {% endunless %}
-          {% if count >= 2 %}
-            {% break %}
-          {% endif %}
-        {% endfor %}
-        {{ excerpt | markdownify }}
+        {{ text_only }}
       </div>
 
       <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
     </article>
   {% endfor %}
 </div>
+
 </html>
