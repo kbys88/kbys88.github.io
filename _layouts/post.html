@@ -1,10 +1,11 @@
 ---
 layout: default
 ---
+
 <article class="posts">
   <h1>{{ page.title }}</h1>
 
-  <div class="meta">
+  <div clsss="meta">
     <span class="date">
       {{ page.date | date: "%Y-%m" }}
     </span>
@@ -20,48 +21,22 @@ layout: default
     </ul>
   </div>
 
-  {% assign image_found = false %}
-  {% assign lines = page.content | split: '\n' %}
-
-  <div class="preview">
-    {% for line in lines %}
-      {% if image_found == false and line contains '![', and line contains '](' %}
-        {{ line | markdownify }}
-        {% assign image_found = true %}
-      {% endif %}
-    {% endfor %}
-
-    <div class="excerpt">
-      {% assign text_lines = "" %}
-      {% assign count = 0 %}
-      {% for line in lines %}
-        {% unless line contains '![', or line contains '](' %}
-          {% assign text_lines = text_lines | append: line | append: '<br>' %}
-          {% assign count = count | plus: 1 %}
-        {% endunless %}
-        {% if count >= 4 %}
-          {% break %}
-        {% endif %}
-      {% endfor %}
-      {{ text_lines | markdownify }}
-    </div>
-  </div>
-
   <div class="entry">
     {{ content }}
   </div>
+
 </article>
 
 <div class="pagination">
   {% if page.previous.url %}
-    <span class="prev">
+    <span class="prev" >
       <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
         ←
       </a>
     </span>
   {% endif %}
   {% if page.next.url %}
-    <span class="next">
+    <span class="next" >
       <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
         →
       </a>
