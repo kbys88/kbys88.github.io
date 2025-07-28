@@ -4,7 +4,7 @@ title: The Cosmic Microwaves Background
 date: 2025-07-28
 Author: Sachie
 categories: [collaboration, sound design, movie]
-tags: [works]
+tags: [Movie]
 comments: false
 ---
 <img src="https://media.lefresnoy.net/?url=https://api.lefresnoy.net/media/production/film/2024/08/robin_touchard_1ad2c_YHB.tif&w=1360&h=600&fmt=jpg" alt="image" width="600">
