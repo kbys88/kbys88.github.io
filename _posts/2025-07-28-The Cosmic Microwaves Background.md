@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Collaboration with Robin Touchard – *The Cosmic Microwaves Background*
+title: The Cosmic Microwaves Background
 date: 2025-07-28
 Author: Sachie
 categories: [collaboration, sound design, movie]
