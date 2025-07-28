@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Cosmic Microwaves Background
-date: 2025-07-28
+date: 2024-06
 Author: Sachie
 categories: [collaboration, sound design, movie]
 tags: [Movie]
