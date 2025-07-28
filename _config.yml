@@ -26,6 +26,8 @@ navigation:
     url: /sound
   - name: Works
     url: /works
+  - name: Moment
+    url: /moment
   - name: Lesson
     url: /lesson
 
