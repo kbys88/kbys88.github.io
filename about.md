@@ -3,6 +3,9 @@ layout: page
 title: About
 permalink: /about/
 ---
+
+<img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/about.jpeg" alt="About" width="100%">
+
 ## English
 
 Sachie Kobayashi (1990) is interested in intuitive creation and musical expression related to social phenomena.
