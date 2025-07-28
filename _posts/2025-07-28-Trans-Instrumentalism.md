@@ -1,3 +1,12 @@
+---
+layout: post
+title: Day 0 – Trans-Instrumentalism 
+date: 2025-07-28
+Author: Sachie
+categories: 
+tags: [multimedia]
+comments: false
+---
 # Day 0 – Trans-Instrumentalism  
 **Sachie Kobayashi**  
 
