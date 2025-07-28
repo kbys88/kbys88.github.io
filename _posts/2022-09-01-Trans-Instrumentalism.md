@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Day 0 – Trans-Instrumentalism 
-date: 2022-9
+date: 2022-09-01
 Author: Sachie
 categories: 
 tags: [Multimedia]
