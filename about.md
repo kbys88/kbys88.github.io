@@ -3,9 +3,6 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-# About Sachie Kobayashi
-
 ## English
 
 Sachie Kobayashi (1990) is interested in intuitive creation and musical expression related to social phenomena.
