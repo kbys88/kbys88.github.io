@@ -22,6 +22,8 @@ navigation:
     url: /
   - name: About
     url: /about
+  - name: Sound
+    url: /sound
   - name: Works
     url: /works
   - name: Lesson
