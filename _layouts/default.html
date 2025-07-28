@@ -18,27 +18,26 @@
             </ul>
           </div>
 
-          {% assign lines = post.content | split: '\n' %}
           {% assign image_rendered = false %}
-
-          <div class="post-thumbnail">
-            {% for line in lines %}
-              {% if image_rendered == false and line contains '![', and line contains '](' %}
+          {% assign lines = post.content | split: '\n' %}
+          {% for line in lines %}
+            {% if image_rendered == false and line contains '![', and line contains '](' %}
+              <div class="post-thumbnail">
                 {{ line | markdownify }}
-                {% assign image_rendered = true %}
-              {% endif %}
-            {% endfor %}
-          </div>
+              </div>
+              {% assign image_rendered = true %}
+            {% endif %}
+          {% endfor %}
 
           <div class="post-excerpt">
-            {% assign text_count = 0 %}
             {% assign excerpt = "" %}
+            {% assign count = 0 %}
             {% for line in lines %}
               {% unless line contains '![', or line contains '](' %}
                 {% assign excerpt = excerpt | append: line | append: ' ' %}
-                {% assign text_count = text_count | plus: 1 %}
+                {% assign count = count | plus: 1 %}
               {% endunless %}
-              {% if text_count >= 2 %}
+              {% if count >= 2 %}
                 {% break %}
               {% endif %}
             {% endfor %}
