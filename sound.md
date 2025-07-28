@@ -5,6 +5,13 @@ permalink: /sound/
 ---
 
 <!-- SoundCloud Player -->
+---
+layout: page
+title: Sound
+permalink: /sound/
+---
+
+<!-- SoundCloud Player -->
 <iframe 
   width="100%" 
   height="450" 
@@ -13,19 +20,31 @@ permalink: /sound/
   src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/sachiekbys&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
 </iframe>
 
-<!-- Centered YouTube Video -->
-<div style="display:flex; justify-content:center; align-items:center; margin-top:3rem;">
+<!-- Container for multiple YouTube videos -->
+<div style="display:flex; flex-direction: column; align-items: center; gap: 3rem; margin-top: 2rem;">
+
   <iframe 
     width="640" 
     height="360" 
     src="https://www.youtube.com/embed/atHQ7RAiGXg?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&iv_load_policy=3&disablekb=1&loop=1&playlist=atHQ7RAiGXg" 
-    title="YouTube video player" 
+    title="YouTube video player 1" 
     frameborder="0" 
     allow="autoplay; encrypted-media" 
     allowfullscreen
     style="border-radius:8px;">
   </iframe>
-</div>
 
-<!-- Another YouTube Video Link -->
-[Watch another video here](https://www.youtube.com/watch?v=fjrhLMT3Ctk)
+  <iframe 
+    width="640" 
+    height="360" 
+    src="https://www.youtube.com/embed/fjrhLMT3Ctk" 
+    title="YouTube video player 2" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen
+    style="border-radius:8px;">
+  </iframe>
+
+  <!-- 他に追加したい動画があれば同じ要領で追加してください -->
+  
+</div>
