@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Don't Hit Me – for two percussionists
 date: 2019-9-15
 tags: [percussion, chamber-music, live-performance, score]
