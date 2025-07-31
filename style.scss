@@ -125,7 +125,7 @@ ol, ul {
   > li {
     &:before {
       position: absolute;
-      color: #000;
+      color: $black;
       width: $li-bullets-width;
       margin-left: -$li-bullets-width;
       display: inline-block;
@@ -138,7 +138,7 @@ ol, ul {
 ul {
   > li:before {
     content: "\2022";
-    color: #000;
+    color: $black;
     padding-right: $ul-bullets-right-space;
     font-family: $ul-bullets-font;
     font-size: $ul-bullets-font-size;
@@ -148,11 +148,11 @@ ul {
 
 ol {
   counter-reset: section;
-  color: #000;
+  color: $black;
   > li:before {
     counter-increment: section;
     content: counter(section) ".";
-    color: #000;
+    color: $black;
     padding-right: $ol-bullets-right-space;
     font-family: $ol-bullets-font;
     font-size: $ol-bullets-font-size;
@@ -164,10 +164,11 @@ ol, ul {
   > li {
     margin: 0 auto $li-bottom-space $li-bullets-width;
     line-height: $li-line-height;
-    color: #000;
+    color: $black;
     > ol,
     > ul {
       margin-top: $li-bottom-space;
+      color: $black;
     }
   }
 }
@@ -186,6 +187,7 @@ li {
 // Definition list
 dt {
   float: left;
+  color: $black;
   width: $dt-width;
   overflow: auto;
   clear: left;
@@ -234,7 +236,7 @@ blockquote {
   border-left: .2em solid $blockquote-border-color;
 
   p {
-    color: $blockquote-color;
+    color: $black;;
   }
 
   p:last-child {
