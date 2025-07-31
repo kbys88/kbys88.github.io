@@ -4,9 +4,10 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
-# Bundler
+# Bundler (exclude from GitHub Pages but keep for local development)
 .bundle/
 vendor/
+Gemfile
 Gemfile.lock
 
 # OS generated files
