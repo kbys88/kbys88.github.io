@@ -1,3 +1,6 @@
+---
+---
+
 //
 // IMPORTS
 //
@@ -328,9 +331,6 @@ img {
     position: relative;
     border-bottom: 1px solid $divider-color;
     border-right: 0;
-    max-width: 100vw; /* 画面幅に合わせる */
-    padding: 0 1rem;  /* 横のパディングも確保 */
-    box-sizing: border-box; /* パディングを含めて幅計算 */
   }
 }
 
