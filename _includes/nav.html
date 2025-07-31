@@ -1,29 +1,49 @@
-  <div class="wrapper-sidebar">
-  <header class="sidebar clearfix">
-    <div class="site-info">
-      {% if site.avatar %}
-        <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-      {% endif %} 
-      <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-      <p class="site-description">{{ site.description }}</p>
-    </div>
-  </header>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+  }
 
-  <div class="navlist">
-    <nav>
-      {% for nav in site.navigation %}
-      {% if nav.url contains 'http://' or nav.url contains 'https://' %}
-      <a href="{{ nav.url }}">{{ nav.name }}</a>
-      {% else %}
-      <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.name }}</a>
-      {% endif %}
-      {% endfor %}
-    </nav>
-  </div>
+  .layout {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+  }
 
-  <div class="wrapper-footer-desktop">
-    <footer class="footer">
-      {% include footer.html %}
-    </footer>
-  </div>
-</div>
+  .wrapper-sidebar {
+    width: 300px;
+    background-color: #111;
+    color: white;
+    padding: 20px;
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+
+  /* モバイル用レスポンシブ対応 */
+  @media (max-width: 768px) {
+    .layout {
+      flex-direction: column;
+    }
+
+    .wrapper-sidebar {
+      width: 100%;
+    }
+  }
+
+  /* ナビゲーションのスタイル例 */
+  .navlist nav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .navlist nav a:hover {
+    background-color: #333;
+  }
+</style>
