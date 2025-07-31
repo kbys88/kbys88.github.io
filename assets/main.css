@@ -13,21 +13,19 @@
   box-sizing: border-box;
 }
 
+
 .wrapper-content {
   width: 70%;
   max-width: 100vw;
-  padding: 20px;
-  background-color: #222;
-  color: white;
-  box-sizing: border-box;
-}
 
   @include mobile {
     width: 100%;
     max-width: 100vw;
     float: none;
-    display: block;  
+    display: block;
+  }
 }
+
 
 /* モバイル時は上に表示 */
 @media (max-width: 768px) {
