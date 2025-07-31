@@ -146,7 +146,7 @@ ul {
 
 ol {
   counter-reset: section;
-
+  color: #000;
   > li:before {
     counter-increment: section;
     content: counter(section) ".";
@@ -162,7 +162,7 @@ ol, ul {
   > li {
     margin: 0 auto $li-bottom-space $li-bullets-width;
     line-height: $li-line-height;
-
+    color: #000;
     > ol,
     > ul {
       margin-top: $li-bottom-space;
