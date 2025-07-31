@@ -15,11 +15,6 @@
 /* BASE RULES */
 /**************/
 
-  @include mobile {
-    flex-direction: column;
-  }
-}
-
 html {
   font-size: $base-font-size;
 }
@@ -316,6 +311,10 @@ img {
 //
 // .sidebar
 //
+
+  @include mobile {
+    flex-direction: column;
+  }
 
 .layout {
   display: flex;
