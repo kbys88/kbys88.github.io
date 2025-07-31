@@ -1,15 +1,91 @@
-<!-- Async font loading -->
+<!-- Font loading strategy for Oswald (Latin) and Kosugi (Japanese) -->
+<style>
+  /* Oswald font face declarations for Latin characters */
+  @font-face {
+    font-family: 'Oswald';
+    src: url('/fonts/Oswald-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Oswald';
+    src: url('/fonts/Oswald-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Oswald';
+    src: url('/fonts/Oswald-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Oswald';
+    src: url('/fonts/Oswald-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Oswald';
+    src: url('/fonts/Oswald-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Oswald';
+    src: url('/fonts/Oswald-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* Kosugi font face declarations for Japanese characters */
+  @font-face {
+    font-family: 'Kosugi';
+    src: url('/fonts/Kosugi-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* Dual font stack - Oswald for Latin, Kosugi for Japanese */
+  * {
+    font-family: 'Oswald', 'Kosugi', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', 'Takao', 'IPAexGothic', 'IPAPGothic', 'VL PGothic', 'Noto Sans CJK JP', 'Arial', sans-serif !important;
+  }
+
+  /* Code font */
+  code, pre {
+    font-family: 'Liberation Mono', 'DejaVu Sans Mono', 'Menlo', 'Monaco', 'Courier New', monospace !important;
+  }
+</style>
+
+<!-- Font loading optimization -->
 <script>
-  window.WebFontConfig = {
-      custom: {
-          families: ['Spoqa Han Sans:100,300,400,700'],
-          urls: ['https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css']
-      },
-      timeout: 60000
-  };
-  (function(d) {
-      var wf = d.createElement('script'), s = d.scripts[0];
-      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
-      s.parentNode.insertBefore(wf, s);
-  })(document);
+  // Font loading check for both Oswald and Kosugi
+  if ('fonts' in document) {
+    Promise.all([
+      document.fonts.load('400 1em "Oswald"'),
+      document.fonts.load('700 1em "Oswald"'),
+      document.fonts.load('400 1em "Kosugi"')
+    ]).then(function() {
+      document.documentElement.classList.add('fonts-loaded');
+      console.log('Oswald and Kosugi fonts loaded successfully');
+    }).catch(function(error) {
+      document.documentElement.classList.add('fonts-fallback');
+      console.log('Fonts failed to load:', error);
+    });
+  } else {
+    document.documentElement.classList.add('fonts-fallback');
+    console.log('Font Loading API not supported');
+  }
 </script>

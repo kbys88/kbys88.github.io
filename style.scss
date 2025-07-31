@@ -396,12 +396,25 @@ a.footnote {
 
 .site-name {
   margin: 0 auto;
-  color: $oc-gray-9;
+  color: $black !important;
   cursor: pointer;
   font-family: $base-font;
   font-weight: 700;
   font-size: 28px;
   letter-spacing: 1px;
+
+  a {
+    color: $black !important;
+    text-decoration: none;
+    transition: all 0.2s ease; // Smooth transition for hover effects
+    padding: 5px 10px; // Add padding for hover area
+    border-radius: 3px; // Rounded corners for hover effect
+    
+    &:hover, &:active {
+      color: $white !important;
+      background-color: $black !important;
+    }
+  }
 }
 
 .site-description {
@@ -431,15 +444,32 @@ nav {
   }
 
   a {
-    margin: 0 10px;
-    color: $oc-gray-8;
-    text-align: right;
-    font-weight: 300;
+    display: block; // Changed from inline to block for vertical layout
+    margin: 8px 0; // Changed from horizontal margins to vertical margins
+    color: $black !important; // Always black, never green
+    text-align: center; // Changed from right to center for better alignment
+    font-weight: 700; // Changed from 300 to 700 for bold
     letter-spacing: 1px;
+    padding: 5px 0; // Added padding for better spacing
+    transition: all 0.2s ease; // Smooth transition for hover effects
+
+    &:hover, &:active {
+      color: $white !important; // White text on hover
+      background-color: $black !important; // Black background on hover
+    }
 
     @include mobile {
+      display: inline-block; // Keep horizontal on mobile
       margin: 0 10px;
-      color: $oc-teal-8;
+      color: $black !important; // Always black on mobile too
+      padding: 5px 10px; // Add some padding for hover area
+      font-weight: 700; // Keep bold on mobile
+      border-radius: 3px; // Rounded corners for hover effect
+
+      &:hover, &:active {
+        color: $white !important; // White text on hover
+        background-color: $black !important; // Black background on hover
+      }
     }
   }
 }

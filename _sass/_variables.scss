@@ -17,11 +17,12 @@ $white: #fff;
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$impact: Impact, 'Impact', sans-serif;
+$oswald: 'Oswald', Arial, sans-serif;
+$kosugi: 'Kosugi', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
 $georgia: Georgia, 'Times New Roman', serif;
 
-// Fonts
-$base-font: $impact;
+// Fonts - Dual font system
+$base-font: $oswald, $kosugi;
 $code-font: 'Menlo', 'Monaco', 'Courier New', monospace;
 
 // Font sizes
@@ -30,7 +31,7 @@ $small-font-size: 12px;
 
 // Colors
 $base-color: $black;
-$base-lighten-color: $$base-color;
+$base-lighten-color: $base-color;
 
 $text-color: $base-color;
 $link-color: #008000;
@@ -45,8 +46,8 @@ $blockquote-border-color: $oc-gray-3;
 $footnote-link-border-color: $base-color;
 $footnote-link-background-over-color: $oc-gray-1;
 
-$selection-color: $base-color;
-$selection-background-color: $white;
+$selection-color: $white;
+$selection-background-color: $black;
 
 $pagination-color: $base-color;
 $pagination-over-color: $oc-gray-8;
@@ -80,8 +81,8 @@ $dt-dd-space: 20px;
 $dd-position: $dt-width+$dt-dd-space;
 
 // Mobile breakpoints
-//@mixin mobile {
-//  @media screen and (max-width: 1200px) {
-//    @content;
-//  }
-//}
+@mixin mobile {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
