@@ -1,14 +1,16 @@
 .layout {
   display: flex;
-  flex-direction: row;
   min-height: 100vh;
+  flex-direction: row;
 }
 
 .wrapper-sidebar {
-  width: 300px;
+  width: 300px;        /* 固定幅 */
+  flex-shrink: 0;      /* 幅が縮まないようにする */
   background-color: #111;
   color: white;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .wrapper-content {
@@ -16,9 +18,10 @@
   padding: 20px;
   background-color: #222;
   color: white;
+  box-sizing: border-box;
 }
 
-/* モバイル対応 */
+/* モバイル時は上に表示 */
 @media (max-width: 768px) {
   .layout {
     flex-direction: column;
