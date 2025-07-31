@@ -613,11 +613,12 @@ ul, ol, li {
     font-size: $small-font-size;
     font-weight: 300;
     display: inline;
+    color: $base-color;
 
     > a {
       display: inline-block;
       margin: 1px;
-      color: $black;
+      color: $base-color;
       background-color: $tag-index-label-background-color;
       border-radius: 3px;
 
