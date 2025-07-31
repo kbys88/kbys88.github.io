@@ -12,6 +12,47 @@
 /* BASE RULES */
 /**************/
 
+.layout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.wrapper-sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  background-color: #111;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 4;
+  border-right: 1px solid $divider-color;
+
+  @include mobile {
+    width: 100%;
+    height: auto;
+    padding-bottom: 24px;
+    position: relative;
+    border-bottom: 1px solid $divider-color;
+    border-right: 0;
+  }
+}
+
+.page, .entry {
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding: 0 1rem;
+}
+
 html, body {
   font-size: $base-font-size;
   overflow-x: hidden;
@@ -23,11 +64,10 @@ html, body {
 }
 
 body {
-  font-family: $base-font;
-  color: $base-color;
-  line-height: 1.7em;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
-
 .container {
   margin: 0 auto;
   max-width: 800px;
@@ -43,6 +83,18 @@ h1, h2, h3, h4, h5, h6 {
 
   @include mobile {
     line-height: 1.6em;
+  }
+}
+
+.wrapper-content {
+  width: calc(100% - 200px);
+  max-width: 100vw;
+
+  @include mobile {
+    width: 100%;
+    max-width: 100vw;
+    float: none;
+    display: block;
   }
 }
 
@@ -258,11 +310,9 @@ a.footnote {
 }
 
 img, iframe, video {
-  display: block;
   max-width: 100%;
   height: auto;
-  margin: 0 0 1em;
-  border-radius: 5px;
+  display: block;
 }
 
 .gmnoprint img {
