@@ -6,10 +6,9 @@
 # 注意，“name: LOFFER”，冒号后面的空格不可以省略。
 # 井号后面的文字是说明文档，不会被程序读取。
 name: SACHIE KOBAYASHI 小林祥恵
-# 描述/签名
+
 description: Composer/作曲家
 #
-# 下面的设定都是可选的
 #
 
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px
@@ -28,8 +27,8 @@ navigation:
     url: /works
   - name: Pic
     url: /pic
-  - name: Lesson
-    url: /lesson
+  - name: Teach
+    url: /teach
 
 # 每页的文章数
 paginate: 8
