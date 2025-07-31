@@ -20,8 +20,8 @@ favicon:
 navigation:
   - name: Home
     url: /
-  - name: About
-    url: /about
+  - name: Bio
+    url: /bio
   - name: Sound
     url: /sound
   - name: Works
