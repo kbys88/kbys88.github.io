@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RÊVERIE - TRANS-INSTRUMENTALISM (Création)
-date: 2025-07-01
+date: 2025-10-01
 author: Sachie
 categories: 
 tags: [Multimedia]
