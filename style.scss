@@ -28,21 +28,6 @@ body {
   line-height: 1.7em;
 }
 
-/**************/
-
-.wrapper-content {
-  width: 70%;
-  max-width: 100vw;
-
-  @include mobile {
-    width: 100%;
-    max-width: 100vw;
-    float: none;
-    display: block;
-  }
-}
-/**************/
-
 .container {
   margin: 0 auto;
   max-width: 800px;
