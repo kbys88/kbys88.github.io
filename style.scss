@@ -265,7 +265,7 @@ a.footnote {
 
 // Image
 
-// Fixes images in popup boxes from Google Translate
+// Fixes images in popup boxes from Google Translatea
 .gmnoprint img {
   max-width: none;
 }
@@ -439,8 +439,8 @@ nav {
 // content
 
 .wrapper-content {
-  margin-left: 200px;
-  width: calc(100% - 200px);
+  margin-left: 350px; // ← 修正
+  width: calc(100% - 350px); // ← 修正
   max-width: 100vw;
   position: relative;  // ✅ 追加
   z-index: 1;          // ✅ 追加
