@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /bio/
 ---
 
 <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/about.jpeg" alt="About" width="50%">
