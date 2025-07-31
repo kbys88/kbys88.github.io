@@ -15,11 +15,6 @@
 /* BASE RULES */
 /**************/
 
-.layout {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: row;
-
   @include mobile {
     flex-direction: column;
   }
@@ -322,6 +317,10 @@ img {
 // .sidebar
 //
 
+.layout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
 
 .wrapper-sidebar {
   width: 200px;
