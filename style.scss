@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 2em;
   margin: 1em 0 16px;
   padding: 0;
-  color: #000
+  color: $black;
 
   @include mobile {
     line-height: 1.6em;
@@ -53,13 +53,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3, h5 {
   font-weight: bold;
-  color: $black
+  color: $black;
 }
 
 h1 {
   font-size: 30px;
   a {
-  color: #000;
+  color: $black;
   }
 }
 
@@ -73,11 +73,11 @@ h3 {
 
 h4 {
   font-size: 20px;
-  color: #000;
+  color: $black;
 }
 
 h6 {
-  color: #000;
+  color: $black;
 }
 
 p {
@@ -179,7 +179,7 @@ li {
     > li {
       font-size: ($li-child-size-ratio * 1em);
       margin: 0 auto ($li-bottom-space * $li-child-size-ratio) ($li-bullets-width * $li-child-size-ratio);
-      color: #000;
+  color: $black;
     }
   }
 }
@@ -311,7 +311,7 @@ a.footnote {
 }
 
 .right {
-  text-align: right
+  text-align: right;
 }
 
 /*********************/
