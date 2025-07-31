@@ -2,19 +2,21 @@
 <html>
   {% include head.html %}
   <body>
-    {% include nav.html %}
 
-    <div id="main" role="main" class="wrapper-content">
-      {{ content }}
+    <div class="layout">
+      {% include nav.html %}  <!-- サイドバー -->
+
+      <div id="main" role="main" class="wrapper-content">
+        {{ content }}         <!-- メインコンテンツ -->
+      </div>
+    </div>
+
+    <div class="wrapper-footer-mobile">
+      <footer class="footer">
+        {% include footer.html %}
+      </footer>
     </div>
 
     {% include analytics.html %}
   </body>
-
-  <div class="wrapper-footer-mobile">
-    <footer class="footer">
-      {% include footer.html %}
-    </footer>
-
-
 </html>
