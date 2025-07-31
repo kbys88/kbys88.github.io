@@ -1,0 +1,30 @@
+.layout {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.wrapper-sidebar {
+  width: 300px;
+  background-color: #111;
+  color: white;
+  padding: 20px;
+}
+
+.wrapper-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+}
+
+/* モバイル対応 */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .wrapper-sidebar {
+    width: 100%;
+  }
+}
