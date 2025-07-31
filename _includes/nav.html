@@ -1,49 +1,85 @@
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: white;
-  }
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Sidebar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+      font-family: sans-serif;
+    }
 
-  .layout {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: row;
-  }
-
-  .wrapper-sidebar {
-    width: 300px;
-    background-color: #111;
-    color: white;
-    padding: 20px;
-  }
-
-  .main-content {
-    flex: 1;
-    padding: 20px;
-  }
-
-  /* モバイル用レスポンシブ対応 */
-  @media (max-width: 768px) {
     .layout {
-      flex-direction: column;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: row;
     }
 
     .wrapper-sidebar {
-      width: 100%;
+      width: 300px;
+      background-color: #111;
+      color: white;
+      padding: 20px;
     }
-  }
 
-  /* ナビゲーションのスタイル例 */
-  .navlist nav a {
-    display: block;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-  }
+    .main-content {
+      flex: 1;
+      padding: 20px;
+      background-color: #222;
+    }
 
-  .navlist nav a:hover {
-    background-color: #333;
-  }
-</style>
+    .navlist nav a {
+      display: block;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .navlist nav a:hover {
+      background-color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .layout {
+        flex-direction: column;
+      }
+
+      .wrapper-sidebar {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="layout">
+  <div class="wrapper-sidebar">
+    <header class="sidebar clearfix">
+      <div class="site-info">
+        <h1 class="site-name"><a href="#" style="color:white;">サイト名</a></h1>
+        <p class="site-description">説明文</p>
+      </div>
+    </header>
+
+    <div class="navlist">
+      <nav>
+        <a href="#">ホーム</a>
+        <a href="#">作品</a>
+        <a href="#">プロフィール</a>
+        <a href="#">お問い合わせ</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <h2>メインコンテンツ</h2>
+    <p>ここにビデオやテキストなどを表示します。</p>
+  </div>
+</div>
+
+</body>
+</html>
