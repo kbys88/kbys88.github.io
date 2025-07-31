@@ -53,12 +53,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3, h5 {
   font-weight: bold;
+  color: #000
 }
 
 h1 {
   font-size: 30px;
   a {
-    color: inherit;
+  color: #000
   }
 }
 
@@ -72,11 +73,11 @@ h3 {
 
 h4 {
   font-size: 20px;
-  color: $base-lighten-color;
+  color: #000;
 }
 
 h6 {
-  color: $base-lighten-color;
+  color: #000;
 }
 
 p {
@@ -85,7 +86,7 @@ p {
 }
 
 a {
-  color: $oc-teal-8;
+  color: #000;
   text-decoration: none;
   cursor: pointer;
   &:hover, &:active {
