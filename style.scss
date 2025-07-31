@@ -322,16 +322,19 @@ img {
 // .sidebar
 //
 
+
 .wrapper-sidebar {
-  width: 30%;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-color: $oc-gray-0;
-	height: 100%;
-	top: 0;
-	left:0;
-	position: fixed;
-	z-index: 4;
+  width: 200px;
+  flex-shrink: 0;
+  background-color: #111;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 4;
   border-right: 1px solid $divider-color;
 
   @include mobile {
