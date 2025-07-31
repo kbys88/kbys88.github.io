@@ -18,7 +18,7 @@ avatar: https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/sa
 favicon: 
 # 菜单中的按钮
 navigation:
-  - name: Home
+  - name: Top
     url: /
   - name: Bio
     url: /bio
