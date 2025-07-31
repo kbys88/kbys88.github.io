@@ -1,5 +1,7 @@
 ---
 layout: main
+title: Pic
+permalink: /pic/
 ---
 
 <div style="margin-top: 100px;"></div>
