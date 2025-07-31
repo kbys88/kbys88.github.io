@@ -429,6 +429,7 @@ a.footnote {
 
 .navlist{
   text-align:center;
+  text-transform: uppercase !important;
 }
 
 nav {
@@ -452,6 +453,7 @@ nav {
     letter-spacing: 1px;
     padding: 5px 0; // Added padding for better spacing
     transition: all 0.2s ease; // Smooth transition for hover effects
+    text-transform: uppercase !important; // Make text all-caps with !important
 
     &:hover, &:active {
       color: $white !important; // White text on hover
@@ -460,11 +462,12 @@ nav {
 
     @include mobile {
       display: inline-block; // Keep horizontal on mobile
-      margin: 0 10px;
+      margin: 0 5px; // Reduced margin from 10px to 5px for tighter spacing
       color: $black !important; // Always black on mobile too
-      padding: 5px 10px; // Add some padding for hover area
+      padding: 5px 8px; // Reduced padding from 10px to 8px
       font-weight: 700; // Keep bold on mobile
       border-radius: 3px; // Rounded corners for hover effect
+      text-transform: uppercase !important; // Make text all-caps on mobile too with !important
 
       &:hover, &:active {
         color: $white !important; // White text on hover
