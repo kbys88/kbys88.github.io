@@ -58,8 +58,9 @@ h1, h2, h3, h5 {
 
 h1 {
   font-size: 30px;
-  a {
   color: $black;
+  a {
+
   }
 }
 
@@ -86,7 +87,6 @@ p {
 }
 
 a {
-  color: #000;
   text-decoration: none;
   cursor: pointer;
   &:hover, &:active {
