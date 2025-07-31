@@ -454,6 +454,10 @@ nav {
 
 // Posts
 
+ul, ol, li {
+  color: $black; // ← ここに追加
+}
+
 .posts{
   margin: 40px;
 
