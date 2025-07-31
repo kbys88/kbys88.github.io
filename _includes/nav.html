@@ -1,9 +1,13 @@
+---
+layout: none
+---
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Responsive Sidebar</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sachie Kobayashi</title>
   <style>
     body {
       margin: 0;
@@ -60,24 +64,32 @@
   <div class="wrapper-sidebar">
     <header class="sidebar clearfix">
       <div class="site-info">
-        <h1 class="site-name"><a href="#" style="color:white;">サイト名</a></h1>
-        <p class="site-description">説明文</p>
+        {% if site.avatar %}
+          <a href="{{ site.baseurl }}/" class="site-avatar">
+            <img src="{{ site.avatar }}" style="max-width:100px;" />
+          </a>
+        {% endif %}
+        <h1 class="site-name"><a href="{{ site.baseurl }}/" style="color:white;">{{ site.name }}</a></h1>
+        <p class="site-description">{{ site.description }}</p>
       </div>
     </header>
 
     <div class="navlist">
       <nav>
-        <a href="#">ホーム</a>
-        <a href="#">作品</a>
-        <a href="#">プロフィール</a>
-        <a href="#">お問い合わせ</a>
+        {% for nav in site.navigation %}
+          {% if nav.url contains 'http://' or nav.url contains 'https://' %}
+            <a href="{{ nav.url }}">{{ nav.name }}</a>
+          {% else %}
+            <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.name }}</a>
+          {% endif %}
+        {% endfor %}
       </nav>
     </div>
   </div>
 
   <div class="main-content">
     <h2>メインコンテンツ</h2>
-    <p>ここにビデオやテキストなどを表示します。</p>
+    <p>ここにビデオやテキストを表示します。</p>
   </div>
 </div>
 
