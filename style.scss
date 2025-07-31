@@ -29,7 +29,7 @@
   color: white;
   padding: 20px;
   box-sizing: border-box;
-  height: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
   position: fixed;
@@ -44,7 +44,6 @@
     border-bottom: 1px solid $divider-color;
     border-right: 0;
   }
-}
 
 .page, .entry {
   max-width: 100vw;
@@ -87,14 +86,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper-content {
+  margin-left: 200px;
   width: calc(100% - 200px);
   max-width: 100vw;
 
   @include mobile {
     width: 100%;
     max-width: 100vw;
-    float: none;
-    display: block;
+    margin-left: 0;
   }
 }
 
