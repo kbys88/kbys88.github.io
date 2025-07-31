@@ -30,7 +30,7 @@ $small-font-size: 12px;
 
 // Colors
 $base-color: $black;
-$base-lighten-color: $oc-gray-6;
+$base-lighten-color: $$base-color;
 
 $text-color: $base-color;
 $link-color: #008000;
@@ -42,7 +42,7 @@ $table-background-color: $oc-gray-1;
 $blockquote-color: $base-color;
 $blockquote-border-color: $oc-gray-3;
 
-$footnote-link-border-color: $oc-gray-1;
+$footnote-link-border-color: $base-color;
 $footnote-link-background-over-color: $oc-gray-1;
 
 $selection-color: $base-color;
