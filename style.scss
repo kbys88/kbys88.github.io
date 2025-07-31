@@ -312,14 +312,15 @@ img {
 // .sidebar
 //
 
-  @include mobile {
-    flex-direction: column;
-  }
-
 .layout {
   display: flex;
   min-height: 100vh;
   flex-direction: row;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
 
 .wrapper-sidebar {
   width: 200px;
