@@ -5,7 +5,7 @@
 }
 
 .wrapper-sidebar {
-  width: 300px;        /* 固定幅 */
+  width: 200px;        /* 固定幅 */
   flex-shrink: 0;      /* 幅が縮まないようにする */
   background-color: #111;
   color: white;
