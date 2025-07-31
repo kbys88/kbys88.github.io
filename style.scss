@@ -15,6 +15,16 @@
 /* BASE RULES */
 /**************/
 
+.layout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
 html {
   font-size: $base-font-size;
 }
