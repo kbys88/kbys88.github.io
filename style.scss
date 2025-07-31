@@ -176,6 +176,7 @@ li {
     > li {
       font-size: ($li-child-size-ratio * 1em);
       margin: 0 auto ($li-bottom-space * $li-child-size-ratio) ($li-bullets-width * $li-child-size-ratio);
+      color: #000;
     }
   }
 }
