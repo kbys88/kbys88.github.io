@@ -19,11 +19,11 @@ permalink: /sound/
   </iframe>
 
   <!-- Container for multiple YouTube videos -->
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 3rem; margin-top: 2rem; width: 90%; max-width: 900px;">
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 3rem; margin-top: 2rem; width: 70%; max-width: 700px;">
   
     <iframe 
       width="100%" 
-      height="506"  <!-- 16:9 ratio for 900px width -->
+      height="360" 
       src="https://www.youtube.com/embed/atHQ7RAiGXg?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&iv_load_policy=3&disablekb=1&loop=1&playlist=atHQ7RAiGXg" 
       title="YouTube video player 1" 
       frameborder="0" 
@@ -34,7 +34,7 @@ permalink: /sound/
   
     <iframe 
       width="100%" 
-      height="506" 
+      height="360" 
       src="https://www.youtube.com/embed/fjrhLMT3Ctk" 
       title="YouTube video player 2" 
       frameborder="0" 
