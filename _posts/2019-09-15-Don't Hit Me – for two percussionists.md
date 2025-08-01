@@ -2,7 +2,7 @@
 layout: post
 title: Don't Hit Me – for two percussionists
 date: 2019-9-15
-tags: [Small Ensemble]
+tags: [Duo, Percussion]
 ---
 
 [![Don't Hit Me – excerpt (YouTube)](https://img.youtube.com/vi/fjrhLMT3Ctk/maxresdefault.jpg)](https://www.youtube.com/watch?v=fjrhLMT3Ctk)
