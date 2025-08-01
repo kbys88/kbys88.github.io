@@ -10,6 +10,9 @@ comments: false
 [📎 View the project on Brahms (IRCAM)](https://brahms.ircam.fr/fr/media/x56d2a9_day-0-trans-instrumentalism-sachie-kobayas)
 
 ---
+<a href="https://youtu.be/nVIiBWsJCFE" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.youtube.com/vi/nVIiBWsJCFE/hqdefault.jpg" alt="YouTube Video" style="width:100%; max-width:800px; height:auto; border:0;">
+</a>
 
 **"Day 0 – Trans-Instrumentalism"** is a multidisciplinary performance and musical research project that explores the hybridization of human bodies and instruments through gesture, sound, and technology. Developed in collaboration with IRCAM and Le Fresnoy – Studio national des arts contemporains, the piece interrogates the boundaries between instrumental play, bodily presence, and digital media.
 
