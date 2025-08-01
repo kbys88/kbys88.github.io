@@ -38,7 +38,7 @@ My sound design involved both composed and generative materials, blending physic
 
 - **Direction, Visuals**: Robin Touchard  
 - **Sound Design & Music**: Sachie Kobayashi  
-- **Institution**: Le Fresnoy – Studio national des arts contemporains  
+- **Institution**: IRCAM / Le Fresnoy – Studio national des arts contemporains  
 - **Presented in**: Panorama 26, 2024
 
 ---
