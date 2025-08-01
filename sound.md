@@ -3,7 +3,7 @@ layout: page
 title: Sound
 permalink: /sound/
 ---
-
+<img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/work-img.png" alt="About" width="70%">
 <!-- SoundCloud Player -->
 <iframe 
   width="100%" 
