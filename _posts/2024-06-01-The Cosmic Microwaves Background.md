@@ -27,9 +27,10 @@ My sound design involved both composed and generative materials, blending physic
 
 ### 🎥 Watch the video:
 
-<div class="video-container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/vXPt26iCe70" title="The Cosmic Microwaves Background – video excerpt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+<a href="https://youtu.be/vXPt26iCe70" target="_blank">
+  <img src="https://img.youtube.com/vi/vXPt26iCe70/maxresdefault.jpg" alt="The Cosmic Microwave Background – video excerpt" style="width:100%; max-width:800px; height:auto; border:0;">
+</a>
+
 
 ---
 
