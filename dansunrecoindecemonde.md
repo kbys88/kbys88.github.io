@@ -22,6 +22,8 @@ permalink: /dansunrecoindecemonde/
 だから地球のすみっこから、という題名にしました。
 スイスにいたので、フランス語で。
 
+a tt !
+
 Sachie
 
 ---
