@@ -3,6 +3,23 @@ layout: page
 title: dans un recoin de ce monde
 permalink: /dansunrecoindecemonde/
 ---
+# 日々学びです
+*投稿日: 2025-09-24*  
+嬉しいことが色々ある中、新しいプロジェクトにも取り組んでいます。
+サウンドだけでなくて、時折ビジュアルに関わることもなぜかある小林さん。
+
+<img width="656" height="748" alt="スクリーンショット 2025-09-24 15 40 05" src="https://github.com/user-attachments/assets/82080820-bf4e-4d4a-be1d-63646bfe86cd" />
+
+こんな感じ。。。
+
+
+a tt !
+
+Sachie
+
+---
+
+
 # どんなこと
 *投稿日: 2025-08-27*  
 さて、これを読んでくれる皆様は、どんなことを読みたいのかなあと思っているんだけど、自分でもとても思い入れのあるスイス時代から書き出すのがいいかなあと考えていた。
