@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cucurbitaceae Studio
+title: Studio Cucurbit. 
 permalink: /cucurbit/
 ---
 
