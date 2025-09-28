@@ -31,6 +31,8 @@ navigation:
     url: /teach
   - name: Blog
     url: /dansunrecoindecemonde
+  - name: STUDIO
+    url: /cucurbit
     
 # 每页的文章数
 paginate: 8
