@@ -14,7 +14,7 @@ permalink: /dansunrecoindecemonde/
 この間は私が今年に入ってずっと心を奪われっぱなしのミーアキャットに一緒に会いに行ってくれました。
 いくつかの写真たち。
 <p align="center">
-  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/cucurbit.gif" width="20%">
+  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/d1.jpg" width="20%">
 
 しょーじパイセンとの最近について、もうちょこっと次の記事で書こうと思います。嬉しいお知らせもアリ。(えみちゃんありがと❤️)
 
