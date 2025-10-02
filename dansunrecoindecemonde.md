@@ -15,6 +15,7 @@ permalink: /dansunrecoindecemonde/
 いくつかの写真たち。
 <p align="center">
   <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/d1.jpg" width="20%">
+  (最後の黒猫は先輩の猫ごんちゃん、わたしと相性がいい。アレルギーが、、)
 
 しょーじパイセンとの最近について、もうちょこっと次の記事で書こうと思います。嬉しいお知らせもアリ。(えみちゃんありがと❤️)
 
