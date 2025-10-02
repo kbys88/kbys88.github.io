@@ -29,9 +29,9 @@ Sachie
 *投稿日: 2025-09-24*  
 嬉しいことが色々ある中、新しいプロジェクトにも取り組んでいます。
 サウンドだけでなくて、時折ビジュアルに関わることもなぜかある小林さん。
-
-<img width="656" height="748" alt="スクリーンショット 2025-09-24 15 40 05" src="https://github.com/user-attachments/assets/82080820-bf4e-4d4a-be1d-63646bfe86cd" />
-
+<p align="center">
+<img width="656" height="748" alt="スクリーンショット 2025-09-24 15 40 05" src="https://github.com/user-attachments/assets/82080820-bf4e-4d4a-be1d-63646bfe86cd" width="50%">
+</p>
 こんな感じ。。。
 
 
