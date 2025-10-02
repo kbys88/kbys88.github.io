@@ -4,7 +4,7 @@ title: dans un recoin de ce monde
 permalink: /dansunrecoindecemonde/
 ---
 # 日々侘び寂びです
-*投稿日: 2025-09-24*  
+*投稿日: 2025-10-2*  
 地獄みたいな暑さの夏がやっと終わった感じの最近ですね。
 みなさん干からびてませんか。
 
