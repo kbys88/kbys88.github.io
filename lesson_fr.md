@@ -88,6 +88,14 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
        data-fr="Sachie Kobayashi (née en 1990 au Japon) est compositrice, explorant la création musicale intuitive et l’expression inspirée par les phénomènes sociaux. Elle a étudié le piano dès l’âge de sept ans et la composition à vingt ans, et a obtenu un Master en Composition et Pédagogie Musicale ainsi qu’un Master en Éducation Musicale à la Haute École de Musique de Genève. Ses œuvres ont été jouées dans le monde entier, avec des collaborations incluant Klangforum Wien, Ensemble Modern, Ensemble Proton Bern et The Geidai Philharmonia Orchestra. Sachie a participé au programme de composition de l’IRCAM à Paris, a remporté de nombreux prix dont le impuls International Composition Competition 2023, et a reçu des bourses du gouvernement suisse, de la Fondation Nomura et de la Fondation Kakehashi. Ses œuvres récentes intègrent vidéo, scène et multimédia, reliant la musique traditionnelle et contemporaine."></p>
   </div>
 
+  <!-- Beginner Section -->
+<div class="card beginner">
+  <h2 data-en="For Beginners" data-fr="Pour Débutants"></h2>
+  <p data-en="Whether you are a child or an adult, I offer gentle and careful guidance for beginners. Lessons cover solfège, music theory, and composition, and I can also incorporate elements of Japanese pop music to make learning engaging and fun. With my experience at the Haute École de Musique de Genève and practical training across Europe, I adapt lessons to your pace and interests."
+     data-fr="Que vous soyez enfant ou adulte, je propose un enseignement doux et attentif pour les débutants. Les cours couvrent le solfège, la théorie musicale et la composition, et je peux également intégrer des éléments de la musique pop japonaise pour rendre l’apprentissage plaisant et motivant. Grâce à mon expérience à la Haute École de Musique de Genève et à mes stages pratiques en Europe, j’adapte les cours à votre rythme et à vos intérêts."></p>
+</div>
+
+
   <!-- Tutorial Video Section -->
   <div class="card">
     <h2 data-en="Tutorial Video (€17/CHF17)" data-fr="Vidéo Tutoriel (17€ / 17CHF)"></h2>
