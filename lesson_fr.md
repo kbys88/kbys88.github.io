@@ -94,6 +94,10 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
   <p data-en="Whether you are a child or an adult, I offer gentle and careful guidance for beginners. Lessons cover solfège, music theory, and composition, and I can also incorporate elements of Japanese pop music to make learning engaging and fun. With my experience at the Haute École de Musique de Genève and practical training across Europe, I adapt lessons to your pace and interests."
      data-fr="Que vous soyez enfant ou adulte, je propose un enseignement doux et attentif pour les débutants. Les cours couvrent le solfège, la théorie musicale et la composition, et je peux également intégrer des éléments de la musique pop japonaise pour rendre l’apprentissage plaisant et motivant. Grâce à mon expérience à la Haute École de Musique de Genève et à mes stages pratiques en Europe, j’adapte les cours à votre rythme et à vos intérêts."></p>
 </div>
+<div class="sound-gallery">
+    <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson07.jpg" alt="Lesson 07" class="sound-item">
+  </div>
+
 
 
   <!-- Tutorial Video Section -->
