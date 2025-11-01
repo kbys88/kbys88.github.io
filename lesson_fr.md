@@ -110,4 +110,28 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
     <h3 data-en="FAQ" data-fr="FAQ"></h3>
     <p class="small">
       <span data-en="Q: When can I watch the video? A: After payment, a link will be sent by email." data-fr="Q : Quand puis-je regarder la vidéo ? R : Après le paiement, un lien sera envoyé par email."></span><br><br>
-      <span data-en="Q: Can I cancel a lesson? A: Cancel at least 24h before the scheduled time."
+      <span data-en="Q: Can I cancel a lesson? A: Cancel at least 24h before the scheduled time." data-fr="Q : Puis-je annuler un cours ? R : Annulez au moins 24h avant l'heure prévue."></span>
+    </p>
+  </div>
+</div>
+
+<script>
+  const enBtn = document.getElementById('enBtn');
+  const frBtn = document.getElementById('frBtn');
+  const elements = document.querySelectorAll('[data-en]');
+
+  function setLanguage(lang) {
+    elements.forEach(el => {
+      el.innerHTML = el.getAttribute('data-' + lang); // innerHTMLに変更して<span>対応
+    });
+    if(lang==='en'){ enBtn.classList.add('active'); frBtn.classList.remove('active'); }
+    else{ frBtn.classList.add('active'); enBtn.classList.remove('active'); }
+  }
+
+  enBtn.addEventListener('click',()=>setLanguage('en'));
+  frBtn.addEventListener('click',()=>setLanguage('fr'));
+
+  setLanguage('en'); // 初期表示は英語
+</script>
+</body>
+</html>
