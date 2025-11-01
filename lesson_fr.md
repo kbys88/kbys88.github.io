@@ -1,8 +1,3 @@
----
-layout: page
-title: Lesson_FR
-permalink: /lesson_fr/
----
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,7 +15,7 @@ permalink: /lesson_fr/
   .lang-btns button.active{background:#2b6cb0;color:#fff;}
   .bio, .greeting {margin-bottom:20px;}
   .video-container {margin-bottom:20px; border-radius:10px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.06);}
-  video {width:100%; height:auto; display:block;}
+  .video-container iframe {width:100%; height:450px; border:0;}
 </style>
 </head>
 <body>
@@ -40,12 +35,9 @@ permalink: /lesson_fr/
        data-fr="Bonjour, je suis Sachie Kobayashi, compositrice, créatrice et artiste. Titulaire d’un Master en Composition et Pédagogie Musicale en Suisse, je peux vous offrir un enseignement attentif et personnalisé. J’ai une expérience internationale dans de nombreux contextes—Paris, Suisse, Autriche, Belgique, Pays-Bas, Corée du Sud et Tokyo. Mon travail couvre la musique contemporaine, la composition pour le théâtre, ainsi que des projets innovants intégrant l’IA et la réalité virtuelle."></p>
   </div>
 
-  <!-- Video Section -->
+  <!-- YouTube Video Section -->
   <div class="video-container">
-<video controls autoplay loop muted playsinline>
-  <source src="images/SACHIE_inst.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+    <iframe src="https://www.youtube.com/embed/EOf82PRXh3Y" title="Sachie Kobayashi Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
   <!-- Bio Section -->
@@ -97,9 +89,7 @@ permalink: /lesson_fr/
   enBtn.addEventListener('click',()=>setLanguage('en'));
   frBtn.addEventListener('click',()=>setLanguage('fr'));
 
-  // 初期表示は英語
-  setLanguage('en');
+  setLanguage('en'); // 初期表示は英語
 </script>
 </body>
 </html>
-
