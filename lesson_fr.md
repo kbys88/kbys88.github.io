@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Sachie Kobayashi — Online Tutorials & Lessons</title>
+<title>Sachie Kobayashi — Online Exchange & Lessons</title>
 <style>
   body { font-family: sans-serif; background:#f7fafc; margin:0; color:#111;}
   .container{max-width:800px;margin:40px auto;padding:20px;}
@@ -27,12 +27,12 @@
   </div>
 
   <!-- Hero Title -->
-  <h1 data-en="Sachie Kobayashi — Online Tutorials & Lessons" data-fr="Sachie Kobayashi — Tutoriels & Cours en ligne"></h1>
+  <h1 data-en="Sachie Kobayashi — Online Exchange & Lessons" data-fr="Sachie Kobayashi — Échanges et Cours en ligne"></h1>
 
   <!-- Greeting Section -->
   <div class="card greeting">
-    <p data-en="Hello, I’m Sachie Kobayashi, composer, creator, and artist. With a Master’s in Composition and Music Education from Switzerland, I can provide careful, personalized guidance. I have experience performing and collaborating internationally—in Paris, Switzerland, Austria, Belgium, the Netherlands, South Korea, and Tokyo. My work spans contemporary music, theater compositions, and innovative projects integrating AI and VR."
-       data-fr="Bonjour, je suis Sachie Kobayashi, compositrice, créatrice et artiste. Titulaire d’un Master en Composition et Pédagogie Musicale en Suisse, je peux vous offrir un enseignement attentif et personnalisé. J’ai une expérience internationale dans de nombreux contextes—Paris, Suisse, Autriche, Belgique, Pays-Bas, Corée du Sud et Tokyo. Mon travail couvre la musique contemporaine, la composition pour le théâtre, ainsi que des projets innovants intégrant l’IA et la réalité virtuelle."></p>
+    <p data-en="Hello, I’m Sachie Kobayashi, composer, creator, and artist. With a Master’s in Composition and Music Education from Switzerland, I offer careful, personalized guidance. Here, you can access not only tutorials and private lessons, but also professional exchange sessions—opportunities to discuss, collaborate, and learn directly from an internationally active artist. My work spans contemporary music, theater compositions, and innovative projects integrating AI and VR."
+       data-fr="Bonjour, je suis Sachie Kobayashi, compositrice, créatrice et artiste. Titulaire d’un Master en Composition et Pédagogie Musicale en Suisse, je peux vous offrir un enseignement attentif et personnalisé. Sur cette plateforme, vous pouvez accéder non seulement à des tutoriels et des cours privés, mais aussi à des sessions d’échange professionnel — des opportunités pour discuter, collaborer et apprendre directement auprès d’une artiste active à l’international. Mon travail couvre la musique contemporaine, la composition pour le théâtre, ainsi que des projets innovants intégrant l’IA et la réalité virtuelle."></p>
   </div>
 
   <!-- YouTube Video Section -->
@@ -56,11 +56,11 @@
     <a href="https://systeme.io/your-tutorial-link" target="_blank" class="btn" data-en="Buy Tutorial" data-fr="Acheter le tutoriel"></a>
   </div>
 
-  <!-- Private Lesson -->
+  <!-- Private Lesson & Professional Exchange -->
   <div class="card">
-    <h2 data-en="Book a Private Lesson (50€ / CHF / $)" data-fr="Réserver un cours privé (50€ / CHF / $)"></h2>
-    <p class="small" data-en="Choose your preferred date and pay securely." data-fr="Choisissez la date souhaitée et payez en toute sécurité."></p>
-    <a href="https://systeme.io/your-lesson-link" target="_blank" class="btn" data-en="Book Lesson" data-fr="Réserver le cours"></a>
+    <h2 data-en="Book a Private Lesson / Professional Exchange (50€ / CHF / $)" data-fr="Réserver un Cours Privé / Échange Professionnel (50€ / CHF / $)"></h2>
+    <p class="small" data-en="Choose your preferred date for a private lesson or a professional exchange session and pay securely." data-fr="Choisissez la date souhaitée pour un cours privé ou une session d’échange professionnel et payez en toute sécurité."></p>
+    <a href="https://systeme.io/your-lesson-link" target="_blank" class="btn" data-en="Book Lesson / Exchange" data-fr="Réserver Cours / Échange"></a>
   </div>
 
   <!-- FAQ -->
