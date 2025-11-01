@@ -31,8 +31,15 @@ permalink: /lesson_fr/
     <button id="frBtn">Français</button>
   </div>
 
+
   <!-- Hero Title -->
   <h1 data-en="Sachie Kobayashi — Online Exchange & Lessons" data-fr="Sachie Kobayashi — Échanges et Cours en ligne"></h1>
+
+
+  <img 
+    src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson01.jpg" 
+    alt="About" 
+    class="sound-item"/>
 
   <!-- Greeting Section -->
   <div class="card greeting">
