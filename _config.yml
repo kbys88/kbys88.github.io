@@ -27,8 +27,6 @@ navigation:
     url: /works
   - name: Pic
     url: /pic
-  - name: Teach
-    url: /teach
   - name: Blog
     url: /dansunrecoindecemonde
   - name: STUDIO
