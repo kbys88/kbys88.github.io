@@ -49,6 +49,7 @@ permalink: /lesson_fr/
 </head>
 <body>
 <div class="container">
+
   <!-- Language Buttons -->
   <div class="lang-btns">
     <button id="enBtn" class="active">English</button>
@@ -57,6 +58,16 @@ permalink: /lesson_fr/
 
   <!-- Hero Title -->
   <h1 data-en="Sachie Kobayashi — Online Exchange & Lessons" data-fr="Sachie Kobayashi — Échanges et Cours en ligne"></h1>
+
+  <!-- Photo Gallery directly below title -->
+  <div class="sound-gallery">
+    <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson01.jpg" alt="Lesson 01" class="sound-item">
+    <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson02.jpg" alt="Lesson 02" class="sound-item">
+    <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson03.jpg" alt="Lesson 03" class="sound-item">
+    <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson04.jpg" alt="Lesson 04" class="sound-item">
+    <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson05.jpg" alt="Lesson 05" class="sound-item">
+    <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson06.jpg" alt="Lesson 06" class="sound-item">
+  </div>
 
   <!-- Greeting Section -->
   <div class="card greeting">
@@ -82,17 +93,9 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
     <h2 data-en="Tutorial Video (€17/CHF17)" data-fr="Vidéo Tutoriel (17€ / 17CHF)"></h2>
     <p data-en="This 5-hour tutorial shows how a professional composer creates a musical work using Ableton Live. Step-by-step guidance covers composition, arrangement, sound design, and final production. Includes a 30-minute trial lesson to ask questions and try techniques directly with Sachie."
        data-fr="Ce tutoriel de 5 heures montre comment un compositeur professionnel crée une œuvre musicale avec Ableton Live. Des explications étape par étape couvrent la composition, l’arrangement, le design sonore et la production finale. Comprend une leçon d’essai de 30 minutes pour poser des questions et expérimenter les techniques directement avec Sachie."></p>
-
-    <!-- Image Gallery -->
-    <div class="sound-gallery">
-      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson01.jpg" alt="Lesson 01" class="sound-item">
-      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson02.jpg" alt="Lesson 02" class="sound-item">
-      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson03.jpg" alt="Lesson 03" class="sound-item">
-      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson04.jpg" alt="Lesson 04" class="sound-item">
-      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson05.jpg" alt="Lesson 05" class="sound-item">
-      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson06.jpg" alt="Lesson 06" class="sound-item">
+    <div style="height:220px;background:#e2e8f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#475569;">
+      <span data-en="Video Thumbnail" data-fr="Vignette vidéo"></span>
     </div>
-
     <p class="small" data-en="After purchase, a viewing link will be sent by email." data-fr="Après l'achat, un lien pour visionner la vidéo sera envoyé par email."></p>
     <a href="https://systeme.io/your-tutorial-link" target="_blank" class="btn" data-en="Buy Tutorial" data-fr="Acheter le tutoriel"></a>
   </div>
@@ -122,7 +125,7 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
 
   function setLanguage(lang) {
     elements.forEach(el => {
-      el.innerHTML = el.getAttribute('data-' + lang); // innerHTMLに変更して<span>対応
+      el.innerHTML = el.getAttribute('data-' + lang); // innerHTMLで<span>対応
     });
     if(lang==='en'){ enBtn.classList.add('active'); frBtn.classList.remove('active'); }
     else{ frBtn.classList.add('active'); enBtn.classList.remove('active'); }
