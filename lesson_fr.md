@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lesson_FR
+title: Music/Composition/Sound Design/Solfege Lesson from the World !
 permalink: /lesson_fr/
 ---
 
