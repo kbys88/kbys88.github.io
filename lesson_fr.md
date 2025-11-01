@@ -3,6 +3,7 @@ layout: page
 title: Lesson_FR
 permalink: /lesson_fr/
 ---
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -12,11 +13,11 @@ permalink: /lesson_fr/
   .container{max-width:800px;margin:40px auto;padding:20px;}
   h1,h2,h3{margin-top:0;}
   .card{background:#fff;padding:20px;margin-bottom:20px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.06);}
-  .btn{display:inline-block;padding:12px 20px;border-radius:8px;background:#2b6cb0;color:white;text-decoration:none;font-weight:600;}
+  .btn{display:inline-block;padding:12px 20px;border-radius:8px;background:#333;color:#fff;text-decoration:none;font-weight:600;}
   .small{font-size:0.9rem;color:#555;margin-top:8px;}
   .lang-btns{margin-bottom:20px;}
-  .lang-btns button{margin-right:8px;padding:6px 12px;border-radius:6px;border:1px solid #2b6cb0;background:#fff;color:#2b6cb0;cursor:pointer;}
-  .lang-btns button.active{background:#2b6cb0;color:#fff;}
+  .lang-btns button{margin-right:8px;padding:6px 12px;border-radius:6px;border:1px solid #333;background:#fff;color:#333;cursor:pointer;}
+  .lang-btns button.active{background:#333;color:#fff;}
   .bio, .greeting {margin-bottom:20px;}
   .video-container {margin-bottom:20px; border-radius:10px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.06);}
   .video-container iframe {width:100%; height:450px; border:0;}
@@ -35,8 +36,10 @@ permalink: /lesson_fr/
 
   <!-- Greeting Section -->
   <div class="card greeting">
-    <p data-en="Hello, I’m Sachie Kobayashi, composer, creator, and artist. With a Master’s in Composition and Music Education from Switzerland, I offer careful, personalized guidance. Here, you can access not only tutorials and private lessons, but also professional exchange sessions—opportunities to discuss, collaborate, and learn directly from an internationally active artist. My work spans contemporary music, theater compositions, and innovative projects integrating AI and VR."
-       data-fr="Bonjour, je suis Sachie Kobayashi, compositrice, créatrice et artiste. Titulaire d’un Master en Composition et Pédagogie Musicale en Suisse, je peux vous offrir un enseignement attentif et personnalisé. Sur cette plateforme, vous pouvez accéder non seulement à des tutoriels et des cours privés, mais aussi à des sessions d’échange professionnel — des opportunités pour discuter, collaborer et apprendre directement auprès d’une artiste active à l’international. Mon travail couvre la musique contemporaine, la composition pour le théâtre, ainsi que des projets innovants intégrant l’IA et la réalité virtuelle."></p>
+    <p data-en="Hello, I’m Sachie Kobayashi, composer, creator, and artist. With a Master’s in Composition and Music Education from Switzerland, I offer careful, personalized guidance. Here, you can access not only tutorials and private lessons, but also professional exchange sessions—opportunities to discuss, collaborate, and learn directly from an internationally active artist. My work spans contemporary music, theater compositions, and innovative projects integrating AI and VR.  
+For professional collaborators interested in working together, please contact me at info@sachiekobayashi.com."
+       data-fr="Bonjour, je suis Sachie Kobayashi, compositrice, créatrice et artiste. Titulaire d’un Master en Composition et Pédagogie Musicale en Suisse, je peux vous offrir un enseignement attentif et personnalisé. Sur cette plateforme, vous pouvez accéder non seulement à des tutoriels et des cours privés, mais aussi à des sessions d’échange professionnel — des opportunités pour discuter, collaborer et apprendre directement auprès d’une artiste active à l’international. Mon travail couvre la musique contemporaine, la composition pour le théâtre, ainsi que des projets innovants intégrant l’IA et la réalité virtuelle.  
+Pour les professionnels souhaitant collaborer, veuillez me contacter à info@sachiekobayashi.com."></p>
   </div>
 
   <!-- YouTube Video Section -->
@@ -50,9 +53,11 @@ permalink: /lesson_fr/
        data-fr="Sachie Kobayashi (née en 1990 au Japon) est compositrice, explorant la création musicale intuitive et l’expression inspirée par les phénomènes sociaux. Elle a étudié le piano dès l’âge de sept ans et la composition à vingt ans, et a obtenu un Master en Composition et Pédagogie Musicale ainsi qu’un Master en Éducation Musicale à la Haute École de Musique de Genève. Ses œuvres ont été jouées dans le monde entier, avec des collaborations incluant Klangforum Wien, Ensemble Modern, Ensemble Proton Bern et The Geidai Philharmonia Orchestra. Sachie a participé au programme de composition de l’IRCAM à Paris, a remporté de nombreux prix dont le impuls International Composition Competition 2023, et a reçu des bourses du gouvernement suisse, de la Fondation Nomura et de la Fondation Kakehashi. Ses œuvres récentes intègrent vidéo, scène et multimédia, reliant la musique traditionnelle et contemporaine."></p>
   </div>
 
-  <!-- Tutorial Video Purchase -->
+  <!-- Tutorial Video Section -->
   <div class="card">
     <h2 data-en="Tutorial Video (€17/CHF17)" data-fr="Vidéo Tutoriel (17€ / 17CHF)"></h2>
+    <p data-en="This 5-hour tutorial shows how a professional composer creates a musical work using Ableton Live. Step-by-step guidance covers composition, arrangement, sound design, and final production. Includes a 30-minute trial lesson to ask questions and try techniques directly with Sachie."
+       data-fr="Ce tutoriel de 5 heures montre comment un compositeur professionnel crée une œuvre musicale avec Ableton Live. Des explications étape par étape couvrent la composition, l’arrangement, le design sonore et la production finale. Comprend une leçon d’essai de 30 minutes pour poser des questions et expérimenter les techniques directement avec Sachie."></p>
     <div style="height:220px;background:#e2e8f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#475569;">
       <span data-en="Video Thumbnail" data-fr="Vignette vidéo"></span>
     </div>
@@ -63,7 +68,8 @@ permalink: /lesson_fr/
   <!-- Private Lesson & Professional Exchange -->
   <div class="card">
     <h2 data-en="Book a Private Lesson / Professional Exchange (50€ / CHF / $)" data-fr="Réserver un Cours Privé / Échange Professionnel (50€ / CHF / $)"></h2>
-    <p class="small" data-en="Choose your preferred date for a private lesson or a professional exchange session and pay securely." data-fr="Choisissez la date souhaitée pour un cours privé ou une session d’échange professionnel et payez en toute sécurité."></p>
+    <p class="small" data-en="Choose your preferred date for a private lesson or professional exchange session and pay securely. For professional collaboration inquiries, contact info@sachiekobayashi.com."
+       data-fr="Choisissez la date souhaitée pour un cours privé ou une session d’échange professionnel et payez en toute sécurité. Pour les demandes de collaboration professionnelle, contactez info@sachiekobayashi.com."></p>
     <a href="https://systeme.io/your-lesson-link" target="_blank" class="btn" data-en="Book Lesson / Exchange" data-fr="Réserver Cours / Échange"></a>
   </div>
 
