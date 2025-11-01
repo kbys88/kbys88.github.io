@@ -3,7 +3,7 @@ layout: page
 title: Lesson_FR
 permalink: /lesson_fr/
 ---
-<!doctype html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -21,6 +21,30 @@ permalink: /lesson_fr/
   .bio, .greeting {margin-bottom:20px;}
   .video-container {margin-bottom:20px; border-radius:10px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.06);}
   .video-container iframe {width:100%; height:450px; border:0;}
+  /* ギャラリー */
+  .sound-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+  }
+  .sound-item {
+    width: calc(33.333% - 15px);
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  @media (max-width: 768px) {
+    .sound-item { width: calc(50% - 15px); }
+  }
+  @media (max-width: 480px) {
+    .sound-item { width: 100%; }
+  }
+  /* 赤色メールアドレス */
+  .highlight-email {
+    color: red;
+    font-weight: 600;
+  }
 </style>
 </head>
 <body>
@@ -31,25 +55,15 @@ permalink: /lesson_fr/
     <button id="frBtn">Français</button>
   </div>
 
-
   <!-- Hero Title -->
   <h1 data-en="Sachie Kobayashi — Online Exchange & Lessons" data-fr="Sachie Kobayashi — Échanges et Cours en ligne"></h1>
-
-<div class="sound-gallery">
-  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson01.jpg" alt="Lesson 01" class="sound-item">
-  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson02.jpg" alt="Lesson 02" class="sound-item">
-  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson03.jpg" alt="Lesson 03" class="sound-item">
-  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson04.jpg" alt="Lesson 04" class="sound-item">
-  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson05.jpg" alt="Lesson 05" class="sound-item">
-  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson06.jpg" alt="Lesson 06" class="sound-item">
-</div>
 
   <!-- Greeting Section -->
   <div class="card greeting">
     <p data-en="Hello, I’m Sachie Kobayashi, composer, creator, and artist. With a Master’s in Composition and Music Education from Switzerland, I offer careful, personalized guidance. Here, you can access not only tutorials and private lessons, but also professional exchange sessions—opportunities to discuss, collaborate, and learn directly from an internationally active artist. My work spans contemporary music, theater compositions, and innovative projects integrating AI and VR.  
-For professional collaborators interested in working together, please contact me at info@sachiekobayashi.com."
+For professional collaborators interested in working together, please contact <span class='highlight-email'>info@sachiekobayashi.com</span>."
        data-fr="Bonjour, je suis Sachie Kobayashi, compositrice, créatrice et artiste. Titulaire d’un Master en Composition et Pédagogie Musicale en Suisse, je peux vous offrir un enseignement attentif et personnalisé. Sur cette plateforme, vous pouvez accéder non seulement à des tutoriels et des cours privés, mais aussi à des sessions d’échange professionnel — des opportunités pour discuter, collaborer et apprendre directement auprès d’une artiste active à l’international. Mon travail couvre la musique contemporaine, la composition pour le théâtre, ainsi que des projets innovants intégrant l’IA et la réalité virtuelle.  
-Pour les professionnels souhaitant collaborer, veuillez me contacter à info@sachiekobayashi.com."></p>
+Pour les professionnels souhaitant collaborer, veuillez contacter <span class='highlight-email'>info@sachiekobayashi.com</span>."></p>
   </div>
 
   <!-- YouTube Video Section -->
@@ -68,9 +82,17 @@ Pour les professionnels souhaitant collaborer, veuillez me contacter à info@sac
     <h2 data-en="Tutorial Video (€17/CHF17)" data-fr="Vidéo Tutoriel (17€ / 17CHF)"></h2>
     <p data-en="This 5-hour tutorial shows how a professional composer creates a musical work using Ableton Live. Step-by-step guidance covers composition, arrangement, sound design, and final production. Includes a 30-minute trial lesson to ask questions and try techniques directly with Sachie."
        data-fr="Ce tutoriel de 5 heures montre comment un compositeur professionnel crée une œuvre musicale avec Ableton Live. Des explications étape par étape couvrent la composition, l’arrangement, le design sonore et la production finale. Comprend une leçon d’essai de 30 minutes pour poser des questions et expérimenter les techniques directement avec Sachie."></p>
-    <div style="height:220px;background:#e2e8f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#475569;">
-      <span data-en="Video Thumbnail" data-fr="Vignette vidéo"></span>
+
+    <!-- Image Gallery -->
+    <div class="sound-gallery">
+      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson01.jpg" alt="Lesson 01" class="sound-item">
+      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson02.jpg" alt="Lesson 02" class="sound-item">
+      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson03.jpg" alt="Lesson 03" class="sound-item">
+      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson04.jpg" alt="Lesson 04" class="sound-item">
+      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson05.jpg" alt="Lesson 05" class="sound-item">
+      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson06.jpg" alt="Lesson 06" class="sound-item">
     </div>
+
     <p class="small" data-en="After purchase, a viewing link will be sent by email." data-fr="Après l'achat, un lien pour visionner la vidéo sera envoyé par email."></p>
     <a href="https://systeme.io/your-tutorial-link" target="_blank" class="btn" data-en="Buy Tutorial" data-fr="Acheter le tutoriel"></a>
   </div>
@@ -78,8 +100,8 @@ Pour les professionnels souhaitant collaborer, veuillez me contacter à info@sac
   <!-- Private Lesson & Professional Exchange -->
   <div class="card">
     <h2 data-en="Book a Private Lesson / Professional Exchange (50€ / CHF / $)" data-fr="Réserver un Cours Privé / Échange Professionnel (50€ / CHF / $)"></h2>
-    <p class="small" data-en="Choose your preferred date for a private lesson or professional exchange session and pay securely. For professional collaboration inquiries, contact info@sachiekobayashi.com."
-       data-fr="Choisissez la date souhaitée pour un cours privé ou une session d’échange professionnel et payez en toute sécurité. Pour les demandes de collaboration professionnelle, contactez info@sachiekobayashi.com."></p>
+    <p class="small" data-en="Choose your preferred date for a private lesson or professional exchange session and pay securely. For professional collaboration inquiries, contact <span class='highlight-email'>info@sachiekobayashi.com</span>."
+       data-fr="Choisissez la date souhaitée pour un cours privé ou une session d’échange professionnel et payez en toute sécurité. Pour les demandes de collaboration professionnelle, contactez <span class='highlight-email'>info@sachiekobayashi.com</span>."></p>
     <a href="https://systeme.io/your-lesson-link" target="_blank" class="btn" data-en="Book Lesson / Exchange" data-fr="Réserver Cours / Échange"></a>
   </div>
 
@@ -88,28 +110,4 @@ Pour les professionnels souhaitant collaborer, veuillez me contacter à info@sac
     <h3 data-en="FAQ" data-fr="FAQ"></h3>
     <p class="small">
       <span data-en="Q: When can I watch the video? A: After payment, a link will be sent by email." data-fr="Q : Quand puis-je regarder la vidéo ? R : Après le paiement, un lien sera envoyé par email."></span><br><br>
-      <span data-en="Q: Can I cancel a lesson? A: Cancel at least 24h before the scheduled time." data-fr="Q : Puis-je annuler un cours ? R : Annulez au moins 24h avant l'heure prévue."></span>
-    </p>
-  </div>
-</div>
-
-<script>
-  const enBtn = document.getElementById('enBtn');
-  const frBtn = document.getElementById('frBtn');
-  const elements = document.querySelectorAll('[data-en]');
-
-  function setLanguage(lang) {
-    elements.forEach(el => {
-      el.textContent = el.getAttribute('data-' + lang);
-    });
-    if(lang==='en'){ enBtn.classList.add('active'); frBtn.classList.remove('active'); }
-    else{ frBtn.classList.add('active'); enBtn.classList.remove('active'); }
-  }
-
-  enBtn.addEventListener('click',()=>setLanguage('en'));
-  frBtn.addEventListener('click',()=>setLanguage('fr'));
-
-  setLanguage('en'); // 初期表示は英語
-</script>
-</body>
-</html>
+      <span data-en="Q: Can I cancel a lesson? A: Cancel at least 24h before the scheduled time."
