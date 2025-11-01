@@ -100,13 +100,13 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
     <a href="https://systeme.io/your-tutorial-link" target="_blank" class="btn" data-en="Buy Tutorial" data-fr="Acheter le tutoriel"></a>
   </div>
 
-  <!-- Private Lesson & Professional Exchange -->
-  <div class="card">
-    <h2 data-en="Book a Private Lesson / Professional Exchange (50€ / CHF / $)" data-fr="Réserver un Cours Privé / Échange Professionnel (50€ / CHF / $)"></h2>
-    <p class="small" data-en="Choose your preferred date for a private lesson or professional exchange session and pay securely. For professional collaboration inquiries, contact <span class='highlight-email'>info@sachiekobayashi.com</span>."
-       data-fr="Choisissez la date souhaitée pour un cours privé ou une session d’échange professionnel et payez en toute sécurité. Pour les demandes de collaboration professionnelle, contactez <span class='highlight-email'>info@sachiekobayashi.com</span>."></p>
-    <a href="https://systeme.io/your-lesson-link" target="_blank" class="btn" data-en="Book Lesson / Exchange" data-fr="Réserver Cours / Échange"></a>
-  </div>
+<!-- Private Lesson & Professional Exchange -->
+<div class="card">
+  <h2 data-en="Book a Private Lesson / Professional Exchange (50€ / CHF / $)" data-fr="Réserver un Cours Privé / Échange Professionnel (50€ / CHF / $)"></h2>
+  <p class="small" data-en="Choose your preferred date for a private lesson or professional exchange session and pay securely. For professional collaboration inquiries, contact info@sachiekobayashi.com."
+     data-fr="Choisissez la date souhaitée pour un cours privé ou une session d’échange professionnel et payez en toute sécurité. Pour les demandes de collaboration professionnelle, contactez info@sachiekobayashi.com."></p>
+  <a href="https://systeme.io/your-lesson-link" target="_blank" class="btn" data-en="Book Lesson / Exchange" data-fr="Réserver Cours / Échange"></a>
+</div>
 
   <!-- FAQ -->
   <div class="card">
