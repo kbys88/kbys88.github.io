@@ -18,26 +18,43 @@ permalink: /lesson_fr/
   .lang-btns{margin-bottom:20px;}
   .lang-btns button{margin-right:8px;padding:6px 12px;border-radius:6px;border:1px solid #2b6cb0;background:#fff;color:#2b6cb0;cursor:pointer;}
   .lang-btns button.active{background:#2b6cb0;color:#fff;}
-  .bio {margin-bottom:20px;}
+  .bio, .greeting {margin-bottom:20px;}
+  .video-container {margin-bottom:20px; border-radius:10px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.06);}
+  video {width:100%; height:auto; display:block;}
 </style>
 </head>
 <body>
 <div class="container">
+  <!-- Language Buttons -->
   <div class="lang-btns">
     <button id="enBtn" class="active">English</button>
     <button id="frBtn">Français</button>
   </div>
 
-  <!-- Hero Section / Title -->
+  <!-- Hero Title -->
   <h1 data-en="Sachie Kobayashi — Online Tutorials & Lessons" data-fr="Sachie Kobayashi — Tutoriels & Cours en ligne"></h1>
+
+  <!-- Greeting Section -->
+  <div class="card greeting">
+    <p data-en="Hello, I’m Sachie Kobayashi, composer, creator, and artist. With a Master’s in Composition and Music Education from Switzerland, I can provide careful, personalized guidance. I have experience performing and collaborating internationally—in Paris, Switzerland, Austria, Belgium, the Netherlands, South Korea, and Tokyo. My work spans contemporary music, theater compositions, and innovative projects integrating AI and VR."
+       data-fr="Bonjour, je suis Sachie Kobayashi, compositrice, créatrice et artiste. Titulaire d’un Master en Composition et Pédagogie Musicale en Suisse, je peux vous offrir un enseignement attentif et personnalisé. J’ai une expérience internationale dans de nombreux contextes—Paris, Suisse, Autriche, Belgique, Pays-Bas, Corée du Sud et Tokyo. Mon travail couvre la musique contemporaine, la composition pour le théâtre, ainsi que des projets innovants intégrant l’IA et la réalité virtuelle."></p>
+  </div>
+
+  <!-- Video Section -->
+  <div class="video-container">
+    <video autoplay loop muted playsinline>
+      <source src="images/SACHIE_PUB.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
   <!-- Bio Section -->
   <div class="card bio">
     <p data-en="Sachie Kobayashi (b. 1990, Japan) is a composer exploring intuitive musical creation and expression inspired by social phenomena. She studied piano from age seven and composition from twenty, completing a Master’s in Composition and Music Theory at Haute École de Musique de Genève, and a Master’s in Music Education. Her works have been performed worldwide, including collaborations with Klangforum Wien, Ensemble Modern, Ensemble Proton Bern, and The Geidai Philharmonia Orchestra. Sachie has participated in IRCAM’s composition program in Paris, won numerous prizes including the impuls International Composition Competition 2023, and received scholarships from the Swiss Government, Nomura Foundation, and Kakehashi Foundation. She integrates video, stage, and multimedia in her recent works, bridging traditional and contemporary music expression."
-       data-fr="Sachie Kobayashi (née en 1990 au Japon) est compositrice, explorant la création musicale intuitive et l’expression inspirée par les phénomènes sociaux. Elle a étudié le piano dès l’âge de sept ans et la composition à vingt ans, et a obtenu un Master en Composition et Théorie Musicale ainsi qu’un Master en Éducation Musicale à la Haute École de Musique de Genève. Ses œuvres ont été jouées dans le monde entier, avec des collaborations incluant Klangforum Wien, Ensemble Modern, Ensemble Proton Bern et The Geidai Philharmonia Orchestra. Sachie a participé au programme de composition de l’IRCAM à Paris, a remporté de nombreux prix dont le impuls International Composition Competition 2023, et a reçu des bourses du gouvernement suisse, de la Fondation Nomura et de la Fondation Kakehashi. Ses œuvres récentes intègrent vidéo, scène et multimédia, reliant la musique traditionnelle et contemporaine."></p>
+       data-fr="Sachie Kobayashi (née en 1990 au Japon) est compositrice, explorant la création musicale intuitive et l’expression inspirée par les phénomènes sociaux. Elle a étudié le piano dès l’âge de sept ans et la composition à vingt ans, et a obtenu un Master en Composition et Pédagogie Musicale ainsi qu’un Master en Éducation Musicale à la Haute École de Musique de Genève. Ses œuvres ont été jouées dans le monde entier, avec des collaborations incluant Klangforum Wien, Ensemble Modern, Ensemble Proton Bern et The Geidai Philharmonia Orchestra. Sachie a participé au programme de composition de l’IRCAM à Paris, a remporté de nombreux prix dont le impuls International Composition Competition 2023, et a reçu des bourses du gouvernement suisse, de la Fondation Nomura et de la Fondation Kakehashi. Ses œuvres récentes intègrent vidéo, scène et multimédia, reliant la musique traditionnelle et contemporaine."></p>
   </div>
 
-  <!-- Tutorial Video -->
+  <!-- Tutorial Video Purchase -->
   <div class="card">
     <h2 data-en="Tutorial Video (€17/CHF17)" data-fr="Vidéo Tutoriel (17€ / 17CHF)"></h2>
     <div style="height:220px;background:#e2e8f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#475569;">
@@ -80,8 +97,9 @@ permalink: /lesson_fr/
   enBtn.addEventListener('click',()=>setLanguage('en'));
   frBtn.addEventListener('click',()=>setLanguage('fr'));
 
-  // 初期設定
+  // 初期表示は英語
   setLanguage('en');
 </script>
 </body>
 </html>
+
