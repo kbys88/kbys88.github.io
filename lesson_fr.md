@@ -1,4 +1,8 @@
-<!doctype html>
+---
+layout: page
+title: Lesson_FR
+permalink: /lesson_fr/
+---
 <html lang="en">
 <head>
 <meta charset="utf-8">
