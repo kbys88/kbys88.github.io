@@ -79,8 +79,11 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
 
   <!-- YouTube Video Section -->
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/EOf82PRXh3Y" title="Sachie Kobayashi Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/EOf82PRXh3Y" title="MAKE ART TOGETHER" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/BPuq3Up4hzU?si=Yd2jq30bDtcpFZdC" title="Sachie Kobayashi Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
+
+  
 
   <!-- Bio Section -->
   <div class="card bio">
