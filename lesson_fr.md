@@ -1,3 +1,9 @@
+---
+layout: page
+title: Lesson_FR
+permalink: /lesson_fr/
+---
+
 <!doctype html>
 <html lang="en">
 <head>
