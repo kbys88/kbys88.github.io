@@ -42,10 +42,10 @@ permalink: /lesson_fr/
 
   <!-- Video Section -->
   <div class="video-container">
-    <video autoplay loop muted playsinline>
-      <source src="images/SACHIE_PUB.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+<video controls autoplay loop muted playsinline>
+  <source src="images/SACHIE_PUB.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
   </div>
 
   <!-- Bio Section -->
