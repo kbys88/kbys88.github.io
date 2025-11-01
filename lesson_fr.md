@@ -35,11 +35,14 @@ permalink: /lesson_fr/
   <!-- Hero Title -->
   <h1 data-en="Sachie Kobayashi — Online Exchange & Lessons" data-fr="Sachie Kobayashi — Échanges et Cours en ligne"></h1>
 
-
-  <img 
-    src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson01.jpg" 
-    alt="About" 
-    class="sound-item"/>
+<div class="sound-gallery">
+  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson01.jpg" alt="Lesson 01" class="sound-item">
+  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson02.jpg" alt="Lesson 02" class="sound-item">
+  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson03.jpg" alt="Lesson 03" class="sound-item">
+  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson04.jpg" alt="Lesson 04" class="sound-item">
+  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson05.jpg" alt="Lesson 05" class="sound-item">
+  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson06.jpg" alt="Lesson 06" class="sound-item">
+</div>
 
   <!-- Greeting Section -->
   <div class="card greeting">
