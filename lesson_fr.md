@@ -81,6 +81,7 @@ permalink: /lesson_fr/
   </p>
 </div>
 <!-- YouTube Video Section --> <div class="video-container"> <iframe src="https://www.youtube.com/embed/iwmMEvuAfyU?si=Utb-27uorAPNFsjO" title="Sachie Kobayashi Introduction" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+
 <!-- Instructor Strengths -->
 <div class="card" style="background:#fff9e6;">
   <h2 data-en="Instructor Strengths" data-fr="Points forts de l'enseignante"></h2>
@@ -124,7 +125,7 @@ permalink: /lesson_fr/
   <p data-en="This 3-hour tutorial shows how a professional composer creates a musical work using Ableton Live."
      data-fr="Ce tutoriel de 3 heures montre comment un compositeur professionnel crée une œuvre musicale avec Ableton Live."></p>
   <div style="height:220px;background:#e2e8f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#475569;">
-    <span data-en="Video Thumbnail" data-fr="Vignette vidéo"></span>
+    <span data-en="images/comingsoon.png" data-fr="images/comingsoon.png"></span>
   </div>
   <p class="small" data-en="After purchase, a viewing link will be sent by email."
      data-fr="Après l'achat, un lien pour visionner la vidéo sera envoyé par email."></p>
