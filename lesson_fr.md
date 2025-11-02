@@ -153,23 +153,28 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
   </p>
 </div>
 
-
-<div class="card" style="text-align:center; max-width:800px; margin:40px auto; padding:20px;">
-  <h2 data-en="Book a Private Lesson / Professional Exchange (€45)" data-fr="Réserver un Cours Privé / Échange Professionnel (€45)"></h2>
-  <div class="calendly-wrapper" style="width:100%; max-width:700px; height:800px; margin:20px auto;">
-    <div class="calendly-inline-widget" 
-         data-url="https://calendly.com/sound-sachiekobayashi/new-meeting"
-         style="width:100%; height:100%;">
-    </div>
-  </div>
-</div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-
 <!-- FAQ -->
 <div class="card"> <h3 data-en="FAQ" data-fr="FAQ"></h3> <p class="small"> <span data-en="Q: When can I watch the video? A: After payment, a link will be sent by email." data-fr="Q : Quand puis-je regarder la vidéo ? R : Après le paiement, un lien sera envoyé par email."></span><br><br> <span data-en="Q: Can I cancel a lesson? A: Cancel at least 24h before the scheduled time." data-fr="Q : Puis-je annuler un cours ? R : Annulez au moins 24h avant l'heure prévue."></span> </p> </div> </div> 
 
-<script> const enBtn = document.getElementById('enBtn'); const frBtn = document.getElementById('frBtn'); const elements = document.querySelectorAll('[data-en]'); function setLanguage(lang) { elements.forEach(el => { el.innerHTML = el.getAttribute('data-' + lang); // innerHTMLで<span>対応 }); 
- if(lang==='en'){ enBtn.classList.add('active'); frBtn.classList.remove('active'); } else{ frBtn.classList.add('active'); enBtn.classList.remove('active'); } } enBtn.addEventListener('click',()=>setLanguage('en')); frBtn.addEventListener('click',()=>setLanguage('fr')); setLanguage('en'); // 初期表示は英語 
-</script> 
+<script>
+const enBtn = document.getElementById('enBtn');
+const frBtn = document.getElementById('frBtn');
+const elements = document.querySelectorAll('[data-en]');
+
+function setLanguage(lang) {
+  elements.forEach(el => el.innerHTML = el.getAttribute('data-' + lang));
+  if(lang === 'en') {
+    enBtn.classList.add('active');
+    frBtn.classList.remove('active');
+  } else {
+    frBtn.classList.add('active');
+    enBtn.classList.remove('active');
+  }
+}
+
+enBtn.addEventListener('click', () => setLanguage('en'));
+frBtn.addEventListener('click', () => setLanguage('fr'));
+</script>
+
 </body> 
 </html>
