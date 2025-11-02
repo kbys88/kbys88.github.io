@@ -154,10 +154,17 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
 </div>
 
 
-<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/sound-sachiekobayashi/new-meeting" style="min-width:320px;height:700px;"></div>
+<div class="card" style="text-align:center; max-width:800px; margin:40px auto; padding:20px;">
+  <h2 data-en="Book a Private Lesson / Professional Exchange (€45)" data-fr="Réserver un Cours Privé / Échange Professionnel (€45)"></h2>
+  <div class="calendly-wrapper" style="width:100%; max-width:700px; height:800px; margin:20px auto;">
+    <div class="calendly-inline-widget" 
+         data-url="https://calendly.com/sound-sachiekobayashi/new-meeting"
+         style="width:100%; height:100%;">
+    </div>
+  </div>
+</div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
+
 
 <!-- Stripe GeoIP Auto Currency -->
 <script>
