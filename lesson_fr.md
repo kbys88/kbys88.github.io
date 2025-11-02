@@ -105,8 +105,8 @@ async function setCurrencyLink() {
     const payButton = document.getElementById('payButton');
 
     // Stripe Checkoutリンクを置き換える
-    const stripeEUR = 'https://buy.stripe.com/test_eur_price_link'; // EURリンクに変更
-    const stripeCHF = 'https://buy.stripe.com/test_chf_price_link'; // CHFリンクに変更
+    const stripeEUR = 'https://buy.stripe.com/8x27sN78vfy1bsY0c85Ne00'; // EURリンクに変更
+    const stripeCHF = 'https://buy.stripe.com/14AbJ3eAXadHcx28IE5Ne01'; // CHFリンクに変更
 
     if(country === 'CH') {
       payButton.onclick = () => { window.location.href = stripeCHF; };
