@@ -151,8 +151,8 @@ permalink: /lesson_fr/
         data-fr="Les annulations effectuées au moins 72 heures avant l’heure prévue du cours donnent droit à un remboursement complet (100%)."></li>
     <li data-en="Cancellations made within 72 hours of the scheduled lesson are non-refundable."
         data-fr="Les annulations effectuées moins de 72 heures avant le cours ne sont pas remboursables."></li>
-    <li data-en="Rescheduling is not available for cancellations made within 48 hours of the scheduled time."
-        data-fr="Aucun report n’est possible pour les annulations effectuées dans les 48 heures précédant le cours."></li>
+    <li data-en="Rescheduling is not available for cancellations made within 72 hours of the scheduled time."
+        data-fr="Aucun report n’est possible pour les annulations effectuées dans les 72 heures précédant le cours."></li>
     <li data-en="Lessons start promptly at the scheduled time. If you are late, the remaining time will be used for your session, and extensions cannot be offered."
         data-fr="Les cours commencent à l’heure prévue. En cas de retard, le temps restant sera utilisé pour la session, sans prolongation possible."></li>
     <li data-en="In case of serious illness or technical issues, please contact info@sachiekobayashi.com to discuss a possible solution."
