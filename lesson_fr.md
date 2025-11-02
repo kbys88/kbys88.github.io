@@ -126,7 +126,7 @@ permalink: /lesson_fr/
      data-fr="Ce tutoriel de 3 heures montre comment un compositeur professionnel crée une œuvre musicale avec Ableton Live."></p>
   
   <div style="height:220px; background:#e2e8f0; border-radius:8px; display:flex; align-items:center; justify-content:center; color:#475569;">
-    <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/comingsoon.jpg" alt="comingsoon" class="sound-item" style="max-height:100%; border-radius:8px;">
+    <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/comingsoon.png" alt="comingsoon" class="sound-item" style="max-height:100%; border-radius:8px;">
   </div>
   
   <p class="small" data-en="After purchase, a viewing link will be sent by email."
