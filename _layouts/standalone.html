@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
-  {% include meta.html %}
-  {% include fonts.html %}
-
-</head>
-
+  {% include head.html %}
   <body>
+
+    <div class="layout">
+      <!-- サイドバー削除 -->
+      <!-- {% include nav.html %} -->
+
+      <div id="main" role="main" class="wrapper-content" style="width:100%;">
+        {{ content }}         <!-- メインコンテンツ -->
+      </div>
+    </div>
 
     <div class="wrapper-footer-mobile">
       <footer class="footer">
+        {% include footer.html %}
       </footer>
     </div>
 
