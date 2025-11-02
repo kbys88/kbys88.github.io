@@ -4,7 +4,6 @@ title: Music/Composition/Sound Design/Solfege Lesson from the World !
 permalink: /lesson_fr/
 ---
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
