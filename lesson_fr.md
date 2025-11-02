@@ -150,26 +150,29 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
 
 <!-- Calendly inline widget -->
 <!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/sound-sachiekobayashi/new-meeting?primary_color=00ffdd" style="min-width:320px;height:700px;"></div>
+<div style="max-width:800px; margin:0 auto; padding:20px; text-align:center;">
+  <div class="calendly-container" style="width:100%; height:800px; max-width:700px; margin:0 auto;">
+    <div class="calendly-inline-widget" 
+         data-url="https://calendly.com/sound-sachiekobayashi/new-meeting?primary_color=87a5a2" 
+         style="width:100%; height:100%;">
+    </div>
+  </div>
+</div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
 
-<!-- Language Switcher -->
-<script>
-const enBtn = document.getElementById('enBtn');
-const frBtn = document.getElementById('frBtn');
-const elements = document.querySelectorAll('[data-en]');
-
-function setLanguage(lang) {
-  elements.forEach(el => { el.innerHTML = el.getAttribute('data-' + lang); });
-  if(lang==='en'){ enBtn.classList.add('active'); frBtn.classList.remove('active'); }
-  else{ frBtn.classList.add('active'); enBtn.classList.remove('active'); }
+<style>
+/* レスポンシブ対応 */
+@media (max-width:768px) {
+  .calendly-container {
+    height:700px !important;
+  }
 }
-
-enBtn.addEventListener('click',()=>setLanguage('en'));
-frBtn.addEventListener('click',()=>setLanguage('fr'));
-setLanguage('en'); // 初期表示は英語
-</script>
+@media (max-width:480px) {
+  .calendly-container {
+    height:600px !important;
+  }
+}
+</style>
 
 <!-- Stripe GeoIP Auto Currency -->
 <script>
