@@ -9,8 +9,6 @@ permalink: /lesson_fr/
 <meta charset="utf-8">
 <title>Sachie Kobayashi — Online Exchange & Lessons (English or French)</title>
 
-
-  
 <style>
   body { font-family: sans-serif; background:#f7fafc; margin:0; color:#111;}
   .container{max-width:800px;margin:40px auto;padding:20px;}
@@ -180,19 +178,6 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
 }
 </style>
 
-<!-- Footer直前に追加 -->
-<div style="text-align:center; margin:40px 0; font-size:1.3rem; font-weight:700; color:#333;">
-  <span data-en="Looking forward to meeting you!" 
-        data-fr="Au plaisir de vous rencontrer !">
-  </span>
-</div>
-
-<!-- Footer の直後に追加 -->
-<div style="text-align:center; font-size:0.9rem; color:#777; margin:20px 0;">
-  <span data-en="&copy; 2025 Sachie Kobayashi. All rights reserved." 
-        data-fr="&copy; 2025 Sachie Kobayashi. Tous droits réservés.">
-  </span>
-</div>
 
 
 <!-- Stripe GeoIP Auto Currency -->
