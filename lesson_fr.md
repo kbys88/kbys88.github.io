@@ -147,10 +147,10 @@ permalink: /lesson_fr/
 <div class="card" style="max-width:800px; margin:40px auto; padding:20px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
   <h3 data-en="Lesson Terms & Conditions" data-fr="Conditions des Cours"></h3>
   <ul style="font-size:1.05rem; line-height:1.8; margin-top:10px;">
-    <li data-en="Cancellations made at least 72 hours before the scheduled lesson are eligible for a 100% refund."
-        data-fr="Les annulations effectuées au moins 72 heures avant l’heure prévue du cours donnent droit à un remboursement complet (100%)."></li>
-    <li data-en="Cancellations made within 72 hours of the scheduled lesson are non-refundable."
-        data-fr="Les annulations effectuées moins de 72 heures avant le cours ne sont pas remboursables."></li>
+   <!--    <li data-en="Cancellations made at least 72 hours before the scheduled lesson are eligible for a 100% refund."
+        data-fr="Les annulations effectuées au moins 72 heures avant l’heure prévue du cours donnent droit à un remboursement complet (100%)."></li> -->
+   <!--  <li data-en="Cancellations made within 72 hours of the scheduled lesson are non-refundable."
+        data-fr="Les annulations effectuées moins de 72 heures avant le cours ne sont pas remboursables."></li> -->
     <li data-en="Rescheduling is not available for cancellations made within 72 hours of the scheduled time."
         data-fr="Aucun report n’est possible pour les annulations effectuées dans les 72 heures précédant le cours."></li>
     <li data-en="Lessons start promptly at the scheduled time. If you are late, the remaining time will be used for your session, and extensions cannot be offered."
