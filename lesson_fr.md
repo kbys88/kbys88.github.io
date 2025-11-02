@@ -99,6 +99,9 @@ permalink: /lesson_fr/
      data-fr="Sachie Kobayashi (née en 1990 au Japon) est compositrice, explorant la création musicale intuitive et l’expression inspirée par les phénomènes sociaux. Elle a obtenu un Master en Composition et Théorie Musicale à la Haute École de Musique de Genève, ainsi qu’un Master en Éducation Musicale. Ses œuvres ont été jouées dans le monde entier, notamment avec Klangforum Wien et Ensemble Modern."></p>
 </div>
 
+<!-- YouTube Video Section --> 
+<div class="video-container"> <iframe src="https://www.youtube.com/embed/iwmMEvuAfyU?si=qgelS7xlMNBIVSnq" title="Sachie Kobayashi Introduction" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+
 <!-- Software -->
 <div class="card" style="background:#e6f7ff;">
   <h2 data-en="Software & Tools" data-fr="Logiciels et Outils"></h2>
