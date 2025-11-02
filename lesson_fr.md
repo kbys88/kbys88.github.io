@@ -166,7 +166,7 @@ permalink: /lesson_fr/
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <!-- Calendly inline widget end -->
 
-<!-- FAQ -->
+<!-- FAQ
 <div class="card">
   <h3>FAQ</h3>
   <p class="small">
@@ -175,7 +175,7 @@ permalink: /lesson_fr/
     <span data-en="Q: Can I cancel a lesson? A: Cancel at least 24h before the scheduled time."
           data-fr="Q : Puis-je annuler un cours ? R : Annulez au moins 24h avant l'heure prévue."></span>
   </p>
-</div>
+</div>  -->
 
 </div>
 
