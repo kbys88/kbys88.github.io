@@ -114,11 +114,8 @@ permalink: /lesson_fr/
   </ul>
 </div>
 
-<!-- Beginner -->
-<div class="card">
-  <h2 data-en="For Beginners" data-fr="Pour Débutants"></h2>
-  <p data-en="Whether you are a child or an adult, I offer gentle guidance for beginners, covering solfège, music theory, and composition. Lessons can also include Japanese pop music elements to make learning fun."
-     data-fr="Que vous soyez enfant ou adulte, je propose un enseignement doux pour les débutants, couvrant le solfège, la théorie musicale et la composition. Les cours peuvent aussi inclure des éléments de musique pop japonaise pour rendre l’apprentissage plaisant."></p>
+<!-- Beginner Section --> 
+<div class="card beginner"> <h2 data-en="For Beginners" data-fr="Pour Débutants"></h2> <p data-en="Whether you are a child or an adult, I offer gentle and careful guidance for beginners. Lessons cover solfège, music theory, and composition, and I can also incorporate elements of Japanese pop music to make learning engaging and fun. With my experience at the Haute École de Musique de Genève and practical training across Europe, I adapt lessons to your pace and interests." data-fr="Que vous soyez enfant ou adulte, je propose un enseignement doux et attentif pour les débutants. Les cours couvrent le solfège, la théorie musicale et la composition, et je peux également intégrer des éléments de la musique pop japonaise pour rendre l’apprentissage plaisant et motivant. Grâce à mon expérience à la Haute École de Musique de Genève et à mes stages pratiques en Europe, j’adapte les cours à votre rythme et à vos intérêts."></p> 
 </div>
 
 <!-- Tutorial -->
@@ -157,6 +154,20 @@ permalink: /lesson_fr/
   </p>
 </div>
 
+</div>
+
+<!-- Footer直前に追加 -->
+<div style="text-align:center; margin:40px 0; font-size:1.3rem; font-weight:700; color:#333;">
+  <span data-en="Looking forward to meeting you!" 
+        data-fr="Au plaisir de vous rencontrer !">
+  </span>
+</div>
+
+<!-- Footer の直後に追加 -->
+<div style="text-align:center; font-size:0.9rem; color:#777; margin:20px 0;">
+  <span data-en="&copy; 2025 Sachie Kobayashi. All rights reserved." 
+        data-fr="&copy; 2025 Sachie Kobayashi. Tous droits réservés.">
+  </span>
 </div>
 
 <script>
