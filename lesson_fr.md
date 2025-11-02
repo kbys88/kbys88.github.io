@@ -174,6 +174,15 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
 }
 </style>
 
+
+<!-- Footer直前に追加 -->
+<div style="text-align:center; margin:40px 0; font-size:1.3rem; font-weight:700; color:#333;">
+  <span data-en="Looking forward to meeting you!" 
+        data-fr="Au plaisir de vous rencontrer !">
+  </span>
+</div>
+
+
 <!-- Stripe GeoIP Auto Currency -->
 <script>
 async function setCurrencyLink() {
