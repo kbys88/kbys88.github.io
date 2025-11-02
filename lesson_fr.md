@@ -7,7 +7,7 @@ permalink: /lesson_fr/
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Sachie Kobayashi — Online Exchange & Lessons</title>
+<title>Sachie Kobayashi — Online Exchange & Lessons (English or French)</title>
 
 
   
