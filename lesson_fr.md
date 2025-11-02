@@ -148,7 +148,13 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
   <!-- Tutorial Video Section --> 
   <div class="card"> <h2 data-en="Tutorial Video (EUR19.9)" data-fr="Vidéo Tutoriel (EUR19.9)"></h2> <p data-en="This 3-hour tutorial shows how a professional composer creates a musical work using Ableton Live. Step-by-step guidance covers composition, arrangement, sound design, and final production. Includes a 30-minute trial lesson to ask questions and try techniques directly with Sachie." data-fr="Ce tutoriel de 3 heures montre comment un compositeur professionnel crée une œuvre musicale avec Ableton Live. Des explications étape par étape couvrent la composition, l’arrangement, le design sonore et la production finale. Comprend une leçon d’essai de 30 minutes pour poser des questions et expérimenter les techniques directement avec Sachie."></p> <div style="height:220px;background:#e2e8f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#475569;"> <span data-en="Video Thumbnail" data-fr="Vignette vidéo"></span> </div> <p class="small" data-en="After purchase, a viewing link will be sent by email." data-fr="Après l'achat, un lien pour visionner la vidéo sera envoyé par email."></p> <a href="https://systeme.io/your-tutorial-link" target="_blank" class="btn" data-en="Buy Tutorial" data-fr="Acheter le tutoriel"></a> </div>
 
-<!-- Calendly inline widget -->
+<div class="card" style="max-width:800px; margin:40px auto; padding:20px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+  <h3 data-en="Lesson Terms & Conditions" data-fr="Conditions des Cours"></h3>
+  <p class="small" data-en="Cancellations must be made at least 24 hours in advance. Refunds are available only in case of technical issues or serious illness. Please contact info@sachiekobayashi.com for any inquiries."
+     data-fr="Les annulations doivent être effectuées au moins 24 heures à l'avance. Les remboursements ne sont possibles qu'en cas de problème technique ou de maladie grave. Veuillez contacter info@sachiekobayashi.com pour toute question.">
+  </p>
+</div>
+
 <!-- Calendly inline widget begin -->
 <div style="max-width:800px; margin:0 auto; padding:20px; text-align:center;">
   <div class="calendly-container" style="width:100%; height:800px; max-width:700px; margin:0 auto;">
