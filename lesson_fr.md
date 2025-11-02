@@ -63,19 +63,15 @@ For professional collaborators interested in working together, please contact <s
 Pour les professionnels souhaitant collaborer, veuillez contacter <span class='highlight-email'>info@sachiekobayashi.com</span>."></p>
   </div>
 
-  <!-- Stripe Checkout Button -->
-  <div class="card">
-    <h2 data-en="Book a Private Lesson / Professional Exchange (45€/45CHF)" data-fr="Réserver un Cours Privé / Échange Professionnel (45€/45CHF)"></h2>
-    <p class="small" data-en="Choose your preferred date and pay securely." data-fr="Choisissez la date souhaitée et payez en toute sécurité."></p>
-    <button id="payButton">Pay Now</button>
-  </div>
+  <!-- Tutorial Video Section --> 
+  <div class="card"> <h2 data-en="Tutorial Video (CHF17.8)" data-fr="Vidéo Tutoriel (CHF17.8)"></h2> <p data-en="This 3-hour tutorial shows how a professional composer creates a musical work using Ableton Live. Step-by-step guidance covers composition, arrangement, sound design, and final production. Includes a 30-minute trial lesson to ask questions and try techniques directly with Sachie." data-fr="Ce tutoriel de 3 heures montre comment un compositeur professionnel crée une œuvre musicale avec Ableton Live. Des explications étape par étape couvrent la composition, l’arrangement, le design sonore et la production finale. Comprend une leçon d’essai de 30 minutes pour poser des questions et expérimenter les techniques directement avec Sachie."></p> <div style="height:220px;background:#e2e8f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#475569;"> <span data-en="Video Thumbnail" data-fr="Vignette vidéo"></span> </div> <p class="small" data-en="After purchase, a viewing link will be sent by email." data-fr="Après l'achat, un lien pour visionner la vidéo sera envoyé par email."></p> <a href="https://systeme.io/your-tutorial-link" target="_blank" class="btn" data-en="Buy Tutorial" data-fr="Acheter le tutoriel"></a> </div>
 
   <!-- Calendly inline widget -->
   <div class="card">
+     <h2 data-en="Book a Private Lesson / Professional Exchange (45€/45CHF)" data-fr="Réserver un Cours Privé / Échange Professionnel (45€/45CHF)"></h2>
     <div class="calendly-inline-widget" data-url="https://calendly.com/sound-sachiekobayashi/new-meeting" style="min-width:320px; height:700px;"></div>
   </div>
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-
 </div>
 
 <!-- Language Switcher -->
