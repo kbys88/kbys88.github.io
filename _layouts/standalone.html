@@ -1,13 +1,21 @@
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- これが必要 -->
-</head>
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
 
-<article class="page">
+    <div class="layout">
 
-  <h1>{{ page.title }}</h1>
+      <div id="main" role="main" class="wrapper-content">
+        {{ content }}         <!-- メインコンテンツ -->
+      </div>
 
-  <div class="entry">
-    {{ content }}
-  </div>
-</article>
+
+    <div class="wrapper-footer-mobile">
+      <footer class="footer">
+        {% include footer.html %}
+      </footer>
+    </div>
+
+    {% include analytics.html %}
+  </body>
+</html>
