@@ -153,30 +153,6 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
   </p>
 </div>
 
-<!-- Calendly inline widget begin -->
-<div style="max-width:800px; margin:0 auto; padding:20px; text-align:center;">
-  <div class="calendly-container" style="width:100%; height:800px; max-width:700px; margin:0 auto;">
-    <div class="calendly-inline-widget" 
-         data-url="https://calendly.com/sound-sachiekobayashi/new-meeting?primary_color=87a5a2" 
-         style="width:100%; height:100%;">
-    </div>
-  </div>
-</div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-
-<style>
-/* レスポンシブ対応 */
-@media (max-width:768px) {
-  .calendly-container {
-    height:700px !important;
-  }
-}
-@media (max-width:480px) {
-  .calendly-container {
-    height:600px !important;
-  }
-}
-</style>
 
 
 
