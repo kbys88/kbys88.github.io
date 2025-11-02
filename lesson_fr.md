@@ -130,7 +130,7 @@ permalink: /lesson_fr/
 </div>
 
 <!-- Tutorial -->
-<div class="card">
+<!--<div class="card">
   <h2 data-en="Tutorial Video (EUR19.9)" data-fr="Vidéo Tutoriel (EUR19.9)"></h2>
   <p data-en="This 3-hour tutorial shows how a professional composer creates a musical work using Ableton Live."
      data-fr="Ce tutoriel de 3 heures montre comment un compositeur professionnel crée une œuvre musicale avec Ableton Live."></p>
@@ -143,7 +143,7 @@ permalink: /lesson_fr/
      data-fr="Après l'achat, un lien pour visionner la vidéo sera envoyé par email."></p>
   
   <a href="https://systeme.io/your-tutorial-link" target="_blank" class="btn" data-en="Buy Tutorial" data-fr="Acheter le tutoriel"></a>
-</div>
+</div> -->
 
 <!-- Terms -->
 <div class="card" style="max-width:800px; margin:40px auto; padding:20px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
