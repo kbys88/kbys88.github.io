@@ -46,7 +46,7 @@ permalink: /lesson_fr/
 
 <!-- YouTube Video Section --> 
 <div class="video-container">
-  <iframe src="https://youtu.be/EOf82PRXh3Y" 
+  <iframe src="https://www.youtube.com/watch?v=EOf82PRXh3Y" 
   title="Sachie Kobayashi Introduction" allowfullscreen></iframe>
 </div>
 
@@ -90,7 +90,7 @@ permalink: /lesson_fr/
 </div>
 
 <!-- YouTube Video Section --> 
-<div class="video-container"> <iframe src="https://www.youtube.com/embed/iwmMEvuAfyU" title="Sachie Kobayashi Introduction" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+<div class="video-container"> <iframe src="https://www.youtube.com/watch?v=BPuq3Up4hzU" title="Sachie Kobayashi Introduction" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
 
 <!-- Instructor Strengths -->
 <div class="card" style="background:#fff9e6;">
@@ -109,7 +109,7 @@ permalink: /lesson_fr/
 </div>
 
 <!-- YouTube Video Section --> 
-<div class="video-container"> <iframe src="https://youtu.be/BPuq3Up4hzU" title="Sachie Kobayashi Introduction" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+<div class="video-container"> <iframe src="https://www.youtube.com/watch?v=iwmMEvuAfyU" title="Sachie Kobayashi Introduction" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
 
 <!-- Software -->
 <div class="card" style="background:#e6f7ff;">
