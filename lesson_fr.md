@@ -83,6 +83,20 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
   </p>
 </div>
 
+<!-- Instructor Strengths Section -->
+<div class="card" style="background:#fff9e6; padding:20px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+  <h2 style="text-align:center;" data-en="Instructor Strengths" data-fr="Points forts de l'enseignante"></h2>
+  <ul style="font-size:1.1rem; line-height:1.8; margin-top:15px;">
+    <li data-en="Internationally experienced composer with performances worldwide." data-fr="Compositrice expérimentée internationalement, avec des œuvres jouées dans le monde entier."></li>
+    <li data-en="Extensive professional collaborations with ensembles, orchestras, and multimedia artists." data-fr="Collaboration professionnelle avec des ensembles, orchestres et artistes multimédias."></li>
+    <li data-en="Advanced degrees in Composition and Music Education from Switzerland." data-fr="Titulaire de masters en Composition et Pédagogie Musicale en Suisse."></li>
+    <li data-en="Award-winning artist: impuls International Composition Competition 2023, Swiss Government Excellence Scholarship, and more." data-fr="Artiste primée : impuls International Composition Competition 2023, Bourse d'excellence du gouvernement suisse, et plus."></li>
+    <li data-en="Experienced in teaching beginners to advanced students, offering personalized guidance." data-fr="Expérience dans l'enseignement du niveau débutant à avancé, avec un accompagnement personnalisé."></li>
+    <li data-en="Integrates contemporary music, multimedia, and innovative methods in teaching." data-fr="Intègre la musique contemporaine, le multimédia et des méthodes innovantes dans l'enseignement."></li>
+  </ul>
+</div>
+
+
   <!-- Bio Section -->
   <div class="card bio"> <p data-en="Sachie Kobayashi (b. 1990, Japan) is a composer exploring intuitive musical creation and expression inspired by social phenomena. She studied piano from age seven and composition from twenty, completing a Master’s in Composition and Music Theory at Haute École de Musique de Genève, and a Master’s in Music Education. Her works have been performed worldwide, including collaborations with Klangforum Wien, Ensemble Modern, Ensemble Proton Bern, and The Geidai Philharmonia Orchestra. Sachie has participated in IRCAM’s composition program in Paris, won numerous prizes including the impuls International Composition Competition 2023, and received scholarships from the Swiss Government, Nomura Foundation, and Kakehashi Foundation. She integrates video, stage, and multimedia in her recent works, bridging traditional and contemporary music expression." data-fr="Sachie Kobayashi (née en 1990 au Japon) est compositrice, explorant la création musicale intuitive et l’expression inspirée par les phénomènes sociaux. Elle a étudié le piano dès l’âge de sept ans et la composition à vingt ans, et a obtenu un Master en Composition et Pédagogie Musicale ainsi qu’un Master en Éducation Musicale à la Haute École de Musique de Genève. Ses œuvres ont été jouées dans le monde entier, avec des collaborations incluant Klangforum Wien, Ensemble Modern, Ensemble Proton Bern et The Geidai Philharmonia Orchestra. Sachie a participé au programme de composition de l’IRCAM à Paris, a remporté de nombreux prix dont le impuls International Composition Competition 2023, et a reçu des bourses du gouvernement suisse, de la Fondation Nomura et de la Fondation Kakehashi. Ses œuvres récentes intègrent vidéo, scène et multimédia, reliant la musique traditionnelle et contemporaine."></p> 
   </div>
