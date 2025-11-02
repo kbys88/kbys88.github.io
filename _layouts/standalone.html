@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
   <body>
 
     <div class="layout">
@@ -8,14 +7,11 @@
       <div id="main" role="main" class="wrapper-content">
         {{ content }}         <!-- メインコンテンツ -->
       </div>
-
-
     <div class="wrapper-footer-mobile">
       <footer class="footer">
         {% include footer.html %}
       </footer>
     </div>
-
     {% include analytics.html %}
   </body>
 </html>
