@@ -140,6 +140,11 @@ permalink: /lesson_fr/
      data-fr="Les annulations doivent être effectuées au moins 24 heures à l'avance."></p>
 </div>
 
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/sound-sachiekobayashi/new-meeting?primary_color=8cc6da" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
+
 <!-- FAQ -->
 <div class="card">
   <h3>FAQ</h3>
