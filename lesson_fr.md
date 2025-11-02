@@ -149,14 +149,17 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
   <div class="card"> <h2 data-en="Tutorial Video (EUR19.9)" data-fr="Vidéo Tutoriel (EUR19.9)"></h2> <p data-en="This 3-hour tutorial shows how a professional composer creates a musical work using Ableton Live. Step-by-step guidance covers composition, arrangement, sound design, and final production. Includes a 30-minute trial lesson to ask questions and try techniques directly with Sachie." data-fr="Ce tutoriel de 3 heures montre comment un compositeur professionnel crée une œuvre musicale avec Ableton Live. Des explications étape par étape couvrent la composition, l’arrangement, le design sonore et la production finale. Comprend une leçon d’essai de 30 minutes pour poser des questions et expérimenter les techniques directement avec Sachie."></p> <div style="height:220px;background:#e2e8f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#475569;"> <span data-en="Video Thumbnail" data-fr="Vignette vidéo"></span> </div> <p class="small" data-en="After purchase, a viewing link will be sent by email." data-fr="Après l'achat, un lien pour visionner la vidéo sera envoyé par email."></p> <a href="https://systeme.io/your-tutorial-link" target="_blank" class="btn" data-en="Buy Tutorial" data-fr="Acheter le tutoriel"></a> </div>
 
 <!-- Calendly inline widget -->
-<div class="card" style="text-align:center; padding:20px; max-width:800px; margin:0 auto;">
+<div style="max-width:800px; margin:0 auto; padding:20px; text-align:center;">
   <h2 data-en="Book a Private Lesson / Professional Exchange (€45)" 
       data-fr="Réserver un Cours Privé / Échange Professionnel (€45)">
   </h2>
 
-  <div class="calendly-inline-widget" 
-       data-url="https://calendly.com/sound-sachiekobayashi/new-meeting" 
-       style="min-width:320px; width:100%; height:800px; max-width:700px; margin:20px auto 0 auto;">
+  <!-- 親divをフレックスでなくblockにして幅を100%に -->
+  <div style="display:block; width:100%; height:800px; max-width:700px; margin:20px auto;">
+    <div class="calendly-inline-widget" 
+         data-url="https://calendly.com/sound-sachiekobayashi/new-meeting" 
+         style="width:100%; height:100%;">
+    </div>
   </div>
 </div>
 
