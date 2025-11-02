@@ -8,6 +8,10 @@ permalink: /lesson_fr/
 <head>
 <meta charset="utf-8">
 <title>Sachie Kobayashi — Online Exchange & Lessons</title>
+
+<!-- YouTube Video Section --> 
+<div class="video-container"> <iframe src="https://www.youtube.com/embed/iwmMEvuAfyU?si=GE2vGX8pflJ6l0Jm" title="Sachie Kobayashi Introduction" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+  
 <style>
   body { font-family: sans-serif; background:#f7fafc; margin:0; color:#111;}
   .container{max-width:800px;margin:40px auto;padding:20px;}
