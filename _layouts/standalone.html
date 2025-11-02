@@ -3,11 +3,10 @@
   {% include head.html %}
   <body>
 
-    <div class="layout">
-      <!-- サイドバー削除 -->
-      <!-- {% include nav.html %} -->
+    <div class="layout" style="max-width:none; display:block;">
+      <!-- サイドバー削除済み -->
 
-      <div id="main" role="main" class="wrapper-content" style="width:100%;">
+      <div id="main" role="main" class="wrapper-content" style="width:100%; margin:0 auto; max-width:1200px; padding:20px;">
         {{ content }}         <!-- メインコンテンツ -->
       </div>
     </div>
