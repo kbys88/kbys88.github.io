@@ -4,6 +4,12 @@ title: Music/Composition/Sound Design/Solfege Lesson from the World !
 permalink: /lesson_fr/
 ---
 
+<!-- Header Image -->
+<div style="text-align:center;">
+  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson01.jpg" alt="Header" style="width:100%; max-height:300px; object-fit:cover; border-radius:10px;">
+</div>
+
+
 <html lang="en">
 <head>
 <meta charset="utf-8">
