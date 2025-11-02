@@ -163,23 +163,6 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
   </div>
 </div>
 
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-
-<style>
-  /* レスポンシブ対応 */
-  @media (max-width:768px) {
-    .calendly-inline-widget {
-      height:700px !important;
-    }
-  }
-  @media (max-width:480px) {
-    .calendly-inline-widget {
-      height:600px !important;
-    }
-  }
-</style>
-
-
 <!-- Language Switcher -->
 <script>
 const enBtn = document.getElementById('enBtn');
