@@ -72,14 +72,17 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
   
 <!-- Website Section -->
 <div class="card greeting">
-  <p style="font-size:1.2rem;">
+  <p style="font-size:1.2rem; font-weight:bold;">
+    <span data-en="Website: " data-fr="Site web: "></span>
     <a href="https://www.sachiekobayashi.com/" target="_blank" rel="noopener noreferrer"
+       style="color:black; text-decoration:underline;"
        data-en="https://www.sachiekobayashi.com/"
        data-fr="https://www.sachiekobayashi.com/">
       https://www.sachiekobayashi.com/
     </a>
   </p>
 </div>
+
 
 
   <!-- Bio Section -->
