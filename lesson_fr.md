@@ -16,6 +16,8 @@ permalink: /lesson_fr/
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sachie Kobayashi — Online Exchange & Lessons (English or French)</title>
 
+{% include fonts.html %}
+
 <style>
   body { font-family: sans-serif; background:#f7fafc; margin:0; color:#111;}
   .container{max-width:800px;margin:40px auto;padding:20px;}
