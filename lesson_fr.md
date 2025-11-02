@@ -165,53 +165,11 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
 </div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
+<!-- FAQ -->
+<div class="card"> <h3 data-en="FAQ" data-fr="FAQ"></h3> <p class="small"> <span data-en="Q: When can I watch the video? A: After payment, a link will be sent by email." data-fr="Q : Quand puis-je regarder la vidéo ? R : Après le paiement, un lien sera envoyé par email."></span><br><br> <span data-en="Q: Can I cancel a lesson? A: Cancel at least 24h before the scheduled time." data-fr="Q : Puis-je annuler un cours ? R : Annulez au moins 24h avant l'heure prévue."></span> </p> </div> </div> 
 
-<!-- Stripe GeoIP Auto Currency -->
-<script>
-async function setCurrencyLink() {
-  try {
-    const res = await fetch('https://ipapi.co/json/');
-    const data = await res.json();
-    const country = data.country;
-    const payButton = document.getElementById('payButton');
-
-    // Stripe Checkoutリンクを置き換える
-    const stripeEUR = 'https://buy.stripe.com/8x27sN78vfy1bsY0c85Ne00'; // EURリンクに変更
-    const stripeCHF = 'https://buy.stripe.com/14AbJ3eAXadHcx28IE5Ne01'; // CHFリンクに変更
-
-    if(country === 'CH') {
-      payButton.onclick = () => { window.location.href = stripeCHF; };
-    } else {
-      payButton.onclick = () => { window.location.href = stripeEUR; };
-    }
-  } catch (error) {
-    console.error('GeoIP failed, default to EUR:', error);
-    document.getElementById('payButton').onclick = () => { window.location.href = 'https://buy.stripe.com/test_eur_price_link'; };
-  }
-}
-
-setCurrencyLink();
-</script>
-
-<script>
-const enBtn = document.getElementById('enBtn');
-const frBtn = document.getElementById('frBtn');
-const elements = document.querySelectorAll('[data-en]');
-
-function setLanguage(lang) {
-  elements.forEach(el => el.innerHTML = el.getAttribute('data-' + lang));
-  if(lang === 'en') {
-    enBtn.classList.add('active');
-    frBtn.classList.remove('active');
-  } else {
-    frBtn.classList.add('active');
-    enBtn.classList.remove('active');
-  }
-}
-
-enBtn.addEventListener('click', () => setLanguage('en'));
-frBtn.addEventListener('click', () => setLanguage('fr'));
-</script>
-
-</body>
+<script> const enBtn = document.getElementById('enBtn'); const frBtn = document.getElementById('frBtn'); const elements = document.querySelectorAll('[data-en]'); function setLanguage(lang) { elements.forEach(el => { el.innerHTML = el.getAttribute('data-' + lang); // innerHTMLで<span>対応 }); 
+ if(lang==='en'){ enBtn.classList.add('active'); frBtn.classList.remove('active'); } else{ frBtn.classList.add('active'); enBtn.classList.remove('active'); } } enBtn.addEventListener('click',()=>setLanguage('en')); frBtn.addEventListener('click',()=>setLanguage('fr')); setLanguage('en'); // 初期表示は英語 
+</script> 
+</body> 
 </html>
