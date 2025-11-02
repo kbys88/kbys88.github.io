@@ -182,7 +182,12 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
   </span>
 </div>
 
-
+<!-- Footer の直後に追加 -->
+<div style="text-align:center; font-size:0.9rem; color:#777; margin:20px 0;">
+  <span data-en="&copy; 2025 Sachie Kobayashi. All rights reserved." 
+        data-fr="&copy; 2025 Sachie Kobayashi. Tous droits réservés.">
+  </span>
+</div>
 <!-- Stripe GeoIP Auto Currency -->
 <script>
 async function setCurrencyLink() {
