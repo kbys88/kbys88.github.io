@@ -193,5 +193,25 @@ async function setCurrencyLink() {
 setCurrencyLink();
 </script>
 
+<script>
+const enBtn = document.getElementById('enBtn');
+const frBtn = document.getElementById('frBtn');
+const elements = document.querySelectorAll('[data-en]');
+
+function setLanguage(lang) {
+  elements.forEach(el => el.innerHTML = el.getAttribute('data-' + lang));
+  if(lang === 'en') {
+    enBtn.classList.add('active');
+    frBtn.classList.remove('active');
+  } else {
+    frBtn.classList.add('active');
+    enBtn.classList.remove('active');
+  }
+}
+
+enBtn.addEventListener('click', () => setLanguage('en'));
+frBtn.addEventListener('click', () => setLanguage('fr'));
+</script>
+
 </body>
 </html>
