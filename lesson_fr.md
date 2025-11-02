@@ -124,11 +124,14 @@ permalink: /lesson_fr/
   <h2 data-en="Tutorial Video (EUR19.9)" data-fr="Vidéo Tutoriel (EUR19.9)"></h2>
   <p data-en="This 3-hour tutorial shows how a professional composer creates a musical work using Ableton Live."
      data-fr="Ce tutoriel de 3 heures montre comment un compositeur professionnel crée une œuvre musicale avec Ableton Live."></p>
-  <div style="height:220px;background:#e2e8f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#475569;">
-    <span data-en="images/comingsoon.png" data-fr="images/comingsoon.png"></span>
+  
+  <div style="height:220px; background:#e2e8f0; border-radius:8px; display:flex; align-items:center; justify-content:center; color:#475569;">
+    <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson01.jpg" alt="Lesson 01" class="sound-item" style="max-height:100%; border-radius:8px;">
   </div>
+  
   <p class="small" data-en="After purchase, a viewing link will be sent by email."
      data-fr="Après l'achat, un lien pour visionner la vidéo sera envoyé par email."></p>
+  
   <a href="https://systeme.io/your-tutorial-link" target="_blank" class="btn" data-en="Buy Tutorial" data-fr="Acheter le tutoriel"></a>
 </div>
 
