@@ -80,7 +80,7 @@ permalink: /lesson_fr/
     </a>
   </p>
 </div>
-
+<!-- YouTube Video Section --> <div class="video-container"> <iframe src="https://www.youtube.com/embed/iwmMEvuAfyU?si=Utb-27uorAPNFsjO" title="Sachie Kobayashi Introduction" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
 <!-- Instructor Strengths -->
 <div class="card" style="background:#fff9e6;">
   <h2 data-en="Instructor Strengths" data-fr="Points forts de l'enseignante"></h2>
