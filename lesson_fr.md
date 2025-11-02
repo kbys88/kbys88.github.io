@@ -120,10 +120,33 @@ Pour les professionnels souhaitant collaborer, veuillez contacter <span class='h
 
 <!-- Private Lesson & Professional Exchange -->
 <div class="card">
-  <h2 data-en="Book a Private Lesson / Professional Exchange (50€ / CHF / $)" data-fr="Réserver un Cours Privé / Échange Professionnel (50€ / CHF / $)"></h2>
-  <p class="small" data-en="Choose your preferred date for a private lesson or professional exchange session and pay securely. For professional collaboration inquiries, contact info@sachiekobayashi.com."
-     data-fr="Choisissez la date souhaitée pour un cours privé ou une session d’échange professionnel et payez en toute sécurité. Pour les demandes de collaboration professionnelle, contactez info@sachiekobayashi.com."></p>
-  <a href="https://systeme.io/your-lesson-link" target="_blank" class="btn" data-en="Book Lesson / Exchange" data-fr="Réserver Cours / Échange"></a>
+  <h2 data-en="Book a Private Lesson / Professional Exchange (45€/45CHF)" 
+      data-fr="Réserver un Cours Privé / Échange Professionnel (45€/45CHF)">
+  </h2>
+
+  <p class="small" 
+     data-en="Choose your preferred date for a private lesson or professional exchange session and pay securely. For professional collaboration inquiries, contact info@sachiekobayashi.com."
+     data-fr="Choisissez la date souhaitée pour un cours privé ou une session d’échange professionnel et payez en toute sécurité. Pour les demandes de collaboration professionnelle, contactez info@sachiekobayashi.com.">
+  </p>
+
+  <!-- Calendly inline widget begin -->
+  <div class="calendly-inline-widget" 
+       data-url="https://calendly.com/sound-sachiekobayashi/new-meeting" 
+       style="min-width:320px; height:700px;">
+  </div>
+  <script type="text/javascript" 
+          src="https://assets.calendly.com/assets/external/widget.js" 
+          async>
+  </script>
+  <!-- Calendly inline widget end -->
+
+  <!-- （もし外部リンクボタンも残したい場合は下記を残す） -->
+  <!--
+  <a href="https://systeme.io/your-lesson-link" target="_blank" class="btn" 
+     data-en="Book Lesson / Exchange" 
+     data-fr="Réserver Cours / Échange">
+  </a>
+  -->
 </div>
 
   <!-- FAQ -->
