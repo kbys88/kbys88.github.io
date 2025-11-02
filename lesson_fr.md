@@ -144,11 +144,22 @@ permalink: /lesson_fr/
 </div>
 
 <!-- Terms -->
-<div class="card">
+<div class="card" style="max-width:800px; margin:40px auto; padding:20px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
   <h3 data-en="Lesson Terms & Conditions" data-fr="Conditions des Cours"></h3>
-  <p class="small" data-en="Cancellations must be made at least 24 hours in advance."
-     data-fr="Les annulations doivent être effectuées au moins 24 heures à l'avance."></p>
+  <ul style="font-size:1.05rem; line-height:1.8; margin-top:10px;">
+    <li data-en="Cancellations made at least 72 hours before the scheduled lesson are eligible for a 100% refund."
+        data-fr="Les annulations effectuées au moins 72 heures avant l’heure prévue du cours donnent droit à un remboursement complet (100%)."></li>
+    <li data-en="Cancellations made within 72 hours of the scheduled lesson are non-refundable."
+        data-fr="Les annulations effectuées moins de 72 heures avant le cours ne sont pas remboursables."></li>
+    <li data-en="Rescheduling is not available for cancellations made within 48 hours of the scheduled time."
+        data-fr="Aucun report n’est possible pour les annulations effectuées dans les 48 heures précédant le cours."></li>
+    <li data-en="Lessons start promptly at the scheduled time. If you are late, the remaining time will be used for your session, and extensions cannot be offered."
+        data-fr="Les cours commencent à l’heure prévue. En cas de retard, le temps restant sera utilisé pour la session, sans prolongation possible."></li>
+    <li data-en="In case of serious illness or technical issues, please contact info@sachiekobayashi.com to discuss a possible solution."
+        data-fr="En cas de problème technique ou de maladie grave, veuillez contacter info@sachiekobayashi.com pour convenir d’une solution."></li>
+  </ul>
 </div>
+
 
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/sound-sachiekobayashi/new-meeting?primary_color=8cc6da" style="min-width:320px;height:700px;"></div>
