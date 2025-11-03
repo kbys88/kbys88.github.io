@@ -9,9 +9,6 @@ permalink: /lesson_fr/
   <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/header2.jpg" alt="Header" style="width:100%; max-height:900px; object-fit:cover; border-radius:10px;">
 </div>
 
-Composer and creator Sachie Kobayashi, trained in Switzerland, Tokyo and Paris, active worldwid. She teaches everything from beginner to pro: composition, music theory, ear training, sound design, and music for film, blending J-Pop flair with contemporary techniques.
-
-Sachie Kobayashi, compositrice et créatrice formée en Suisse, à Tokyo, et à Paris, active dans le monde entier. Elle enseigne tout, du débutant au professionnel : composition, théorie musicale, solfège, design sonore et musique pour l’image, avec une touche J-Pop moderne aussi.
 
 
 <html lang="en">
@@ -63,6 +60,10 @@ Sachie Kobayashi, compositrice et créatrice formée en Suisse, à Tokyo, et à 
 <!-- Hero Title -->
 <h1 data-en="Sachie Kobayashi — Online Exchange & Lessons"
     data-fr="Sachie Kobayashi — Échanges et Cours en ligne"></h1>
+
+<h2 data-en="Composer and creator Sachie Kobayashi, trained in Switzerland, Tokyo and Paris, active worldwid. She teaches everything from beginner to pro: composition, music theory, ear training, sound design, and music for film, blending J-Pop flair with contemporary techniques.
+"
+    data-fr="Sachie Kobayashi, compositrice et créatrice formée en Suisse, à Tokyo, et à Paris, active dans le monde entier. Elle enseigne tout, du débutant au professionnel : composition, théorie musicale, solfège, design sonore et musique pour l’image, avec une touche J-Pop moderne aussi."></h2>
 
 <!-- Photo Gallery -->
 <div class="sound-gallery">
