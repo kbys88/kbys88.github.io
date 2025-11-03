@@ -195,7 +195,7 @@ function showVideo(lang) {
 
 
 <!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/sound-sachiekobayashi/new-meeting?primary_color=8cc6da" style="min-width:320px;height:700px;"></div>
+<div class="calendly-inline-widget" data-url="https://calendly.com/sound-sachiekobayashi/new-meeting?primary_color=8cc6da" style="min-width:320px;height:100%;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </div>
 
