@@ -66,7 +66,7 @@ permalink: /lesson_fr/
 <h1 data-en="Sachie Kobayashi — Online Exchange & Lessons"
     data-fr="Sachie Kobayashi — Échanges et Cours en ligne"></h1>
 
-<h2 data-en="Composer and creator Sachie Kobayashi, trained in Switzerland, Tokyo and Paris, active worldwid. She teaches everything from beginner to pro: composition, music theory, ear training, sound design, and music for film, blending J-Pop flair with contemporary techniques.
+<h2 data-en="Composer and creator Sachie Kobayashi, trained in Switzerland, Tokyo and Paris, active worldwide. She teaches everything from beginner to pro: composition, music theory, ear training, sound design, and music for film, blending J-Pop flair with contemporary techniques.
 "
     data-fr="Sachie Kobayashi, compositrice et créatrice formée en Suisse, à Tokyo, et à Paris, active dans le monde entier. Elle enseigne tout, du débutant au professionnel : composition, théorie musicale, solfège, design sonore et musique pour l’image, avec une touche J-Pop moderne aussi."></h2>
 
@@ -214,8 +214,6 @@ function showVideo(lang) {
   
   <ul style="font-size:1.1rem; line-height:1.8; margin-top:15px;">
 
-
-  
     
 <!-- Trial Lesson -->
 　　<li>
@@ -230,7 +228,9 @@ function showVideo(lang) {
       <strong data-en="Trial Lesson Discount:" data-fr="Réduction après leçon d’essai :"></strong>
       <span data-en="Students who take the trial lesson will receive a 10% discount coupon for their next lesson." 
             data-fr="Les étudiants ayant suivi la leçon d’essai recevront un coupon de réduction de 10% pour leur prochaine leçon."></span>
-    </li>
+  </li>
+
+
     
     <!-- Paid Lesson -->
 　　<li>
