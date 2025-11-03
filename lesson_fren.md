@@ -213,9 +213,12 @@ function showVideo(lang) {
 </h2>
 
 <!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/sound-sachiekobayashi/new-meeting?primary_color=8cc6da" style="min-width:320px;height:100%;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<div class="calendly-inline-widget" 
+     data-url="https://calendly.com/sound-sachiekobayashi/new-meeting?primary_color=8cc6da" 
+     style="min-width:320px; height:700px; max-width:100%; margin:0 auto;">
 </div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
 
   <!-- Paid Lesson Booking Button -->
 <div style="text-align:center; margin:20px 0;">
