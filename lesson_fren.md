@@ -84,12 +84,6 @@ permalink: /lesson_fren/
      data-fr="Bonjour, je suis Sachie Kobayashi, compositrice, créatrice et artiste. Titulaire d’un Master en Composition et Pédagogie Musicale en Suisse, je peux vous offrir un enseignement attentif et personnalisé. Sur cette plateforme, vous pouvez accéder non seulement à des tutoriels et des cours privés, mais aussi à des sessions d’échange professionnel — des opportunités pour discuter, collaborer et apprendre directement auprès d’une artiste active à l’international. Mon travail couvre la musique contemporaine, la composition pour le théâtre, ainsi que des projets innovants intégrant l’IA et la réalité virtuelle.<br><br>Pour les professionnels souhaitant collaborer, veuillez contacter <span class='highlight-email'>info@sachiekobayashi.com</span>."></p>
 </div>
 
-<!-- image 2-->
-<div style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/images/photo_lesson.jpg" alt="photo1" style="width:100%; max-height:900px; object-fit:cover; border-radius:10px;">
-</div>
-
-
 <!-- description 2-->
 <h2 data-en="30-minute free trial available"
     data-fr="Essai gratuit de 30 minutes disponible"
@@ -170,6 +164,12 @@ function showVideo(lang) {
 <!-- Beginner Section --> 
 <div class="card beginner"> <h2 data-en="For Beginners" data-fr="Pour Débutants"></h2> <p data-en="Whether you are a child or an adult, I offer gentle and careful guidance for beginners. Lessons cover solfège, music theory, and composition, and I can also incorporate elements of Japanese pop music to make learning engaging and fun. With my experience at the Haute École de Musique de Genève and practical training across Europe, I adapt lessons to your pace and interests." data-fr="Que vous soyez enfant ou adulte, je propose un enseignement doux et attentif pour les débutants. Les cours couvrent le solfège, la théorie musicale et la composition, et je peux également intégrer des éléments de la musique pop japonaise pour rendre l’apprentissage plaisant et motivant. Grâce à mon expérience à la Haute École de Musique de Genève et à mes stages pratiques en Europe, j’adapte les cours à votre rythme et à vos intérêts."></p> 
 </div>
+
+<!-- image 2-->
+<div style="text-align:center;">
+  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/photo_lesson.jpg" alt="photo1" style="width:100%; max-height:900px; object-fit:cover; border-radius:10px;">
+</div>
+
 
 <!-- description 2-->
 <h2 data-en="30-minute free trial available"
