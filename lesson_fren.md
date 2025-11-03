@@ -86,6 +86,10 @@ permalink: /lesson_fren/
      data-fr="Bonjour, je suis Sachie Kobayashi, compositrice, créatrice et artiste. Titulaire d’un Master en Composition et Pédagogie Musicale en Suisse, je peux vous offrir un enseignement attentif et personnalisé. Sur cette plateforme, vous pouvez accéder non seulement à des tutoriels et des cours privés, mais aussi à des sessions d’échange professionnel — des opportunités pour discuter, collaborer et apprendre directement auprès d’une artiste active à l’international. Mon travail couvre la musique contemporaine, la composition pour le théâtre, ainsi que des projets innovants intégrant l’IA et la réalité virtuelle.<br><br>Pour les professionnels souhaitant collaborer, veuillez contacter <span class='highlight-email'>info@sachiekobayashi.com</span>."></p>
 </div>
 
+<!-- description 2-->
+<h2 data-en="30-minute free trial available"
+    data-fr="Essai gratuit de 30 minutes disponible"></h2>
+
 <!-- Website Section -->
 <div class="card" style="text-align:center;">
   <p style="font-size:1.2rem; font-weight:bold; margin:0;">
@@ -160,6 +164,9 @@ function showVideo(lang) {
 <div class="card beginner"> <h2 data-en="For Beginners" data-fr="Pour Débutants"></h2> <p data-en="Whether you are a child or an adult, I offer gentle and careful guidance for beginners. Lessons cover solfège, music theory, and composition, and I can also incorporate elements of Japanese pop music to make learning engaging and fun. With my experience at the Haute École de Musique de Genève and practical training across Europe, I adapt lessons to your pace and interests." data-fr="Que vous soyez enfant ou adulte, je propose un enseignement doux et attentif pour les débutants. Les cours couvrent le solfège, la théorie musicale et la composition, et je peux également intégrer des éléments de la musique pop japonaise pour rendre l’apprentissage plaisant et motivant. Grâce à mon expérience à la Haute École de Musique de Genève et à mes stages pratiques en Europe, j’adapte les cours à votre rythme et à vos intérêts."></p> 
 </div>
 
+<!-- description 2-->
+<h2 data-en="30-minute free trial available"
+    data-fr="Essai gratuit de 30 minutes disponible"></h2>
 <!-- Tutorial -->
 <!--<div class="card">
   <h2 data-en="Tutorial Video (EUR19.9)" data-fr="Vidéo Tutoriel (EUR19.9)"></h2>
@@ -194,6 +201,9 @@ function showVideo(lang) {
 </div>
 
 
+<!-- description 2-->
+<h2 data-en="Reserve 30-minute free trial available"
+    data-fr="Essai gratuit de 30 minutes disponible"></h2>
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/sound-sachiekobayashi/new-meeting?primary_color=8cc6da" style="min-width:320px;height:100%;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
