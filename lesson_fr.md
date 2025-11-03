@@ -109,7 +109,9 @@ permalink: /lesson_fr/
 </div>
 
 <!-- YouTube Video Section --> 
-<div class="video-container"> <iframe src="https://www.youtube.com/embed/iwmMEvuAfyU" title="Sachie Kobayashi Introduction" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+<div class="video-container"> <iframe src="https://www.youtube.com/embed/xFx8gj7iKCY" title="Sachie Kobayashi Introduction" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+
+<div class="video-container"> <iframe src="https://www.youtube.com/embed/SYYX3eBwMrc" title="Sachie Kobayashi Introduction" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- Software -->
 <div class="card" style="background:#e6f7ff;">
