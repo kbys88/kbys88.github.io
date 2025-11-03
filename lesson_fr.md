@@ -254,9 +254,6 @@ function showVideo(lang) {
       <span data-en="Lessons are conducted via Zoom. The link is automatically sent upon booking." 
             data-fr="Les leçons se déroulent via Zoom. Le lien est envoyé automatiquement après la réservation."></span>
     </li>
-    
-  </ul>
-</div>
 
     <!-- Q -->
 　　<li>
