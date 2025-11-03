@@ -193,20 +193,46 @@ function showVideo(lang) {
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/sound-sachiekobayashi/new-meeting?primary_color=8cc6da" style="min-width:320px;height:700px;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
-
-<!-- FAQ
-<div class="card">
-  <h3>FAQ</h3>
-  <p class="small">
-    <span data-en="Q: When can I watch the video? A: After payment, a link will be sent by email."
-          data-fr="Q : Quand puis-je regarder la vidéo ? R : Après le paiement, un lien sera envoyé par email."></span><br><br>
-    <span data-en="Q: Can I cancel a lesson? A: Cancel at least 24h before the scheduled time."
-          data-fr="Q : Puis-je annuler un cours ? R : Annulez au moins 24h avant l'heure prévue."></span>
-  </p>
-</div>  -->
-
 </div>
+
+<!-- Q&A Section -->
+<div class="card" style="background:#f0f4ff; padding:20px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+  <h2 style="text-align:center;" data-en="Frequently Asked Questions (Q&A)" data-fr="Questions Fréquemment Posées (Q&R)"></h2>
+  
+  <ul style="font-size:1.1rem; line-height:1.8; margin-top:15px;">
+    
+    <!-- Trial Lesson -->
+    <li>
+      <strong data-en="Trial Lesson:" data-fr="Leçon d’essai :"></strong>
+      <span data-en="One free 30-minute trial lesson is available per student. Only one rescheduling is allowed for the trial. Any subsequent trial rescheduling will cost CHF 5." 
+            data-fr="Une leçon d’essai gratuite de 30 minutes est disponible par élève. Seul un changement d’horaire est autorisé pour la leçon d’essai. Tout changement supplémentaire coûtera 5 CHF."></span>
+    </li>
+    
+    <!-- Discount Coupon -->
+    <li>
+      <strong data-en="Trial Lesson Discount:" data-fr="Réduction après leçon d’essai :"></strong>
+      <span data-en="Students who take the trial lesson will receive a 10% discount coupon for their next lesson." 
+            data-fr="Les étudiants ayant suivi la leçon d’essai recevront un coupon de réduction de 10% pour leur prochaine leçon."></span>
+    </li>
+    
+    <!-- Paid Lesson -->
+    <li>
+      <strong data-en="Paid Lessons:" data-fr="Leçons payantes :"></strong>
+      <span data-en="45-minute paid lessons cost CHF 45 each. Rescheduling is allowed up to 48 hours before the lesson. Changes within 48 hours are treated as 100% cancellation. Any rescheduling within 48 hours requires booking a new lesson. Refunds are not provided under any circumstances." 
+            data-fr="Les leçons payantes de 45 minutes coûtent 45 CHF chacune. Les changements d’horaire sont autorisés jusqu’à 48 heures avant la leçon. Les modifications dans les 48 heures précédant la leçon sont considérées comme des annulations à 100%. Toute modification après ce délai nécessite une nouvelle réservation. Aucun remboursement n’est possible dans tous les cas."></span>
+    </li>
+    
+    <!-- Platform -->
+    <li>
+      <strong data-en="Platform:" data-fr="Plateforme :"></strong>
+      <span data-en="Lessons are conducted via Zoom. The link is automatically sent upon booking." 
+            data-fr="Les leçons se déroulent via Zoom. Le lien est envoyé automatiquement après la réservation."></span>
+    </li>
+    
+  </ul>
+</div>
+
+
 
 <!-- Footer直前に追加 -->
 <div style="text-align:center; margin:40px 0; font-size:1.3rem; font-weight:700; color:#333;">
@@ -247,3 +273,5 @@ frBtn.addEventListener('click', () => setLanguage('fr'));
 
 </body>
 </html>
+
+
