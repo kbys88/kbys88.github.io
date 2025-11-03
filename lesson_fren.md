@@ -88,7 +88,10 @@ permalink: /lesson_fren/
 
 <!-- description 2-->
 <h2 data-en="30-minute free trial available"
-    data-fr="Essai gratuit de 30 minutes disponible"></h2>
+    data-fr="Essai gratuit de 30 minutes disponible"
+    style="text-align: center;">
+</h2>
+
 
 <!-- Website Section -->
 <div class="card" style="text-align:center;">
@@ -166,7 +169,10 @@ function showVideo(lang) {
 
 <!-- description 2-->
 <h2 data-en="30-minute free trial available"
-    data-fr="Essai gratuit de 30 minutes disponible"></h2>
+    data-fr="Essai gratuit de 30 minutes disponible"
+    style="text-align: center;">
+</h2>
+
 <!-- Tutorial -->
 <!--<div class="card">
   <h2 data-en="Tutorial Video (EUR19.9)" data-fr="Vidéo Tutoriel (EUR19.9)"></h2>
@@ -200,10 +206,12 @@ function showVideo(lang) {
   </ul>
 </div>
 
-
 <!-- description 2-->
-<h2 data-en="Reserve 30-minute free trial available"
-    data-fr="Essai gratuit de 30 minutes disponible"></h2>
+<h2 data-en="30-minute free trial available"
+    data-fr="Essai gratuit de 30 minutes disponible"
+    style="text-align: center;">
+</h2>
+
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/sound-sachiekobayashi/new-meeting?primary_color=8cc6da" style="min-width:320px;height:100%;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
