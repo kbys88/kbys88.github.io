@@ -57,6 +57,10 @@ permalink: /lesson_fr/
   title="Sachie Kobayashi Introduction" allowfullscreen></iframe>
 </div>
 
+<!-- description 1-->
+<h2 data-en="Available in English and French"
+    data-fr="Available in English and French"></h2>
+
 
 <!-- Hero Title -->
 <h1 data-en="Sachie Kobayashi — Online Exchange & Lessons"
