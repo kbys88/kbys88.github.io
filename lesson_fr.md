@@ -180,8 +180,8 @@ function showVideo(lang) {
         data-fr="Les annulations effectuées au moins 72 heures avant l’heure prévue du cours donnent droit à un remboursement complet (100%)."></li> -->
    <!--  <li data-en="Cancellations made within 72 hours of the scheduled lesson are non-refundable."
         data-fr="Les annulations effectuées moins de 72 heures avant le cours ne sont pas remboursables."></li> -->
-    <li data-en="Rescheduling is not available for cancellations made within 72 hours of the scheduled time."
-        data-fr="Aucun report n’est possible pour les annulations effectuées dans les 72 heures précédant le cours."></li>
+    <li data-en="Rescheduling is not available for cancellations made within 48 hours of the scheduled time."
+        data-fr="Aucun report n’est possible pour les annulations effectuées dans les 48 heures précédant le cours."></li>
     <li data-en="Lessons start promptly at the scheduled time. If you are late, the remaining time will be used for your session, and extensions cannot be offered."
         data-fr="Les cours commencent à l’heure prévue. En cas de retard, le temps restant sera utilisé pour la session, sans prolongation possible."></li>
     <li data-en="In case of serious illness or technical issues, please contact info@sachiekobayashi.com to discuss a possible solution."
@@ -195,14 +195,6 @@ function showVideo(lang) {
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </div>
 
-<!-- Q&A Section -->
-<div class="card" style="background:#f0f4ff; padding:20px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
-  <h2 style="text-align:center;" data-en="Frequently Asked Questions (Q&A)" data-fr="Questions Fréquemment Posées (Q&R)"></h2>
-  
-  <ul style="font-size:1.1rem; line-height:1.8; margin-top:15px;">
-</div>
-
-    
   <!-- Paid Lesson Booking Button -->
 <div style="text-align:center; margin:20px 0;">
   <a id="paidLessonBtn" href="https://sachiekobayashi.systeme.io/888090f" target="_blank"
@@ -211,6 +203,15 @@ function showVideo(lang) {
   </a>
 </div>
 
+
+<!-- Q&A Section -->
+<div class="card" style="background:#f0f4ff; padding:20px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+  <h2 style="text-align:center;" data-en="Frequently Asked Questions (Q&A)" data-fr="Questions Fréquemment Posées (Q&R)"></h2></div>
+  
+  <ul style="font-size:1.1rem; line-height:1.8; margin-top:15px;">
+
+
+  
     
 <!-- Trial Lesson -->
 　　<li>
