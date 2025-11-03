@@ -198,7 +198,7 @@ function showVideo(lang) {
   <!-- Paid Lesson Booking Button -->
 <div style="text-align:center; margin:20px 0;">
   <a id="paidLessonBtn" href="https://sachiekobayashi.systeme.io/888090f" target="_blank"
-     style="display:inline-block; padding:12px 25px; font-size:16px; border-radius:8px; background-color:#6772e5; color:#fff; text-decoration:none; font-weight:600;">
+     style="display:inline-block; padding:12px 25px; font-size:20px; border-radius:8px; background-color:#6772e5; color:#fff; text-decoration:none; font-weight:600;">
     Book Paid Lesson
   </a>
 </div>
@@ -206,7 +206,7 @@ function showVideo(lang) {
 
 <!-- Q&A Section -->
 <div class="card" style="background:#f0f4ff; padding:20px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
-  <h2 style="text-align:center;" data-en="Frequently Asked Questions (Q&A)" data-fr="Questions Fréquemment Posées (Q&R)"></h2></div>
+  <h2 style="text-align:center;" data-en="Frequently Asked Questions (Q&A)" data-fr="Questions Fréquemment Posées (Q&R)"></h2>
   
   <ul style="font-size:1.1rem; line-height:1.8; margin-top:15px;">
 
