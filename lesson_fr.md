@@ -107,11 +107,30 @@ permalink: /lesson_fr/
 <!-- Bio Section --> 
 <div class="card bio"> <p data-en="Sachie Kobayashi (b. 1990, Japan) is a composer exploring intuitive musical creation and expression inspired by social phenomena. She studied piano from age seven and composition from twenty, completing a Master’s in Composition and Music Theory at Haute École de Musique de Genève, and a Master’s in Music Education. Her works have been performed worldwide, including collaborations with Klangforum Wien, Ensemble Modern, Ensemble Proton Bern, and The Geidai Philharmonia Orchestra. Sachie has participated in IRCAM’s composition program in Paris, won numerous prizes including the impuls International Composition Competition 2023, and received scholarships from the Swiss Government, Nomura Foundation, and Kakehashi Foundation. She integrates video, stage, and multimedia in her recent works, bridging traditional and contemporary music expression." data-fr="Sachie Kobayashi (née en 1990 au Japon) est compositrice, explorant la création musicale intuitive et l’expression inspirée par les phénomènes sociaux. Elle a étudié le piano dès l’âge de sept ans et la composition à vingt ans, et a obtenu un Master en Composition et Pédagogie Musicale ainsi qu’un Master en Éducation Musicale à la Haute École de Musique de Genève. Ses œuvres ont été jouées dans le monde entier, avec des collaborations incluant Klangforum Wien, Ensemble Modern, Ensemble Proton Bern et The Geidai Philharmonia Orchestra. Sachie a participé au programme de composition de l’IRCAM à Paris, a remporté de nombreux prix dont le impuls International Composition Competition 2023, et a reçu des bourses du gouvernement suisse, de la Fondation Nomura et de la Fondation Kakehashi. Ses œuvres récentes intègrent vidéo, scène et multimédia, reliant la musique traditionnelle et contemporaine."></p> 
 </div>
+<!-- 言語切替ボタン -->
+<button onclick="showVideo('en')">English</button>
+<button onclick="showVideo('fr')">Français</button>
 
-<!-- YouTube Video Section --> 
-<div class="video-container"> <iframe src="https://www.youtube.com/embed/xFx8gj7iKCY" title="Sachie Kobayashi Introduction" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+<!-- YouTube Video Section -->
+<div class="video-container" id="video-en">
+  <iframe src="https://www.youtube.com/embed/xFx8gj7iKCY" title="Sachie Kobayashi Introduction (EN)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
-<div class="video-container"> <iframe src="https://www.youtube.com/embed/SYYX3eBwMrc" title="Sachie Kobayashi Introduction" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container" id="video-fr" style="display:none;">
+  <iframe src="https://www.youtube.com/embed/SYYX3eBwMrc" title="Sachie Kobayashi Introduction (FR)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<script>
+function showVideo(lang) {
+  if(lang === 'en') {
+    document.getElementById('video-en').style.display = 'block';
+    document.getElementById('video-fr').style.display = 'none';
+  } else if(lang === 'fr') {
+    document.getElementById('video-en').style.display = 'none';
+    document.getElementById('video-fr').style.display = 'block';
+  }
+}
+</script>
 
 <!-- Software -->
 <div class="card" style="background:#e6f7ff;">
