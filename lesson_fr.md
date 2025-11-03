@@ -44,6 +44,12 @@ permalink: /lesson_fr/
 </head>
 <body>
 <div class="container">
+<!-- Language Buttons -->
+<div class="lang-btns">
+  <button id="enBtn" class="active">English</button>
+  <button id="frBtn">Français</button>
+</div>
+
 
 <!-- YouTube Video Section --> 
 <div class="video-container">
@@ -51,11 +57,6 @@ permalink: /lesson_fr/
   title="Sachie Kobayashi Introduction" allowfullscreen></iframe>
 </div>
 
-<!-- Language Buttons -->
-<div class="lang-btns">
-  <button id="enBtn" class="active">English</button>
-  <button id="frBtn">Français</button>
-</div>
 
 <!-- Hero Title -->
 <h1 data-en="Sachie Kobayashi — Online Exchange & Lessons"
