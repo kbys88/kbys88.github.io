@@ -86,7 +86,7 @@ permalink: /lesson_fren/
 
 <!-- image 2-->
 <div style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/images/photo_lesson.jpg" alt="Header" style="width:100%; max-height:900px; object-fit:cover; border-radius:10px;">
+  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/images/photo_lesson.jpg" alt="photo1" style="width:100%; max-height:900px; object-fit:cover; border-radius:10px;">
 </div>
 
 
