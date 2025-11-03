@@ -193,16 +193,18 @@ function showVideo(lang) {
 <div class="card" style="max-width:800px; margin:40px auto; padding:20px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
   <h3 data-en="Lesson Terms & Conditions" data-fr="Conditions des Cours"></h3>
   <ul style="font-size:1.05rem; line-height:1.8; margin-top:10px;">
-   <!--    <li data-en="Cancellations made at least 72 hours before the scheduled lesson are eligible for a 100% refund."
-        data-fr="Les annulations effectuées au moins 72 heures avant l’heure prévue du cours donnent droit à un remboursement complet (100%)."></li> -->
-   <!--  <li data-en="Cancellations made within 72 hours of the scheduled lesson are non-refundable."
-        data-fr="Les annulations effectuées moins de 72 heures avant le cours ne sont pas remboursables."></li> -->
-    <li data-en="Rescheduling is not available for cancellations made within 48 hours of the scheduled time."
-        data-fr="Aucun report n’est possible pour les annulations effectuées dans les 48 heures précédant le cours."></li>
+    <!-- Existing rules -->
     <li data-en="Lessons start promptly at the scheduled time. If you are late, the remaining time will be used for your session, and extensions cannot be offered."
         data-fr="Les cours commencent à l’heure prévue. En cas de retard, le temps restant sera utilisé pour la session, sans prolongation possible."></li>
     <li data-en="In case of serious illness or technical issues, please contact info@sachiekobayashi.com to discuss a possible solution."
         data-fr="En cas de problème technique ou de maladie grave, veuillez contacter info@sachiekobayashi.com pour convenir d’une solution."></li>
+    
+    <!-- Trial Lesson -->
+  　<li>
+      <strong data-en="Trial Lesson:" data-fr="Leçon d’essai :"></strong>
+      <span data-en="One free 30-minute trial lesson is available per student. Only one rescheduling is allowed for the trial. Any subsequent trial rescheduling will cost CHF 5." 
+            data-fr="Une leçon d’essai gratuite de 30 minutes est disponible par élève. Seul un changement d’horaire est autorisé pour la leçon d’essai. Tout changement supplémentaire coûtera 5 CHF."></span>
+    </li>
   </ul>
 </div>
 
