@@ -112,11 +112,11 @@ permalink: /lesson_fren/
 <!-- Website Section -->
 <div class="card" style="text-align:center;">
   <p style="font-size:1.2rem; font-weight:bold; margin:0;">
-    <span data-en="Artist's Website: " data-fr="Site web de l'artiste: "></span>
+    <span data-en="(Bookings are at the bottom of the page.)Artist's Website: " data-fr="(La réservation se trouve en bas de la page)Site web de l'artiste: "></span>
     <a href="https://www.sachiekobayashi.com/" target="_blank" rel="noopener noreferrer"
        style="color:black; text-decoration:underline;"
-       data-en="https://www.sachiekobayashi.com/ Bookings are at the bottom of the page."
-       data-fr="https://www.sachiekobayashi.com/　La réservation se trouve en bas de la page">
+       data-en="https://www.sachiekobayashi.com/"
+       data-fr="https://www.sachiekobayashi.com/">
       https://www.sachiekobayashi.com/
     </a>
   </p>
