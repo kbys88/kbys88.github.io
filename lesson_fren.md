@@ -9,8 +9,6 @@ permalink: /lesson_fren/
   <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/header2.jpg" alt="Header" style="width:100%; max-height:900px; object-fit:cover; border-radius:10px;">
 </div>
 
-
-
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -328,7 +326,5 @@ enBtn.addEventListener('click', () => setLanguage('en'));
 frBtn.addEventListener('click', () => setLanguage('fr'));
 </script>
 
-</body>
-</html>
 
 
