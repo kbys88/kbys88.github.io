@@ -1,7 +1,7 @@
 ---
 layout: none
 title: Music/Composition/Sound Design/Solfege Lesson from the World !
-permalink: /lesson_fren/
+permalink: /lesson_fr/
 ---
 
 <!-- Header Image -->
