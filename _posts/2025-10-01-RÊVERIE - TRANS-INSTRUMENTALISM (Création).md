@@ -14,6 +14,10 @@ comments: false
 ![Reverie_photo01](https://github.com/user-attachments/assets/82f68685-e4f3-45ff-bb07-b21dd77f8d3a)
 
 <img width="1418" height="798" alt="reverie_general2" src="https://github.com/user-attachments/assets/3dd8f7fb-f3f4-4b33-bacf-31fce0db58b0" />
+![mixte](https://github.com/user-attachments/assets/a7fd2ed8-0328-4f12-858c-35293a66c896)
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xRVBC2DTBSo?si=7aO8h5DKip67zK2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 LOCUS SOLUS
 Geneva International
