@@ -14,6 +14,16 @@ https://2025.giff.ch/film/reverie-trans-instrumentalism/
 The festival ends tomorrow, and I already feel a bit sad — it has been such a wonderful and inspiring experience.
 Every day has been filled with creativity, warm encounters, and exciting conversations about art and technology...
 
+![reverie](https://github.com/user-attachments/assets/3cdec525-4a30-42c3-9251-36991db8f8cf)
+
+![Reverie_photo01](https://github.com/user-attachments/assets/82f68685-e4f3-45ff-bb07-b21dd77f8d3a)
+
+<img width="1418" height="798" alt="reverie_general2" src="https://github.com/user-attachments/assets/3dd8f7fb-f3f4-4b33-bacf-31fce0db58b0" />
+![mixte](https://github.com/user-attachments/assets/a7fd2ed8-0328-4f12-858c-35293a66c896)
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xRVBC2DTBSo?si=7aO8h5DKip67zK2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 Presenting our work with Ensemble Contrechamps was truly special, and I’m grateful for the audience’s deep engagement.
 I met so many talented filmmakers and musicians from around the world, each sharing unique visions.
 Geneva’s atmosphere and GIFF’s open spirit made this week unforgettable.
