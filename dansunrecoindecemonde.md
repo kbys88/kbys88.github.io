@@ -3,6 +3,28 @@ layout: page
 title: dans un recoin de ce monde
 permalink: /dansunrecoindecemonde/
 ---
+
+# GIFF
+*投稿日: 2025-11-8*  
+
+Hi, I’m Kobayashi Sachie, here at the Geneva International Film Festival (GIFF) with RÊVERIE – TRANS-INSTRUMENTALISM.
+
+https://2025.giff.ch/film/reverie-trans-instrumentalism/
+
+The festival ends tomorrow, and I already feel a bit sad — it has been such a wonderful and inspiring experience.
+Every day has been filled with creativity, warm encounters, and exciting conversations about art and technology...
+
+Presenting our work with Ensemble Contrechamps was truly special, and I’m grateful for the audience’s deep engagement.
+I met so many talented filmmakers and musicians from around the world, each sharing unique visions.
+Geneva’s atmosphere and GIFF’s open spirit made this week unforgettable.
+I’m leaving with new ideas, friendships, and a full heart.
+Thank you, GIFF!!
+
+à tt !
+Sachie
+
+---
+
 # 日々侘び寂びです
 *投稿日: 2025-10-2*  
 地獄みたいな暑さの夏がやっと終わった感じの最近ですね。
