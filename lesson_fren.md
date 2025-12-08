@@ -265,12 +265,16 @@ function showVideo(lang) {
       <span data-en="45-minute paid lessons cost CHF 45 each. Rescheduling is allowed up to 48 hours before the lesson. Changes within 48 hours are treated as 100% cancellation. Any rescheduling within 48 hours requires booking a new lesson. Refunds are not provided under any circumstances." 
             data-fr="Les leçons payantes de 45 minutes coûtent 45 CHF chacune. Les changements d’horaire sont autorisés jusqu’à 48 heures avant la leçon. Les modifications dans les 48 heures précédant la leçon sont considérées comme des annulations à 100%. Toute modification après ce délai nécessite une nouvelle réservation. Aucun remboursement n’est possible dans tous les cas."></span>
     </li>
+
+    
     
    <!-- Details -->
 <li>
   <strong data-en="Lesson Details:" data-fr="Détails du cours :"></strong>
-  <span data-en="Lessons can be taken on either PC or Mac. Any software is acceptable, though the instructor uses Ableton Live. Please note that the instructor may not have all plugins. Lessons cover composition, orchestration, sheet music, and solfège. Suitable for all skill levels. Lessons are available in English and French." 
-        data-fr="Les cours peuvent se faire sur PC ou Mac. N’importe quel logiciel est accepté, mais le professeur utilise Ableton Live. Veuillez noter que le professeur ne possède pas forcément tous les plugins. Les cours couvrent la composition, l’orchestration, la notation musicale et le solfège. Convient à tous les niveaux. Les cours sont disponibles en anglais et en français."></span>
+  <span data-en="Lessons can be taken on either PC or Mac. Any software is acceptable, though the instructor uses Ableton Live. Please note that the instructor may not have all plugins. Lessons cover composition, orchestration, sheet music, and solfège. Suitable for all skill levels. Lessons are available in English and French.For details regarding payment, cancellations, refunds, and general terms, please see [**Lesson Policies**](https://www.sachiekobayashi.com/policies/).
+" 
+        data-fr="Les cours peuvent se faire sur PC ou Mac. N’importe quel logiciel est accepté, mais le professeur utilise Ableton Live. Veuillez noter que le professeur ne possède pas forcément tous les plugins. Les cours couvrent la composition, l’orchestration, la notation musicale et le solfège. Convient à tous les niveaux. Les cours sont disponibles en anglais et en français. For details regarding payment, cancellations, refunds, and general terms, please see our  
+[**Lesson Policies**](https://www.sachiekobayashi.com/policies/)."></span>
 </li>
 
 
