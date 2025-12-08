@@ -9,7 +9,7 @@ permalink: /policies/
 This page provides important information regarding billing, payments, refunds, and other commercial policies related to our online lessons. Payments are securely processed through Stripe.
 
 Business Information
-Business name: Sachie Kobayashi (Sachie Kobayashi Language Services)
+Business name: Sachie Kobayashi (Studio Cucurbits.)
 Email: info@sachiekobayashi.com
 
 
