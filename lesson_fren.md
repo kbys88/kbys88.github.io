@@ -296,7 +296,10 @@ function showVideo(lang) {
   </ul>
 </div>
 
-For details regarding payment, cancellations, refunds, and general terms, please see our [**Lesson Policies**](https://www.sachiekobayashi.com/policies/).
+<p>
+  For details regarding payment, cancellations, refunds, and general terms, please refer to our 
+  <a href="https://www.sachiekobayashi.com/policies/" target="_blank">Lesson Policies</a>.
+</p>
 
 
 
