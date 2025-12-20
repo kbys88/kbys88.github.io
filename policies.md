@@ -54,51 +54,85 @@ permalink: /policies/
 る裁判所を第一審の専属的合意管轄とします。
 
 
-  Commerce Disclosure
+Commerce Disclosure 
 
-This page provides important information regarding billing, payments, refunds, and other commercial policies related to our online lessons. Payments are securely processed through Stripe.
+This page provides important information regarding billing, payments, cancellations, and other commercial policies related to our online lessons. Payments are securely processed through Stripe.
 
 Business Information
+
 Business name: Sachie Kobayashi (Studio Cucurbits.)
 Email: info@sachiekobayashi.com
 
-
 Phone: 050-5530-1800 (Weekdays 10:00–18:00 JST)
+
 Address:
 Shibuya Office
 Shibuya Dogenzaka Tokyu Building 2F-C
 1-10-8 Dogenzaka, Shibuya-ku, Tokyo 150-0043, Japan
 
 Services Provided
-Online one-on-one language lessons (Japanese, English, French), typically 60 minutes per session.
 
-Pricing (1h)
+Online one-on-one music lessons conducted via online communication tools.
+Each lesson is typically 60 minutes per session.
+Lessons are available in Japanese, English, and French.
 
-Japanese lessons (Japan residents): 4,500 JPY per hour
-French / English lessons (Euro Area): 45 EUR per hour
+Pricing
 
-Payments are processed in the appropriate currency based on your region of residence.
+Lesson Fee:
+Japan residents (Japanese lessons): 4,500 JPY per hour (tax included)
 
-Billing Descriptor
-The card statement name follows the Stripe account settings (e.g., “SACHIE KOBAYASHI LESSON”).
+Pricing for other regions may vary depending on location and currency.
 
-Refund & Cancellation Policy
+Monthly Billing System
 
-Cancellation ≥ 48 hours before the lesson: Full refund or lesson credit
+Lessons are offered on a monthly billing basis.
 
-Cancellation < 48 hours: Non-refundable
+At the beginning of each month, students declare the number of lesson hours they wish to take during that month.
 
-No-show: Non-refundable
-Refunds are issued using the same payment method.
+The total lesson fee for the declared hours must be paid in advance.
 
-Payment Timing
-Charged at booking or confirmation.
-Receipts available upon request: info@sachiekobayashi.com
+No refunds are provided for unused lesson hours or changes made after payment, except as expressly stated below.
+
+Payment Method
+
+Payments are made through an online payment link issued via Stripe.
+
+Payments are charged monthly and must be completed by the specified due date.
+
+Any payment processing fees or communication costs are borne by the student.
+
+We do not store credit card information.
+
+Cancellation & Rescheduling Policy
+
+If a student notifies us before the scheduled lesson start time, the lesson may be rescheduled within the same month, subject to availability.
+
+Rescheduling beyond the current month is not permitted.
+
+No refunds are provided for canceled lessons, regardless of timing.
+
+In the case of a no-show (absence without prior notice), the lesson is considered completed and cannot be refunded or rescheduled.
+
+Refund Policy
+
+Lesson fees are non-refundable once paid.
+
+This includes cancellations, partial use of monthly lesson hours, or failure to attend scheduled lessons.
+
+Payment Timing & Receipts
+
+Payments are charged after lesson hours are confirmed for the month.
+
+Receipts are available upon request: info@sachiekobayashi.com
 
 Taxes
-Please verify whether prices include applicable taxes. International transactions follow regional tax laws.
+
+Prices include applicable Japanese consumption tax where required.
+For international transactions, applicable taxes are handled in accordance with regional regulations.
 
 Payment Provider
-Payments are processed via Stripe; we do not store credit card information.
 
-Last updated: December 8, 2025
+Payments are securely processed via Stripe.
+Stripe’s terms and privacy policies apply to all payment transactions.
+
+Last updated: December 20, 2025
