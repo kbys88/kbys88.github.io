@@ -4,7 +4,7 @@ title: Bio
 permalink: /bio/
 ---
 
-<img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/about.jpeg" alt="About" width="50%">
+<img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/sachiebio.png" alt="About" width="50%">
 
 ## English
 
@@ -23,6 +23,7 @@ In 2020, her piece *I haven’t known you yet* for orchestra and electronics pre
 She started her composing career while pursuing a second master’s degree in music theory education at Haute école de musique de Genève, after completing her composition master’s degree in 2020 with Michael Jarrell, Luis Naon, and Gilbert Nouno. She holds a bachelor's degree in Cultural Creative Studies from Aoyama Gakuin University and studied composition at Tokyo University of the Arts (Geidai) under Akio Yasuraoka. In 2018, she won the Acanthus Prize and Taito Mayor Prize.
 
 ---
+<img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/about.jpeg" alt="About" width="50%">
 
 <div class="video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/BPuq3Up4hzU?si=EfIqt80eRZmHbLAt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
