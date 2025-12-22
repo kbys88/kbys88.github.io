@@ -144,4 +144,4 @@ Payment Provider
 Payments are securely processed via Stripe.
 Stripe’s terms and privacy policies apply to all payment transactions.
 
-Last updated: December 20, 2025
+Last updated: December 8, 2025
