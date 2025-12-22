@@ -76,7 +76,6 @@ permalink: /teach/
 
 <hr>
 
-<h2初心者から、プロまでｄ>ｄ>ｄ>
 
 <ul>
   <li>音楽を基礎から学びたい</li>
@@ -126,7 +125,7 @@ permalink: /teach/
 
 <h3>Sachie Kobayashi</h3>
 
-<p><strong>作曲家・音楽教育者</strong></p>
+<p><strong>作曲家・アーティスト</strong></p>
 
 <p>
 スイス・ジュネーブ高等音楽院 音楽教育 修士課程修了。<br>
