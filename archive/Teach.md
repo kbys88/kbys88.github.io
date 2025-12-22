@@ -105,7 +105,7 @@ permalink: /teach/
 </p>
 
 <p>
-👉 <strong><a href="mailto:info@sachiekobayashi.com">info@sachiekobayashi.comへ</a></strong>
+<strong><a href="mailto:info@sachiekobayashi.com">info@sachiekobayashi.comへ</a></strong>
 </p>
 
 <hr>
@@ -117,7 +117,7 @@ permalink: /teach/
 </p>
 
 <p>
-👉 <strong><a href="https://www.sachiekobayashi.com/policies/">レッスン規約はこちら</a></strong>
+<strong><a href="https://www.sachiekobayashi.com/policies/">レッスン規約はこちら</a></strong>
 </p>
 
 <hr>
