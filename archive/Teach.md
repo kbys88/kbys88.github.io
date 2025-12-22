@@ -6,10 +6,10 @@ permalink: /teach/
 
 <img src="{{ '/images/lesson.png' | relative_url }}" alt="Lesson Image" style="max-width:100%; height:auto;">
 
-<h1>オンライン音楽レッスン</h1>
+<h1>ONLINE LESSON</h1>
 
 <p>
-作曲・DTM・音楽理論・ソルフェージュを中心に、目的やレベルに合わせたマンツーマンのオンラインレッスンを行っています。
+作曲・DTM・音楽理論・ソルフェージュを中心に、目的やレベルに合わせたマンツーマンのオンラインレッスン、指導、アレンジの添削などを行っています。
 </p>
 
 <hr>
