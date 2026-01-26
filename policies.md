@@ -89,8 +89,7 @@ Pricing
 
 Lesson Fee:
 Japan residents (Japanese lessons): 4,500 JPY per hour (tax included)
-
-Pricing for other regions may vary depending on location and currency.
+EU/Switzerland residents (English/French lessons): 45 EUR/CHF per hour (tax included)
 
 Monthly Billing System
 
