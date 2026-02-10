@@ -153,6 +153,11 @@ permalink: /cucurbits/
       いまこの時代における「作る」という行為を探究します。
     </p>
   </div>
+  <div class="image">
+    <img src="https://github.com/user-attachments/assets/916521bd-a26a-4e0b-923b-8e70d0c63481" alt="cucurbits008">
+  </div>
+
+  
 </div>
 
 <div class="section right">
