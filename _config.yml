@@ -32,7 +32,7 @@ navigation:
   - name: Blog
     url: /dansunrecoindecemonde
   - name: STUDIO
-    url: /cucurbit
+    url: /cucurbits
     
 # 每页的文章数
 paginate: 8
