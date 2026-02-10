@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Studio Cucurbit. 
+title: Studio Cucurbits. 
 permalink: /cucurbits/
 ---
 
