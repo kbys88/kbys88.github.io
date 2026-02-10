@@ -43,7 +43,9 @@ permalink: /cucurbits/
 
 <div class="section left">
   <h2>About</h2>
-
+  
+  ![cucurbits001](https://github.com/user-attachments/assets/859da98e-bab9-4f06-8a71-ea9615d07dad)
+  
   <p>
     <strong>Studio Cucubits. by Sachie Kobayashi</strong> は、<br>
     音楽制作のためのスタジオであり、思考と実験のためのプラットフォームです。
@@ -72,6 +74,8 @@ permalink: /cucurbits/
   <h2>Practice</h2>
 
   <h3>Composition / Music Production</h3>
+
+  ![cucurbits002](https://github.com/user-attachments/assets/2362bfb0-cf8c-4a9e-9bf0-1876b697edc2)
 
   <p>
     映画、舞台、ダンス、映像作品、インスタレーション、パフォーマンスなど、<br>
