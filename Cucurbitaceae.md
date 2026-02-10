@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Studio Cucurbits. 
+title: Studio Cucurbits.
 permalink: /cucurbits/
 ---
+
 <style>
 .section {
   max-width: 860px;
@@ -21,6 +22,12 @@ permalink: /cucurbits/
 .section h2,
 .section h3 {
   margin-bottom: 1.5rem;
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 0;
 }
 </style>
 
@@ -43,9 +50,9 @@ permalink: /cucurbits/
 
 <div class="section left">
   <h2>About</h2>
-  
-  ![cucurbits001](https://github.com/user-attachments/assets/859da98e-bab9-4f06-8a71-ea9615d07dad)
-  
+
+  <img src="https://github.com/user-attachments/assets/859da98e-bab9-4f06-8a71-ea9615d07dad" alt="cucurbits001">
+
   <p>
     <strong>Studio Cucubits. by Sachie Kobayashi</strong> は、<br>
     音楽制作のためのスタジオであり、思考と実験のためのプラットフォームです。
@@ -75,7 +82,7 @@ permalink: /cucurbits/
 
   <h3>Composition / Music Production</h3>
 
-  ![cucurbits002](https://github.com/user-attachments/assets/2362bfb0-cf8c-4a9e-9bf0-1876b697edc2)
+  <img src="https://github.com/user-attachments/assets/2362bfb0-cf8c-4a9e-9bf0-1876b697edc2" alt="cucurbits002">
 
   <p>
     映画、舞台、ダンス、映像作品、インスタレーション、パフォーマンスなど、<br>
@@ -91,6 +98,8 @@ permalink: /cucurbits/
 
 <div class="section left">
   <h3>Cross-disciplinary Collaboration</h3>
+
+  <img src="https://github.com/user-attachments/assets/495220e4-c5ae-4b58-9801-b42f6bd203ac" alt="cucurbits003">
 
   <p>
     アーティスト、映像作家、振付家、美術家、デザイナーなど、<br>
