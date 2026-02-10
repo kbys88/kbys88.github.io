@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Studio Cucurbit. 
-permalink: /cucurbit/
+permalink: /cucurbits/
 ---
 
 
