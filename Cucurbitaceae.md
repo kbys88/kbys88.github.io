@@ -70,9 +70,7 @@ permalink: /cucurbits/
     </p>
   </div>
 
-  <div class="image">
-    <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/cucurbit.gif" alt="">
-  </div>
+
 </div>
 
 <div class="section right">
