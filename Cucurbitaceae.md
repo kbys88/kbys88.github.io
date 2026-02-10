@@ -21,6 +21,7 @@ permalink: /cucurbits/
 </p>
 
 ---
+![cucurbits001](https://github.com/user-attachments/assets/859da98e-bab9-4f06-8a71-ea9615d07dad)
 
 ## About
 
@@ -40,6 +41,7 @@ Studio Cucubits. は、作品を生み出す場であると同時に、
 開かれた実験の場であり続けます。
 
 ---
+![cucurbits002](https://github.com/user-attachments/assets/2362bfb0-cf8c-4a9e-9bf0-1876b697edc2)
 
 ## Practice
 
@@ -53,6 +55,7 @@ Studio Cucubits. は、作品を生み出す場であると同時に、
 「その作品にしか存在しえない音」を探ります。
 
 ---
+![cucurbits003](https://github.com/user-attachments/assets/495220e4-c5ae-4b58-9801-b42f6bd203ac)
 
 ### Cross-disciplinary Collaboration
 
