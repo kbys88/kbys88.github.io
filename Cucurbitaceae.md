@@ -37,6 +37,12 @@ permalink: /cucurbits/
   display: block;
 }
 
+/* 🔹 最初の段落だけ大きくする */
+.intro {
+  font-size: 1.6rem;
+  line-height: 2.1;
+}
+
 /* 見出し */
 .section h2,
 .section h3 {
@@ -53,12 +59,16 @@ permalink: /cucurbits/
   .section .image {
     width: 100%;
   }
+
+  .intro {
+    font-size: 1.3rem;
+  }
 }
 </style>
 
 <div class="section left">
   <div class="text">
-    <p>
+    <p class="intro">
       <strong>Studio Cucubits. by Sachie Kobayashi</strong><br>
       作曲家 Sachie Kobayashi による音楽制作スタジオ
     </p>
@@ -72,7 +82,6 @@ permalink: /cucurbits/
   <div class="image">
     <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/logo1.png" alt="logo1">
   </div>
-
 </div>
 
 <div class="section right">
@@ -156,8 +165,6 @@ permalink: /cucurbits/
   <div class="image">
     <img src="https://github.com/user-attachments/assets/916521bd-a26a-4e0b-923b-8e70d0c63481" alt="cucurbits008">
   </div>
-
-  
 </div>
 
 <div class="section right">
