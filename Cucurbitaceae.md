@@ -70,7 +70,7 @@ permalink: /cucurbits/
     </p>
   </div>
   <div class="image">
-    <img src="https://github.com/user-attachments/assets/logo1.png" alt="logo1">
+    <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/logo1.png" alt="logo1">
   </div>
 
 </div>
