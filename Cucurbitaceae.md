@@ -69,7 +69,9 @@ permalink: /cucurbits/
       そしてAI時代の創作に関する実験と問題提起を行っています。
     </p>
   </div>
-
+  <div class="image">
+    <img src="https://github.com/user-attachments/assets/logo1.png" alt="logo1">
+  </div>
 
 </div>
 
