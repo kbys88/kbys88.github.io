@@ -249,6 +249,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <!-- =================== Commission =================== -->
 
+
 <div class="section left">
   <div class="text">
 
@@ -264,6 +265,17 @@ document.addEventListener("DOMContentLoaded", function() {
         音楽を「依頼する／される」関係を超えて、<br>
         共に考え、共にリスクを引き受ける制作を志向しています。
       </p>
+
+      <p>
+        映像作品やYouTubeコンテンツ、プロダクト向けのサウンドデザイン、<br>
+        サウンドロゴ制作、ブランド音設計なども承ります。
+      </p>
+
+      <p>
+        実績として、Sonicware「LIVEN Ambient」のサウンドデザイン、<br>
+        株式会社アクシーのサウンドロゴ制作などがあります。<br>
+        また、AI音楽アノテーション業務や、海外クライアントとの協働実績もあります。
+      </p>
     </div>
 
     <div class="en">
@@ -277,6 +289,18 @@ document.addEventListener("DOMContentLoaded", function() {
       <p>
         Beyond the conventional relationship of commissioning and being commissioned,
         the studio seeks processes of making that share thought and risk together.
+      </p>
+
+      <p>
+        Services include sound design for film, YouTube content,
+        and products, as well as sonic branding and sound logo production.
+      </p>
+
+      <p>
+        Selected works include sound design for Sonicware’s
+        “LIVEN Ambient” and the creation of a sound logo for AEXEA Co., Ltd.
+        The studio also has experience in AI music annotation
+        and collaborations with international clients.
       </p>
     </div>
 
