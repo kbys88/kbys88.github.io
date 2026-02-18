@@ -249,7 +249,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <!-- =================== Commission =================== -->
 
-
 <div class="section left">
   <div class="text">
 
@@ -276,6 +275,11 @@ document.addEventListener("DOMContentLoaded", function() {
         株式会社アクシーのサウンドロゴ制作などがあります。<br>
         また、AI音楽アノテーション業務や、海外クライアントとの協働実績もあります。
       </p>
+
+      <p>
+        音源制作やコラボレーション、納期等に関するお問い合わせは<br>
+        <strong>info@sachiekobayashi</strong> までご連絡ください。
+      </p>
     </div>
 
     <div class="en">
@@ -301,6 +305,12 @@ document.addEventListener("DOMContentLoaded", function() {
         “LIVEN Ambient” and the creation of a sound logo for AEXEA Co., Ltd.
         The studio also has experience in AI music annotation
         and collaborations with international clients.
+      </p>
+
+      <p>
+        For inquiries regarding music production, collaboration,
+        scheduling, or delivery timelines, please contact<br>
+        <strong>info@sachiekobayashi</strong>.
       </p>
     </div>
 
