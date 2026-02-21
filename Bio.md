@@ -4,7 +4,7 @@ title: Bio
 permalink: /bio/
 ---
 
-<img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/sachiebio.png" alt="About" width="50%">
+<img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/newsachie.png" alt="About" width="50%">
 
 ## English
 
