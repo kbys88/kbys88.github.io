@@ -4,341 +4,498 @@ title: Music/Composition/Sound Design/Solfege Lesson from the World !
 permalink: /lesson_fr/
 ---
 
-<!-- Header Image -->
 <div style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/header2.jpg" alt="Header" style="width:100%; max-height:900px; object-fit:cover; border-radius:10px;">
+  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/header2.jpg" alt="Header" style="width:100%; max-height:600px; object-fit:cover;">
 </div>
 
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sachie Kobayashi — Online Exchange & Lessons (English or French)</title>
-
+<title>Sachie Kobayashi — Online Lessons</title>
 {% include fonts.html %}
-
 <style>
-  body { font-family: sans-serif; background:#f7fafc; margin:0; color:#111;}
-  .container{max-width:800px;margin:40px auto;padding:20px;}
-  h1,h2,h3{margin-top:0;}
-  .card{background:#fff;padding:20px;margin-bottom:20px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.06);}
-  .btn{display:inline-block;padding:12px 20px;border-radius:8px;background:#333;color:#fff;text-decoration:none;font-weight:600;}
-  .small{font-size:0.9rem;color:#555;margin-top:8px;}
-  .lang-btns{margin-bottom:20px;}
-  .lang-btns button{margin-right:8px;padding:6px 12px;border-radius:6px;border:1px solid #333;background:#fff;color:#333;cursor:pointer;}
-  .lang-btns button.active{background:#333;color:#fff;}
-  .bio, .greeting {margin-bottom:20px;}
-  .video-container {margin-bottom:20px; border-radius:10px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.06);}
-  .video-container iframe {width:100%; height:450px; border:0;}
-  .sound-gallery {display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 30px 0;}
-  .sound-item {width: calc(33.333% - 15px); border-radius: 8px; object-fit: cover;}
-  @media (max-width: 768px) {.sound-item { width: calc(50% - 15px); }}
-  @media (max-width: 480px) {.sound-item { width: 100%; }}
-  .highlight-email {color: red; font-weight: 600;}
-  #payButton {display:inline-block; padding:12px 25px; font-size:16px; border:none; border-radius:8px; background-color:#6772e5; color:#fff; cursor:pointer; margin-bottom:20px;}
-  #payButton:hover {background-color:#5469d4;}
-  .calendly-inline-widget {width:100%; min-width:320px; height:700px;}
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #1a1814;
+    --ink-mid: #5a5650;
+    --ink-light: #a09a93;
+    --sand: #f5f1ec;
+    --sand-mid: #e8e2da;
+    --white: #fdfcfa;
+    --accent: #c4a882;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--white);
+    color: var(--ink);
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
+  .wrap { max-width: 680px; margin: 0 auto; padding: 0 28px; }
+
+  /* lang toggle */
+  .lang-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--white);
+    border-bottom: 1px solid var(--sand-mid);
+    padding: 14px 28px;
+    display: flex;
+    gap: 0;
+  }
+  .lang-bar button {
+    background: none;
+    border: none;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    cursor: pointer;
+    padding: 4px 14px 4px 0;
+    transition: color 0.2s;
+  }
+  .lang-bar button.active { color: var(--ink); }
+  .lang-bar button:not(:last-child)::after {
+    content: '/';
+    margin-left: 14px;
+    color: var(--sand-mid);
+  }
+
+  /* section spacing */
+  section { padding: 72px 0; border-bottom: 1px solid var(--sand-mid); }
+  section:last-of-type { border-bottom: none; }
+
+  /* eyebrow label */
+  .label {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin-bottom: 28px;
+    display: block;
+  }
+
+  /* headings */
+  h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: -0.01em;
+    margin-bottom: 28px;
+  }
+  h2 {
+    font-family: 'EB Garamond', serif;
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-mid);
+    margin-bottom: 16px;
+  }
+
+  p { color: var(--ink-mid); margin-bottom: 18px; }
+  p:last-child { margin-bottom: 0; }
+  p strong { color: var(--ink); font-weight: 400; }
+
+  /* video */
+  .video-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    background: var(--sand);
+  }
+  .video-wrap iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  /* gallery */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    margin: 40px 0;
+  }
+  .gallery img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* strengths list */
+  .strengths {
+    list-style: none;
+    border-top: 1px solid var(--sand-mid);
+  }
+  .strengths li {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--sand-mid);
+    color: var(--ink-mid);
+    font-size: 15px;
+    padding-left: 20px;
+    position: relative;
+  }
+  .strengths li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 24px;
+    width: 6px;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  /* software grid */
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .tools span {
+    font-size: 13px;
+    padding: 6px 14px;
+    border: 1px solid var(--sand-mid);
+    color: var(--ink-mid);
+    letter-spacing: 0.02em;
+  }
+
+  /* pricing table */
+  .pricing {
+    border-top: 1px solid var(--sand-mid);
+    margin-top: 8px;
+  }
+  .pricing-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--sand-mid);
+    gap: 20px;
+  }
+  .pricing-label { font-size: 15px; color: var(--ink-mid); }
+  .pricing-value {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  .pricing-note { font-size: 13px; color: var(--ink-light); margin-top: 4px; }
+
+  /* free trial banner */
+  .trial-banner {
+    background: var(--sand);
+    padding: 36px 40px;
+    text-align: center;
+    margin: 48px 0;
+  }
+  .trial-banner .big {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.6rem;
+    font-style: italic;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .trial-banner .sub { font-size: 13px; color: var(--ink-light); }
+
+  /* FAQ */
+  .faq { border-top: 1px solid var(--sand-mid); }
+  .faq-item {
+    padding: 22px 0;
+    border-bottom: 1px solid var(--sand-mid);
+  }
+  .faq-q {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+  .faq-a { font-size: 14px; color: var(--ink-mid); line-height: 1.65; }
+
+  /* link */
+  a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+
+  .highlight-email { color: var(--ink); font-style: italic; }
+
+  /* calendly */
+  .calendly-wrap {
+    border-top: 1px solid var(--sand-mid);
+    padding-top: 48px;
+  }
+  .calendly-inline-widget { width: 100%; min-width: 320px; height: 700px; }
+
+  /* footer */
+  footer {
+    padding: 48px 28px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--ink-light);
+    letter-spacing: 0.05em;
+    border-top: 1px solid var(--sand-mid);
+  }
+
+  /* lang video toggle */
+  .video-lang-toggle {
+    display: flex;
+    gap: 0;
+    margin-bottom: 20px;
+  }
+  .video-lang-toggle button {
+    background: none;
+    border: 1px solid var(--sand-mid);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    cursor: pointer;
+    padding: 8px 18px;
+    transition: all 0.2s;
+  }
+  .video-lang-toggle button:first-child { border-right: none; }
+  .video-lang-toggle button.active {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--white);
+  }
+
+  @media (max-width: 520px) {
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+    .pricing-row { flex-direction: column; gap: 4px; }
+    .trial-banner { padding: 28px 20px; }
+  }
 </style>
 </head>
 <body>
-<div class="container">
-<!-- Language Buttons -->
-<div class="lang-btns">
+
+<!-- sticky lang bar -->
+<div class="lang-bar">
   <button id="enBtn" class="active">English</button>
   <button id="frBtn">Français</button>
 </div>
 
+<div class="wrap">
 
-<!-- YouTube Video Section --> 
-<div class="video-container">
-  <iframe src="https://www.youtube.com/embed/EOf82PRXh3Y" 
-  title="Sachie Kobayashi Introduction" allowfullscreen></iframe>
-</div>
+  <!-- HERO -->
+  <section>
+    <span class="label" data-en="Online Exchange & Lessons" data-fr="Échanges et Cours en Ligne"></span>
+    <h1 data-en="Sachie Kobayashi" data-fr="Sachie Kobayashi"></h1>
+    <p style="font-family:'EB Garamond',serif; font-size:1.15rem; color:var(--ink-mid); font-style:italic; margin-bottom:32px;"
+       data-en="Composer and creator — trained in Switzerland, Tokyo and Paris, active worldwide."
+       data-fr="Compositrice et créatrice — formée en Suisse, à Tokyo et à Paris, active dans le monde entier."></p>
+    <p data-en="Teaching composition, music theory, ear training, solfège, sound design, and music for film — from beginner to professional. Available in English and French."
+       data-fr="Enseignement de la composition, théorie musicale, solfège, design sonore et musique pour l'image — du débutant au professionnel. Disponible en anglais et en français."></p>
+  </section>
 
-<!-- description 1-->
-<h2 data-en="Available in English and French"
-    data-fr="Available in English and French"></h2>
+  <!-- INTRO VIDEO -->
+  <section>
+    <span class="label" data-en="Introduction" data-fr="Présentation"></span>
+    <div class="video-wrap" style="margin-bottom:0;">
+      <iframe src="https://www.youtube.com/embed/EOf82PRXh3Y" title="Sachie Kobayashi Introduction" allowfullscreen></iframe>
+    </div>
+  </section>
 
+  <!-- GALLERY -->
+  <section style="padding-top:0; border-bottom:none;">
+    <div class="gallery">
+      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson01.jpg" alt="">
+      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson02.jpg" alt="">
+      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson03.jpg" alt="">
+      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson04.jpg" alt="">
+      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson05.jpg" alt="">
+      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson06.jpg" alt="">
+    </div>
+  </section>
 
-<!-- Hero Title -->
-<h1 data-en="Sachie Kobayashi — Online Exchange & Lessons"
-    data-fr="Sachie Kobayashi — Échanges et Cours en ligne"></h1>
+  <!-- ABOUT -->
+  <section>
+    <span class="label" data-en="About" data-fr="À propos"></span>
+    <p data-en="Sachie Kobayashi (b. 1990, Japan) is a composer exploring intuitive musical creation inspired by social phenomena. She completed a Master's in Composition and Music Education at the Haute École de Musique de Genève. Her works have been performed worldwide in collaboration with Klangforum Wien, Ensemble Modern, Ensemble Proton Bern, and The Geidai Philharmonia Orchestra."
+       data-fr="Sachie Kobayashi (née en 1990 au Japon) est compositrice, explorant la création musicale intuitive inspirée par les phénomènes sociaux. Elle a obtenu un Master en Composition et Pédagogie Musicale à la Haute École de Musique de Genève. Ses œuvres ont été jouées dans le monde entier avec Klangforum Wien, Ensemble Modern, Ensemble Proton Bern et The Geidai Philharmonia Orchestra."></p>
+    <p data-en="She has participated in IRCAM's composition program in Paris, won the impuls International Composition Competition 2023, and received scholarships from the Swiss Government, Nomura Foundation, and Kakehashi Foundation. Her recent works integrate video, stage, and multimedia."
+       data-fr="Elle a participé au programme de composition de l'IRCAM à Paris, remporté le impuls International Composition Competition 2023, et reçu des bourses du gouvernement suisse, de la Fondation Nomura et de la Fondation Kakehashi. Ses œuvres récentes intègrent vidéo, scène et multimédia."></p>
+    <p data-en="For professional collaborations: <span class='highlight-email'>info@sachiekobayashi.com</span> — <a href='https://www.sachiekobayashi.com/' target='_blank' rel='noopener'>sachiekobayashi.com</a>"
+       data-fr="Pour les collaborations professionnelles : <span class='highlight-email'>info@sachiekobayashi.com</span> — <a href='https://www.sachiekobayashi.com/' target='_blank' rel='noopener'>sachiekobayashi.com</a>"></p>
+  </section>
 
-<h2 data-en="Composer and creator Sachie Kobayashi, trained in Switzerland, Tokyo and Paris, active worldwide. She teaches everything from beginner to pro: composition, music theory, ear training, sound design, and music for film, blending J-Pop flair with contemporary techniques.
-"
-    data-fr="Sachie Kobayashi, compositrice et créatrice formée en Suisse, à Tokyo, et à Paris, active dans le monde entier. Elle enseigne tout, du débutant au professionnel : composition, théorie musicale, solfège, design sonore et musique pour l’image, avec une touche J-Pop moderne aussi."></h2>
+  <!-- STRENGTHS -->
+  <section>
+    <span class="label" data-en="Why study with Sachie" data-fr="Pourquoi étudier avec Sachie"></span>
+    <ul class="strengths">
+      <li data-en="Internationally performed composer with a global portfolio." data-fr="Compositrice reconnue internationalement avec un portfolio mondial."></li>
+      <li data-en="Collaborations with leading ensembles and multimedia artists worldwide." data-fr="Collaborations avec des ensembles de premier plan et des artistes multimédias."></li>
+      <li data-en="Master's degrees in Composition and Music Education from Switzerland." data-fr="Masters en Composition et Pédagogie Musicale en Suisse."></li>
+      <li data-en="Award-winner: impuls International Composition Competition 2023, Swiss Government Excellence Scholarship." data-fr="Primée : impuls International Composition Competition 2023, Bourse d'excellence du gouvernement suisse."></li>
+      <li data-en="Patient, personalised guidance for all levels — children to professionals." data-fr="Accompagnement personnalisé pour tous les niveaux — enfants et professionnels."></li>
+    </ul>
+  </section>
 
-<!-- Photo Gallery -->
-<div class="sound-gallery">
-  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson01.jpg" alt="Lesson 01" class="sound-item">
-  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson02.jpg" alt="Lesson 02" class="sound-item">
-  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson03.jpg" alt="Lesson 03" class="sound-item">
-  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson04.jpg" alt="Lesson 04" class="sound-item">
-  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson05.jpg" alt="Lesson 05" class="sound-item">
-  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson06.jpg" alt="Lesson 06" class="sound-item">
-</div>
-
-<!-- Greeting Section -->
-<div class="card greeting">
-  <p data-en="Hello, I’m Sachie Kobayashi, composer, creator, and artist. With a Master’s in Composition and Music Education from Switzerland, I offer careful, personalized guidance. Here, you can access not only tutorials and private lessons, but also professional exchange sessions — opportunities to discuss, collaborate, and learn directly from an internationally active artist. My work spans contemporary music, theater compositions, and innovative projects integrating AI and VR.<br><br>For professional collaborators interested in working together, please contact <span class='highlight-email'>info@sachiekobayashi.com</span>."
-     data-fr="Bonjour, je suis Sachie Kobayashi, compositrice, créatrice et artiste. Titulaire d’un Master en Composition et Pédagogie Musicale en Suisse, je peux vous offrir un enseignement attentif et personnalisé. Sur cette plateforme, vous pouvez accéder non seulement à des tutoriels et des cours privés, mais aussi à des sessions d’échange professionnel — des opportunités pour discuter, collaborer et apprendre directement auprès d’une artiste active à l’international. Mon travail couvre la musique contemporaine, la composition pour le théâtre, ainsi que des projets innovants intégrant l’IA et la réalité virtuelle.<br><br>Pour les professionnels souhaitant collaborer, veuillez contacter <span class='highlight-email'>info@sachiekobayashi.com</span>."></p>
-</div>
-
-<!-- description 2-->
-<h2 data-en="30-minute free trial available"
-    data-fr="Essai gratuit de 30 minutes disponible"
-    style="text-align: center;">
-</h2>
-
-<!-- YouTube Video Section --> 
-<div class="video-container"> <iframe src="https://www.youtube.com/embed/BPuq3Up4hzU" title="Sachie Kobayashi Introduction" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
-
-<!-- Instructor Strengths -->
-<div class="card" style="background:#fff9e6;">
-  <h2 data-en="Instructor Strengths" data-fr="Points forts de l'enseignante"></h2>
-  <ul>
-    <li data-en="Internationally experienced composer with performances worldwide." data-fr="Compositrice expérimentée internationalement, avec des œuvres jouées dans le monde entier."></li>
-    <li data-en="Extensive collaborations with ensembles, orchestras, and multimedia artists." data-fr="Nombreuses collaborations avec des ensembles, orchestres et artistes multimédias."></li>
-    <li data-en="Advanced degrees in Composition and Music Education from Switzerland." data-fr="Titulaire de masters en Composition et Pédagogie Musicale en Suisse."></li>
-    <li data-en="Award-winning artist: impuls International Composition Competition 2023, Swiss Government Excellence Scholarship, and more." data-fr="Artiste primée : impuls International Composition Competition 2023, Bourse d'excellence du gouvernement suisse, et plus."></li>
-    <li data-en="Experienced in teaching beginners to advanced students, offering personalized guidance." data-fr="Expérience dans l'enseignement du niveau débutant à avancé, avec un accompagnement personnalisé."></li>
-  </ul>
-</div>
-
-<!-- Bio Section --> 
-<div class="card bio"> <p data-en="Sachie Kobayashi (b. 1990, Japan) is a composer exploring intuitive musical creation and expression inspired by social phenomena. She studied piano from age seven and composition from twenty, completing a Master’s in Composition and Music Theory at Haute École de Musique de Genève, and a Master’s in Music Education. Her works have been performed worldwide, including collaborations with Klangforum Wien, Ensemble Modern, Ensemble Proton Bern, and The Geidai Philharmonia Orchestra. Sachie has participated in IRCAM’s composition program in Paris, won numerous prizes including the impuls International Composition Competition 2023, and received scholarships from the Swiss Government, Nomura Foundation, and Kakehashi Foundation. She integrates video, stage, and multimedia in her recent works, bridging traditional and contemporary music expression." data-fr="Sachie Kobayashi (née en 1990 au Japon) est compositrice, explorant la création musicale intuitive et l’expression inspirée par les phénomènes sociaux. Elle a étudié le piano dès l’âge de sept ans et la composition à vingt ans, et a obtenu un Master en Composition et Pédagogie Musicale ainsi qu’un Master en Éducation Musicale à la Haute École de Musique de Genève. Ses œuvres ont été jouées dans le monde entier, avec des collaborations incluant Klangforum Wien, Ensemble Modern, Ensemble Proton Bern et The Geidai Philharmonia Orchestra. Sachie a participé au programme de composition de l’IRCAM à Paris, a remporté de nombreux prix dont le impuls International Composition Competition 2023, et a reçu des bourses du gouvernement suisse, de la Fondation Nomura et de la Fondation Kakehashi. Ses œuvres récentes intègrent vidéo, scène et multimédia, reliant la musique traditionnelle et contemporaine."></p> 
-</div>
-
-<!-- Website Section -->
-<div class="card" style="text-align:center;">
-  <p style="font-size:1.2rem; font-weight:bold; margin:0;">
-    <span data-en="(Bookings are at the bottom of the page.) Artist's Website: " data-fr="(La réservation se trouve en bas de la page) Site web de l'artiste: "></span>
-    <a href="https://www.sachiekobayashi.com/" target="_blank" rel="noopener noreferrer"
-       style="color:black; text-decoration:underline;"
-       data-en="https://www.sachiekobayashi.com/"
-       data-fr="https://www.sachiekobayashi.com/">
-      https://www.sachiekobayashi.com/
-    </a>
-  </p>
-</div>
-
-<!-- 言語切替ボタン -->
-<button onclick="showVideo('en')">English</button>
-<button onclick="showVideo('fr')">Français</button>
-
-<!-- YouTube Video Section -->
-<div class="video-container" id="video-en">
-  <iframe src="https://www.youtube.com/embed/xFx8gj7iKCY" title="Sachie Kobayashi Introduction (EN)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<div class="video-container" id="video-fr" style="display:none;">
-  <iframe src="https://www.youtube.com/embed/SYYX3eBwMrc" title="Sachie Kobayashi Introduction (FR)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<script>
-function showVideo(lang) {
-  if(lang === 'en') {
-    document.getElementById('video-en').style.display = 'block';
-    document.getElementById('video-fr').style.display = 'none';
-  } else if(lang === 'fr') {
-    document.getElementById('video-en').style.display = 'none';
-    document.getElementById('video-fr').style.display = 'block';
-  }
-}
-</script>
-
-<!-- Software -->
-<div class="card" style="background:#e6f7ff;">
-  <h2 data-en="Software & Tools" data-fr="Logiciels et Outils"></h2>
-  <ul>
-    <li>Ableton Live</li>
-    <li>Reaper</li>
-    <li>Pro Tools</li>
-    <li>Logic Pro</li>
-    <li>Kontakt, iZotope, Opus, GRMtools</li>
-    <li>Pianoteq, Organteq, Repro, Melda</li>
-    <li>Sibelius, Musescore, Max</li>
-  </ul>
-</div>
-
-<!-- Beginner Section --> 
-<div class="card beginner"> <h2 data-en="For Beginners" data-fr="Pour Débutants"></h2> <p data-en="Whether you are a child or an adult, I offer gentle and careful guidance for beginners. Lessons cover solfège, music theory, and composition, and I can also incorporate elements of Japanese pop music to make learning engaging and fun. With my experience at the Haute École de Musique de Genève and practical training across Europe, I adapt lessons to your pace and interests." data-fr="Que vous soyez enfant ou adulte, je propose un enseignement doux et attentif pour les débutants. Les cours couvrent le solfège, la théorie musicale et la composition, et je peux également intégrer des éléments de la musique pop japonaise pour rendre l’apprentissage plaisant et motivant. Grâce à mon expérience à la Haute École de Musique de Genève et à mes stages pratiques en Europe, j’adapte les cours à votre rythme et à vos intérêts."></p> 
-</div>
-
-<!-- image 2-->
-<div style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/photo_lesson.jpg" alt="photo1" style="width:100%; max-height:900px; object-fit:cover; border-radius:10px;">
-</div>
-
-
-<!-- description 2-->
-<h2 data-en="30-minute free trial available"
-    data-fr="Essai gratuit de 30 minutes disponible"
-    style="text-align: center;">
-</h2>
-
-<!-- Tutorial -->
-<!--<div class="card">
-  <h2 data-en="Tutorial Video (EUR19.9)" data-fr="Vidéo Tutoriel (EUR19.9)"></h2>
-  <p data-en="This 3-hour tutorial shows how a professional composer creates a musical work using Ableton Live."
-     data-fr="Ce tutoriel de 3 heures montre comment un compositeur professionnel crée une œuvre musicale avec Ableton Live."></p>
-  
-  <div style="height:220px; background:#e2e8f0; border-radius:8px; display:flex; align-items:center; justify-content:center; color:#475569;">
-    <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/comingsoon.png" alt="comingsoon" class="sound-item" style="max-height:100%; border-radius:8px;">
+  <!-- TRIAL BANNER -->
+  <div class="trial-banner">
+    <div class="big" data-en="30-minute free trial available" data-fr="Essai gratuit de 30 minutes disponible"></div>
+    <div class="sub" data-en="No commitment — book directly below" data-fr="Sans engagement — réservez directement ci-dessous"></div>
   </div>
-  
-  <p class="small" data-en="After purchase, a viewing link will be sent by email."
-     data-fr="Après l'achat, un lien pour visionner la vidéo sera envoyé par email."></p>
-  
-  <a href="https://systeme.io/your-tutorial-link" target="_blank" class="btn" data-en="Buy Tutorial" data-fr="Acheter le tutoriel"></a>
-</div> -->
 
-<!-- Terms -->
-<div class="card" style="max-width:800px; margin:40px auto; padding:20px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
-  <h3 data-en="Lesson Terms & Conditions" data-fr="Conditions des Cours"></h3>
-  <ul style="font-size:1.05rem; line-height:1.8; margin-top:10px;">
-    <!-- Existing rules -->
-    <li data-en="Lessons start promptly at the scheduled time. If you are late, the remaining time will be used for your session, and extensions cannot be offered."
-        data-fr="Les cours commencent à l’heure prévue. En cas de retard, le temps restant sera utilisé pour la session, sans prolongation possible."></li>
-    <li data-en="In case of serious illness or technical issues, please contact info@sachiekobayashi.com to discuss a possible solution."
-        data-fr="En cas de problème technique ou de maladie grave, veuillez contacter info@sachiekobayashi.com pour convenir d’une solution."></li>
-    
-    <!-- Trial Lesson -->
-  　<li>
-      <strong data-en="Trial Lesson:" data-fr="Leçon d’essai :"></strong>
-      <span data-en="One free 30-minute trial lesson is available per student. Only one rescheduling is allowed for the trial. Any subsequent trial rescheduling will cost CHF 5." 
-            data-fr="Une leçon d’essai gratuite de 30 minutes est disponible par élève. Seul un changement d’horaire est autorisé pour la leçon d’essai. Tout changement supplémentaire coûtera 5 CHF."></span>
-    </li>
-  </ul>
-</div>
+  <!-- LESSONS VIDEO -->
+  <section>
+    <span class="label" data-en="Lesson preview" data-fr="Aperçu des cours"></span>
+    <div class="video-lang-toggle">
+      <button class="active" onclick="showVideo('en')" id="vEnBtn">English</button>
+      <button onclick="showVideo('fr')" id="vFrBtn">Français</button>
+    </div>
+    <div id="video-en" class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/xFx8gj7iKCY" title="Lesson EN" allowfullscreen></iframe>
+    </div>
+    <div id="video-fr" class="video-wrap" style="display:none;">
+      <iframe src="https://www.youtube.com/embed/SYYX3eBwMrc" title="Lesson FR" allowfullscreen></iframe>
+    </div>
+  </section>
 
-<!-- description 2-->
-<h2 data-en="30-minute free trial available"
-    data-fr="Essai gratuit de 30 minutes disponible"
-    style="text-align: center;">
-</h2>
+  <!-- SOFTWARE -->
+  <section>
+    <span class="label" data-en="Software & tools" data-fr="Logiciels et outils"></span>
+    <div class="tools">
+      <span>Ableton Live</span>
+      <span>Reaper</span>
+      <span>Pro Tools</span>
+      <span>Logic Pro</span>
+      <span>Kontakt</span>
+      <span>iZotope</span>
+      <span>GRMtools</span>
+      <span>Pianoteq</span>
+      <span>Sibelius</span>
+      <span>MuseScore</span>
+      <span>Max/MSP</span>
+    </div>
+  </section>
 
-<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" 
-     data-url="https://calendly.com/sound-sachiekobayashi/new-meeting?primary_color=8cc6da" 
-     style="min-width:320px; height:700px; max-width:100%; margin:0 auto;">
-</div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
+  <!-- PRICING -->
+  <section>
+    <span class="label" data-en="Rates" data-fr="Tarifs"></span>
+    <div class="pricing">
+      <div class="pricing-row">
+        <div>
+          <div class="pricing-label" data-en="Trial lesson (30 min)" data-fr="Leçon d'essai (30 min)"></div>
+          <div class="pricing-note" data-en="One per student, one rescheduling allowed" data-fr="Une par élève, un changement autorisé"></div>
+        </div>
+        <div class="pricing-value" data-en="Free" data-fr="Gratuit"></div>
+      </div>
+      <div class="pricing-row">
+        <div>
+          <div class="pricing-label" data-en="Private lesson (45 min)" data-fr="Cours particulier (45 min)"></div>
+          <div class="pricing-note" data-en="Rescheduling allowed up to 48h prior" data-fr="Modification possible jusqu'à 48h avant"></div>
+        </div>
+        <div class="pricing-value">CHF 45</div>
+      </div>
+      <div class="pricing-row">
+        <div>
+          <div class="pricing-label" data-en="Trial lesson discount" data-fr="Réduction après essai"></div>
+          <div class="pricing-note" data-en="Coupon sent after completing trial" data-fr="Coupon envoyé après la leçon d'essai"></div>
+        </div>
+        <div class="pricing-value">−10%</div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Paid Lesson Booking Button -->
-  <!-- P<div style="text-align:center; margin:20px 0;">
-  <a id="paidLessonBtn" href="https://sachiekobayashi.systeme.io/888090fa" target="_blank"
-     style="display:inline-block; padding:12px 25px; font-size:20px; border-radius:8px; background-color:#6772e5; color:#fff; text-decoration:none; font-weight:600;">
-    Book Paid Lesson
-  </a>
-</div>
--->
+  <!-- FAQ -->
+  <section>
+    <span class="label" data-en="Frequently asked questions" data-fr="Questions fréquentes"></span>
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-q" data-en="What platform do you use?" data-fr="Quelle plateforme utilisez-vous ?"></div>
+        <div class="faq-a" data-en="Lessons are conducted via Zoom. The link is sent automatically upon booking." data-fr="Les cours se déroulent via Zoom. Le lien est envoyé automatiquement après la réservation."></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" data-en="Do I need a specific computer or software?" data-fr="Ai-je besoin d'un ordinateur ou logiciel particulier ?"></div>
+        <div class="faq-a" data-en="Any PC or Mac is fine. Any software is welcome, though the instructor primarily uses Ableton Live. Not all plugins may be available." data-fr="PC ou Mac convient. Tout logiciel est bienvenu, bien que l'enseignante utilise principalement Ableton Live. Tous les plugins ne sont pas forcément disponibles."></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" data-en="What subjects can be covered?" data-fr="Quels sujets peuvent être abordés ?"></div>
+        <div class="faq-a" data-en="Composition, orchestration, sheet music notation, solfège, ear training, sound design, and music for film. Suitable for all skill levels." data-fr="Composition, orchestration, notation musicale, solfège, formation auditive, design sonore et musique pour l'image. Adapté à tous les niveaux."></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" data-en="What is the cancellation policy?" data-fr="Quelle est la politique d'annulation ?"></div>
+        <div class="faq-a">
+          <span data-en="Changes within 48 hours are treated as full cancellations. Refunds are not provided. For serious illness or technical issues, contact " data-fr="Toute modification dans les 48 heures est considérée comme une annulation totale. Aucun remboursement possible. En cas de maladie grave ou problème technique, contactez "></span><span class="highlight-email">info@sachiekobayashi.com</span>.
+          <span data-en=" Full policies at " data-fr=" Conditions complètes sur "></span><a href="https://www.sachiekobayashi.com/policies/" target="_blank" data-en="sachiekobayashi.com/policies" data-fr="sachiekobayashi.com/policies"></a>.
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- Q&A Section -->
-<div class="card" style="background:#f0f4ff; padding:20px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
-  <h2 style="text-align:center;" data-en="Frequently Asked Questions (Q&A)" data-fr="Questions Fréquemment Posées (Q&R)"></h2>
-  
-  <ul style="font-size:1.1rem; line-height:1.8; margin-top:15px;">
+  <!-- PHOTO -->
+  <div style="margin: 0 -28px;">
+    <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/photo_lesson.jpg" alt="" style="width:100%; max-height:500px; object-fit:cover; display:block;">
+  </div>
 
-    
-<!-- Trial Lesson -->
-　　<li>
-      <strong data-en="Trial Lesson:" data-fr="Leçon d’essai :"></strong>
-      <span data-en="One free 30-minute trial lesson is available per student. Only one rescheduling is allowed for the trial. Any subsequent trial rescheduling will cost CHF 5." 
-            data-fr="Une leçon d’essai gratuite de 30 minutes est disponible par élève. Seul un changement d’horaire est autorisé pour la leçon d’essai. Tout changement supplémentaire coûtera 5 CHF."></span>
-    </li>
+  <!-- BOOKING -->
+  <section>
+    <span class="label" data-en="Book a lesson" data-fr="Réserver un cours"></span>
+    <div class="trial-banner" style="margin-bottom:40px;">
+      <div class="big" data-en="30-minute free trial available" data-fr="Essai gratuit de 30 minutes disponible"></div>
+    </div>
+    <div class="calendly-inline-widget"
+         data-url="https://calendly.com/sound-sachiekobayashi/new-meeting?primary_color=c4a882"
+         style="min-width:320px;height:700px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  </section>
 
-<!-- Discount Coupon -->
+</div><!-- /wrap -->
 
-　<li>
-      <strong data-en="Trial Lesson Discount:" data-fr="Réduction après leçon d’essai :"></strong>
-      <span data-en="Students who take the trial lesson will receive a 10% discount coupon for their next lesson." 
-            data-fr="Les étudiants ayant suivi la leçon d’essai recevront un coupon de réduction de 10% pour leur prochaine leçon."></span>
-  </li>
-
-
-    
-    <!-- Paid Lesson -->
-　　<li>
-      <strong data-en="Paid Lessons:" data-fr="Leçons payantes :"></strong>
-      <span data-en="45-minute paid lessons cost CHF 45 each. Rescheduling is allowed up to 48 hours before the lesson. Changes within 48 hours are treated as 100% cancellation. Any rescheduling within 48 hours requires booking a new lesson. Refunds are not provided under any circumstances." 
-            data-fr="Les leçons payantes de 45 minutes coûtent 45 CHF chacune. Les changements d’horaire sont autorisés jusqu’à 48 heures avant la leçon. Les modifications dans les 48 heures précédant la leçon sont considérées comme des annulations à 100%. Toute modification après ce délai nécessite une nouvelle réservation. Aucun remboursement n’est possible dans tous les cas."></span>
-    </li>
-
-    
-    
-   <!-- Details -->
-<li>
-  <strong data-en="Lesson Details:" data-fr="Détails du cours :"></strong>
-  <span data-en="Lessons can be taken on either PC or Mac. Any software is acceptable, though the instructor uses Ableton Live. Please note that the instructor may not have all plugins. Lessons cover composition, orchestration, sheet music, and solfège. Suitable for all skill levels. Lessons are available in English and French.For details regarding payment, cancellations, refunds, and general terms, please see [**Lesson Policies**](https://www.sachiekobayashi.com/policies/).
-" 
-        data-fr="Les cours peuvent se faire sur PC ou Mac. N’importe quel logiciel est accepté, mais le professeur utilise Ableton Live. Veuillez noter que le professeur ne possède pas forcément tous les plugins. Les cours couvrent la composition, l’orchestration, la notation musicale et le solfège. Convient à tous les niveaux. Les cours sont disponibles en anglais et en français. For details regarding payment, cancellations, refunds, and general terms, please see our  
-[**Lesson Policies**](https://www.sachiekobayashi.com/policies/)."></span>
-</li>
-
-
-    
-    <!-- Platform -->
-　　<li>
-      <strong data-en="Platform:" data-fr="Plateforme :"></strong>
-      <span data-en="Lessons are conducted via Zoom. The link is automatically sent upon booking." 
-            data-fr="Les leçons se déroulent via Zoom. Le lien est envoyé automatiquement après la réservation."></span>
-    </li>
-
-    <!-- Q -->
-　　<li>
-      <strong data-en="Questions:" data-fr="Plateforme :"></strong>
-      <span data-en="Please contact info@sachiekobayashi.com." 
-            data-fr="Veuillez contacter info@sachiekobayashi.com."></span>
-    </li>
-    
-  </ul>
-</div>
-
-<p>
-  For details regarding payment, cancellations, refunds, and general terms, please refer to our 
-  <a href="https://www.sachiekobayashi.com/policies/" target="_blank">Lesson Policies</a>.
-</p>
-
-
-
-<!-- Footer直前に追加 -->
-<div style="text-align:center; margin:40px 0; font-size:1.3rem; font-weight:700; color:#333;">
-  <span data-en="Looking forward to meeting you!" 
-        data-fr="Au plaisir de vous rencontrer !">
-  </span>
-</div>
-
-<!-- Footer の直後に追加 -->
-<div style="text-align:center; font-size:0.9rem; color:#777; margin:20px 0;">
-  <span data-en="&copy; 2025 Sachie Kobayashi. All rights reserved." 
-        data-fr="&copy; 2025 Sachie Kobayashi. Tous droits réservés.">
-  </span>
-</div>
+<footer>
+  <span data-en="Looking forward to meeting you." data-fr="Au plaisir de vous rencontrer."></span><br><br>
+  <span data-en="© 2025 Sachie Kobayashi. All rights reserved." data-fr="© 2025 Sachie Kobayashi. Tous droits réservés."></span>
+</footer>
 
 <script>
 const enBtn = document.getElementById('enBtn');
 const frBtn = document.getElementById('frBtn');
-const elements = document.querySelectorAll('[data-en]');
+const els = document.querySelectorAll('[data-en]');
 
-function setLanguage(lang) {
-  elements.forEach(el => el.innerHTML = el.getAttribute('data-' + lang));
-  if(lang === 'en') {
-    enBtn.classList.add('active');
-    frBtn.classList.remove('active');
-  } else {
-    frBtn.classList.add('active');
-    enBtn.classList.remove('active');
-  }
+function setLang(lang) {
+  els.forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (val !== null) el.innerHTML = val;
+  });
+  enBtn.classList.toggle('active', lang === 'en');
+  frBtn.classList.toggle('active', lang === 'fr');
 }
 
-// ✅ 初期表示を英語に設定
-setLanguage('en');
+enBtn.addEventListener('click', () => setLang('en'));
+frBtn.addEventListener('click', () => setLang('fr'));
+setLang('en');
 
-enBtn.addEventListener('click', () => setLanguage('en'));
-frBtn.addEventListener('click', () => setLanguage('fr'));
+function showVideo(lang) {
+  document.getElementById('video-en').style.display = lang === 'en' ? 'block' : 'none';
+  document.getElementById('video-fr').style.display = lang === 'fr' ? 'block' : 'none';
+  document.getElementById('vEnBtn').classList.toggle('active', lang === 'en');
+  document.getElementById('vFrBtn').classList.toggle('active', lang === 'fr');
+}
 </script>
 
-
-
+</body>
+</html>
