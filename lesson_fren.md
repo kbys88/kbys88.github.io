@@ -507,7 +507,7 @@ permalink: /lesson_fr/
       </div>
       <div class="pricing-row">
         <div>
-          <div class="pricing-label" data-en="Private lesson (45 min)" data-fr="Cours particulier (45 min)"></div>
+          <div class="pricing-label" data-en="Private lesson (60 min)" data-fr="Cours particulier (60 min)"></div>
 <div class="pricing-note" data-en="Rescheduling is possible within the same month. No-shows on the day will be counted as one lesson."
      data-fr="Le report est possible dans le même mois. Toute absence non signalée le jour même sera comptée comme une séance.">
 </div>
