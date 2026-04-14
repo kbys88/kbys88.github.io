@@ -1,0 +1,231 @@
+---
+layout: page
+title: Teach
+permalink: /teach/
+---
+
+<style>
+  .teach-page * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  .hero { padding: 2.5rem 0 2rem; border-bottom: 0.5px solid rgba(0,0,0,0.12); margin-bottom: 2rem; }
+  .hero-eyebrow { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #999; margin-bottom: 0.75rem; }
+  .hero-title { font-size: 28px; font-weight: 500; line-height: 1.2; margin-bottom: 1rem; }
+  .hero-body { font-size: 15px; color: #555; line-height: 1.75; max-width: 560px; }
+
+  .features-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-bottom: 2rem; }
+  .feat { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; font-size: 13px; color: #555; display: flex; align-items: flex-start; gap: 8px; }
+  .feat-dot { width: 5px; height: 5px; border-radius: 50%; background: #aaa; margin-top: 5px; flex-shrink: 0; }
+
+  .t-section { margin-bottom: 2.25rem; }
+  .section-label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #aaa; margin-bottom: 1.1rem; }
+
+  .lesson-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .lesson-card { border: 0.5px solid rgba(0,0,0,0.12); border-radius: 12px; padding: 1rem; background: #fff; }
+  .lesson-card-title { font-size: 13px; font-weight: 500; margin-bottom: 0.6rem; }
+  .lesson-card-items { list-style: none; padding: 0; }
+  .lesson-card-items li { font-size: 12px; color: #666; padding: 3px 0; border-bottom: 0.5px solid rgba(0,0,0,0.08); line-height: 1.45; }
+  .lesson-card-items li:last-child { border-bottom: none; }
+  .lesson-card-special { border-style: dashed; background: #f9f9f7; }
+  .lesson-card-special .lesson-card-title { color: #aaa; }
+
+  .flow { display: flex; flex-direction: column; gap: 0; }
+  .flow-item { display: flex; gap: 1rem; align-items: flex-start; }
+  .flow-line-wrap { display: flex; flex-direction: column; align-items: center; }
+  .flow-num { width: 24px; height: 24px; border-radius: 50%; border: 0.5px solid rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; font-size: 11px; color: #888; flex-shrink: 0; background: #fff; }
+  .flow-connector { width: 0.5px; height: 28px; background: rgba(0,0,0,0.1); }
+  .flow-text { font-size: 14px; color: #555; padding-top: 3px; line-height: 1.55; padding-bottom: 28px; }
+  .flow-item:last-child .flow-text { padding-bottom: 0; }
+
+  .t-divider { border: none; border-top: 0.5px solid rgba(0,0,0,0.1); margin: 2rem 0; }
+
+  .pricing-block { border: 0.5px solid rgba(0,0,0,0.12); border-radius: 12px; padding: 1.25rem 1.5rem; background: #fff; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.75rem; }
+  .price-main { font-size: 26px; font-weight: 500; }
+  .price-unit { font-size: 14px; font-weight: 400; color: #aaa; }
+  .price-label { font-size: 12px; color: #aaa; margin-top: 2px; }
+  .price-note { font-size: 13px; color: #666; max-width: 300px; line-height: 1.55; }
+  .stripe-badge { display: inline-flex; align-items: center; gap: 5px; border: 0.5px solid rgba(0,0,0,0.12); border-radius: 4px; padding: 3px 8px; font-size: 11px; color: #aaa; background: #f5f5f3; }
+
+  .cta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 2rem; }
+  .btn-primary { padding: 10px 22px; border-radius: 8px; background: #1a1a1a; color: #fff; font-size: 14px; font-weight: 500; text-decoration: none; display: inline-block; }
+  .btn-secondary { padding: 10px 22px; border-radius: 8px; background: transparent; color: #1a1a1a; font-size: 14px; border: 0.5px solid rgba(0,0,0,0.25); text-decoration: none; display: inline-block; }
+  .btn-primary:hover { background: #333; }
+  .btn-secondary:hover { background: #f5f5f3; }
+
+  .profile { display: flex; gap: 1.25rem; align-items: flex-start; }
+  .avatar { width: 44px; height: 44px; border-radius: 50%; border: 0.5px solid rgba(0,0,0,0.15); background: #f0f0ee; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; color: #888; flex-shrink: 0; }
+  .profile-name { font-size: 15px; font-weight: 500; margin-bottom: 2px; }
+  .profile-role { font-size: 12px; color: #aaa; margin-bottom: 0.75rem; }
+  .profile-bio { font-size: 13px; color: #666; line-height: 1.7; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 1rem; }
+  .tag { font-size: 11px; color: #666; border: 0.5px solid rgba(0,0,0,0.12); border-radius: 3px; padding: 3px 8px; background: #f5f5f3; }
+
+  @media (max-width: 540px) {
+    .lesson-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .features-grid { grid-template-columns: 1fr; }
+    .pricing-block { flex-direction: column; }
+    .hero-title { font-size: 22px; }
+  }
+  @media (max-width: 360px) {
+    .lesson-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="teach-page">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-eyebrow">Online Lesson (JP)</div>
+    <h1 class="hero-title">作曲・DTM・音楽理論<br>マンツーマンレッスン</h1>
+    <p class="hero-body">スイス音楽院修士取得、現役作曲家・アーティストによるオンライン個人指導。目的・レベルに応じたオーダーメイドのカリキュラムで、初心者から専門を目指す方まで対応します。</p>
+  </div>
+
+  <!-- Features -->
+  <div class="t-section">
+    <div class="features-grid">
+      <div class="feat"><div class="feat-dot"></div>完全マンツーマン・Zoom対応</div>
+      <div class="feat"><div class="feat-dot"></div>初心者から経験者まで</div>
+      <div class="feat"><div class="feat-dot"></div>作曲・理論・DTMを横断的に</div>
+      <div class="feat"><div class="feat-dot"></div>海外音楽院での専門的な教育背景</div>
+    </div>
+  </div>
+
+  <!-- Lesson content -->
+  <div class="t-section">
+    <div class="section-label">レッスン内容</div>
+    <div class="lesson-grid">
+      <div class="lesson-card">
+        <div class="lesson-card-title">作曲</div>
+        <ul class="lesson-card-items">
+          <li>メロディ・ハーモニー・形式</li>
+          <li>自作曲の添削</li>
+          <li>ジャンル別アプローチ</li>
+        </ul>
+      </div>
+      <div class="lesson-card">
+        <div class="lesson-card-title">DTM / DAW</div>
+        <ul class="lesson-card-items">
+          <li>DAW基本操作</li>
+          <li>打ち込み・アレンジ</li>
+          <li>ミックスの基礎</li>
+        </ul>
+      </div>
+      <div class="lesson-card">
+        <div class="lesson-card-title">音楽理論</div>
+        <ul class="lesson-card-items">
+          <li>楽典・コード・スケール</li>
+          <li>構造的な音楽理解</li>
+          <li>作曲・演奏への応用</li>
+        </ul>
+      </div>
+      <div class="lesson-card">
+        <div class="lesson-card-title">ソルフェージュ</div>
+        <ul class="lesson-card-items">
+          <li>音感トレーニング</li>
+          <li>読譜</li>
+          <li>リズム練習</li>
+        </ul>
+      </div>
+      <div class="lesson-card">
+        <div class="lesson-card-title">キーボード / シンセ</div>
+        <ul class="lesson-card-items">
+          <li>基礎演奏</li>
+          <li>音作り・機材の使い方</li>
+          <li>作曲・理論のための鍵盤</li>
+        </ul>
+      </div>
+      <div class="lesson-card lesson-card-special">
+        <div class="lesson-card-title">電子音響 / 受験対策</div>
+        <ul class="lesson-card-items">
+          <li>エレクトロアコースティック</li>
+          <li>音楽大学受験指導</li>
+          <li>インタラクティブサウンド</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flow -->
+  <div class="t-section">
+    <div class="section-label">レッスンの進め方</div>
+    <div class="flow">
+      <div class="flow-item">
+        <div class="flow-line-wrap">
+          <div class="flow-num">1</div>
+          <div class="flow-connector"></div>
+        </div>
+        <div class="flow-text">無料Zoom面談 (30分) — 目的・経験・ご希望をヒアリング</div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-line-wrap">
+          <div class="flow-num">2</div>
+          <div class="flow-connector"></div>
+        </div>
+        <div class="flow-text">内容とペースのご提案</div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-line-wrap">
+          <div class="flow-num">3</div>
+          <div class="flow-connector"></div>
+        </div>
+        <div class="flow-text">マンツーマンでのレッスン実施 (Zoom等)</div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-line-wrap">
+          <div class="flow-num">4</div>
+        </div>
+        <div class="flow-text">課題・復習サポート</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="t-divider">
+
+  <!-- Pricing -->
+  <div class="t-section">
+    <div class="section-label">料金</div>
+    <div class="pricing-block">
+      <div>
+        <div class="price-main">¥4,500<span class="price-unit"> / 1時間</span></div>
+        <div class="price-label">日本国内料金</div>
+      </div>
+      <div class="price-note">日本国外在住の方は €45 / $45 (USD) ベースでご案内。詳細はお問い合わせください。</div>
+    </div>
+    <div class="stripe-badge">Stripe によるオンライン決済</div>
+  </div>
+
+  <!-- CTA -->
+  <div class="t-section">
+    <div class="section-label">お申し込み・お問い合わせ</div>
+    <p style="font-size:14px;color:#666;line-height:1.7;margin-bottom:1.25rem;">まずは30分の無料Zoom面談からご案内しています。お気軽にご連絡ください。</p>
+    <div class="cta-row">
+      <a class="btn-primary" href="mailto:info@sachiekobayashi.com">info@sachiekobayashi.com へ</a>
+      <a class="btn-secondary" href="https://www.sachiekobayashi.com/policies/">レッスン規約</a>
+    </div>
+  </div>
+
+  <hr class="t-divider">
+
+  <!-- Profile -->
+  <div class="t-section">
+    <div class="section-label">講師プロフィール</div>
+    <div class="profile">
+      <div class="avatar">SK</div>
+      <div>
+        <div class="profile-name">Sachie Kobayashi</div>
+        <div class="profile-role">作曲家・アーティスト</div>
+        <p class="profile-bio">スイス・ジュネーブ高等音楽院 音楽教育 修士課程修了。クラシック音楽を基盤とした理論教育を軸に、現代的な作曲・DTM・創作実践へとつなげる指導を行っています。VR作品や電子音楽など、アーティストとしても活動中。「自分の音楽を自分の言葉で理解し、表現できること」を大切にしています。</p>
+        <div class="tags">
+          <span class="tag">作曲</span>
+          <span class="tag">電子音響音楽</span>
+          <span class="tag">音楽理論・和声・対位法</span>
+          <span class="tag">DTM / DAW</span>
+          <span class="tag">ソルフェージュ</span>
+          <span class="tag">音楽大学受験</span>
+          <span class="tag">シンセサイザー</span>
+          <span class="tag">インタラクティブサウンド</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
