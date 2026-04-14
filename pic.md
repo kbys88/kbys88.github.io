@@ -26,11 +26,13 @@ permalink: /pic/
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 10px;
-    transition: opacity 0.2s ease;
+    filter: grayscale(100%);
+    transition: filter 0.25s ease, opacity 0.25s ease;
   }
 
   .pic-grid img:hover {
-    opacity: 0.94;
+    filter: grayscale(0%);
+    opacity: 0.96;
   }
 
   @media (max-width: 980px) {
