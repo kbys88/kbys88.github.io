@@ -35,36 +35,9 @@
         {% endif %}
       {% endfor %}
     </nav>
+
+    <div class="nav-email">
+      <a href="mailto:{{ site.footer-links.email }}">{{ site.footer-links.email }}</a>
+    </div>
   </div>
 </div>
-
-<div class="navlist">
-  <nav class="nav-primary">
-    {% for nav in site.navigation %}
-      {% unless nav.group == "secondary" %}
-        {% if nav.url contains 'http://' or nav.url contains 'https://' %}
-          <a href="{{ nav.url }}">{{ nav.name }}</a>
-        {% else %}
-          <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.name }}</a>
-        {% endif %}
-      {% endunless %}
-    {% endfor %}
-  </nav>
-
-  <nav class="nav-secondary">
-    {% for nav in site.navigation %}
-      {% if nav.group == "secondary" %}
-        {% if nav.url contains 'http://' or nav.url contains 'https://' %}
-          <a href="{{ nav.url }}">{{ nav.name }}</a>
-        {% else %}
-          <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.name }}</a>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-  </nav>
-
-  <div class="nav-email">
-    <a href="mailto:info@sachiekobayashi.com">info@sachiekobayashi.com</a>
-  </div>
-</div>
-
