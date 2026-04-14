@@ -9,14 +9,28 @@ permalink: /cucurbits/
     --page-width: 1040px;
     --content-width: 920px;
     --text-width: 620px;
+    --text-color: #111111;
     --border-color: rgba(0, 0, 0, 0.12);
-    --soft-bg: rgba(0, 0, 0, 0.028);
+    --soft-bg: rgba(0, 0, 0, 0.03);
     max-width: var(--page-width);
     margin: 0 auto;
     padding: 1.5rem 1.25rem 4.5rem;
-    color: inherit;
+    color: var(--text-color);
     font: inherit;
     line-height: 1.85;
+  }
+
+  .cucurbits-page,
+  .cucurbits-page h1,
+  .cucurbits-page h2,
+  .cucurbits-page h3,
+  .cucurbits-page p,
+  .cucurbits-page li,
+  .cucurbits-page a,
+  .cucurbits-page strong,
+  .cucurbits-page span,
+  .cucurbits-page div {
+    color: #111111 !important;
   }
 
   .cucurbits-page .lang-switch {
@@ -28,9 +42,9 @@ permalink: /cucurbits/
 
   .cucurbits-page .lang-switch button {
     appearance: none;
-    background: transparent;
-    color: inherit;
-    border: 1px solid var(--border-color);
+    background: #ffffff;
+    color: #111111;
+    border: 1px solid rgba(0, 0, 0, 0.18);
     border-radius: 999px;
     padding: 0.5rem 0.95rem;
     font: inherit;
@@ -42,8 +56,8 @@ permalink: /cucurbits/
 
   .cucurbits-page .lang-switch button:hover,
   .cucurbits-page .lang-switch button.is-active {
-    background: rgba(0, 0, 0, 0.04);
-    border-color: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.28);
   }
 
   .cucurbits-page .lang-block {
@@ -95,10 +109,14 @@ permalink: /cucurbits/
 
   .cucurbits-page .hero-image img,
   .cucurbits-page .section-image img {
-    display: block;
+    display: block !important;
     width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: 12px;
+    opacity: 1 !important;
+    visibility: visible !important;
+    background: transparent;
   }
 
   .cucurbits-page .hero-meta {
@@ -127,13 +145,13 @@ permalink: /cucurbits/
     border: 1px solid rgba(0, 0, 0, 0.18);
     border-radius: 12px;
     background: var(--soft-bg);
-    color: inherit;
+    color: #111111 !important;
     text-decoration: none;
     font-weight: 600;
   }
 
   .cucurbits-page .email-cta:hover {
-    background: rgba(0, 0, 0, 0.045);
+    background: rgba(0, 0, 0, 0.05);
   }
 
   .cucurbits-page .section {
