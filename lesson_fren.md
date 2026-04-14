@@ -4,10 +4,7 @@ title: Music/Composition/Sound Design/Solfege Lesson from the World !
 permalink: /lesson_fr/
 ---
 
-<div style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/header2.jpg" alt="Header" style="width:100%; max-height:600px; object-fit:cover;">
-</div>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -17,7 +14,11 @@ permalink: /lesson_fr/
 <style>
   @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400&display=swap');
 
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
   :root {
     --ink: #1a1814;
@@ -38,19 +39,35 @@ permalink: /lesson_fr/
     font-size: 16px;
   }
 
-  .wrap { max-width: 680px; margin: 0 auto; padding: 0 28px; }
+  .hero-image {
+    text-align: center;
+  }
 
-  /* lang toggle */
+  .hero-image img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
   .lang-bar {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: var(--white);
+    background: rgba(253, 252, 250, 0.96);
+    backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--sand-mid);
     padding: 14px 28px;
     display: flex;
     gap: 0;
   }
+
   .lang-bar button {
     background: none;
     border: none;
@@ -64,18 +81,31 @@ permalink: /lesson_fr/
     padding: 4px 14px 4px 0;
     transition: color 0.2s;
   }
-  .lang-bar button.active { color: var(--ink); }
+
+  .lang-bar button.active {
+    color: var(--ink);
+  }
+
   .lang-bar button:not(:last-child)::after {
     content: '/';
     margin-left: 14px;
     color: var(--sand-mid);
   }
 
-  /* section spacing */
-  section { padding: 72px 0; border-bottom: 1px solid var(--sand-mid); }
-  section:last-of-type { border-bottom: none; }
+  section {
+    padding: 72px 0;
+    border-bottom: 1px solid var(--sand-mid);
+  }
 
-  /* eyebrow label */
+  section:last-of-type {
+    border-bottom: none;
+  }
+
+  .section-tight {
+    padding-top: 0;
+    border-bottom: none;
+  }
+
   .label {
     font-size: 11px;
     letter-spacing: 0.2em;
@@ -85,7 +115,6 @@ permalink: /lesson_fr/
     display: block;
   }
 
-  /* headings */
   h1 {
     font-family: 'EB Garamond', serif;
     font-size: clamp(2.2rem, 5vw, 3.4rem);
@@ -94,6 +123,7 @@ permalink: /lesson_fr/
     letter-spacing: -0.01em;
     margin-bottom: 28px;
   }
+
   h2 {
     font-family: 'EB Garamond', serif;
     font-size: clamp(1.4rem, 3vw, 1.9rem);
@@ -101,6 +131,7 @@ permalink: /lesson_fr/
     line-height: 1.25;
     margin-bottom: 20px;
   }
+
   h3 {
     font-family: 'DM Sans', sans-serif;
     font-size: 13px;
@@ -111,11 +142,28 @@ permalink: /lesson_fr/
     margin-bottom: 16px;
   }
 
-  p { color: var(--ink-mid); margin-bottom: 18px; }
-  p:last-child { margin-bottom: 0; }
-  p strong { color: var(--ink); font-weight: 400; }
+  p {
+    color: var(--ink-mid);
+    margin-bottom: 18px;
+  }
 
-  /* video */
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  p strong {
+    color: var(--ink);
+    font-weight: 400;
+  }
+
+  .hero-subtitle {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.15rem;
+    color: var(--ink-mid);
+    font-style: italic;
+    margin-bottom: 32px;
+  }
+
   .video-wrap {
     position: relative;
     padding-bottom: 56.25%;
@@ -123,6 +171,7 @@ permalink: /lesson_fr/
     overflow: hidden;
     background: var(--sand);
   }
+
   .video-wrap iframe {
     position: absolute;
     inset: 0;
@@ -131,13 +180,13 @@ permalink: /lesson_fr/
     border: 0;
   }
 
-  /* gallery */
   .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 6px;
     margin: 40px 0;
   }
+
   .gallery img {
     width: 100%;
     aspect-ratio: 1;
@@ -145,19 +194,19 @@ permalink: /lesson_fr/
     display: block;
   }
 
-  /* strengths list */
   .strengths {
     list-style: none;
     border-top: 1px solid var(--sand-mid);
   }
+
   .strengths li {
-    padding: 16px 0;
+    padding: 16px 0 16px 20px;
     border-bottom: 1px solid var(--sand-mid);
     color: var(--ink-mid);
     font-size: 15px;
-    padding-left: 20px;
     position: relative;
   }
+
   .strengths li::before {
     content: '';
     position: absolute;
@@ -168,13 +217,13 @@ permalink: /lesson_fr/
     background: var(--accent);
   }
 
-  /* software grid */
   .tools {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 8px;
   }
+
   .tools span {
     font-size: 13px;
     padding: 6px 14px;
@@ -183,11 +232,11 @@ permalink: /lesson_fr/
     letter-spacing: 0.02em;
   }
 
-  /* pricing table */
   .pricing {
     border-top: 1px solid var(--sand-mid);
     margin-top: 8px;
   }
+
   .pricing-row {
     display: flex;
     justify-content: space-between;
@@ -196,22 +245,32 @@ permalink: /lesson_fr/
     border-bottom: 1px solid var(--sand-mid);
     gap: 20px;
   }
-  .pricing-label { font-size: 15px; color: var(--ink-mid); }
+
+  .pricing-label {
+    font-size: 15px;
+    color: var(--ink-mid);
+  }
+
   .pricing-value {
     font-family: 'EB Garamond', serif;
     font-size: 1.2rem;
     color: var(--ink);
     white-space: nowrap;
   }
-  .pricing-note { font-size: 13px; color: var(--ink-light); margin-top: 4px; }
 
-  /* free trial banner */
+  .pricing-note {
+    font-size: 13px;
+    color: var(--ink-light);
+    margin-top: 4px;
+  }
+
   .trial-banner {
     background: var(--sand);
     padding: 36px 40px;
     text-align: center;
     margin: 48px 0;
   }
+
   .trial-banner .big {
     font-family: 'EB Garamond', serif;
     font-size: 1.6rem;
@@ -219,36 +278,60 @@ permalink: /lesson_fr/
     color: var(--ink);
     margin-bottom: 8px;
   }
-  .trial-banner .sub { font-size: 13px; color: var(--ink-light); }
 
-  /* FAQ */
-  .faq { border-top: 1px solid var(--sand-mid); }
+  .trial-banner .sub {
+    font-size: 13px;
+    color: var(--ink-light);
+  }
+
+  .faq {
+    border-top: 1px solid var(--sand-mid);
+  }
+
   .faq-item {
     padding: 22px 0;
     border-bottom: 1px solid var(--sand-mid);
   }
+
   .faq-q {
     font-size: 14px;
     letter-spacing: 0.05em;
     color: var(--ink);
     margin-bottom: 10px;
   }
-  .faq-a { font-size: 14px; color: var(--ink-mid); line-height: 1.65; }
 
-  /* link */
-  a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
-  a:hover { color: var(--accent); }
+  .faq-a {
+    font-size: 14px;
+    color: var(--ink-mid);
+    line-height: 1.65;
+  }
 
-  .highlight-email { color: var(--ink); font-style: italic; }
+  a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
 
-  /* calendly */
+  a:hover {
+    color: var(--accent);
+  }
+
+  .highlight-email {
+    color: var(--ink);
+    font-style: italic;
+  }
+
   .calendly-wrap {
     border-top: 1px solid var(--sand-mid);
     padding-top: 48px;
   }
-  .calendly-inline-widget { width: 100%; min-width: 320px; height: 700px; }
 
-  /* footer */
+  .calendly-inline-widget {
+    width: 100%;
+    min-width: 320px;
+    height: 700px;
+  }
+
   footer {
     padding: 48px 28px;
     text-align: center;
@@ -258,12 +341,12 @@ permalink: /lesson_fr/
     border-top: 1px solid var(--sand-mid);
   }
 
-  /* lang video toggle */
   .video-lang-toggle {
     display: flex;
     gap: 0;
     margin-bottom: 20px;
   }
+
   .video-lang-toggle button {
     background: none;
     border: 1px solid var(--sand-mid);
@@ -276,23 +359,62 @@ permalink: /lesson_fr/
     padding: 8px 18px;
     transition: all 0.2s;
   }
-  .video-lang-toggle button:first-child { border-right: none; }
+
+  .video-lang-toggle button:first-child {
+    border-right: none;
+  }
+
   .video-lang-toggle button.active {
     background: var(--ink);
     border-color: var(--ink);
     color: var(--white);
   }
 
+  .wide-photo {
+    margin: 0 -28px;
+  }
+
+  .wide-photo img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+  }
+
   @media (max-width: 520px) {
-    .gallery { grid-template-columns: repeat(2, 1fr); }
-    .pricing-row { flex-direction: column; gap: 4px; }
-    .trial-banner { padding: 28px 20px; }
+    .wrap {
+      padding: 0 20px;
+    }
+
+    .lang-bar {
+      padding: 12px 20px;
+    }
+
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing-row {
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .trial-banner {
+      padding: 28px 20px;
+    }
+
+    .wide-photo {
+      margin: 0 -20px;
+    }
   }
 </style>
 </head>
 <body>
 
-<!-- sticky lang bar -->
+<div class="hero-image">
+  <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/header2.jpg" alt="Header">
+</div>
+
 <div class="lang-bar">
   <button id="enBtn" class="active">English</button>
   <button id="frBtn">Français</button>
@@ -300,27 +422,24 @@ permalink: /lesson_fr/
 
 <div class="wrap">
 
-  <!-- HERO -->
   <section>
     <span class="label" data-en="Online Exchange & Lessons" data-fr="Échanges et Cours en Ligne"></span>
     <h1 data-en="Sachie Kobayashi" data-fr="Sachie Kobayashi"></h1>
-    <p style="font-family:'EB Garamond',serif; font-size:1.15rem; color:var(--ink-mid); font-style:italic; margin-bottom:32px;"
+    <p class="hero-subtitle"
        data-en="Composer and creator — trained in Switzerland, Tokyo and Paris, active worldwide."
        data-fr="Compositrice et créatrice — formée en Suisse, à Tokyo et à Paris, active dans le monde entier."></p>
     <p data-en="Teaching composition, music theory, ear training, solfège, sound design, and music for film — from beginner to professional. Available in English and French."
        data-fr="Enseignement de la composition, théorie musicale, solfège, design sonore et musique pour l'image — du débutant au professionnel. Disponible en anglais et en français."></p>
   </section>
 
-  <!-- INTRO VIDEO -->
   <section>
     <span class="label" data-en="Introduction" data-fr="Présentation"></span>
-    <div class="video-wrap" style="margin-bottom:0;">
+    <div class="video-wrap">
       <iframe src="https://www.youtube.com/embed/EOf82PRXh3Y" title="Sachie Kobayashi Introduction" allowfullscreen></iframe>
     </div>
   </section>
 
-  <!-- GALLERY -->
-  <section style="padding-top:0; border-bottom:none;">
+  <section class="section-tight">
     <div class="gallery">
       <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson01.jpg" alt="">
       <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/lesson02.jpg" alt="">
@@ -331,7 +450,6 @@ permalink: /lesson_fr/
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section>
     <span class="label" data-en="About" data-fr="À propos"></span>
     <p data-en="Sachie Kobayashi (b. 1990, Japan) is a composer exploring intuitive musical creation inspired by social phenomena. She completed a Master's in Composition and Music Education at the Haute École de Musique de Genève. Her works have been performed worldwide in collaboration with Klangforum Wien, Ensemble Modern, Ensemble Proton Bern, and The Geidai Philharmonia Orchestra."
@@ -342,7 +460,6 @@ permalink: /lesson_fr/
        data-fr="Pour les collaborations professionnelles : <span class='highlight-email'>info@sachiekobayashi.com</span> — <a href='https://www.sachiekobayashi.com/' target='_blank' rel='noopener'>sachiekobayashi.com</a>"></p>
   </section>
 
-  <!-- STRENGTHS -->
   <section>
     <span class="label" data-en="Why study with Sachie" data-fr="Pourquoi étudier avec Sachie"></span>
     <ul class="strengths">
@@ -354,13 +471,11 @@ permalink: /lesson_fr/
     </ul>
   </section>
 
-  <!-- TRIAL BANNER -->
   <div class="trial-banner">
     <div class="big" data-en="30-minute free trial available" data-fr="Essai gratuit de 30 minutes disponible"></div>
     <div class="sub" data-en="No commitment — book directly below" data-fr="Sans engagement — réservez directement ci-dessous"></div>
   </div>
 
-  <!-- LESSONS VIDEO -->
   <section>
     <span class="label" data-en="Lesson preview" data-fr="Aperçu des cours"></span>
     <div class="video-lang-toggle">
@@ -375,7 +490,6 @@ permalink: /lesson_fr/
     </div>
   </section>
 
-  <!-- SOFTWARE -->
   <section>
     <span class="label" data-en="Software & tools" data-fr="Logiciels et outils"></span>
     <div class="tools">
@@ -393,7 +507,6 @@ permalink: /lesson_fr/
     </div>
   </section>
 
-  <!-- PRICING -->
   <section>
     <span class="label" data-en="Rates" data-fr="Tarifs"></span>
     <div class="pricing">
@@ -421,7 +534,6 @@ permalink: /lesson_fr/
     </div>
   </section>
 
-  <!-- FAQ -->
   <section>
     <span class="label" data-en="Frequently asked questions" data-fr="Questions fréquentes"></span>
     <div class="faq">
@@ -441,18 +553,16 @@ permalink: /lesson_fr/
         <div class="faq-q" data-en="What is the cancellation policy?" data-fr="Quelle est la politique d'annulation ?"></div>
         <div class="faq-a">
           <span data-en="Changes within 48 hours are treated as full cancellations. Refunds are not provided. For serious illness or technical issues, contact " data-fr="Toute modification dans les 48 heures est considérée comme une annulation totale. Aucun remboursement possible. En cas de maladie grave ou problème technique, contactez "></span><span class="highlight-email">info@sachiekobayashi.com</span>.
-          <span data-en=" Full policies at " data-fr=" Conditions complètes sur "></span><a href="https://www.sachiekobayashi.com/policies/" target="_blank" data-en="sachiekobayashi.com/policies" data-fr="sachiekobayashi.com/policies"></a>.
+          <span data-en=" Full policies at " data-fr=" Conditions complètes sur "></span><a href="https://www.sachiekobayashi.com/policies/" target="_blank" rel="noopener" data-en="sachiekobayashi.com/policies" data-fr="sachiekobayashi.com/policies"></a>.
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PHOTO -->
-  <div style="margin: 0 -28px;">
-    <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/photo_lesson.jpg" alt="" style="width:100%; max-height:500px; object-fit:cover; display:block;">
+  <div class="wide-photo">
+    <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/photo_lesson.jpg" alt="">
   </div>
 
-  <!-- BOOKING -->
   <section>
     <span class="label" data-en="Book a lesson" data-fr="Réserver un cours"></span>
     <div class="trial-banner" style="margin-bottom:40px;">
@@ -461,10 +571,10 @@ permalink: /lesson_fr/
     <div class="calendly-inline-widget"
          data-url="https://calendly.com/sound-sachiekobayashi/new-meeting?primary_color=c4a882"
          style="min-width:320px;height:700px;"></div>
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
   </section>
 
-</div><!-- /wrap -->
+</div>
 
 <footer>
   <span data-en="Looking forward to meeting you." data-fr="Au plaisir de vous rencontrer."></span><br><br>
@@ -472,29 +582,29 @@ permalink: /lesson_fr/
 </footer>
 
 <script>
-const enBtn = document.getElementById('enBtn');
-const frBtn = document.getElementById('frBtn');
-const els = document.querySelectorAll('[data-en]');
+  const enBtn = document.getElementById('enBtn');
+  const frBtn = document.getElementById('frBtn');
+  const els = document.querySelectorAll('[data-en]');
 
-function setLang(lang) {
-  els.forEach(el => {
-    const val = el.getAttribute('data-' + lang);
-    if (val !== null) el.innerHTML = val;
-  });
-  enBtn.classList.toggle('active', lang === 'en');
-  frBtn.classList.toggle('active', lang === 'fr');
-}
+  function setLang(lang) {
+    els.forEach(el => {
+      const val = el.getAttribute('data-' + lang);
+      if (val !== null) el.innerHTML = val;
+    });
+    enBtn.classList.toggle('active', lang === 'en');
+    frBtn.classList.toggle('active', lang === 'fr');
+  }
 
-enBtn.addEventListener('click', () => setLang('en'));
-frBtn.addEventListener('click', () => setLang('fr'));
-setLang('en');
+  enBtn.addEventListener('click', () => setLang('en'));
+  frBtn.addEventListener('click', () => setLang('fr'));
+  setLang('en');
 
-function showVideo(lang) {
-  document.getElementById('video-en').style.display = lang === 'en' ? 'block' : 'none';
-  document.getElementById('video-fr').style.display = lang === 'fr' ? 'block' : 'none';
-  document.getElementById('vEnBtn').classList.toggle('active', lang === 'en');
-  document.getElementById('vFrBtn').classList.toggle('active', lang === 'fr');
-}
+  function showVideo(lang) {
+    document.getElementById('video-en').style.display = lang === 'en' ? 'block' : 'none';
+    document.getElementById('video-fr').style.display = lang === 'fr' ? 'block' : 'none';
+    document.getElementById('vEnBtn').classList.toggle('active', lang === 'en');
+    document.getElementById('vFrBtn').classList.toggle('active', lang === 'fr');
+  }
 </script>
 
 </body>
