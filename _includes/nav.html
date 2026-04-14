@@ -12,12 +12,26 @@
   </header>
 
   <div class="navlist">
-    <nav>
+    <nav class="nav-primary">
       {% for nav in site.navigation %}
-        {% if nav.url contains 'http://' or nav.url contains 'https://' %}
-          <a href="{{ nav.url }}">{{ nav.name }}</a>
-        {% else %}
-          <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.name }}</a>
+        {% unless nav.group == "secondary" %}
+          {% if nav.url contains 'http://' or nav.url contains 'https://' %}
+            <a href="{{ nav.url }}">{{ nav.name }}</a>
+          {% else %}
+            <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.name }}</a>
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+    </nav>
+
+    <nav class="nav-secondary">
+      {% for nav in site.navigation %}
+        {% if nav.group == "secondary" %}
+          {% if nav.url contains 'http://' or nav.url contains 'https://' %}
+            <a href="{{ nav.url }}">{{ nav.name }}</a>
+          {% else %}
+            <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.name }}</a>
+          {% endif %}
         {% endif %}
       {% endfor %}
     </nav>
