@@ -4,13 +4,8 @@ title: Music/Composition/Sound Design/Solfege Lesson from the World !
 permalink: /lesson_fr/
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sachie Kobayashi — Online Lessons</title>
 {% include fonts.html %}
+
 <style>
   @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400&display=swap');
 
@@ -321,11 +316,6 @@ permalink: /lesson_fr/
     font-style: italic;
   }
 
-  .calendly-wrap {
-    border-top: 1px solid var(--sand-mid);
-    padding-top: 48px;
-  }
-
   .calendly-inline-widget {
     width: 100%;
     min-width: 320px;
@@ -408,8 +398,6 @@ permalink: /lesson_fr/
     }
   }
 </style>
-</head>
-<body>
 
 <div class="hero-image">
   <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/header2.jpg" alt="Header">
@@ -606,6 +594,3 @@ permalink: /lesson_fr/
     document.getElementById('vFrBtn').classList.toggle('active', lang === 'fr');
   }
 </script>
-
-</body>
-</html>
