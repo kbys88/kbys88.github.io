@@ -508,9 +508,11 @@ permalink: /lesson_fr/
       <div class="pricing-row">
         <div>
           <div class="pricing-label" data-en="Private lesson (45 min)" data-fr="Cours particulier (45 min)"></div>
-          <div class="pricing-note" data-en="Rescheduling allowed up to 48h prior" data-fr="Modification possible jusqu'à 48h avant"></div>
+<div class="pricing-note" data-en="Rescheduling is possible within the same month. No-shows on the day will be counted as one lesson."
+     data-fr="Le report est possible dans le même mois. Toute absence non signalée le jour même sera comptée comme une séance.">
+</div>
         </div>
-        <div class="pricing-value">CHF 45</div>
+        <div class="pricing-value">CHF/EUR/USD 45</div>
       </div>
       <div class="pricing-row">
         <div>
