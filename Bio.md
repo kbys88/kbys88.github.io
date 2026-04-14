@@ -79,6 +79,12 @@ permalink: /bio/
 <div class="bio-page">
   <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/newsachie.png" alt="About">
 
+<p>
+  <a href="{{ '/images/Sachie_Kobayashi_Portofolio_EN_2025_COMP.pdf' | relative_url }}" target="_blank" rel="noopener">
+    View Portfolio PDF
+  </a>
+</p>
+
   <h2>English</h2>
 
   <p>Sachie Kobayashi (1990) is interested in intuitive creation and musical expression related to social phenomena.</p>
