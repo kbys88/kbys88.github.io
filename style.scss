@@ -451,6 +451,21 @@ a.footnote {
 }
 
 
+  .moving-logo {
+    margin: 1rem 0 2rem;
+  }
+
+  .moving-logo video {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 12px;
+    background: transparent;
+  }
+
+
+
 nav {
   display: block;
   margin-top: 23px; // @TODO: Vertically middle align
