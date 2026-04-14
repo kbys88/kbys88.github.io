@@ -54,18 +54,15 @@ permalink: /cucurbits/
     display: block;
   }
 
-  .cucurbits-page .moving-logo {
-    margin: 0 0 2rem;
-  }
+.cucurbits-page .moving-logo video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  background: transparent;
+}
 
-  .cucurbits-page .moving-logo video {
-    display: block;
-    width: 100%;
-    max-width: 420px;
-    height: auto;
-    border-radius: 12px;
-    background: transparent;
-  }
 
   .cucurbits-page .hero,
   .cucurbits-page .section {
