@@ -432,6 +432,12 @@ a.footnote {
   text-transform: uppercase !important;
 }
 
+.nav-secondary {
+  margin-top: 1.8rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
 nav {
   display: block;
   margin-top: 23px; // @TODO: Vertically middle align
