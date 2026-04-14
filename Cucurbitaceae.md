@@ -6,11 +6,13 @@ permalink: /cucurbits/
 
 <style>
   .cucurbits-page {
+    width: 100%;
     max-width: 1040px;
-    margin: 0 auto;
-    padding: 2rem 1.25rem 4rem;
+    margin: 0;
+    padding: 2rem 1.25rem 4rem 0;
     color: #111;
     line-height: 1.85;
+    text-align: left;
   }
 
   .cucurbits-page,
@@ -21,7 +23,7 @@ permalink: /cucurbits/
 
   .cucurbits-page .lang-switch {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 0.5rem;
     margin-bottom: 2rem;
   }
@@ -52,11 +54,24 @@ permalink: /cucurbits/
     display: block;
   }
 
+  .cucurbits-page .moving-logo {
+    margin: 0 0 2rem;
+  }
+
+  .cucurbits-page .moving-logo video {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 12px;
+    background: transparent;
+  }
+
   .cucurbits-page .hero,
   .cucurbits-page .section {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 320px;
-    gap: 2.5rem;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 2rem;
     align-items: start;
     padding-bottom: 3rem;
     margin-bottom: 3rem;
@@ -87,12 +102,14 @@ permalink: /cucurbits/
 
   .cucurbits-page p {
     margin: 0 0 1.1rem;
+    text-align: left;
   }
 
   .cucurbits-page h2,
   .cucurbits-page h3 {
     margin: 0 0 1rem;
     line-height: 1.35;
+    text-align: left;
   }
 
   .cucurbits-page img {
@@ -158,6 +175,7 @@ permalink: /cucurbits/
 
   .cucurbits-page li {
     margin-bottom: 0.45rem;
+    text-align: left;
   }
 
   .cucurbits-page .trust-list,
@@ -177,11 +195,7 @@ permalink: /cucurbits/
 
   @media (max-width: 860px) {
     .cucurbits-page {
-      padding: 1.5rem 1rem 3rem;
-    }
-
-    .cucurbits-page .lang-switch {
-      justify-content: flex-start;
+      padding: 1.5rem 1rem 3rem 0;
     }
 
     .cucurbits-page .hero,
@@ -204,10 +218,21 @@ permalink: /cucurbits/
     .cucurbits-page .intro {
       font-size: 1.25rem;
     }
+
+    .cucurbits-page .moving-logo video {
+      max-width: 100%;
+    }
   }
 </style>
 
 <div class="cucurbits-page" id="cucurbits-page" data-lang="ja">
+  <div class="moving-logo">
+    <video autoplay muted loop playsinline preload="metadata" controls>
+      <source src="/images/logo_2026.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
   <div class="lang-switch">
     <button type="button" data-lang-button="ja">日本語</button>
     <button type="button" data-lang-button="en">English</button>
@@ -237,12 +262,6 @@ permalink: /cucurbits/
         <a class="email-cta" href="mailto:info@sachiekobayashi">info@sachiekobayashi</a>
       </div>
 
-<div class="moving-logo">
-  <video autoplay muted loop playsinline preload="metadata" controls>
-    <source src="/images/logo_2026.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
       <div class="lang-block lang-block--en">
         <p class="eyebrow">Studio Cucurbits.</p>
         <p class="intro">
