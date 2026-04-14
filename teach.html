@@ -1,0 +1,564 @@
+---
+layout: page
+title: Teach
+permalink: /teach/
+---
+
+<style>
+  .teach-page * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* ── Hero ── */
+  .hero { padding: 2.5rem 0 0; margin-bottom: 2rem; }
+  .hero-eyebrow { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.4; margin-bottom: 0.75rem; }
+  .hero-title { font-size: 28px; font-weight: 500; line-height: 1.2; margin-bottom: 1rem; }
+  .hero-body { font-size: 15px; opacity: 0.6; line-height: 1.75; max-width: 560px; margin-bottom: 2rem; }
+
+  .hero-img {
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    object-fit: cover;
+    object-position: center 30%;
+    border-radius: 12px;
+    display: block;
+    margin-bottom: 2.5rem;
+    border: 0.5px solid rgba(128,128,128,0.15);
+  }
+
+  /* ── Section ── */
+  .t-section { margin-bottom: 2.25rem; }
+  .section-label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.35; margin-bottom: 1.1rem; }
+
+  /* ── Features ── */
+  .features-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-bottom: 2rem; }
+  .feat { background: rgba(128,128,128,0.08); border-radius: 8px; padding: 0.85rem 1rem; font-size: 13px; opacity: 0.7; display: flex; align-items: flex-start; gap: 8px; }
+  .feat-dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; opacity: 0.4; margin-top: 5px; flex-shrink: 0; }
+
+  /* ── Lesson cards ── */
+  .lesson-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .lesson-card { border: 0.5px solid rgba(128,128,128,0.2); border-radius: 12px; padding: 1rem; }
+  .lesson-card-title { font-size: 13px; font-weight: 500; margin-bottom: 0.6rem; }
+  .lesson-card-items { list-style: none; padding: 0; }
+  .lesson-card-items li { font-size: 12px; opacity: 0.6; padding: 3px 0; border-bottom: 0.5px solid rgba(128,128,128,0.15); line-height: 1.45; }
+  .lesson-card-items li:last-child { border-bottom: none; }
+  .lesson-card-special { border-style: dashed; }
+  .lesson-card-special .lesson-card-title { opacity: 0.4; }
+
+  /* ── Photo between sections ── */
+  .section-img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+    border: 0.5px solid rgba(128,128,128,0.15);
+    margin: 2rem 0;
+  }
+  .section-img-wide {
+    aspect-ratio: 16 / 6;
+    object-fit: cover;
+    object-position: center 40%;
+  }
+  .section-img-dark {
+    aspect-ratio: 16 / 7;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  /* ── Flow ── */
+  .flow { display: flex; flex-direction: column; }
+  .flow-item { display: flex; gap: 1rem; align-items: flex-start; }
+  .flow-line-wrap { display: flex; flex-direction: column; align-items: center; }
+  .flow-num { width: 24px; height: 24px; border-radius: 50%; border: 0.5px solid rgba(128,128,128,0.3); display: flex; align-items: center; justify-content: center; font-size: 11px; opacity: 0.6; flex-shrink: 0; }
+  .flow-connector { width: 0.5px; height: 28px; background: rgba(128,128,128,0.2); }
+  .flow-text { font-size: 14px; opacity: 0.65; padding-top: 3px; line-height: 1.55; padding-bottom: 28px; }
+  .flow-item:last-child .flow-text { padding-bottom: 0; }
+
+  /* ── Divider ── */
+  .t-divider { border: none; border-top: 0.5px solid rgba(128,128,128,0.2); margin: 2rem 0; }
+
+  /* ── Pricing ── */
+  .pricing-block { border: 0.5px solid rgba(128,128,128,0.2); border-radius: 12px; padding: 1.25rem 1.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.75rem; }
+  .price-main { font-size: 26px; font-weight: 500; }
+  .price-unit { font-size: 14px; font-weight: 400; opacity: 0.4; }
+  .price-label { font-size: 12px; opacity: 0.4; margin-top: 2px; }
+  .price-note { font-size: 13px; opacity: 0.6; max-width: 300px; line-height: 1.55; }
+  .stripe-badge { display: inline-flex; align-items: center; gap: 5px; border: 0.5px solid rgba(128,128,128,0.2); border-radius: 4px; padding: 3px 8px; font-size: 11px; opacity: 0.5; background: rgba(128,128,128,0.06); }
+
+  /* ── CTA ── */
+  .cta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 2rem; }
+  .btn-primary { padding: 10px 22px; border-radius: 8px; font-size: 14px; font-weight: 500; text-decoration: none; display: inline-block; }
+  .btn-secondary { padding: 10px 22px; border-radius: 8px; background: transparent; font-size: 14px; border: 0.5px solid rgba(128,128,128,0.3); text-decoration: none; display: inline-block; opacity: 0.75; }
+  @media (prefers-color-scheme: light) {
+    .btn-primary { background: #1a1a1a; color: #fff; }
+    .btn-secondary { color: #1a1a1a; }
+  }
+  @media (prefers-color-scheme: dark) {
+    .btn-primary { background: #f0f0f0; color: #111; }
+    .btn-secondary { color: inherit; }
+  }
+
+  /* ── Profile ── */
+  .profile { display: flex; gap: 1.25rem; align-items: flex-start; }
+  .profile-photo { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; object-position: center top; flex-shrink: 0; border: 0.5px solid rgba(128,128,128,0.2); }
+  .profile-name { font-size: 15px; font-weight: 500; margin-bottom: 2px; }
+  .profile-role { font-size: 12px; opacity: 0.4; margin-bottom: 0.75rem; }
+  .profile-bio { font-size: 13px; opacity: 0.65; line-height: 1.7; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 1rem; }
+  .tag { font-size: 11px; opacity: 0.65; border: 0.5px solid rgba(128,128,128,0.2); border-radius: 3px; padding: 3px 8px; background: rgba(128,128,128,0.06); }
+
+  /* ── Q&A ── */
+  .qa-group { margin-bottom: 2rem; }
+  .qa-group-title { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.35; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 0.5px solid rgba(128,128,128,0.15); }
+  .qa-item { margin-bottom: 0; border-bottom: 0.5px solid rgba(128,128,128,0.12); }
+  .qa-item:last-child { border-bottom: none; }
+  .qa-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 0.9rem 0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0.85;
+  }
+  .qa-question:hover { opacity: 1; }
+  .qa-icon { font-size: 18px; opacity: 0.4; flex-shrink: 0; transition: transform 0.2s; line-height: 1; font-weight: 300; }
+  .qa-answer {
+    font-size: 13px;
+    opacity: 0.6;
+    line-height: 1.75;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.25s ease, padding 0.2s ease;
+    padding-bottom: 0;
+  }
+  .qa-answer ul { padding-left: 1.2rem; margin-top: 0.5rem; }
+  .qa-answer li { margin-bottom: 0.25rem; }
+  .qa-item.open .qa-answer { max-height: 600px; padding-bottom: 1rem; }
+  .qa-item.open .qa-icon { transform: rotate(45deg); opacity: 0.7; }
+
+  /* ── Responsive ── */
+  @media (max-width: 540px) {
+    .lesson-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .features-grid { grid-template-columns: 1fr; }
+    .pricing-block { flex-direction: column; }
+    .hero-title { font-size: 22px; }
+    .hero-img { aspect-ratio: 4 / 3; object-position: center 20%; }
+  }
+  @media (max-width: 360px) {
+    .lesson-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="teach-page">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-eyebrow">Online Lesson (JP)</div>
+    <h1 class="hero-title">作曲・DTM・音楽理論<br>マンツーマンレッスン</h1>
+    <p class="hero-body">スイス音楽院修士取得、現役作曲家・アーティストによるオンライン個人指導。目的・レベルに応じたオーダーメイドのカリキュラムで、初心者から専門を目指す方まで対応します。</p>
+  </div>
+
+  <!-- Hero image: portrait at studio desk -->
+  <img
+    class="hero-img"
+    src="{{ '/images/IMG_2846.JPEG' | relative_url }}"
+    alt="Sachie Kobayashi — スタジオにて"
+  >
+
+  <!-- Features -->
+  <div class="t-section">
+    <div class="features-grid">
+      <div class="feat"><div class="feat-dot"></div>完全マンツーマン・Zoom対応</div>
+      <div class="feat"><div class="feat-dot"></div>初心者から経験者まで</div>
+      <div class="feat"><div class="feat-dot"></div>作曲・理論・DTMを横断的に</div>
+      <div class="feat"><div class="feat-dot"></div>海外音楽院での専門的な教育背景</div>
+    </div>
+  </div>
+
+  <!-- Lesson content -->
+  <div class="t-section">
+    <div class="section-label">レッスン内容</div>
+    <div class="lesson-grid">
+      <div class="lesson-card">
+        <div class="lesson-card-title">作曲</div>
+        <ul class="lesson-card-items">
+          <li>メロディ・ハーモニー・形式</li>
+          <li>自作曲の添削</li>
+          <li>ジャンル別アプローチ</li>
+        </ul>
+      </div>
+      <div class="lesson-card">
+        <div class="lesson-card-title">DTM / DAW</div>
+        <ul class="lesson-card-items">
+          <li>DAW基本操作</li>
+          <li>打ち込み・アレンジ</li>
+          <li>ミックスの基礎</li>
+        </ul>
+      </div>
+      <div class="lesson-card">
+        <div class="lesson-card-title">音楽理論</div>
+        <ul class="lesson-card-items">
+          <li>楽典・コード・スケール</li>
+          <li>構造的な音楽理解</li>
+          <li>作曲・演奏への応用</li>
+        </ul>
+      </div>
+      <div class="lesson-card">
+        <div class="lesson-card-title">ソルフェージュ</div>
+        <ul class="lesson-card-items">
+          <li>音感トレーニング</li>
+          <li>読譜</li>
+          <li>リズム練習</li>
+        </ul>
+      </div>
+      <div class="lesson-card">
+        <div class="lesson-card-title">キーボード / シンセ</div>
+        <ul class="lesson-card-items">
+          <li>基礎演奏</li>
+          <li>音作り・機材の使い方</li>
+          <li>作曲・理論のための鍵盤</li>
+        </ul>
+      </div>
+      <div class="lesson-card lesson-card-special">
+        <div class="lesson-card-title">電子音響 / 受験対策</div>
+        <ul class="lesson-card-items">
+          <li>エレクトロアコースティック</li>
+          <li>音楽大学受験指導</li>
+          <li>インタラクティブサウンド</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAW setup photo -->
+  <img
+    class="section-img section-img-wide"
+    src="{{ '/images/IMG_6357.JPEG' | relative_url }}"
+    alt="DAWセットアップ — デュアルモニターとスコア"
+  >
+
+  <!-- Flow -->
+  <div class="t-section">
+    <div class="section-label">レッスンの進め方</div>
+    <div class="flow">
+      <div class="flow-item">
+        <div class="flow-line-wrap">
+          <div class="flow-num">1</div>
+          <div class="flow-connector"></div>
+        </div>
+        <div class="flow-text">無料Zoom面談 (30分) — 目的・経験・ご希望をヒアリング</div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-line-wrap">
+          <div class="flow-num">2</div>
+          <div class="flow-connector"></div>
+        </div>
+        <div class="flow-text">内容とペースのご提案</div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-line-wrap">
+          <div class="flow-num">3</div>
+          <div class="flow-connector"></div>
+        </div>
+        <div class="flow-text">マンツーマンでのレッスン実施 (Zoom等)</div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-line-wrap">
+          <div class="flow-num">4</div>
+        </div>
+        <div class="flow-text">課題・復習サポート</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="t-divider">
+
+  <!-- Pricing -->
+  <div class="t-section">
+    <div class="section-label">料金</div>
+    <div class="pricing-block">
+      <div>
+        <div class="price-main">¥4,500<span class="price-unit"> / 1時間</span></div>
+        <div class="price-label">日本国内料金</div>
+      </div>
+      <div class="price-note">日本国外在住の方は €45 / $45 (USD) ベースでご案内。詳細はお問い合わせください。</div>
+    </div>
+    <div class="stripe-badge">Stripe によるオンライン決済</div>
+  </div>
+
+  <!-- CTA -->
+  <div class="t-section">
+    <div class="section-label">お申し込み・お問い合わせ</div>
+    <p style="font-size:14px; opacity:0.65; line-height:1.7; margin-bottom:1.25rem;">まずは30分の無料Zoom面談からご案内しています。お気軽にご連絡ください。</p>
+    <div class="cta-row">
+      <a class="btn-primary" href="mailto:info@sachiekobayashi.com">info@sachiekobayashi.com へ</a>
+      <a class="btn-secondary" href="https://www.sachiekobayashi.com/policies/">レッスン規約</a>
+    </div>
+  </div>
+
+  <hr class="t-divider">
+
+  <!-- Profile -->
+  <div class="t-section">
+    <div class="section-label">講師プロフィール</div>
+    <div class="profile">
+      <img
+        class="profile-photo"
+        src="{{ '/images/スクリーンショット_2026-04-06_170102.png' | relative_url }}"
+        alt="Sachie Kobayashi"
+      >
+      <div>
+        <div class="profile-name">Sachie Kobayashi</div>
+        <div class="profile-role">作曲家・アーティスト</div>
+        <p class="profile-bio">スイス・ジュネーブ高等音楽院 音楽教育 修士課程修了。クラシック音楽を基盤とした理論教育を軸に、現代的な作曲・DTM・創作実践へとつなげる指導を行っています。VR作品や電子音楽など、アーティストとしても活動中。「自分の音楽を自分の言葉で理解し、表現できること」を大切にしています。</p>
+        <div class="tags">
+          <span class="tag">作曲</span>
+          <span class="tag">電子音響音楽</span>
+          <span class="tag">音楽理論・和声・対位法</span>
+          <span class="tag">DTM / DAW</span>
+          <span class="tag">ソルフェージュ</span>
+          <span class="tag">音楽大学受験</span>
+          <span class="tag">シンセサイザー</span>
+          <span class="tag">インタラクティブサウンド</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Studio night photo -->
+  <img
+    class="section-img section-img-dark"
+    src="{{ '/images/DSC07588.JPEG' | relative_url }}"
+    alt="スタジオにて — 制作風景"
+  >
+
+  <!-- Q&A -->
+  <div class="t-section">
+    <div class="section-label">よくあるご質問</div>
+
+    <div class="qa-group">
+      <div class="qa-group-title">レッスン全般</div>
+
+      <div class="qa-item">
+        <button class="qa-question" onclick="toggleQa(this)">
+          初心者でも受講できますか？
+          <span class="qa-icon">+</span>
+        </button>
+        <div class="qa-answer">
+          はい、まったくの初心者の方でも安心してご参加いただけます。楽譜が読めない方や、DTMに初めて触れる方にも、基礎から丁寧にご説明いたします。「こんな音楽を作ってみたい」というイメージだけでも、十分にスタートできます。
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <button class="qa-question" onclick="toggleQa(this)">
+          どのような内容を学べますか？
+          <span class="qa-icon">+</span>
+        </button>
+        <div class="qa-answer">
+          作曲、編曲、DTM（Ableton Live、Logic Pro など）、音楽理論、ソルフェージュ、音響設計など、目的に応じて幅広く対応しています。映像音楽や舞台音楽、電子音楽制作など、専門的な内容にも対応可能です。
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <button class="qa-question" onclick="toggleQa(this)">
+          レッスンはどのように進みますか？
+          <span class="qa-icon">+</span>
+        </button>
+        <div class="qa-answer">
+          Zoom等を使用し、画面共有を行いながら進めます。制作中の音源やスコアを一緒に確認し、具体的な改善点や次のステップを整理していきます。必要に応じて課題や資料をオンラインで共有いたします。
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-group">
+      <div class="qa-group-title">オンライン環境・機材</div>
+
+      <div class="qa-item">
+        <button class="qa-question" onclick="toggleQa(this)">
+          必要な機材は何ですか？
+          <span class="qa-icon">+</span>
+        </button>
+        <div class="qa-answer">
+          基本的には以下があれば受講可能です。
+          <ul>
+            <li>インターネット接続環境</li>
+            <li>パソコン（Windows / Mac）</li>
+            <li>マイク・イヤホンまたはヘッドホン</li>
+          </ul>
+          DTMの場合は、DAWソフトやオーディオインターフェースがあるとより効果的ですが、必須ではありません。
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <button class="qa-question" onclick="toggleQa(this)">
+          DAWや機材の設定も教えてもらえますか？
+          <span class="qa-icon">+</span>
+        </button>
+        <div class="qa-answer">
+          はい、可能です。ただし、設定作業のみでレッスン時間の大半を占めてしまう場合は、内容を整理して段階的に対応いたします。スムーズな進行のため、事前に状況をお知らせいただけますと助かります。
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-group">
+      <div class="qa-group-title">スケジュール・回数</div>
+
+      <div class="qa-item">
+        <button class="qa-question" onclick="toggleQa(this)">
+          レッスンの頻度はどのくらいが理想ですか？
+          <span class="qa-icon">+</span>
+        </button>
+        <div class="qa-answer">
+          目安は以下の通りです。
+          <ul>
+            <li>月2回：継続的にスキルを伸ばしたい方</li>
+            <li>月1回：自分のペースで取り組みたい方</li>
+            <li>不定期：作品制作や課題の相談中心の方</li>
+          </ul>
+          目的や生活スタイルに合わせて柔軟に調整可能です。
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <button class="qa-question" onclick="toggleQa(this)">
+          レッスンの日程変更はできますか？
+          <span class="qa-icon">+</span>
+        </button>
+        <div class="qa-answer">
+          はい、可能です。ただし、同月内での振替を原則としております。開始時刻を過ぎてからのご連絡や無断欠席の場合は、レッスン実施扱いとなります。
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-group">
+      <div class="qa-group-title">レッスン外での連絡・質問について</div>
+
+      <div class="qa-item">
+        <button class="qa-question" onclick="toggleQa(this)">
+          レッスン外でも質問できますか？
+          <span class="qa-icon">+</span>
+        </button>
+        <div class="qa-answer">
+          簡単なご連絡や日程調整は、いつでもお送りいただけます。ただし、内容の確認や指導を伴うご質問（楽譜の添削、アレンジ相談、技術的な解説など）は、原則としてレッスン時間内で対応させていただいております。これは、すべての生徒様に公平で質の高い指導を提供するための方針です。
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <button class="qa-question" onclick="toggleQa(this)">
+          楽譜や音源を事前に送ってもいいですか？
+          <span class="qa-icon">+</span>
+        </button>
+        <div class="qa-answer">
+          はい、歓迎しております。事前に共有していただくことで、レッスンをより効率的に進めることができます。詳細な内容については、レッスン内で一緒に確認していきます。
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-group">
+      <div class="qa-group-title">お子様のレッスン</div>
+
+      <div class="qa-item">
+        <button class="qa-question" onclick="toggleQa(this)">
+          何歳から受講できますか？
+          <span class="qa-icon">+</span>
+        </button>
+        <div class="qa-answer">
+          目安として、6歳頃から対応しております。年齢や集中力に応じて、無理のないペースで進めていきます。
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <button class="qa-question" onclick="toggleQa(this)">
+          保護者へのフィードバックはありますか？
+          <span class="qa-icon">+</span>
+        </button>
+        <div class="qa-answer">
+          はい、必要に応じてレッスン内容や進捗についてご報告いたします。ご家庭での練習方法についても、具体的にご提案いたします。
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-group">
+      <div class="qa-group-title">料金・支払い</div>
+
+      <div class="qa-item">
+        <button class="qa-question" onclick="toggleQa(this)">
+          支払いはどのように行いますか？
+          <span class="qa-icon">+</span>
+        </button>
+        <div class="qa-answer">
+          月初に当月の回数をご申告いただき、事前にお支払いいただいております。お支払いはオンライン決済（Stripe等）に対応しています。領収書が必要な場合はお知らせください。
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <button class="qa-question" onclick="toggleQa(this)">
+          途中で回数を変更できますか？
+          <span class="qa-icon">+</span>
+        </button>
+        <div class="qa-answer">
+          はい、可能です。ただし、お支払い後の返金は原則として行っておりません。回数の変更は、次月からの反映となります。
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-group">
+      <div class="qa-group-title">専門・進路・ジャンル</div>
+
+      <div class="qa-item">
+        <button class="qa-question" onclick="toggleQa(this)">
+          音大受験やプロ志向の指導にも対応していますか？
+          <span class="qa-icon">+</span>
+        </button>
+        <div class="qa-answer">
+          はい、対応しております。ポートフォリオ制作、作曲試験対策、映像・舞台音楽制作、プロジェクト準備など、目的に応じて具体的な課題設定を行います。
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <button class="qa-question" onclick="toggleQa(this)">
+          クラシック以外の音楽も学べますか？
+          <span class="qa-icon">+</span>
+        </button>
+        <div class="qa-answer">
+          はい、ジャンルは問いません。クラシック、映像音楽、電子音楽、ポップス、実験音楽、サウンドデザインなど幅広く対応しています。
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <button class="qa-question" onclick="toggleQa(this)">
+          どんな方に向いていますか？
+          <span class="qa-icon">+</span>
+        </button>
+        <div class="qa-answer">
+          <ul>
+            <li>音楽を作ってみたいが、何から始めればよいか分からない方</li>
+            <li>自分の作品を客観的に見てもらいたい方</li>
+            <li>専門的な技術を体系的に学びたい方</li>
+            <li>自分のペースで創作を続けたい方</li>
+          </ul>
+          一人ひとりの目的や関心に合わせて、現実的で持続可能な学び方を一緒に設計していきます。
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /Q&A -->
+
+</div><!-- /teach-page -->
+
+<script>
+function toggleQa(btn) {
+  var item = btn.closest('.qa-item');
+  var isOpen = item.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.qa-item.open').forEach(function(el) {
+    el.classList.remove('open');
+  });
+  // Open clicked if it was closed
+  if (!isOpen) item.classList.add('open');
+}
+</script>
