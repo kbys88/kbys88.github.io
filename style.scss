@@ -438,6 +438,19 @@ a.footnote {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
+.nav-email {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.nav-email a {
+  display: inline-block;
+  word-break: break-word;
+  font-size: 0.95rem;
+}
+
+
 nav {
   display: block;
   margin-top: 23px; // @TODO: Vertically middle align
