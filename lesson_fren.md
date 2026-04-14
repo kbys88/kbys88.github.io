@@ -542,7 +542,10 @@ permalink: /lesson_fr/
       <div class="faq-item">
         <div class="faq-q" data-en="What is the cancellation policy?" data-fr="Quelle est la politique d'annulation ?"></div>
         <div class="faq-a">
-          <span data-en="Changes within 48 hours are treated as full cancellations. Refunds are not provided. For serious illness or technical issues, contact " data-fr="Toute modification dans les 48 heures est considérée comme une annulation totale. Aucun remboursement possible. En cas de maladie grave ou problème technique, contactez "></span><span class="highlight-email">info@sachiekobayashi.com</span>.
+        <span  data-en="Rescheduling is possible within the same month. No-shows on the day will be counted as one lesson. If there are unavoidable circumstances (such as serious illness or technical issues), please contact:"
+  data-fr="Le report est possible dans le même mois. Toute absence non signalée le jour même sera comptée comme une séance. En cas de circonstances inévitables (maladie grave ou problème technique), veuillez contacter :">
+</span>
+<span class="highlight-email">info@sachiekobayashi.com</span>.
           <span data-en=" Full policies at " data-fr=" Conditions complètes sur "></span><a href="https://www.sachiekobayashi.com/policies/" target="_blank" rel="noopener" data-en="sachiekobayashi.com/policies" data-fr="sachiekobayashi.com/policies"></a>.
         </div>
       </div>
