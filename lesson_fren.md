@@ -411,8 +411,8 @@ permalink: /lesson_fr/
 <div class="wrap">
 
   <section>
-    <span class="label" data-en="Online Exchange & Lessons" data-fr="Échanges et Cours en Ligne"></span>
-    <h1 data-en="Sachie Kobayashi" data-fr="Sachie Kobayashi"></h1>
+    <span class="label" data-en="Sachie Kobayashi" data-fr="Sachie Kobayashi"></span>
+    <h1 data-en="Online Exchange & Lessons" data-fr="Échanges et Cours en Ligne"></h1>
     <p class="hero-subtitle"
        data-en="Composer and creator — trained in Switzerland, Tokyo and Paris, active worldwide."
        data-fr="Compositrice et créatrice — formée en Suisse, à Tokyo et à Paris, active dans le monde entier."></p>
