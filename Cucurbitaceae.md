@@ -237,6 +237,12 @@ permalink: /cucurbits/
         <a class="email-cta" href="mailto:info@sachiekobayashi">info@sachiekobayashi</a>
       </div>
 
+<div class="moving-logo">
+  <video autoplay muted loop playsinline preload="metadata" controls>
+    <source src="/images/logo_2026.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
       <div class="lang-block lang-block--en">
         <p class="eyebrow">Studio Cucurbits.</p>
         <p class="intro">
