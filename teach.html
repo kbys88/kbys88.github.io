@@ -118,7 +118,11 @@ permalink: /teach/
   .qa-answer { font-size: 13px; color: var(--t-secondary); line-height: 1.75; overflow: hidden; max-height: 0; transition: max-height 0.25s ease, padding 0.2s ease; padding-bottom: 0; }
   .qa-answer p { margin-bottom: 0.75rem; }
   .qa-answer p:last-child { margin-bottom: 0; }
-  .qa-answer ul { padding-left: 1.2rem; margin: 0.5rem 0; }
+  .qa-answer ul {
+  padding-left: 1.2rem;
+  margin: 0;                     /* ← これも重要 */
+  list-style-position: inside;   /* ← 核心 */
+}
   .qa-answer li { margin-bottom: 0.25rem; }
   .qa-freq { display: flex; flex-direction: column; gap: 10px; margin: 0.75rem 0; }
   .qa-freq-item { border: 0.5px solid var(--t-border); border-radius: 10px; padding: 0.85rem 1rem; }
