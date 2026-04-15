@@ -41,7 +41,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ── LANG BAR ── */
 .lang-bar {
   position: sticky; top: 0; z-index: 200;
   background: rgba(253,252,248,0.96);
@@ -64,7 +63,6 @@ body {
   content: '/'; margin-left: 18px; color: var(--sand-mid);
 }
 
-/* ── HERO ── */
 .hero {
   position: relative;
   height: 88vh; min-height: 500px; max-height: 820px;
@@ -103,7 +101,6 @@ body {
   margin-top: 16px; display: block;
 }
 
-/* ── LAYOUT ── */
 .wrap { max-width: 720px; margin: 0 auto; padding: 0 48px; }
 
 section {
@@ -128,17 +125,20 @@ p { color: var(--ink-mid); margin-bottom: 20px; }
 p:last-child { margin-bottom: 0; }
 p strong { color: var(--ink); font-weight: 400; }
 
-/* ── INTRO VIDEO ── */
 .video-wrap {
-  position: relative; padding-bottom: 56.25%;
-  height: 0; overflow: hidden; background: var(--sand);
+  position: relative;
+  background: var(--sand);
+  border-radius: 0;
+  overflow: hidden;
 }
-.video-wrap iframe {
-  position: absolute; inset: 0;
-  width: 100%; height: 100%; border: 0;
+.video-wrap video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #000;
 }
 
-/* ── PHOTO GRID — asymmetric ── */
 .photo-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -157,14 +157,12 @@ p strong { color: var(--ink); font-weight: 400; }
   aspect-ratio: 4/3;
 }
 
-/* ── FULL-WIDTH PHOTO ── */
 .photo-full {
   width: 100%; max-height: 480px;
   object-fit: cover; object-position: center 40%;
   display: block;
 }
 
-/* ── STRENGTHS ── */
 .strengths { list-style: none; border-top: 1px solid var(--sand-mid); }
 .strengths li {
   padding: 18px 0 18px 24px;
@@ -178,7 +176,6 @@ p strong { color: var(--ink); font-weight: 400; }
   width: 8px; height: 1px; background: var(--accent);
 }
 
-/* ── LESSON TOPICS ── */
 .topics {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -200,7 +197,6 @@ p strong { color: var(--ink); font-weight: 400; }
 }
 .topic-desc { font-size: 13px; color: var(--ink-light); line-height: 1.6; }
 
-/* ── TOOLS ── */
 .tools { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 4px; }
 .tools span {
   font-size: 12px; padding: 6px 14px;
@@ -208,7 +204,6 @@ p strong { color: var(--ink); font-weight: 400; }
   color: var(--ink-mid); letter-spacing: 0.03em;
 }
 
-/* ── TRIAL BAND ── */
 .trial {
   background: var(--sand);
   padding: 48px 48px;
@@ -226,7 +221,6 @@ p strong { color: var(--ink); font-weight: 400; }
   letter-spacing: 0.08em;
 }
 
-/* ── VIDEO TOGGLE ── */
 .video-toggle {
   display: flex; gap: 0; margin-bottom: 20px;
 }
@@ -244,7 +238,6 @@ p strong { color: var(--ink); font-weight: 400; }
   background: var(--ink); border-color: var(--ink); color: var(--white);
 }
 
-/* ── PRICING ── */
 .pricing { border-top: 1px solid var(--sand-mid); margin-top: 4px; }
 .pricing-row {
   display: flex; justify-content: space-between;
@@ -258,7 +251,6 @@ p strong { color: var(--ink); font-weight: 400; }
   font-size: 1.25rem; color: var(--ink); white-space: nowrap;
 }
 
-/* ── FAQ ── */
 .faq { border-top: 1px solid var(--sand-mid); }
 .faq-item { padding: 24px 0; border-bottom: 1px solid var(--sand-mid); }
 .faq-q {
@@ -267,17 +259,14 @@ p strong { color: var(--ink); font-weight: 400; }
 }
 .faq-a { font-size: 14px; color: var(--ink-mid); line-height: 1.7; }
 
-/* ── LINKS ── */
 a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
 a:hover { color: var(--accent); }
 .highlight-email { color: var(--ink); font-style: italic; }
 
-/* ── CALENDLY ── */
 .calendly-inline-widget {
   width: 100%; min-width: 320px; height: 700px;
 }
 
-/* ── FOOTER ── */
 footer {
   padding: 56px 48px; text-align: center;
   font-size: 12px; color: var(--ink-light);
@@ -285,7 +274,6 @@ footer {
   border-top: 1px solid var(--sand-mid);
 }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 600px) {
   .wrap { padding: 0 24px; }
   .lang-bar { padding: 13px 24px; }
@@ -301,7 +289,6 @@ footer {
 }
 </style>
 
-<!-- HERO -->
 <div class="hero">
   <img src="https://www.sachiekobayashi.com/images/IMG_2846.JPEG" alt="Sachie Kobayashi — studio">
   <div class="hero-overlay"></div>
@@ -314,7 +301,6 @@ footer {
   </div>
 </div>
 
-<!-- LANG BAR -->
 <div class="lang-bar">
   <button id="enBtn" class="active">English</button>
   <button id="frBtn">Français</button>
@@ -322,15 +308,15 @@ footer {
 
 <div class="wrap">
 
-  <!-- INTRO -->
   <section>
     <span class="label" data-en="Introduction" data-fr="Présentation"></span>
     <div class="video-wrap">
-      <iframe src="https://www.youtube.com/embed/EOf82PRXh3Y" title="Sachie Kobayashi Introduction" allowfullscreen></iframe>
+      <video autoplay muted loop playsinline preload="metadata" aria-label="Sachie Kobayashi introduction video">
+        <source src="https://github.com/kbys88/kbys88.github.io/raw/refs/heads/main/images/lesson_wide.mp4" type="video/mp4">
+      </video>
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section>
     <span class="label" data-en="About Sachie" data-fr="À propos de Sachie"></span>
     <h2 data-en="Composer. Educator. Based between continents." data-fr="Compositrice. Pédagogue. Entre les continents."></h2>
@@ -341,7 +327,6 @@ footer {
     <p data-en="Professional inquiries: <span class='highlight-email'>info@sachiekobayashi.com</span> — <a href='https://www.sachiekobayashi.com/' target='_blank' rel='noopener'>sachiekobayashi.com</a>"
        data-fr="Collaborations professionnelles : <span class='highlight-email'>info@sachiekobayashi.com</span> — <a href='https://www.sachiekobayashi.com/' target='_blank' rel='noopener'>sachiekobayashi.com</a>"></p>
 
-    <!-- ASYMMETRIC PHOTO GRID -->
     <div class="photo-grid">
       <img class="tall" src="https://www.sachiekobayashi.com/images/DSC07588.JPEG" alt="Studio — composition work">
       <img class="wide" src="https://www.sachiekobayashi.com/images/IMG_6357.JPEG" alt="DAW setup — dual monitor and score">
@@ -349,7 +334,6 @@ footer {
     </div>
   </section>
 
-  <!-- WHY -->
   <section>
     <span class="label" data-en="Why study with Sachie" data-fr="Pourquoi étudier avec Sachie"></span>
     <ul class="strengths">
@@ -361,7 +345,6 @@ footer {
     </ul>
   </section>
 
-  <!-- TOPICS -->
   <section>
     <span class="label" data-en="What you can study" data-fr="Ce que vous pouvez étudier"></span>
     <div class="topics">
@@ -392,7 +375,6 @@ footer {
     </div>
   </section>
 
-  <!-- TOOLS -->
   <section>
     <span class="label" data-en="Software & tools" data-fr="Logiciels et outils"></span>
     <div class="tools">
@@ -403,20 +385,17 @@ footer {
     </div>
   </section>
 
-</div><!-- /wrap -->
+</div>
 
-<!-- FULL-WIDTH PHOTO -->
 <img class="photo-full" src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/photo_lesson.jpg" alt="">
 
 <div class="wrap">
 
-  <!-- TRIAL BANNER -->
   <div class="trial">
     <div class="big" data-en="30-minute free trial — no commitment" data-fr="Essai gratuit de 30 minutes — sans engagement"></div>
     <div class="note" data-en="Book directly below" data-fr="Réservez directement ci-dessous"></div>
   </div>
 
-  <!-- LESSON PREVIEW -->
   <section>
     <span class="label" data-en="Lesson preview" data-fr="Aperçu des cours"></span>
     <div class="video-toggle">
@@ -424,14 +403,17 @@ footer {
       <button onclick="showVideo('fr')" id="vFrBtn">Français</button>
     </div>
     <div id="video-en" class="video-wrap">
-      <iframe src="https://www.youtube.com/embed/xFx8gj7iKCY" title="Lesson EN" allowfullscreen></iframe>
+      <video autoplay muted loop playsinline preload="metadata" aria-label="Lesson preview video English">
+        <source src="https://github.com/kbys88/kbys88.github.io/raw/refs/heads/main/images/lesson_wide.mp4" type="video/mp4">
+      </video>
     </div>
     <div id="video-fr" class="video-wrap" style="display:none;">
-      <iframe src="https://www.youtube.com/embed/SYYX3eBwMrc" title="Lesson FR" allowfullscreen></iframe>
+      <video autoplay muted loop playsinline preload="metadata" aria-label="Lesson preview video French">
+        <source src="https://github.com/kbys88/kbys88.github.io/raw/refs/heads/main/images/lesson_wide.mp4" type="video/mp4">
+      </video>
     </div>
   </section>
 
-  <!-- RATES -->
   <section>
     <span class="label" data-en="Rates" data-fr="Tarifs"></span>
     <div class="pricing">
@@ -459,7 +441,6 @@ footer {
     </div>
   </section>
 
-  <!-- FAQ -->
   <section>
     <span class="label" data-en="Frequently asked questions" data-fr="Questions fréquentes"></span>
     <div class="faq">
@@ -489,7 +470,6 @@ footer {
     </div>
   </section>
 
-  <!-- BOOK -->
   <section>
     <span class="label" data-en="Book a lesson" data-fr="Réserver un cours"></span>
     <div class="trial" style="margin-bottom:40px;">
@@ -501,7 +481,7 @@ footer {
     <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
   </section>
 
-</div><!-- /wrap -->
+</div>
 
 <footer>
   <span data-en="Looking forward to meeting you." data-fr="Au plaisir de vous rencontrer."></span><br><br>
