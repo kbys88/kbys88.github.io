@@ -1,8 +1,25 @@
 ---
 layout: none
-title: Music/Composition/Sound Design/Solfege Lesson from the World !
+title: Online Composition and Music Lessons | Sachie Kobayashi
 permalink: /lesson_fr/
 ---
+
+<head>
+
+<title>
+Online Composition, Music Theory and Sound Design Lessons | Sachie Kobayashi
+</title>
+
+<meta name="description" content="
+Online composition, solfège, music theory and sound design lessons with an internationally active composer.
+Available in English and French. 30-minute free trial available.
+">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://あなたのURL/lesson_fr/">
+
+</head>
 
 {% include fonts.html %}
 
