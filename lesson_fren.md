@@ -1,7 +1,7 @@
 ---
 layout: none
 title: Online Composition and Music Lessons | Sachie Kobayashi
-permalink: /lesson_fr/
+permalink: /lesson_fr_old/
 ---
 
 <head>
