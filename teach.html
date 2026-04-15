@@ -33,25 +33,26 @@ permalink: /teach/
   .hero-img {
     width: 100%;
     aspect-ratio: 16 / 7;
+    aspect-ratio: 16 / 8.5;
     object-fit: cover;
     object-position: center 30%;
     border-radius: 12px;
-    display: block;
-    margin-bottom: 2.5rem;
-    border: 0.5px solid var(--t-border);
-  }
 
   .hero-video {
     width: 100%;
     aspect-ratio: 16 / 7;
+    aspect-ratio: 16 / 8.5;
     object-fit: cover;
     object-position: center 30%;
     border-radius: 12px;
-    display: block;
-    margin-bottom: 1rem;
-    border: 0.5px solid var(--t-border);
-    background: #000;
+    .pricing-block { flex-direction: column; }
+    .hero-title { font-size: 22px; }
+    .hero-video,
+    .hero-img { aspect-ratio: 4 / 3; object-position: center 20%; }
+    .hero-img { aspect-ratio: 4 / 3.4; object-position: center 20%; }
   }
+  @media (max-width: 360px) {
+    .lesson-grid { grid-template-columns: 1fr; }
 
   /* ── Section ── */
   .t-section { margin-bottom: 2.25rem; }
