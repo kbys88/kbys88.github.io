@@ -129,14 +129,22 @@ p strong { color: var(--ink); font-weight: 400; }
   position: relative;
   background: var(--sand);
   border-radius: 0;
+  padding-bottom: 56.25%;
+  height: 0;
   overflow: hidden;
+  background: var(--sand);
 }
 .video-wrap video {
   display: block;
+.video-wrap iframe {
+  position: absolute;
+  inset: 0;
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   background: #000;
+  height: 100%;
+  border: 0;
 }
 
 .photo-grid {
@@ -301,10 +309,16 @@ footer {
   </div>
 </div>
 
-<div class="lang-bar">
-  <button id="enBtn" class="active">English</button>
-  <button id="frBtn">Français</button>
-</div>
+ <section>
+    <span class="label" data-en="Introduction" data-fr="Présentation"></span>
+    <div class="video-wrap">
+      <video autoplay muted loop playsinline preload="metadata" aria-label="Sachie Kobayashi introduction video">
+        <source src="https://github.com/kbys88/kbys88.github.io/raw/refs/heads/main/images/lesson_wide.mp4" type="video/mp4">
+      </video>
+      <iframe src="https://www.youtube.com/embed/EOf82PRXh3Y" title="Sachie Kobayashi Introduction" allowfullscreen></iframe>
+    </div>
+  </section>
+
 
 <div class="wrap">
 
