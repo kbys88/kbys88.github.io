@@ -8,19 +8,16 @@ permalink: /teach/
 <style>
   .teach-page * { box-sizing: border-box; margin: 0; padding: 0; }
 
-  /* Color tokens — no opacity layering */
-:root {
-  --t-primary:   #000000;
-  --t-secondary: #000000;
-  --t-muted:     #000000;
-  --t-faint:     #000000;
-  --t-border:    #000000;
-  --t-surface:   transparent;
-  --t-btn-bg:    #000000;
-  --t-btn-fg:    #ffffff;
-}
-
-
+  :root {
+    --t-primary: #000000;
+    --t-secondary: #000000;
+    --t-muted: #000000;
+    --t-faint: #000000;
+    --t-border: #000000;
+    --t-surface: transparent;
+    --t-btn-bg: #000000;
+    --t-btn-fg: #ffffff;
+  }
 
   .teach-page { color: var(--t-primary); }
 
@@ -30,29 +27,28 @@ permalink: /teach/
   .hero-title { font-size: 28px; font-weight: 500; line-height: 1.2; margin-bottom: 1rem; color: var(--t-primary); }
   .hero-body { font-size: 15px; color: var(--t-secondary); line-height: 1.75; max-width: 560px; margin-bottom: 2rem; }
 
-  .hero-img {
-    width: 100%;
-    aspect-ratio: 16 / 7;
-    aspect-ratio: 16 / 8.5;
-    object-fit: cover;
-    object-position: center 30%;
-    border-radius: 12px;
-
   .hero-video {
     width: 100%;
-    aspect-ratio: 16 / 7;
     aspect-ratio: 16 / 8.5;
     object-fit: cover;
     object-position: center 30%;
     border-radius: 12px;
-    .pricing-block { flex-direction: column; }
-    .hero-title { font-size: 22px; }
-    .hero-video,
-    .hero-img { aspect-ratio: 4 / 3; object-position: center 20%; }
-    .hero-img { aspect-ratio: 4 / 3.4; object-position: center 20%; }
+    display: block;
+    margin-bottom: 1rem;
+    border: 0.5px solid var(--t-border);
+    background: #000;
   }
-  @media (max-width: 360px) {
-    .lesson-grid { grid-template-columns: 1fr; }
+
+  .hero-img {
+    width: 100%;
+    aspect-ratio: 16 / 8.5;
+    object-fit: cover;
+    object-position: center 30%;
+    border-radius: 12px;
+    display: block;
+    margin-bottom: 2.5rem;
+    border: 0.5px solid var(--t-border);
+  }
 
   /* ── Section ── */
   .t-section { margin-bottom: 2.25rem; }
@@ -119,20 +115,20 @@ permalink: /teach/
   .qa-item:last-child { border-bottom: none; }
   .qa-question { width: 100%; text-align: left; background: none; border: none; padding: 0.9rem 0; font-size: 14px; font-weight: 500; color: var(--t-primary); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
   .qa-icon { font-size: 18px; color: var(--t-muted); flex-shrink: 0; transition: transform 0.2s; line-height: 1; font-weight: 300; }
-.qa-answer {
-  display: none;
-  font-size: 13px;
-  color: var(--t-secondary);
-  line-height: 1.75;
-  padding-bottom: 0;
-}
+  .qa-answer {
+    display: none;
+    font-size: 13px;
+    color: var(--t-secondary);
+    line-height: 1.75;
+    padding-bottom: 0;
+  }
   .qa-answer p { margin-bottom: 0.75rem; }
   .qa-answer p:last-child { margin-bottom: 0; }
   .qa-answer ul {
-  padding-left: 1.2rem;
-  margin: 0;
-  list-style-position: inside;
-}
+    padding-left: 1.2rem;
+    margin: 0;
+    list-style-position: inside;
+  }
   .qa-answer li { margin-bottom: 0.25rem; }
   .qa-freq { display: flex; flex-direction: column; gap: 10px; margin: 0.75rem 0; }
   .qa-freq-item { border: 0.5px solid var(--t-border); border-radius: 10px; padding: 0.85rem 1rem; }
@@ -141,10 +137,10 @@ permalink: /teach/
   .qa-freq-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 0.5rem; }
   .qa-freq-tag { font-size: 11px; color: var(--t-muted); border: 0.5px solid var(--t-border); border-radius: 3px; padding: 2px 7px; background: var(--t-surface); }
   .qa-freq-note { font-size: 12px; color: var(--t-muted); line-height: 1.65; border-top: 0.5px solid var(--t-border); padding-top: 0.75rem; margin-top: 0.25rem; }
-.qa-item.open .qa-answer {
-  display: block;
-  padding-bottom: 1rem;
-}
+  .qa-item.open .qa-answer {
+    display: block;
+    padding-bottom: 1rem;
+  }
   .qa-item.open .qa-icon { transform: rotate(45deg); }
 
   /* ── Responsive ── */
@@ -154,8 +150,9 @@ permalink: /teach/
     .pricing-block { flex-direction: column; }
     .hero-title { font-size: 22px; }
     .hero-video,
-    .hero-img { aspect-ratio: 4 / 3; object-position: center 20%; }
+    .hero-img { aspect-ratio: 4 / 3.4; object-position: center 20%; }
   }
+
   @media (max-width: 360px) {
     .lesson-grid { grid-template-columns: 1fr; }
   }
@@ -271,7 +268,7 @@ permalink: /teach/
         <div class="lesson-card-title">シンセサイザー・音作り</div>
         <ul class="lesson-card-items">
           <li>シンセサイザー入門Rev.2 音作りが分かるシンセの教科書<br>松前公高</li>
-　　　　　　<li>サウンドシンセシス 電子音響学入門<br>小泉 宣夫, 岩崎 真</li> 
+          <li>サウンドシンセシス 電子音響学入門<br>小泉宣夫、岩崎真</li>
         </ul>
       </div>
     </div>
@@ -333,9 +330,7 @@ permalink: /teach/
   <div class="t-section">
     <div class="section-label">講師プロフィール</div>
     <div class="profile">
-<img class="profile-photo"
-     src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/sachiehome1.png"
-     alt="Sachie Kobayashi">
+      <img class="profile-photo" src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/sachiehome1.png" alt="Sachie Kobayashi">
       <div>
         <div class="profile-name">Sachie Kobayashi</div>
         <div class="profile-role">作曲家・アーティスト</div>
@@ -360,7 +355,6 @@ permalink: /teach/
   <div class="t-section">
     <div class="section-label">よくあるご質問</div>
 
-    <!-- レッスン全般 -->
     <div class="qa-group">
       <div class="qa-group-title">レッスン全般</div>
 
@@ -386,7 +380,6 @@ permalink: /teach/
       </div>
     </div>
 
-    <!-- オンライン環境・機材 -->
     <div class="qa-group">
       <div class="qa-group-title">オンライン環境・機材</div>
 
@@ -411,7 +404,6 @@ permalink: /teach/
       </div>
     </div>
 
-    <!-- スケジュール・回数 -->
     <div class="qa-group">
       <div class="qa-group-title">スケジュール・回数</div>
 
@@ -451,7 +443,6 @@ permalink: /teach/
       </div>
     </div>
 
-    <!-- 連絡・質問 -->
     <div class="qa-group">
       <div class="qa-group-title">レッスン外での連絡・質問</div>
 
@@ -470,7 +461,6 @@ permalink: /teach/
       </div>
     </div>
 
-    <!-- お子様 -->
     <div class="qa-group">
       <div class="qa-group-title">お子様のレッスン</div>
 
@@ -489,7 +479,6 @@ permalink: /teach/
       </div>
     </div>
 
-    <!-- 料金・支払い -->
     <div class="qa-group">
       <div class="qa-group-title">料金・支払い</div>
 
@@ -508,7 +497,6 @@ permalink: /teach/
       </div>
     </div>
 
-    <!-- 専門・ジャンル -->
     <div class="qa-group">
       <div class="qa-group-title">専門・進路・ジャンル</div>
 
