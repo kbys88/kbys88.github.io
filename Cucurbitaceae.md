@@ -501,6 +501,10 @@ permalink: /cucurbits/
           <h3>Frederik Bous</h3>
           <p class="collaborator-role">AI Researcher and Creative Technology Collaborator</p>
           <p>
+            Website:
+            <a href="https://frederik.bous.cc/" target="_blank" rel="noopener noreferrer">frederik.bous.cc</a>
+          </p>
+          <p>
             Frederik Bous は、音声およびボイステクノロジーのための人工知能を専門とする研究者・開発者です。
             音声合成、歌声合成、ボイス・トランスフォーメーション、表現制御に関する深層学習手法を軸に、
             次世代のニューラルオーディオシステムの開発に取り組んでいます。
@@ -524,6 +528,10 @@ permalink: /cucurbits/
           <h3>Frederik Bous</h3>
           <p class="collaborator-role">AI Researcher and Creative Technology Collaborator</p>
           <p>
+            Website:
+            <a href="https://frederik.bous.cc/" target="_blank" rel="noopener noreferrer">frederik.bous.cc</a>
+          </p>
+          <p>
             Frederik Bous is a researcher and developer specializing in artificial intelligence for audio and voice technologies. His work focuses on deep learning methods for speech and singing voice synthesis, transformation, and expressive control, contributing to the development of next-generation neural audio systems.
           </p>
           <p>
@@ -534,6 +542,12 @@ permalink: /cucurbits/
           </p>
         </div>
       </div>
+    </div>
+
+    <div class="image">
+      <a href="https://frederik.bous.cc/" target="_blank" rel="noopener noreferrer">
+        <img src="https://frederik.bous.cc/assets/bous_square.jpg" alt="Portrait of Frederik Bous">
+      </a>
     </div>
   </section>
 
