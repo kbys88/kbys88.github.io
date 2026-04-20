@@ -54,15 +54,14 @@ permalink: /cucurbits/
     display: block;
   }
 
-.cucurbits-page .moving-logo video {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  background: transparent;
-}
-
+  .cucurbits-page .moving-logo video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    background: transparent;
+  }
 
   .cucurbits-page .hero,
   .cucurbits-page .section {
@@ -148,14 +147,16 @@ permalink: /cucurbits/
     margin-top: 1.5rem;
   }
 
-  .cucurbits-page .service-card {
+  .cucurbits-page .service-card,
+  .cucurbits-page .collaborator-card {
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 12px;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.015);
   }
 
-  .cucurbits-page .service-card h3 {
+  .cucurbits-page .service-card h3,
+  .cucurbits-page .collaborator-card h3 {
     font-size: 1rem;
     margin-bottom: 0.65rem;
   }
@@ -181,6 +182,14 @@ permalink: /cucurbits/
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.35rem 1rem;
     margin-top: 1rem;
+  }
+
+  .cucurbits-page .collaborator-role {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    opacity: 0.72;
+    margin-bottom: 1rem;
   }
 
   .cucurbits-page .cta-card {
@@ -480,6 +489,50 @@ permalink: /cucurbits/
         <h2>AI &amp; Technology</h2>
         <p>AI and computational processes are part of my practice not only as tools, but as ways of rethinking authorship, listening, and creative decision-making.</p>
         <p>This perspective informs both artistic commissions and applied collaborations involving emerging technology, research, and sound-led experimentation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="text">
+      <div class="lang-block lang-block--ja">
+        <h2>Collaborator</h2>
+        <div class="collaborator-card">
+          <h3>Frederik Bous</h3>
+          <p class="collaborator-role">AI Researcher and Creative Technology Collaborator</p>
+          <p>
+            Frederik Bous は、音声およびボイステクノロジーのための人工知能を専門とする研究者・開発者です。
+            音声合成、歌声合成、ボイス・トランスフォーメーション、表現制御に関する深層学習手法を軸に、
+            次世代のニューラルオーディオシステムの開発に取り組んでいます。
+          </p>
+          <p>
+            彼の研究は、ニューラルボコーダーや機械学習モデルを含む高度な音声生成・操作技術を扱い、
+            異なる言語、声質、表現スタイルにまたがる高品質な音声や歌声の生成を探究しています。
+          </p>
+          <p>
+            また、アーティストやクリエイティブ・プラクティショナーとの協働を通じて、
+            生成音響システム、声の変換、インタラクティブ・メディアを含む制作プロセスにAIを統合する実験的なワークフロー設計にも携わっています。
+            Studio Cucurbits では、AIとクリエイティブ・コンピュテーションの領域におけるテクノロジー・コラボレーターとして、
+            音楽、デジタルメディア、先端技術を横断するハイブリッドな実践を支えています。
+          </p>
+        </div>
+      </div>
+
+      <div class="lang-block lang-block--en">
+        <h2>Collaborator</h2>
+        <div class="collaborator-card">
+          <h3>Frederik Bous</h3>
+          <p class="collaborator-role">AI Researcher and Creative Technology Collaborator</p>
+          <p>
+            Frederik Bous is a researcher and developer specializing in artificial intelligence for audio and voice technologies. His work focuses on deep learning methods for speech and singing voice synthesis, transformation, and expressive control, contributing to the development of next-generation neural audio systems.
+          </p>
+          <p>
+            His research explores advanced neural architectures for voice generation and manipulation, including neural vocoders and machine learning models capable of producing high-quality speech and singing voices across different languages, timbres, and expressive styles.
+          </p>
+          <p>
+            In addition to his scientific research, he collaborates with artists and creative practitioners to integrate artificial intelligence into artistic production processes. Within Studio Cucurbits, he contributes as a technology collaborator in AI and creative computation, supporting hybrid artistic practices that combine contemporary music, digital media, and emerging technologies.
+          </p>
+        </div>
       </div>
     </div>
   </section>
