@@ -21,20 +21,26 @@ permalink: /works/
   <ul class="works-list">
     {% for post in site.posts %}
       {% if post.title %}
+        {% assign work_thumbnail = post.thumbnail | default: post.image %}
+
         <li class="work-item">
-          <div class="work-main">
-            {% if post.link %}
-              <a href="{{ post.link }}">
-            {% else %}
-              <a href="{{ site.baseurl }}{{ post.url }}">
-            {% endif %}
-                {{ post.title }}
-              </a>
-            <time>{{ post.date | date: "%Y-%m-%d" }}</time>
-          </div>
+          {% if post.link %}
+            <a class="work-link" href="{{ post.link }}">
+          {% else %}
+            <a class="work-link" href="{{ site.baseurl }}{{ post.url }}">
+          {% endif %}
+              {% if work_thumbnail %}
+                <img class="work-thumb" src="{{ work_thumbnail | relative_url }}" alt="">
+              {% endif %}
+
+              <span class="work-text">
+                <span class="work-title">{{ post.title }}</span>
+                <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+              </span>
+            </a>
 
           {% if post.tags %}
-            <div class="work-tags">
+            <div class="work-tags{% if work_thumbnail %} has-thumb{% endif %}">
               {% for tag in post.tags %}
                 <span>{{ tag }}</span>
               {% endfor %}
@@ -76,13 +82,34 @@ permalink: /works/
     margin-bottom: 1.15rem;
   }
 
-  .work-main {
+  .work-link {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .work-thumb {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .work-text {
     display: flex;
     gap: 0.75rem;
     align-items: baseline;
+    min-width: 0;
   }
 
-  .work-main time {
+  .work-title {
+    text-decoration: underline;
+    text-underline-offset: 0.12em;
+  }
+
+  .work-text time {
     font-size: 0.85em;
     white-space: nowrap;
   }
@@ -95,12 +122,20 @@ permalink: /works/
     font-size: 0.85em;
   }
 
+  .work-tags.has-thumb {
+    margin-left: 54px;
+  }
+
   @media (max-width: 540px) {
-    .work-main {
+    .work-link {
+      align-items: flex-start;
+    }
+
+    .work-text {
       display: block;
     }
 
-    .work-main time {
+    .work-text time {
       display: block;
       margin-top: 0.15rem;
     }
