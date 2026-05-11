@@ -38,7 +38,7 @@ permalink: /teach/
     border-radius: 12px;
     display: block;
     margin-bottom: 2.5rem;
-    border: 0.5px solid var(--t-border);
+    border: none;
   }
 
   .hero-video {
@@ -49,7 +49,7 @@ permalink: /teach/
     border-radius: 12px;
     display: block;
     margin-bottom: 1rem;
-    border: 0.5px solid var(--t-border);
+    border: none;
     background: #000;
   }
 
@@ -64,19 +64,19 @@ permalink: /teach/
 
   /* ── Lesson cards ── */
   .lesson-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
-  .lesson-card { border: 0.5px solid var(--t-border); border-radius: 12px; padding: 1rem; }
+  .lesson-card { border: none; border-radius: 0; padding: 1rem 0; }
   .lesson-card-title { font-size: 13px; font-weight: 500; color: var(--t-primary); margin-bottom: 0.6rem; }
   .lesson-card-items { list-style: none; padding: 0; }
-  .lesson-card-items li { font-size: 12px; color: var(--t-secondary); padding: 3px 0; border-bottom: 0.5px solid var(--t-border); line-height: 1.45; }
+  .lesson-card-items li { font-size: 12px; color: var(--t-secondary); padding: 3px 0; border-bottom: none; line-height: 1.45; }
   .lesson-card-items li:last-child { border-bottom: none; }
-  .lesson-card-special { border-style: solid; }
+  .lesson-card-special { border-style: none; }
   .lesson-card-special .lesson-card-title { color: var(--t-muted); }
 
   /* ── Materials table ── */
   .materials-table-wrap {
-    border: 0.5px solid var(--t-border);
-    border-radius: 12px;
-    overflow: hidden;
+    border: none;
+    border-radius: 0;
+    overflow: visible;
     background: transparent;
   }
   .materials-table {
@@ -87,7 +87,7 @@ permalink: /teach/
   }
   .materials-table th,
   .materials-table td {
-    border-bottom: 0.5px solid var(--t-border);
+    border-bottom: none;
     padding: 0.9rem 1rem;
     vertical-align: top;
     text-align: left;
@@ -102,7 +102,7 @@ permalink: /teach/
     font-size: 12px;
     font-weight: 500;
     color: var(--t-primary);
-    background: var(--t-surface);
+    background: transparent;
   }
   .materials-table td {
     font-size: 12px;
@@ -119,7 +119,7 @@ permalink: /teach/
   }
 
   /* ── Section photos ── */
-  .section-img { width: 100%; border-radius: 12px; display: block; border: 0.5px solid var(--t-border); margin: 2rem 0; }
+  .section-img { width: 100%; border-radius: 12px; display: block; border: none; margin: 2rem 0; }
   .section-img-wide { aspect-ratio: 16 / 6; object-fit: cover; object-position: center 40%; }
   .section-img-dark { aspect-ratio: 16 / 7; object-fit: cover; object-position: center center; }
 
@@ -219,7 +219,7 @@ permalink: /teach/
 
   /* ── Profile ── */
   .profile { display: flex; gap: 1.25rem; align-items: flex-start; }
-  .profile-photo { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; object-position: center top; flex-shrink: 0; border: 0.5px solid var(--t-border); }
+  .profile-photo { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; object-position: center top; flex-shrink: 0; border: none; }
   .profile-name { font-size: 15px; font-weight: 500; color: var(--t-primary); margin-bottom: 2px; }
   .profile-role { font-size: 12px; color: var(--t-faint); margin-bottom: 0.75rem; }
   .profile-bio { font-size: 13px; color: var(--t-secondary); line-height: 1.7; }
@@ -249,12 +249,12 @@ permalink: /teach/
 }
   .qa-answer li { margin-bottom: 0.25rem; }
   .qa-freq { display: flex; flex-direction: column; gap: 10px; margin: 0.75rem 0; }
-  .qa-freq-item { border: 0.5px solid var(--t-border); border-radius: 10px; padding: 0.85rem 1rem; }
+  .qa-freq-item { border: none; border-radius: 0; padding: 0.85rem 0; }
   .qa-freq-head { font-size: 13px; font-weight: 500; color: var(--t-primary); margin-bottom: 0.35rem; }
   .qa-freq-body { font-size: 12px; color: var(--t-secondary); line-height: 1.6; }
   .qa-freq-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 0.5rem; }
-  .qa-freq-tag { font-size: 11px; color: var(--t-muted); border: 0.5px solid var(--t-border); border-radius: 3px; padding: 2px 7px; background: var(--t-surface); }
-  .qa-freq-note { font-size: 12px; color: var(--t-muted); line-height: 1.65; border-top: 0.5px solid var(--t-border); padding-top: 0.75rem; margin-top: 0.25rem; }
+  .qa-freq-tag { font-size: 11px; color: var(--t-muted); border: none; border-radius: 0; padding: 2px 0; background: transparent; }
+  .qa-freq-note { font-size: 12px; color: var(--t-muted); line-height: 1.65; border-top: none; padding-top: 0.75rem; margin-top: 0.25rem; }
 .qa-item.open .qa-answer {
   display: block;
   padding-bottom: 1rem;
@@ -301,7 +301,7 @@ permalink: /teach/
   <div class="hero">
     <div class="hero-eyebrow">Online Lesson (JP)</div>
     <h1 class="hero-title">作曲・DTM・音楽理論・シンセサイザー・キーボード・ソルフェージュ<br>マンツーマンレッスン</h1>
-    <p class="hero-body">スイス音楽院修士取得、現役作曲家・アーティストによるオンライン個人指導。目的・レベルに応じたオーダーメイドのカリキュラムで、初心者から専門を目指す方まで対応します。指導は、創作活動と切り離されたものではなく、芸術実践そのものの一環として考えています。制作・研究を通して得た経験や方法論を、個々の目的や背景に応じて共有します。</p>
+    <p class="hero-body">スイス音楽院修士取得、現役作曲家・アーティストによるオンライン個人指導。目的・レベルに応じたオーダーメイドのカリキュラムで、初心者から専門を目指す方まで対応します。</p>
   </div>
 
   <video class="hero-video" autoplay muted loop playsinline preload="metadata" aria-label="レッスン紹介動画">
