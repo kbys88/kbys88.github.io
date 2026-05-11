@@ -9,55 +9,61 @@ permalink: /works/
 {% endif %}
 
 <div class="works-page">
-  <ul class="works-label">
+  <ul class="works-tags">
     {% for tag in site.tags %}
-      <li><a href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a></li>
+      <li>
+        <span>{{ tag[0] }}</span>
+        <span class="count">{{ tag[1] | size }}</span>
+      </li>
     {% endfor %}
   </ul>
 
-  {% for tag in site.tags %}
-    <section class="works-section">
-      <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
-      <ul class="works-list">
-        {% for post in site.posts %}
-          {% if post.title and post.tags[0] == tag[0] %}
-            <li>
-              {% if post.link %}
-                <a href="{{ post.link }}">
-              {% else %}
-                <a href="{{ site.baseurl }}{{ post.url }}">
-              {% endif %}
-                  {{ post.title }}
-                </a>
-              <time>{{ post.date | date: "%Y-%m-%d" }}</time>
-            </li>
+  <ul class="works-list">
+    {% for post in site.posts %}
+      {% if post.title %}
+        <li class="work-item">
+          <div class="work-main">
+            {% if post.link %}
+              <a href="{{ post.link }}">
+            {% else %}
+              <a href="{{ site.baseurl }}{{ post.url }}">
+            {% endif %}
+                {{ post.title }}
+              </a>
+            <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+          </div>
+
+          {% if post.tags %}
+            <div class="work-tags">
+              {% for tag in post.tags %}
+                <span>{{ tag }}</span>
+              {% endfor %}
+            </div>
           {% endif %}
-        {% endfor %}
-      </ul>
-    </section>
-  {% endfor %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </div>
 
 <style>
-  .works-label {
+  .works-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem 1rem;
+    gap: 0.45rem 1rem;
     list-style: none;
     padding: 0;
     margin: 0 0 2rem;
   }
 
-  .works-label a {
-    text-decoration: none;
+  .works-tags li {
+    display: inline-flex;
+    gap: 0.35rem;
+    align-items: baseline;
   }
 
-  .works-section {
-    margin-bottom: 2rem;
-  }
-
-  .works-section h2 {
-    margin-bottom: 0.75rem;
+  .works-tags .count {
+    font-size: 0.8em;
   }
 
   .works-list {
@@ -66,15 +72,37 @@ permalink: /works/
     margin: 0;
   }
 
-  .works-list li {
+  .work-item {
+    margin-bottom: 1.15rem;
+  }
+
+  .work-main {
     display: flex;
     gap: 0.75rem;
     align-items: baseline;
-    margin-bottom: 0.45rem;
   }
 
-  .works-list time {
+  .work-main time {
     font-size: 0.85em;
     white-space: nowrap;
+  }
+
+  .work-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.65rem;
+    margin-top: 0.25rem;
+    font-size: 0.85em;
+  }
+
+  @media (max-width: 540px) {
+    .work-main {
+      display: block;
+    }
+
+    .work-main time {
+      display: block;
+      margin-top: 0.15rem;
+    }
   }
 </style>
