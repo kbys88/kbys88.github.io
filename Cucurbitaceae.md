@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Studio Cucurbits.</title>
+---
+layout: main
+title: Studio Cucurbits.
+permalink: /cucurbits/
+---
+
   <style>
     :root {
       --bg: #f4f3ef;
