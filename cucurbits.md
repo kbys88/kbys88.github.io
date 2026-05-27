@@ -52,7 +52,7 @@ permalink: /cucurbits/
   .studio-cucurbits .topbar {
     position: sticky;
     top: 0;
-    z-index: 20;
+    z-index: 30;
     backdrop-filter: blur(18px);
     background: rgba(244, 243, 239, 0.82);
     border-bottom: 1px solid var(--line);
@@ -116,17 +116,57 @@ permalink: /cucurbits/
   .studio-cucurbits .hero {
     max-width: var(--max);
     margin: 0 auto;
-    padding: clamp(3.2rem, 8vw, 7rem) 1rem 3.5rem;
+    padding: clamp(1.6rem, 4vw, 3.5rem) 1rem 3.5rem;
+  }
+
+  .studio-cucurbits .hero-image-wrap {
+    position: relative;
+    min-height: clamp(440px, 72vh, 760px);
+    border: 1px solid var(--line);
+    background: var(--ink);
+    overflow: hidden;
+  }
+
+  .studio-cucurbits .hero-image-wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to bottom, rgba(0,0,0,0.16), rgba(0,0,0,0.46)),
+      linear-gradient(to right, rgba(0,0,0,0.48), rgba(0,0,0,0.05) 52%, rgba(0,0,0,0.36));
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .studio-cucurbits .hero-image-wrap img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1) contrast(1.05) brightness(0.86);
+    transform: scale(1.015);
+  }
+
+  .studio-cucurbits .hero-content {
+    position: relative;
+    z-index: 2;
+    min-height: clamp(440px, 72vh, 760px);
+    padding: clamp(1.2rem, 4vw, 3.5rem);
     display: grid;
-    grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr);
+    grid-template-columns: 1fr minmax(260px, 0.42fr);
     gap: clamp(2rem, 6vw, 5rem);
     align-items: end;
-    min-height: 78vh;
+    color: #fff;
+  }
+
+  .studio-cucurbits .hero-content * {
+    color: #fff;
   }
 
   .studio-cucurbits .kicker {
     margin: 0 0 1.4rem;
-    color: var(--muted);
+    color: rgba(255,255,255,0.68);
     font-size: 0.78rem;
     text-transform: uppercase;
     letter-spacing: 0.12em;
@@ -136,10 +176,11 @@ permalink: /cucurbits/
     margin: 0 0 2rem;
     font-weight: 800;
     text-transform: uppercase;
-    font-size: clamp(3.7rem, 12.5vw, 10rem);
+    font-size: clamp(3.45rem, 11vw, 9.4rem);
     letter-spacing: -0.105em;
     line-height: 0.78;
     transform: translateX(-0.08em);
+    text-shadow: 0 20px 60px rgba(0,0,0,0.42);
   }
 
   .studio-cucurbits .logo-type span {
@@ -160,35 +201,22 @@ permalink: /cucurbits/
   }
 
   .studio-cucurbits .statement {
-    max-width: 760px;
-    font-size: clamp(1.3rem, 2.5vw, 2.25rem);
+    max-width: 780px;
+    font-size: clamp(1.25rem, 2.35vw, 2.2rem);
     line-height: 1.2;
     letter-spacing: -0.055em;
     margin: 0;
   }
 
   .studio-cucurbits .hero-side {
-    border-left: 1px solid var(--line);
+    border-left: 1px solid rgba(255,255,255,0.28);
     padding-left: 1.2rem;
   }
 
   .studio-cucurbits .hero-side p {
     margin: 0 0 1.2rem;
-    color: var(--muted);
+    color: rgba(255,255,255,0.72);
     font-size: 0.98rem;
-  }
-
-  .studio-cucurbits .hero-image {
-    margin-top: 1.4rem;
-    border: 1px solid var(--line);
-    background: rgba(255,255,255,0.28);
-    padding: 0.7rem;
-  }
-
-  .studio-cucurbits .hero-image img {
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    filter: grayscale(1) contrast(1.06);
   }
 
   .studio-cucurbits .tags {
@@ -199,12 +227,12 @@ permalink: /cucurbits/
   }
 
   .studio-cucurbits .tags span {
-    border: 1px solid var(--line);
+    border: 1px solid rgba(255,255,255,0.32);
     padding: 0.32rem 0.54rem;
     font-size: 0.72rem;
     text-transform: uppercase;
     letter-spacing: 0.075em;
-    background: rgba(255,255,255,0.32);
+    background: rgba(255,255,255,0.05);
   }
 
   .studio-cucurbits .cta-row {
@@ -218,7 +246,7 @@ permalink: /cucurbits/
     align-items: center;
     justify-content: center;
     min-height: 42px;
-    border: 1px solid var(--ink);
+    border: 1px solid currentColor;
     padding: 0.62rem 0.86rem;
     font-size: 0.83rem;
     text-transform: uppercase;
@@ -227,8 +255,14 @@ permalink: /cucurbits/
   }
 
   .studio-cucurbits .button.primary {
-    background: var(--ink);
+    background: currentColor;
     color: var(--bg);
+  }
+
+  .studio-cucurbits .hero-content .button.primary {
+    background: #fff;
+    color: #0b0b0b;
+    border-color: #fff;
   }
 
   .studio-cucurbits .button:hover {
@@ -258,7 +292,7 @@ permalink: /cucurbits/
     to { transform: translateX(-50%); }
   }
 
-  .studio-cucurbits section {
+  .studio-cucurbits section:not(.hero) {
     max-width: var(--max);
     margin: 0 auto;
     padding: clamp(3.5rem, 7vw, 6.5rem) 1rem;
@@ -465,20 +499,25 @@ permalink: /cucurbits/
       display: none;
     }
 
-    .studio-cucurbits .hero,
+    .studio-cucurbits .hero {
+      padding-top: 1rem;
+    }
+
+    .studio-cucurbits .hero-image-wrap,
+    .studio-cucurbits .hero-content {
+      min-height: 620px;
+    }
+
+    .studio-cucurbits .hero-content,
     .studio-cucurbits .section-grid,
     .studio-cucurbits .collab,
     .studio-cucurbits .inquiry-box {
       grid-template-columns: 1fr;
     }
 
-    .studio-cucurbits .hero {
-      min-height: auto;
-    }
-
     .studio-cucurbits .hero-side {
       border-left: 0;
-      border-top: 1px solid var(--line);
+      border-top: 1px solid rgba(255,255,255,0.32);
       padding-left: 0;
       padding-top: 1.2rem;
     }
@@ -498,7 +537,7 @@ permalink: /cucurbits/
     }
 
     .studio-cucurbits .logo-type {
-      font-size: clamp(3.15rem, 17vw, 6.2rem);
+      font-size: clamp(3.05rem, 16vw, 6.2rem);
     }
 
     .studio-cucurbits .image-strip img {
@@ -527,42 +566,44 @@ permalink: /cucurbits/
 
   <main id="top">
     <section class="hero">
-      <div>
-        <p class="kicker">Composition / Sound Design / Sonic Systems</p>
-        <h1 class="logo-type" aria-label="Studio Cucurbits">
-          <span>S</span><span>T</span><span>U</span><span>D</span><span>I</span><span>O</span><br>
-          <span>C</span><span>U</span><span>C</span><span>U</span><span>R</span><span>B</span><span>I</span><span>T</span><span>S</span><span>.</span>
-        </h1>
-        <div class="lang-block lang-block--ja">
-          <p class="statement">作曲、サウンドデザイン、AI、空間、身体性を横断する、国際的な音楽制作スタジオ。</p>
-        </div>
-        <div class="lang-block lang-block--en">
-          <p class="statement">An international studio for composition, sound design, AI, space, and embodied sonic practice.</p>
+      <div class="hero-image-wrap">
+        <img src="/images/hero_g.png" alt="Interdisciplinary performance with dancers, musicians, projection, and interaction">
+        <div class="hero-content">
+          <div>
+            <p class="kicker">Composition / Sound Design / Sonic Systems</p>
+            <h1 class="logo-type" aria-label="Studio Cucurbits">
+              <span>S</span><span>T</span><span>U</span><span>D</span><span>I</span><span>O</span><br>
+              <span>C</span><span>U</span><span>C</span><span>U</span><span>R</span><span>B</span><span>I</span><span>T</span><span>S</span><span>.</span>
+            </h1>
+            <div class="lang-block lang-block--ja">
+              <p class="statement">作曲、サウンドデザイン、AI、空間、身体性を横断する、国際的な音楽制作スタジオ。</p>
+            </div>
+            <div class="lang-block lang-block--en">
+              <p class="statement">An international studio for composition, sound design, AI, space, and embodied sonic practice.</p>
+            </div>
+          </div>
+
+          <aside class="hero-side">
+            <div class="lang-block lang-block--ja">
+              <p>Studio Cucurbits. は、作曲家・サウンドアーティスト Sachie Kobayashi による制作スタジオです。映画、映像、舞台、展示、プロダクト、研究開発に向けて、プロジェクト固有の音の言語を設計します。</p>
+            </div>
+            <div class="lang-block lang-block--en">
+              <p>Studio Cucurbits. is the studio of composer and sound artist Sachie Kobayashi. It develops project-specific sonic languages for film, moving image, performance, installation, products, and research-driven work.</p>
+            </div>
+            <div class="tags">
+              <span>Original Music</span>
+              <span>Sound Design</span>
+              <span>Installation</span>
+              <span>AI Audio</span>
+              <span>Consultation</span>
+            </div>
+            <div class="cta-row">
+              <a class="button primary" href="mailto:info@sachiekobayashi.com">Inquiry</a>
+              <a class="button" href="#services">View Services</a>
+            </div>
+          </aside>
         </div>
       </div>
-
-      <aside class="hero-side">
-        <div class="lang-block lang-block--ja">
-          <p>Studio Cucurbits. は、作曲家・サウンドアーティスト Sachie Kobayashi による制作スタジオです。映画、映像、舞台、展示、プロダクト、研究開発に向けて、プロジェクト固有の音の言語を設計します。</p>
-        </div>
-        <div class="lang-block lang-block--en">
-          <p>Studio Cucurbits. is the studio of composer and sound artist Sachie Kobayashi. It develops project-specific sonic languages for film, moving image, performance, installation, products, and research-driven work.</p>
-        </div>
-        <div class="tags">
-          <span>Original Music</span>
-          <span>Sound Design</span>
-          <span>Installation</span>
-          <span>AI Audio</span>
-          <span>Consultation</span>
-        </div>
-        <div class="cta-row">
-          <a class="button primary" href="mailto:info@sachiekobayashi.com">Inquiry</a>
-          <a class="button" href="#services">View Services</a>
-        </div>
-        <div class="hero-image">
-          <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/logo1.png" alt="Studio Cucurbits logo">
-        </div>
-      </aside>
     </section>
 
     <div class="ticker" aria-hidden="true">
