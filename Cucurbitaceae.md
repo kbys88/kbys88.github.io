@@ -1,625 +1,741 @@
----
-layout: main
-title: Studio Cucurbits.
-permalink: /cucurbits/
----
-
-<style>
-  .cucurbits-page {
-    --ink: #0b0b0b;
-    --line: rgba(0,0,0,.13);
-    --soft: rgba(0,0,0,.035);
-
-    width: 100%;
-    max-width: 1120px;
-    margin: 0;
-    padding: 1.2rem 1.25rem 5rem 0;
-    color: var(--ink);
-    font-family: Helvetica, Arial, sans-serif;
-    line-height: 1.72;
-    letter-spacing: -0.01em;
-    text-align: left;
-  }
-
-  .cucurbits-page,
-  .cucurbits-page * {
-    box-sizing: border-box;
-    color: var(--ink) !important;
-  }
-
-  .moving-logo {
-    margin-bottom: 1.4rem;
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 1.4rem;
-  }
-
-  .moving-logo video {
-    display: block;
-    width: min(720px, 100%);
-    height: auto;
-    border-radius: 0;
-    background: transparent;
-    filter: grayscale(1) contrast(1.08);
-  }
-
-  .lang-switch {
-    display: flex;
-    gap: .4rem;
-    margin: 0 0 3.2rem;
-  }
-
-  .lang-switch button {
-    appearance: none;
-    border: 1px solid var(--line);
-    background: transparent;
-    border-radius: 0;
-    padding: .45rem .85rem;
-    font: inherit;
-    font-size: .82rem;
-    letter-spacing: .04em;
-    text-transform: uppercase;
-    cursor: pointer;
-  }
-
-  .lang-switch button.is-active {
-    background: var(--ink);
-    color: #fff !important;
-  }
-
-  .lang-block {
-    display: none;
-  }
-
-  .cucurbits-page[data-lang="ja"] .lang-block--ja,
-  .cucurbits-page[data-lang="en"] .lang-block--en {
-    display: block;
-  }
-
-  .hero,
-  .section {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 280px;
-    gap: clamp(1.5rem, 5vw, 4rem);
-    align-items: start;
-    padding-bottom: 4rem;
-    margin-bottom: 4rem;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .section.reverse .text { order: 2; }
-  .section.reverse .image { order: 1; }
-
-  .eyebrow {
-    margin: 0 0 1.1rem;
-    font-size: .78rem;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-    opacity: .55;
-  }
-
-  .intro {
-    max-width: 760px;
-    margin: 0 0 1.6rem;
-    font-size: clamp(1.55rem, 3vw, 2.65rem);
-    line-height: 1.16;
-    letter-spacing: -0.055em;
-  }
-
-  h2 {
-    margin: 0 0 1.2rem;
-    font-size: clamp(1.45rem, 2.5vw, 2.4rem);
-    line-height: 1.05;
-    letter-spacing: -0.055em;
-    font-weight: 700;
-  }
-
-  h3 {
-    margin: 0 0 .75rem;
-    font-size: .95rem;
-    line-height: 1.25;
-    letter-spacing: -0.02em;
-  }
-
-  p {
-    max-width: 720px;
-    margin: 0 0 1.05rem;
-  }
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 0;
-    filter: grayscale(1) contrast(1.04);
-  }
-
-  .hero-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .45rem;
-    margin: 1.7rem 0 1.8rem;
-  }
-
-  .hero-meta span {
-    border: 1px solid var(--line);
-    border-radius: 0;
-    padding: .35rem .65rem;
-    font-size: .78rem;
-    letter-spacing: .06em;
-    text-transform: uppercase;
-  }
-
-  .email-cta {
-    display: inline-block;
-    border: 1px solid var(--ink);
-    border-radius: 0;
-    padding: .72rem .95rem;
-    background: transparent;
-    text-decoration: none;
-    font-size: .88rem;
-    letter-spacing: .02em;
-    transition: background .2s ease, color .2s ease;
-  }
-
-  .email-cta:hover {
-    background: var(--ink);
-    color: #fff !important;
-  }
-
-  .service-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1px;
-    margin-top: 1.7rem;
-    background: var(--line);
-    border: 1px solid var(--line);
-  }
-
-  .service-card,
-  .collaborator-card,
-  .cta-card {
-    border: 0;
-    border-radius: 0;
-    background: #fff;
-    padding: 1.2rem;
-  }
-
-  .service-card p {
-    font-size: .93rem;
-  }
-
-  ul {
-    margin: 0;
-    padding-left: 1.05rem;
-  }
-
-  li {
-    margin-bottom: .38rem;
-  }
-
-  .trust-list,
-  .client-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: .35rem 1.2rem;
-    margin-top: 1.2rem;
-    font-size: .95rem;
-  }
-
-  .collaborator-role {
-    margin-bottom: 1.1rem;
-    font-size: .76rem;
-    text-transform: uppercase;
-    letter-spacing: .12em;
-    opacity: .55;
-  }
-
-  .cta-card {
-    border: 1px solid var(--line);
-    padding: clamp(1.4rem, 4vw, 2.4rem);
-    background: var(--soft);
-  }
-
-  @media (max-width: 860px) {
-    .cucurbits-page {
-      padding: 1rem 1rem 4rem 0;
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio Cucurbits.</title>
+  <style>
+    :root {
+      --bg: #f4f3ef;
+      --ink: #0b0b0b;
+      --muted: rgba(11, 11, 11, 0.56);
+      --line: rgba(11, 11, 11, 0.16);
+      --soft: rgba(11, 11, 11, 0.045);
+      --accent: #c8ff2e;
+      --max: 1180px;
     }
 
-    .hero,
-    .section {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-      margin-bottom: 3rem;
-      padding-bottom: 3rem;
+    * {
+      box-sizing: border-box;
     }
 
-    .section.reverse .text,
-    .section.reverse .image {
-      order: initial;
+    html {
+      scroll-behavior: smooth;
     }
 
-    .service-grid,
-    .trust-list,
-    .client-list {
-      grid-template-columns: 1fr;
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      letter-spacing: -0.018em;
+      line-height: 1.65;
     }
 
-    .image {
-      max-width: 420px;
+    a {
+      color: inherit;
+      text-decoration: none;
     }
-  }
-</style>
 
-<div class="cucurbits-page" id="cucurbits-page" data-lang="ja">
-  <div class="moving-logo">
-    <video autoplay muted loop playsinline preload="metadata" controls>
-      <source src="/images/logo_2026.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
+    .page {
+      min-height: 100vh;
+      overflow: hidden;
+    }
 
-  <div class="lang-switch">
-    <button type="button" data-lang-button="ja">日本語</button>
-    <button type="button" data-lang-button="en">English</button>
-  </div>
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: rgba(244, 243, 239, 0.78);
+      border-bottom: 1px solid var(--line);
+    }
 
-  <section class="hero">
-    <div class="text">
-      <div class="lang-block lang-block--ja">
-        <p class="eyebrow">Studio Cucurbits.</p>
-        <p class="intro">
-          <strong>Studio Cucurbits. by Sachie Kobayashi</strong><br>
-          作曲家・サウンドアーティスト Sachie Kobayashi による、国際的な音楽制作とサウンドデザインのためのスタジオ。
-        </p>
-        <p>
-          映画、映像、舞台、インスタレーション、プロダクト、リサーチベースのプロジェクトに向けて、
-          オリジナル音楽、サウンドデザイン、共同制作を行っています。
-        </p>
-        <p>
-          国内外のアーティスト、映像作家、文化機関、クリエイティブチーム、企業からの受託制作・コラボレーションに対応しています。
-        </p>
-        <div class="hero-meta">
-          <span>Composition</span>
-          <span>Sound Design</span>
-          <span>Installation / Performance</span>
-          <span>AI &amp; Technology</span>
-        </div>
-        <a class="email-cta" href="mailto:info@sachiekobayashi">info@sachiekobayashi</a>
-      </div>
+    .topbar-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0.85rem 1rem;
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      gap: 1rem;
+      align-items: center;
+    }
 
-      <div class="lang-block lang-block--en">
-        <p class="eyebrow">Studio Cucurbits.</p>
-        <p class="intro">
-          <strong>Studio Cucurbits. by Sachie Kobayashi</strong><br>
-          An international studio for composition, sound design, and interdisciplinary sonic work.
-        </p>
-        <p>
-          I create original music and sound for film, moving image, performance, installation, products, and research-driven projects.
-        </p>
-        <p>
-          Available for commissions and collaborations with artists, filmmakers, cultural institutions, creative teams, and companies internationally.
-        </p>
-        <div class="hero-meta">
-          <span>Composition</span>
-          <span>Sound Design</span>
-          <span>Installation / Performance</span>
-          <span>AI &amp; Technology</span>
-        </div>
-        <a class="email-cta" href="mailto:info@sachiekobayashi">info@sachiekobayashi</a>
-      </div>
-    </div>
+    .brand-small {
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: -0.04em;
+      line-height: 0.95;
+    }
 
-    <div class="image">
-      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/logo1.png" alt="Studio Cucurbits logo">
-    </div>
-  </section>
+    .nav {
+      display: flex;
+      gap: 1rem;
+      color: var(--muted);
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
 
-  <section class="section">
-    <div class="text">
-      <div class="lang-block lang-block--ja">
-        <h2>What I Do</h2>
-        <p>
-          現代音楽、電気音響、サウンドアート、映像音楽、そしてAIや計算的プロセスを含む創作実践を横断しながら、
-          作品ごとに固有の音と言語を設計します。
-        </p>
-        <p>
-          芸術性と実用性のどちらか一方ではなく、コンセプト、空間、身体感覚、時間感覚、メディア特性に寄り添う形で、
-          実制作へ接続するサウンドを提案します。
-        </p>
-      </div>
+    .nav a:hover {
+      color: var(--ink);
+    }
 
-      <div class="lang-block lang-block--en">
-        <h2>What I Do</h2>
-        <p>
-          My practice moves across contemporary composition, electroacoustic music, sound art, music for image, and creative work involving AI and computational processes.
-        </p>
-        <p>
-          I develop sound that is specific to each project, balancing artistic depth with practical production needs, and responding to concept, space, body, time, and medium.
-        </p>
-      </div>
-    </div>
+    .lang {
+      display: flex;
+      gap: 0.25rem;
+    }
 
-    <div class="image">
-      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/cucurbits001.png" alt="Studio image 1">
-    </div>
-  </section>
+    .lang button {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: transparent;
+      padding: 0.35rem 0.58rem;
+      font: inherit;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+    }
 
-  <section class="section reverse">
-    <div class="text">
-      <div class="lang-block lang-block--ja">
-        <h2>Services</h2>
-        <div class="service-grid">
-          <div class="service-card">
-            <h3>Original Music for Film / Moving Image</h3>
-            <p>映画、ドキュメンタリー、アーティスト映像、短編映像などのためのオリジナル作曲。</p>
-            <ul>
-              <li>劇伴、キュー制作、テーマ音楽</li>
-              <li>ステム、編集用素材、最終納品データ</li>
-            </ul>
-          </div>
-          <div class="service-card">
-            <h3>Sound Design / Sonic Branding</h3>
-            <p>プロダクト、ブランド、デジタルコンテンツ、映像のための音設計とサウンドアイデンティティ制作。</p>
-            <ul>
-              <li>サウンドロゴ、UI音、ブランド音設計</li>
-              <li>短編映像・広告向けサウンドデザイン</li>
-            </ul>
-          </div>
-          <div class="service-card">
-            <h3>Installation / Performance / Immersive Work</h3>
-            <p>展示、舞台、ダンス、インスタレーション、マルチメディア作品のための音楽・音響制作。</p>
-            <ul>
-              <li>空間音響、マルチチャンネル音源</li>
-              <li>上演・展示に応じた再生設計</li>
-            </ul>
-          </div>
-          <div class="service-card">
-            <h3>Creative Consultation / Mentoring</h3>
-            <p>作曲、音の方向性、AIを含む創作プロセスに関する相談、リサーチ開発、メンタリング。</p>
-            <ul>
-              <li>コンセプト設計とフィードバック</li>
-              <li>プロジェクト初期段階の伴走</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    .lang button.active {
+      background: var(--ink);
+      color: var(--bg);
+      border-color: var(--ink);
+    }
 
-      <div class="lang-block lang-block--en">
-        <h2>Services</h2>
-        <div class="service-grid">
-          <div class="service-card">
-            <h3>Original Music for Film / Moving Image</h3>
-            <p>Bespoke composition for film, documentary, artist film, and visual media.</p>
-            <ul>
-              <li>score, cues, thematic material</li>
-              <li>stems and final delivery files</li>
-            </ul>
-          </div>
-          <div class="service-card">
-            <h3>Sound Design / Sonic Branding</h3>
-            <p>Sound design and sonic identity for products, brands, digital content, and short-form media.</p>
-            <ul>
-              <li>sound logos, UI sounds, sonic systems</li>
-              <li>refined sound design for media and campaigns</li>
-            </ul>
-          </div>
-          <div class="service-card">
-            <h3>Installation / Performance / Immersive Work</h3>
-            <p>Music and sound development for exhibitions, stage works, dance, installations, and multimedia environments.</p>
-            <ul>
-              <li>multichannel or spatial sound materials</li>
-              <li>playback structure for site or performance</li>
-            </ul>
-          </div>
-          <div class="service-card">
-            <h3>Creative Consultation / Mentoring</h3>
-            <p>Consultation for composition, sonic direction, research-based development, and AI-related creative practice.</p>
-            <ul>
-              <li>concept feedback and sound direction</li>
-              <li>mentoring and early-stage project support</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    .lang-block {
+      display: none;
+    }
 
-    <div class="image">
-      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/cucurbits002.png" alt="Studio image 2">
-    </div>
-  </section>
+    body[data-lang="ja"] .ja,
+    body[data-lang="en"] .en {
+      display: block;
+    }
 
-  <section class="section">
-    <div class="text">
-      <div class="lang-block lang-block--ja">
-        <h2>Selected Contexts</h2>
-        <p>ヨーロッパと日本を中心に活動し、現代音楽、映像、舞台、美術、テクノロジーを横断する文脈で作品を発表・制作しています。</p>
-        <div class="trust-list">
-          <div>Klangforum Wien</div>
-          <div>Ensemble Modern</div>
-          <div>Ensemble Proton Bern</div>
-          <div>IRCAM</div>
-          <div>Le Fresnoy</div>
-          <div>Orchestre de la HEM</div>
-        </div>
-        <p style="margin-top: 1.25rem;">商業・応用的な仕事として、Sonicware「LIVEN Ambient」のサウンドデザインや、サウンドロゴ制作などにも取り組んでいます。</p>
-      </div>
+    .hero {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: clamp(3.2rem, 8vw, 7.2rem) 1rem 3.5rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      gap: clamp(2rem, 7vw, 6rem);
+      align-items: end;
+      min-height: 78vh;
+    }
 
-      <div class="lang-block lang-block--en">
-        <h2>Selected Contexts</h2>
-        <p>My work has developed internationally across Europe and Japan, in contexts spanning contemporary music, film, performance, visual art, and technology.</p>
-        <div class="trust-list">
-          <div>Klangforum Wien</div>
-          <div>Ensemble Modern</div>
-          <div>Ensemble Proton Bern</div>
-          <div>IRCAM</div>
-          <div>Le Fresnoy</div>
-          <div>Orchestre de la HEM</div>
-        </div>
-        <p style="margin-top: 1.25rem;">Applied and commissioned work includes sound design for Sonicware’s LIVEN Ambient and sonic identity work for commercial clients.</p>
-      </div>
-    </div>
+    .kicker {
+      margin: 0 0 1.4rem;
+      color: var(--muted);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
 
-    <div class="image">
-      <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/cucurbits003.png" alt="Studio image 3">
-    </div>
-  </section>
+    .logo-type {
+      margin: 0 0 2rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: clamp(4rem, 13.5vw, 11rem);
+      letter-spacing: -0.105em;
+      line-height: 0.78;
+      transform: translateX(-0.08em);
+    }
 
-  <section class="section reverse">
-    <div class="text">
-      <div class="lang-block lang-block--ja">
-        <h2>Who I Work With</h2>
-        <p>以下のような方々・組織からのご相談を歓迎しています。</p>
-        <ul class="client-list">
-          <li>映画監督・映像作家</li>
-          <li>アーティスト・キュレーター</li>
-          <li>舞台・ダンス・パフォーマンス制作者</li>
-          <li>美術館・文化機関・フェスティバル</li>
-          <li>ブランド・企業・デザインスタジオ</li>
-          <li>研究者・テクノロジーチーム</li>
-        </ul>
-        <p style="margin-top: 1.25rem;">強いコンセプトや切実なテーマを持つプロジェクト、また独自の音の言語を必要とする案件に特に関心があります。</p>
-      </div>
+    .logo-type span {
+      display: inline-block;
+      animation: type-breathe 5.2s ease-in-out infinite;
+      transform-origin: center bottom;
+    }
 
-      <div class="lang-block lang-block--en">
-        <h2>Who I Work With</h2>
-        <p>I welcome inquiries from clients and collaborators such as:</p>
-        <ul class="client-list">
-          <li>filmmakers and documentary directors</li>
-          <li>artists and curators</li>
-          <li>performance makers and choreographers</li>
-          <li>museums, festivals, and cultural institutions</li>
-          <li>brands, companies, and design studios</li>
-          <li>researchers and technology teams</li>
-        </ul>
-        <p style="margin-top: 1.25rem;">I am especially drawn to projects that need an original sonic language, conceptual depth, and close collaboration.</p>
-      </div>
-    </div>
-  </section>
+    .logo-type span:nth-child(2n) { animation-delay: -0.7s; }
+    .logo-type span:nth-child(3n) { animation-delay: -1.4s; }
+    .logo-type span:nth-child(5n) { animation-delay: -2.1s; }
+    .logo-type span:nth-child(7n) { animation-delay: -2.8s; }
 
-  <section class="section">
-    <div class="text">
-      <div class="lang-block lang-block--ja">
-        <h2>AI &amp; Technology</h2>
-        <p>AIやアルゴリズムは単なるツールとしてではなく、創作、判断、作者性を問い直す契機として扱っています。</p>
-        <p>この視点は、アーティスティックな作品制作だけでなく、新しい技術や研究文脈を含む受託案件や共同開発にも生きています。</p>
-      </div>
+    @keyframes type-breathe {
+      0%, 100% { transform: translateY(0) scaleX(1); }
+      38% { transform: translateY(-0.035em) scaleX(0.965); }
+      72% { transform: translateY(0.025em) scaleX(1.045); }
+    }
 
-      <div class="lang-block lang-block--en">
-        <h2>AI &amp; Technology</h2>
-        <p>AI and computational processes are part of my practice not only as tools, but as ways of rethinking authorship, listening, and creative decision-making.</p>
-        <p>This perspective informs both artistic commissions and applied collaborations involving emerging technology, research, and sound-led experimentation.</p>
-      </div>
-    </div>
-  </section>
+    .statement {
+      max-width: 780px;
+      font-size: clamp(1.3rem, 2.6vw, 2.35rem);
+      line-height: 1.2;
+      letter-spacing: -0.055em;
+      margin: 0;
+    }
 
-  <section class="section">
-    <div class="text">
-      <div class="lang-block lang-block--ja">
-        <h2>Collaborator</h2>
-        <div class="collaborator-card">
-          <h3>Frederik Bous</h3>
-          <p class="collaborator-role">AI Researcher and Creative Technology Collaborator</p>
-          <p>
-            Website:
-            <a href="https://frederik.bous.cc/" target="_blank" rel="noopener noreferrer">frederik.bous.cc</a>
-          </p>
-          <p>
-            Frederik Bous は、音声およびボイステクノロジーのための人工知能を専門とする研究者・開発者です。
-            音声合成、歌声合成、ボイス・トランスフォーメーション、表現制御に関する深層学習手法を軸に、
-            次世代のニューラルオーディオシステムの開発に取り組んでいます。
-          </p>
-          <p>
-            彼の研究は、ニューラルボコーダーや機械学習モデルを含む高度な音声生成・操作技術を扱い、
-            異なる言語、声質、表現スタイルにまたがる高品質な音声や歌声の生成を探究しています。
-          </p>
-          <p>
-            また、アーティストやクリエイティブ・プラクティショナーとの協働を通じて、
-            生成音響システム、声の変換、インタラクティブ・メディアを含む制作プロセスにAIを統合する実験的なワークフロー設計にも携わっています。
-            Studio Cucurbits では、AIとクリエイティブ・コンピュテーションの領域におけるテクノロジー・コラボレーターとして、
-            音楽、デジタルメディア、先端技術を横断するハイブリッドな実践を支えています。
-          </p>
-        </div>
-      </div>
+    .hero-side {
+      border-left: 1px solid var(--line);
+      padding-left: 1.2rem;
+    }
 
-      <div class="lang-block lang-block--en">
-        <h2>Collaborator</h2>
-        <div class="collaborator-card">
-          <h3>Frederik Bous</h3>
-          <p class="collaborator-role">AI Researcher and Creative Technology Collaborator</p>
-          <p>
-            Website:
-            <a href="https://frederik.bous.cc/" target="_blank" rel="noopener noreferrer">frederik.bous.cc</a>
-          </p>
-          <p>
-            Frederik Bous is a researcher and developer specializing in artificial intelligence for audio and voice technologies. His work focuses on deep learning methods for speech and singing voice synthesis, transformation, and expressive control, contributing to the development of next-generation neural audio systems.
-          </p>
-          <p>
-            His research explores advanced neural architectures for voice generation and manipulation, including neural vocoders and machine learning models capable of producing high-quality speech and singing voices across different languages, timbres, and expressive styles.
-          </p>
-          <p>
-            In addition to his scientific research, he collaborates with artists and creative practitioners to integrate artificial intelligence into artistic production processes. Within Studio Cucurbits, he contributes as a technology collaborator in AI and creative computation, supporting hybrid artistic practices that combine contemporary music, digital media, and emerging technologies.
-          </p>
-        </div>
-      </div>
-    </div>
+    .hero-side p {
+      margin: 0 0 1.2rem;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
 
-    <div class="image">
-      <a href="https://frederik.bous.cc/" target="_blank" rel="noopener noreferrer">
-        <img src="https://frederik.bous.cc/assets/bous_square.jpg" alt="Portrait of Frederik Bous">
-      </a>
-    </div>
-  </section>
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin: 1.4rem 0 1.6rem;
+    }
 
-  <section class="cta-card">
-    <div class="lang-block lang-block--ja">
-      <h2>Inquiry</h2>
-      <p>音楽制作、サウンドデザイン、受託制作、共同制作に関するご相談を歓迎しています。</p>
-      <p>映画、展示、舞台、プロダクト、研究プロジェクトなどで音や音楽を必要としている方は、企画概要、スケジュール、媒体や規模感を添えてお気軽にご連絡ください。</p>
-<a class="email-cta" href="mailto:info@sachiekobayashi.com">info@sachiekobayashi.com</a>
-    </div>
+    .tags span {
+      border: 1px solid var(--line);
+      padding: 0.32rem 0.54rem;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.075em;
+      background: rgba(255,255,255,0.32);
+    }
 
-    <div class="lang-block lang-block--en">
-      <h2>Inquiry</h2>
-      <p>I welcome inquiries for commissions, collaborations, sound design projects, and selected commercial work.</p>
-      <p>If you are developing a film, exhibition, performance, product, or research project and are looking for an original approach to music or sound, please feel free to get in touch with a short outline, timeline, and format.</p>
-      <a class="email-cta" href="mailto:info@sachiekobayashi">info@sachiekobayashi</a>
-    </div>
-  </section>
-</div>
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+    }
 
-<script>
-  (function() {
-    var root = document.getElementById('cucurbits-page');
-    if (!root) return;
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      border: 1px solid var(--ink);
+      padding: 0.62rem 0.86rem;
+      font-size: 0.83rem;
+      text-transform: uppercase;
+      letter-spacing: 0.065em;
+      transition: 0.18s ease;
+    }
 
-    var buttons = root.querySelectorAll('[data-lang-button]');
+    .button.primary {
+      background: var(--ink);
+      color: var(--bg);
+    }
 
-    function setLang(lang) {
-      root.setAttribute('data-lang', lang);
-      try {
-        localStorage.setItem('cucurbits-lang', lang);
-      } catch (e) {}
-      for (var i = 0; i < buttons.length; i++) {
-        var isActive = buttons[i].getAttribute('data-lang-button') === lang;
-        if (isActive) {
-          buttons[i].classList.add('is-active');
-        } else {
-          buttons[i].classList.remove('is-active');
-        }
+    .button:hover {
+      transform: translateY(-1px);
+    }
+
+    .ticker {
+      border-block: 1px solid var(--line);
+      overflow: hidden;
+      white-space: nowrap;
+      background: var(--ink);
+      color: var(--bg);
+    }
+
+    .ticker-track {
+      display: inline-flex;
+      gap: 2rem;
+      padding: 0.7rem 0;
+      animation: ticker 26s linear infinite;
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    section {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: clamp(3.5rem, 7vw, 6.5rem) 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-grid {
+      display: grid;
+      grid-template-columns: 0.42fr 1fr;
+      gap: clamp(2rem, 6vw, 5rem);
+      align-items: start;
+    }
+
+    .section-label {
+      position: sticky;
+      top: 5.2rem;
+      font-size: 0.74rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    h2 {
+      margin: 0 0 1.6rem;
+      max-width: 820px;
+      font-size: clamp(2rem, 5vw, 5.2rem);
+      line-height: 0.94;
+      letter-spacing: -0.09em;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      margin: 0 0 0.8rem;
+      font-size: 1.08rem;
+      line-height: 1.15;
+      letter-spacing: -0.035em;
+    }
+
+    .lead {
+      max-width: 780px;
+      font-size: clamp(1.12rem, 2vw, 1.55rem);
+      line-height: 1.35;
+      letter-spacing: -0.045em;
+      margin: 0 0 2rem;
+    }
+
+    p {
+      margin: 0 0 1rem;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+    }
+
+    .card {
+      background: var(--bg);
+      padding: clamp(1.1rem, 2.3vw, 1.7rem);
+      min-height: 220px;
+    }
+
+    .card .num {
+      display: block;
+      margin-bottom: 2.6rem;
+      color: var(--muted);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+    }
+
+    .card ul {
+      margin: 1rem 0 0;
+      padding: 0;
+      list-style: none;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .card li {
+      border-top: 1px solid var(--line);
+      padding: 0.5rem 0;
+    }
+
+    .process {
+      display: grid;
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+    }
+
+    .process-row {
+      display: grid;
+      grid-template-columns: 100px 1fr 1fr;
+      gap: 1.2rem;
+      padding: 1.1rem;
+      background: var(--bg);
+      align-items: start;
+    }
+
+    .process-row strong {
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .contexts {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      margin-top: 2rem;
+    }
+
+    .context-item {
+      background: var(--bg);
+      padding: 1rem;
+      min-height: 88px;
+      font-size: 0.95rem;
+    }
+
+    .collab {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 2rem;
+      align-items: start;
+      padding: 1.2rem;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.24);
+    }
+
+    .portrait {
+      aspect-ratio: 1 / 1;
+      background: linear-gradient(135deg, var(--soft), rgba(0,0,0,0.12));
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .portrait img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(1) contrast(1.05);
+    }
+
+    .inquiry {
+      padding-bottom: 7rem;
+    }
+
+    .inquiry-box {
+      background: var(--ink);
+      color: var(--bg);
+      padding: clamp(1.4rem, 5vw, 3.5rem);
+      display: grid;
+      grid-template-columns: 1fr 0.6fr;
+      gap: 2rem;
+    }
+
+    .inquiry-box * {
+      color: var(--bg);
+    }
+
+    .inquiry-box .button {
+      border-color: var(--bg);
+    }
+
+    .inquiry-box .button.primary {
+      background: var(--bg);
+      color: var(--ink);
+    }
+
+    .fineprint {
+      color: rgba(244,243,239,0.58);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 900px) {
+      .topbar-inner {
+        grid-template-columns: 1fr auto;
+      }
+      .nav {
+        display: none;
+      }
+      .hero,
+      .section-grid,
+      .collab,
+      .inquiry-box {
+        grid-template-columns: 1fr;
+      }
+      .hero {
+        min-height: auto;
+      }
+      .hero-side {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+        padding-left: 0;
+        padding-top: 1.2rem;
+      }
+      .section-label {
+        position: static;
+      }
+      .cards,
+      .contexts {
+        grid-template-columns: 1fr;
+      }
+      .process-row {
+        grid-template-columns: 1fr;
+      }
+      .logo-type {
+        font-size: clamp(3.3rem, 18vw, 6.4rem);
       }
     }
+  </style>
+</head>
+<body data-lang="ja">
+  <div class="page">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand-small" href="#top">Studio<br>Cucurbits.</a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#practice">Practice</a>
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#contexts">Contexts</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="lang">
+          <button type="button" data-set-lang="ja" class="active">JP</button>
+          <button type="button" data-set-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
 
-    for (var i = 0; i < buttons.length; i++) {
-      buttons[i].addEventListener('click', function() {
-        setLang(this.getAttribute('data-lang-button'));
-      });
+    <main id="top">
+      <section class="hero">
+        <div>
+          <p class="kicker">Composition / Sound Design / Sonic Systems</p>
+          <h1 class="logo-type" aria-label="Studio Cucurbits">
+            <span>S</span><span>T</span><span>U</span><span>D</span><span>I</span><span>O</span><br>
+            <span>C</span><span>U</span><span>C</span><span>U</span><span>R</span><span>B</span><span>I</span><span>T</span><span>S</span><span>.</span>
+          </h1>
+          <div class="lang-block ja">
+            <p class="statement">作曲、サウンドデザイン、AI、空間、身体性を横断する、国際的な音楽制作スタジオ。</p>
+          </div>
+          <div class="lang-block en">
+            <p class="statement">An international studio for composition, sound design, AI, space, and embodied sonic practice.</p>
+          </div>
+        </div>
+
+        <aside class="hero-side">
+          <div class="lang-block ja">
+            <p>Studio Cucurbits. は、作曲家・サウンドアーティスト Sachie Kobayashi による制作スタジオです。映画、映像、舞台、展示、プロダクト、研究開発に向けて、プロジェクト固有の音の言語を設計します。</p>
+          </div>
+          <div class="lang-block en">
+            <p>Studio Cucurbits. is the studio of composer and sound artist Sachie Kobayashi. It develops project-specific sonic languages for film, moving image, performance, installation, products, and research-driven work.</p>
+          </div>
+          <div class="tags">
+            <span>Original Music</span>
+            <span>Sound Design</span>
+            <span>Installation</span>
+            <span>AI Audio</span>
+            <span>Consultation</span>
+          </div>
+          <div class="cta-row">
+            <a class="button primary" href="mailto:info@sachiekobayashi.com">Inquiry</a>
+            <a class="button" href="#services">View Services</a>
+          </div>
+        </aside>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>sound / image / systems / composition / voice / algorithm / space / performance / </span>
+          <span>sound / image / systems / composition / voice / algorithm / space / performance / </span>
+          <span>sound / image / systems / composition / voice / algorithm / space / performance / </span>
+        </div>
+      </div>
+
+      <section id="practice">
+        <div class="section-grid">
+          <div class="section-label">01 / Practice</div>
+          <div>
+            <div class="lang-block ja">
+              <h2>音を、媒体の後景ではなく、構造として扱う。</h2>
+              <p class="lead">Studio Cucurbits. は、単に「映像に音楽を付ける」場所ではありません。コンセプト、編集、空間、身体、声、テクノロジーの関係から、プロジェクト全体を支える音響的な構造を設計します。</p>
+              <p class="muted">現代音楽、電気音響、サウンドアート、映像音楽、AI・計算的プロセスを横断し、芸術的な深度と実制作の精度を両立させます。</p>
+            </div>
+            <div class="lang-block en">
+              <h2>Sound is treated as structure, not background.</h2>
+              <p class="lead">Studio Cucurbits. does not simply add music to an image. It designs sonic structures that support the entire project through concept, editing, space, body, voice, and technology.</p>
+              <p class="muted">The practice moves across contemporary composition, electroacoustic music, sound art, music for image, and AI-based creative processes, combining artistic depth with production clarity.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="section-grid">
+          <div class="section-label">02 / Services</div>
+          <div>
+            <div class="lang-block ja">
+              <h2>Services</h2>
+              <p class="lead">依頼内容に応じて、作曲、音響設計、技術的プロトタイピング、クリエイティブ・コンサルテーションを組み合わせます。</p>
+            </div>
+            <div class="lang-block en">
+              <h2>Services</h2>
+              <p class="lead">Depending on the project, composition, sound design, technical prototyping, and creative consultation can be combined.</p>
+            </div>
+            <div class="cards">
+              <article class="card">
+                <span class="num">01</span>
+                <h3>Original Music for Film / Moving Image</h3>
+                <div class="lang-block ja"><p>映画、ドキュメンタリー、アーティスト映像、短編映像、広告・ブランド映像のためのオリジナル音楽。</p></div>
+                <div class="lang-block en"><p>Bespoke composition for film, documentary, artist film, short-form video, campaigns, and visual media.</p></div>
+                <ul>
+                  <li>Score / cues / themes</li>
+                  <li>Stems / edits / final files</li>
+                  <li>Minimal, experimental, dramatic, or hybrid sound</li>
+                </ul>
+              </article>
+              <article class="card">
+                <span class="num">02</span>
+                <h3>Sound Design / Sonic Identity</h3>
+                <div class="lang-block ja"><p>プロダクト、ブランド、UI、映像、展示のためのサウンドデザインと音のアイデンティティ設計。</p></div>
+                <div class="lang-block en"><p>Sound design and sonic identity for products, brands, UI, moving image, and exhibitions.</p></div>
+                <ul>
+                  <li>Sound logo / UI sound</li>
+                  <li>Texture / transition / impact design</li>
+                  <li>Brand-oriented sonic systems</li>
+                </ul>
+              </article>
+              <article class="card">
+                <span class="num">03</span>
+                <h3>Installation / Performance / Immersive Work</h3>
+                <div class="lang-block ja"><p>インスタレーション、舞台、ダンス、パフォーマンス、マルチメディア作品のための音楽・音響制作。</p></div>
+                <div class="lang-block en"><p>Music and sound for installation, stage, dance, performance, and multimedia environments.</p></div>
+                <ul>
+                  <li>Spatial / multichannel sound</li>
+                  <li>Playback structure</li>
+                  <li>Site-specific sonic dramaturgy</li>
+                </ul>
+              </article>
+              <article class="card">
+                <span class="num">04</span>
+                <h3>AI Audio / Creative Technology</h3>
+                <div class="lang-block ja"><p>AI、音声、生成システム、アルゴリズムを含む創作プロセスの設計とプロトタイプ制作。</p></div>
+                <div class="lang-block en"><p>Creative process design and prototyping involving AI, voice, generative systems, and algorithms.</p></div>
+                <ul>
+                  <li>AI-assisted composition</li>
+                  <li>Voice / synthesis workflows</li>
+                  <li>Prototype for research-based projects</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process">
+        <div class="section-grid">
+          <div class="section-label">03 / Process</div>
+          <div>
+            <div class="lang-block ja">
+              <h2>Process</h2>
+              <p class="lead">依頼側が安心して進められるよう、初期段階で方向性・納品物・スケジュールを明確にします。</p>
+            </div>
+            <div class="lang-block en">
+              <h2>Process</h2>
+              <p class="lead">Direction, deliverables, and schedule are clarified early so that collaborators can move forward with confidence.</p>
+            </div>
+            <div class="process">
+              <div class="process-row">
+                <strong>Phase 01</strong>
+                <div>Brief / Listening</div>
+                <div class="muted">Project context, references, constraints, timeline, and intended audience.</div>
+              </div>
+              <div class="process-row">
+                <strong>Phase 02</strong>
+                <div>Direction / Prototype</div>
+                <div class="muted">Sonic direction, palette, demo material, cue structure, or technical sketch.</div>
+              </div>
+              <div class="process-row">
+                <strong>Phase 03</strong>
+                <div>Production / Revision</div>
+                <div class="muted">Composition, sound design, implementation support, revisions, and final delivery.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contexts">
+        <div class="section-grid">
+          <div class="section-label">04 / Contexts</div>
+          <div>
+            <div class="lang-block ja">
+              <h2>Selected Contexts</h2>
+              <p class="lead">ヨーロッパと日本を中心に、現代音楽、映像、舞台、美術、テクノロジーを横断する文脈で活動しています。</p>
+            </div>
+            <div class="lang-block en">
+              <h2>Selected Contexts</h2>
+              <p class="lead">The work has developed internationally across Europe and Japan, spanning contemporary music, moving image, performance, visual art, and technology.</p>
+            </div>
+            <div class="contexts">
+              <div class="context-item">Klangforum Wien</div>
+              <div class="context-item">Ensemble Modern</div>
+              <div class="context-item">Ensemble Proton Bern</div>
+              <div class="context-item">IRCAM</div>
+              <div class="context-item">Le Fresnoy</div>
+              <div class="context-item">Orchestre de la HEM</div>
+              <div class="context-item">Sonicware LIVEN Ambient</div>
+              <div class="context-item">Sound Logo / Sonic Branding</div>
+              <div class="context-item">AI / Creative Research</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="collaborator">
+        <div class="section-grid">
+          <div class="section-label">05 / Collaborator</div>
+          <div>
+            <div class="lang-block ja">
+              <h2>Creative Technology</h2>
+              <p class="lead">必要に応じて、AI・音声技術・クリエイティブコンピュテーション領域の専門家と協働します。</p>
+            </div>
+            <div class="lang-block en">
+              <h2>Creative Technology</h2>
+              <p class="lead">When needed, the studio collaborates with specialists in AI, voice technology, and creative computation.</p>
+            </div>
+            <div class="collab">
+              <div>
+                <h3>Frederik Bous</h3>
+                <p class="muted">AI Researcher and Creative Technology Collaborator</p>
+                <div class="lang-block ja">
+                  <p>音声合成、歌声合成、ボイス・トランスフォーメーション、表現制御に関する深層学習手法を専門とする研究者・開発者。Studio Cucurbits. では、AIとクリエイティブ・コンピュテーションを含むプロジェクトで技術面の協働を行います。</p>
+                </div>
+                <div class="lang-block en">
+                  <p>A researcher and developer specializing in deep learning methods for speech and singing voice synthesis, transformation, and expressive control. Within Studio Cucurbits., he contributes to projects involving AI and creative computation.</p>
+                </div>
+                <a class="button" href="https://frederik.bous.cc/" target="_blank" rel="noopener noreferrer">Website</a>
+              </div>
+              <div class="portrait">
+                <img src="https://frederik.bous.cc/assets/bous_square.jpg" alt="Portrait of Frederik Bous">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="inquiry">
+        <div class="inquiry-box">
+          <div>
+            <div class="lang-block ja">
+              <h2>Inquiry</h2>
+              <p class="lead">映画、展示、舞台、プロダクト、研究開発、ブランドプロジェクトなどで、独自の音や音楽を必要としている方はご相談ください。</p>
+              <p class="fineprint">企画概要、希望納期、媒体、予算感、参考資料があると初回の判断がスムーズです。</p>
+            </div>
+            <div class="lang-block en">
+              <h2>Inquiry</h2>
+              <p class="lead">For film, exhibition, performance, product, research, and brand projects requiring an original approach to sound or music, please get in touch.</p>
+              <p class="fineprint">A short outline, timeline, format, budget range, and references are helpful for the first response.</p>
+            </div>
+          </div>
+          <div class="cta-row">
+            <a class="button primary" href="mailto:info@sachiekobayashi.com">info@sachiekobayashi.com</a>
+            <a class="button" href="https://www.sachiekobayashi.com/" target="_blank" rel="noopener noreferrer">Sachie Kobayashi</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('[data-set-lang]');
+    function setLang(lang) {
+      document.body.setAttribute('data-lang', lang);
+      buttons.forEach(btn => btn.classList.toggle('active', btn.dataset.setLang === lang));
+      try { localStorage.setItem('studio-cucurbits-lang', lang); } catch(e) {}
     }
-
-    var savedLang = 'ja';
-    try {
-      savedLang = localStorage.getItem('cucurbits-lang') || 'ja';
-    } catch (e) {}
-
-    setLang(savedLang);
-  })();
-</script>
+    buttons.forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.setLang)));
+    try { setLang(localStorage.getItem('studio-cucurbits-lang') || 'ja'); } catch(e) { setLang('ja'); }
+  </script>
+</body>
+</html>
