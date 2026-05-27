@@ -6,227 +6,246 @@ permalink: /cucurbits/
 
 <style>
   .cucurbits-page {
+    --ink: #0b0b0b;
+    --line: rgba(0,0,0,.13);
+    --soft: rgba(0,0,0,.035);
+
     width: 100%;
-    max-width: 1040px;
+    max-width: 1120px;
     margin: 0;
-    padding: 2rem 1.25rem 4rem 0;
-    color: #111;
-    line-height: 1.85;
+    padding: 1.2rem 1.25rem 5rem 0;
+    color: var(--ink);
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.72;
+    letter-spacing: -0.01em;
     text-align: left;
   }
 
   .cucurbits-page,
   .cucurbits-page * {
-    color: #111 !important;
     box-sizing: border-box;
+    color: var(--ink) !important;
   }
 
-  .cucurbits-page .lang-switch {
+  .moving-logo {
+    margin-bottom: 1.4rem;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 1.4rem;
+  }
+
+  .moving-logo video {
+    display: block;
+    width: min(720px, 100%);
+    height: auto;
+    border-radius: 0;
+    background: transparent;
+    filter: grayscale(1) contrast(1.08);
+  }
+
+  .lang-switch {
     display: flex;
-    justify-content: flex-start;
-    gap: 0.5rem;
-    margin-bottom: 2rem;
+    gap: .4rem;
+    margin: 0 0 3.2rem;
   }
 
-  .cucurbits-page .lang-switch button {
+  .lang-switch button {
     appearance: none;
-    border: 1px solid rgba(0, 0, 0, 0.18);
-    background: #fff;
-    border-radius: 999px;
-    padding: 0.5rem 0.95rem;
+    border: 1px solid var(--line);
+    background: transparent;
+    border-radius: 0;
+    padding: .45rem .85rem;
     font: inherit;
+    font-size: .82rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
     cursor: pointer;
   }
 
-  .cucurbits-page .lang-switch button.is-active {
-    background: rgba(0, 0, 0, 0.05);
+  .lang-switch button.is-active {
+    background: var(--ink);
+    color: #fff !important;
   }
 
-  .cucurbits-page .lang-block {
+  .lang-block {
     display: none;
   }
 
-  .cucurbits-page[data-lang="ja"] .lang-block--ja {
-    display: block;
-  }
-
+  .cucurbits-page[data-lang="ja"] .lang-block--ja,
   .cucurbits-page[data-lang="en"] .lang-block--en {
     display: block;
   }
 
-  .cucurbits-page .moving-logo video {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    background: transparent;
-  }
-
-  .cucurbits-page .hero,
-  .cucurbits-page .section {
+  .hero,
+  .section {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 300px;
-    gap: 2rem;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: clamp(1.5rem, 5vw, 4rem);
     align-items: start;
-    padding-bottom: 3rem;
-    margin-bottom: 3rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid var(--line);
   }
 
-  .cucurbits-page .section.reverse .text {
-    order: 2;
-  }
+  .section.reverse .text { order: 2; }
+  .section.reverse .image { order: 1; }
 
-  .cucurbits-page .section.reverse .image {
-    order: 1;
-  }
-
-  .cucurbits-page .intro {
-    font-size: 1.45rem;
-    line-height: 1.6;
-    margin: 0 0 1.25rem;
-  }
-
-  .cucurbits-page .eyebrow {
-    font-size: 0.92rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    opacity: 0.72;
-    margin: 0 0 0.75rem;
-  }
-
-  .cucurbits-page p {
+  .eyebrow {
     margin: 0 0 1.1rem;
-    text-align: left;
+    font-size: .78rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    opacity: .55;
   }
 
-  .cucurbits-page h2,
-  .cucurbits-page h3 {
-    margin: 0 0 1rem;
-    line-height: 1.35;
-    text-align: left;
+  .intro {
+    max-width: 760px;
+    margin: 0 0 1.6rem;
+    font-size: clamp(1.55rem, 3vw, 2.65rem);
+    line-height: 1.16;
+    letter-spacing: -0.055em;
   }
 
-  .cucurbits-page img {
+  h2 {
+    margin: 0 0 1.2rem;
+    font-size: clamp(1.45rem, 2.5vw, 2.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.055em;
+    font-weight: 700;
+  }
+
+  h3 {
+    margin: 0 0 .75rem;
+    font-size: .95rem;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    max-width: 720px;
+    margin: 0 0 1.05rem;
+  }
+
+  img {
     display: block;
     width: 100%;
-    max-width: 100%;
     height: auto;
-    border-radius: 12px;
+    border-radius: 0;
+    filter: grayscale(1) contrast(1.04);
   }
 
-  .cucurbits-page .hero-meta {
+  .hero-meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.6rem;
-    margin: 1.4rem 0 1.6rem;
+    gap: .45rem;
+    margin: 1.7rem 0 1.8rem;
   }
 
-  .cucurbits-page .hero-meta span {
-    border: 1px solid rgba(0, 0, 0, 0.14);
-    border-radius: 999px;
-    padding: 0.35rem 0.8rem;
-    font-size: 0.92rem;
-  }
-
-  .cucurbits-page .email-cta {
-    display: inline-block;
-    padding: 0.8rem 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.18);
-    border-radius: 12px;
-    background: rgba(0, 0, 0, 0.03);
-    text-decoration: none;
-    font-weight: 600;
-  }
-
-  .cucurbits-page .service-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
-
-  .cucurbits-page .service-card,
-  .cucurbits-page .collaborator-card {
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    border-radius: 12px;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.015);
-  }
-
-  .cucurbits-page .service-card h3,
-  .cucurbits-page .collaborator-card h3 {
-    font-size: 1rem;
-    margin-bottom: 0.65rem;
-  }
-
-  .cucurbits-page .service-card p {
-    font-size: 0.96rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .cucurbits-page ul {
-    margin: 0;
-    padding-left: 1.15rem;
-  }
-
-  .cucurbits-page li {
-    margin-bottom: 0.45rem;
-    text-align: left;
-  }
-
-  .cucurbits-page .trust-list,
-  .cucurbits-page .client-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.35rem 1rem;
-    margin-top: 1rem;
-  }
-
-  .cucurbits-page .collaborator-role {
-    font-size: 0.95rem;
+  .hero-meta span {
+    border: 1px solid var(--line);
+    border-radius: 0;
+    padding: .35rem .65rem;
+    font-size: .78rem;
+    letter-spacing: .06em;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
-    opacity: 0.72;
-    margin-bottom: 1rem;
   }
 
-  .cucurbits-page .cta-card {
-    border: 1px solid rgba(0, 0, 0, 0.16);
-    border-radius: 14px;
-    background: rgba(0, 0, 0, 0.03);
-    padding: 1.5rem;
+  .email-cta {
+    display: inline-block;
+    border: 1px solid var(--ink);
+    border-radius: 0;
+    padding: .72rem .95rem;
+    background: transparent;
+    text-decoration: none;
+    font-size: .88rem;
+    letter-spacing: .02em;
+    transition: background .2s ease, color .2s ease;
+  }
+
+  .email-cta:hover {
+    background: var(--ink);
+    color: #fff !important;
+  }
+
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1px;
+    margin-top: 1.7rem;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+
+  .service-card,
+  .collaborator-card,
+  .cta-card {
+    border: 0;
+    border-radius: 0;
+    background: #fff;
+    padding: 1.2rem;
+  }
+
+  .service-card p {
+    font-size: .93rem;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.05rem;
+  }
+
+  li {
+    margin-bottom: .38rem;
+  }
+
+  .trust-list,
+  .client-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .35rem 1.2rem;
+    margin-top: 1.2rem;
+    font-size: .95rem;
+  }
+
+  .collaborator-role {
+    margin-bottom: 1.1rem;
+    font-size: .76rem;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    opacity: .55;
+  }
+
+  .cta-card {
+    border: 1px solid var(--line);
+    padding: clamp(1.4rem, 4vw, 2.4rem);
+    background: var(--soft);
   }
 
   @media (max-width: 860px) {
     .cucurbits-page {
-      padding: 1.5rem 1rem 3rem 0;
+      padding: 1rem 1rem 4rem 0;
     }
 
-    .cucurbits-page .hero,
-    .cucurbits-page .section {
+    .hero,
+    .section {
       grid-template-columns: 1fr;
       gap: 1.5rem;
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
     }
 
-    .cucurbits-page .section.reverse .text,
-    .cucurbits-page .section.reverse .image {
+    .section.reverse .text,
+    .section.reverse .image {
       order: initial;
     }
 
-    .cucurbits-page .service-grid,
-    .cucurbits-page .trust-list,
-    .cucurbits-page .client-list {
+    .service-grid,
+    .trust-list,
+    .client-list {
       grid-template-columns: 1fr;
     }
 
-    .cucurbits-page .intro {
-      font-size: 1.25rem;
-    }
-
-    .cucurbits-page .moving-logo video {
-      max-width: 100%;
+    .image {
+      max-width: 420px;
     }
   }
 </style>
@@ -556,7 +575,7 @@ permalink: /cucurbits/
       <h2>Inquiry</h2>
       <p>音楽制作、サウンドデザイン、受託制作、共同制作に関するご相談を歓迎しています。</p>
       <p>映画、展示、舞台、プロダクト、研究プロジェクトなどで音や音楽を必要としている方は、企画概要、スケジュール、媒体や規模感を添えてお気軽にご連絡ください。</p>
-      <a class="email-cta" href="mailto:info@sachiekobayashi">info@sachiekobayashi</a>
+<a class="email-cta" href="mailto:info@sachiekobayashi.com">info@sachiekobayashi.com</a>
     </div>
 
     <div class="lang-block lang-block--en">
