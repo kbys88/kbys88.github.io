@@ -1,8 +1,7 @@
-```html
 ---
 layout: page
-title: レッスンページ移行のお知らせ｜小林祥恵
-description: 作曲・DTM・電子音響・サウンドデザインのオンラインレッスンは、新しいオンラインアトリエ Atelier Composition Son へ移行しました。
+title: オンライン作曲・DTMレッスン｜Sachie Kobayashi
+description: 作曲・DTM・電子音響・サウンドデザイン・AI音楽制作のオンライン個別レッスン。
 permalink: /teach/
 ---
 
@@ -11,180 +10,156 @@ permalink: /teach/
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="5; url=https://ateliercompositionson.com/ja/">
 
-  <title>レッスンページ移行のお知らせ｜小林祥恵</title>
+  <title>オンライン作曲・DTMレッスン｜Sachie Kobayashi</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
     }
 
-    body {
-      background: #ffffff;
-      color: #000000;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
+    body{
+      background:#ffffff;
+      color:#000000;
+      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing:antialiased;
+      line-height:1.7;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
+    a{
+      color:inherit;
+      text-decoration:none;
     }
 
-    .page {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 64px 28px 80px;
+    .page{
+      max-width:980px;
+      margin:0 auto;
+      padding:56px 28px 80px;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
     }
 
-    .eyebrow {
-      font-size: 12px;
-      letter-spacing: .16em;
-      text-transform: uppercase;
-      margin-bottom: 28px;
+    .top{
+      display:flex;
+      flex-direction:column;
+      gap:48px;
     }
 
-    h1 {
-      font-size: clamp(42px, 7vw, 88px);
-      line-height: .98;
-      letter-spacing: -0.06em;
-      font-weight: 500;
-      margin-bottom: 32px;
+    .eyebrow{
+      font-size:12px;
+      letter-spacing:.16em;
+      text-transform:uppercase;
     }
 
-    .lead {
-      max-width: 720px;
-      font-size: 18px;
-      line-height: 1.9;
-      margin-bottom: 36px;
+    h1{
+      font-size:clamp(42px, 7vw, 92px);
+      line-height:.95;
+      letter-spacing:-0.06em;
+      font-weight:500;
+      margin-bottom:28px;
     }
 
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 64px;
+    .lead{
+      max-width:720px;
+      font-size:18px;
+      line-height:1.9;
     }
 
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 13px 20px;
-      border: 1px solid #000;
-      font-size: 14px;
-      transition: opacity .18s ease;
+    .center{
+      flex:1;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:80px 0;
     }
 
-    .btn.black {
-      background: #000;
-      color: #fff;
+    .enter{
+      width:220px;
+      height:220px;
+      border:1px solid #000;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:18px;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      transition:.2s ease;
     }
 
-    .btn:hover {
-      opacity: .72;
+    .enter:hover{
+      background:#000;
+      color:#fff;
     }
 
-    section {
-      padding: 44px 0;
-      border-top: 1px solid #000;
-      display: grid;
-      grid-template-columns: 220px 1fr;
-      gap: 44px;
+    .bottom{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:40px;
+      padding-top:48px;
+      border-top:1px solid #000;
     }
 
-    .label {
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: .16em;
+    .block-title{
+      font-size:11px;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      margin-bottom:18px;
     }
 
-    h2 {
-      font-size: 28px;
-      line-height: 1.15;
-      letter-spacing: -0.04em;
-      font-weight: 500;
-      margin-bottom: 18px;
+    ul{
+      list-style:none;
     }
 
-    p + p {
-      margin-top: 14px;
+    li{
+      padding:6px 0;
+      font-size:14px;
     }
 
-    ul {
-      list-style: none;
-      margin-top: 20px;
-      border-top: 1px solid #000;
+    .price{
+      font-size:28px;
+      line-height:1.2;
+      letter-spacing:-0.04em;
     }
 
-    li {
-      padding: 12px 0;
-      border-bottom: 1px solid #000;
+    .small{
+      margin-top:10px;
+      font-size:12px;
+      opacity:.65;
+      line-height:1.7;
     }
 
-    .pricing-box {
-      margin-top: 24px;
-      border-top: 1px solid #000;
+    footer{
+      margin-top:48px;
+      padding-top:28px;
+      border-top:1px solid #000;
+      font-size:12px;
+      opacity:.55;
     }
 
-    .pricing-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 0;
-      border-bottom: 1px solid #000;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
+    @media (max-width:780px){
 
-    .pricing-title {
-      font-size: 16px;
-    }
-
-    .pricing-price {
-      font-size: 34px;
-      line-height: 1;
-      letter-spacing: -0.05em;
-    }
-
-    .small {
-      margin-top: 16px;
-      font-size: 13px;
-      opacity: .72;
-    }
-
-    footer {
-      padding-top: 42px;
-      border-top: 1px solid #000;
-      font-size: 13px;
-      opacity: .6;
-    }
-
-    @media (max-width: 760px) {
-      .page {
-        padding: 36px 18px 60px;
+      .page{
+        padding:32px 18px 56px;
       }
 
-      section {
-        grid-template-columns: 1fr;
-        gap: 20px;
+      .lead{
+        font-size:16px;
       }
 
-      .lead {
-        font-size: 16px;
+      .bottom{
+        grid-template-columns:1fr;
+        gap:28px;
       }
 
-      h1 {
-        line-height: 1;
-      }
-
-      .pricing-item {
-        align-items: flex-start;
-        flex-direction: column;
+      .enter{
+        width:180px;
+        height:180px;
+        font-size:16px;
       }
     }
   </style>
@@ -194,150 +169,97 @@ permalink: /teach/
 
   <main class="page">
 
-    <header>
+    <div class="top">
 
       <div class="eyebrow">
         Sachie Kobayashi — Composition / Sound Design / Music Creation
       </div>
 
-      <h1>
-        レッスンページは<br>
-        新サイトへ移行しました
-      </h1>
+      <div>
 
-      <p class="lead">
-        作曲・DTM・電子音響・サウンドデザイン・AIを用いた音楽制作のオンラインレッスンは、
-        新しいオンラインアトリエ
-        <strong>Atelier Composition Son</strong>
-        へ移行しました。
-        5秒後に自動的に新しいページへ移動します。
-      </p>
+        <h1>
+          オンライン<br>
+          作曲・DTMレッスン
+        </h1>
 
-      <div class="buttons">
-
-        <a
-          class="btn black"
-          href="https://ateliercompositionson.com/ja/"
-          target="_blank"
-          rel="noopener"
-        >
-          新しいレッスンページを見る
-        </a>
-
-        <a
-          class="btn"
-          href="mailto:info@sachiekobayashi.com"
-        >
-          メールで相談する
-        </a>
+        <p class="lead">
+          作曲、DTM、電子音響、サウンドデザイン、
+          AIを用いた音楽制作まで。
+          作家本人によるオンライン個別レッスン。
+        </p>
 
       </div>
 
-    </header>
+    </div>
 
-    <section>
+    <div class="center">
 
-      <div class="label">
-        about
-      </div>
+      <a
+        class="enter"
+        href="https://ateliercompositionson.com/ja/"
+        target="_blank"
+        rel="noopener"
+      >
+        ENTER
+      </a>
+
+    </div>
+
+    <div class="bottom">
 
       <div>
 
-        <h2>
-          Atelier Composition Son
-        </h2>
-
-        <p>
-          Atelier Composition Son は、
-          作曲・電子音響・サウンドアート・AIと音楽制作を横断する、
-          個人の創作のためのオンラインアトリエです。
-        </p>
-
-        <p>
-          初心者の方から、音大受験、作品制作、ポートフォリオ相談、
-          専門的な創作指導まで、目的に応じて個別に対応します。
-        </p>
-
-        <p class="small">
-          ドメイン設定や移行作業の状況により、
-          新サイトへのアクセスが一時的に不安定な場合があります。
-          その場合はメールにてご相談ください。
-        </p>
-
-      </div>
-
-    </section>
-
-    <section>
-
-      <div class="label">
-        lessons
-      </div>
-
-      <div>
-
-        <h2>
-          レッスン内容
-        </h2>
+        <div class="block-title">
+          lessons
+        </div>
 
         <ul>
           <li>作曲 / 現代音楽</li>
           <li>DTM / DAW</li>
-          <li>電子音響 / Musique concrète</li>
+          <li>電子音響</li>
           <li>サウンドデザイン</li>
           <li>Max/MSP</li>
           <li>AIと音楽制作</li>
-          <li>作品講評 / ポートフォリオ相談</li>
-          <li>個人制作・創作相談</li>
         </ul>
 
       </div>
 
-    </section>
+      <div>
 
-    <section>
+        <div class="block-title">
+          pricing
+        </div>
 
-      <div class="label">
-        pricing
+        <div class="price">
+          対面 ¥6,000
+        </div>
+
+        <div class="price" style="margin-top:10px;">
+          Online ¥4,800
+        </div>
+
+        <div class="small">
+          オンラインレッスンは
+          対面価格より20% OFF
+        </div>
+
       </div>
 
       <div>
 
-        <h2>
-          料金
-        </h2>
-
-        <div class="pricing-box">
-
-          <div class="pricing-item">
-            <div class="pricing-title">
-              対面レッスン
-            </div>
-
-            <div class="pricing-price">
-              ¥6,000 / 60min
-            </div>
-          </div>
-
-          <div class="pricing-item">
-            <div class="pricing-title">
-              オンラインレッスン（20% OFF）
-            </div>
-
-            <div class="pricing-price">
-              ¥4,800 / 60min
-            </div>
-          </div>
-
+        <div class="block-title">
+          contact
         </div>
 
-        <p class="small">
-          初回30分相談無料。
-        </p>
+        <div class="small">
+          初回30分相談無料
+          <br><br>
+          info@sachiekobayashi.com
+        </div>
 
       </div>
 
-    </section>
+    </div>
 
     <footer>
       © Sachie Kobayashi / Atelier Composition Son
@@ -347,4 +269,3 @@ permalink: /teach/
 
 </body>
 </html>
-```
