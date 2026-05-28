@@ -432,8 +432,42 @@ permalink: /cucurbits/
   .studio-cucurbits .context-item {
     background: var(--bg);
     padding: 1rem;
-    min-height: 88px;
+    min-height: 190px;
     font-size: 0.95rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.1rem;
+  }
+
+  .studio-cucurbits .context-item h3 {
+    margin: 0 0 0.45rem;
+    font-size: 1rem;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+  }
+
+  .studio-cucurbits .context-item p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.48;
+  }
+
+  .studio-cucurbits .context-meta {
+    color: var(--muted);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .studio-cucurbits .context-link {
+    display: inline-flex;
+    width: fit-content;
+    border-bottom: 1px solid currentColor;
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
   }
 
   .studio-cucurbits .collab {
@@ -744,15 +778,65 @@ permalink: /cucurbits/
             <p class="lead">The work has developed internationally across Europe and Japan, spanning contemporary music, moving image, performance, visual art, and technology.</p>
           </div>
           <div class="contexts">
-            <div class="context-item">Klangforum Wien</div>
-            <div class="context-item">Ensemble Modern</div>
-            <div class="context-item">Ensemble Proton Bern</div>
-            <div class="context-item">IRCAM</div>
-            <div class="context-item">Le Fresnoy</div>
-            <div class="context-item">Orchestre de la HEM</div>
-            <div class="context-item">Sonicware LIVEN Ambient</div>
-            <div class="context-item">Sound Logo / Sonic Branding</div>
-            <div class="context-item">AI / Creative Research</div>
+            <article class="context-item">
+              <div>
+                <div class="context-meta">Commission / Ensemble</div>
+                <h3>impuls × Klangforum Wien</h3>
+                <div class="lang-block lang-block--ja"><p>impuls 国際作曲コンクールにより2023年委嘱作曲家に選出。Klangforum Wien とのワークショップと、同アンサンブルのための新作委嘱へ接続したプロジェクト。</p></div>
+                <div class="lang-block lang-block--en"><p>Selected as an impuls commissioned composer for 2023, connected to a workshop with Klangforum Wien and a new commissioned work for the ensemble.</p></div>
+              </div>
+              <a class="context-link" href="https://www.impuls.cc/archivvor22/en/competition/composers-for-2023.html" target="_blank" rel="noopener noreferrer">View project</a>
+            </article>
+
+            <article class="context-item">
+              <div>
+                <div class="context-meta">Video Documentation</div>
+                <h3>Performance / Ensemble Project</h3>
+                <div class="lang-block lang-block--ja"><p>アンサンブル、身体性、映像、空間的な音響を含むプロジェクトの記録映像。Studio Cucurbits. の学際的な制作文脈を示すアーカイブ。</p></div>
+                <div class="lang-block lang-block--en"><p>Video documentation of a project involving ensemble practice, embodiment, moving image, and spatial sonic thinking.</p></div>
+              </div>
+              <a class="context-link" href="https://www.youtube.com/watch?v=atHQ7RAiGXg&list=PLGDIvEbr_4IU3HgQ2VLoEb546gWegY2ii&index=9" target="_blank" rel="noopener noreferrer">Watch video</a>
+            </article>
+
+            <article class="context-item">
+              <div>
+                <div class="context-meta">IRCAM / Centre Pompidou</div>
+                <h3>Day 0 - Trans-instrumentalism</h3>
+                <div class="lang-block lang-block--ja"><p>IRCAM Cursus の文脈で制作された、パフォーマー、映像、ジェスチャーセンサー、音響処理による作品。人間が楽器化する状態を「trans-instrumentalism」として扱う。</p></div>
+                <div class="lang-block lang-block--en"><p>An IRCAM Cursus work for performer, video, gesture sensing, and sound processing, exploring the human body becoming an instrument through “trans-instrumentalism.”</p></div>
+              </div>
+              <a class="context-link" href="https://ressources.ircam.fr/en/media/x56d2a9_day-0-trans-instrumentalism-sachie-kobayas" target="_blank" rel="noopener noreferrer">IRCAM archive</a>
+            </article>
+
+            <article class="context-item">
+              <div>
+                <div class="context-meta">Le Fresnoy / Film</div>
+                <h3>The Cosmic Microwaves Background</h3>
+                <div class="lang-block lang-block--ja"><p>Robin Touchard による20分の映画作品。Panorama 26 で発表された、物質、時間、空間の攪乱を扱う映像作品に関わる音楽・サウンドのコラボレーション。</p></div>
+                <div class="lang-block lang-block--en"><p>A music and sound collaboration connected to Robin Touchard’s 20-minute film, presented in Panorama 26, dealing with matter, time, and spatial disturbance.</p></div>
+              </div>
+              <a class="context-link" href="https://www.lefresnoy.net/en/exposition/2207/oeuvre/2256/" target="_blank" rel="noopener noreferrer">Le Fresnoy</a>
+            </article>
+
+            <article class="context-item">
+              <div>
+                <div class="context-meta">Applied Sound</div>
+                <h3>Sonicware LIVEN Ambient</h3>
+                <div class="lang-block lang-block--ja"><p>ハードウェア・シンセサイザーのためのサウンドデザイン。アンビエント、テクスチャ、演奏可能性を結びつける応用的な音響制作。</p></div>
+                <div class="lang-block lang-block--en"><p>Sound design for a hardware synthesizer, connecting ambient texture, instrument design, and performable sonic material.</p></div>
+              </div>
+              <span class="context-link">Sound design</span>
+            </article>
+
+            <article class="context-item">
+              <div>
+                <div class="context-meta">Sonic Identity</div>
+                <h3>Sound Logo / Branding</h3>
+                <div class="lang-block lang-block--ja"><p>ブランド、プロダクト、映像コンテンツのための短い音響アイデンティティ制作。記憶に残る音の輪郭と機能性を設計する。</p></div>
+                <div class="lang-block lang-block--en"><p>Short-form sonic identity for brands, products, and media, designed around memorability, clarity, and functional use.</p></div>
+              </div>
+              <span class="context-link">Commercial work</span>
+            </article>
           </div>
           <div class="image-strip">
             <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/cucurbits003.png" alt="Studio Cucurbits image 3">
