@@ -22,9 +22,6 @@ navigation:
   - name: STUDIO
     url: /cucurbits
     group: secondary
-  - name: Blog
-    url: /dansunrecoindecemonde
-    group: secondary
 
 paginate: 8
 
