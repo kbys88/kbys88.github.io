@@ -1,603 +1,350 @@
+```html
 ---
 layout: page
-title: オンライン作曲・DTMレッスン｜作曲家 小林祥恵｜英語・フランス語対応
-description: 作曲・DTM・音楽理論のオンラインレッスン。初心者から音大受験、プロ志向まで対応。Ableton・電子音響・作曲指導。英語・フランス語・日本語で受講可能。
+title: レッスンページ移行のお知らせ｜小林祥恵
+description: 作曲・DTM・電子音響・サウンドデザインのオンラインレッスンは、新しいオンラインアトリエ Atelier Composition Son へ移行しました。
 permalink: /teach/
 ---
 
-<style>
-  .teach-page * { box-sizing: border-box; margin: 0; padding: 0; }
-
-  /* Color tokens — no opacity layering */
-:root {
-  --t-primary:   #000000;
-  --t-secondary: #000000;
-  --t-muted:     #000000;
-  --t-faint:     #000000;
-  --t-border:    #000000;
-  --t-surface:   transparent;
-  --t-btn-bg:    #000000;
-  --t-btn-fg:    #ffffff;
-}
-
-
-
-  .teach-page { color: var(--t-primary); }
-
-  /* ── Hero ── */
-  .hero { padding: 2.5rem 0 0; margin-bottom: 2rem; }
-  .hero-eyebrow { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--t-faint); margin-bottom: 0.75rem; }
-  .hero-title { font-size: 24px; font-weight: 500; line-height: 1.2; margin-bottom: 1rem; color: var(--t-primary); }
-  .hero-body { font-size: 15px; color: var(--t-secondary); line-height: 1.75; max-width: 560px; margin-bottom: 2rem; }
-
-  .hero-img {
-    width: 100%;
-    aspect-ratio: 16 / 8.5;
-    object-fit: cover;
-    object-position: center 30%;
-    border-radius: 12px;
-    display: block;
-    margin-bottom: 2.5rem;
-    border: none;
-  }
-
-  .hero-video {
-    width: 100%;
-    aspect-ratio: 16 / 8.5;
-    object-fit: cover;
-    object-position: center 30%;
-    border-radius: 12px;
-    display: block;
-    margin-bottom: 1rem;
-    border: none;
-    background: #000;
-  }
-
-  /* ── Section ── */
-  .t-section { margin-bottom: 2.25rem; }
-  .section-label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--t-faint); margin-bottom: 1.1rem; }
-
-  /* ── Features ── */
-  .features-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-bottom: 2rem; }
-  .feat { background: var(--t-surface); border-radius: 8px; padding: 0.85rem 1rem; font-size: 13px; color: var(--t-secondary); display: flex; align-items: flex-start; gap: 8px; }
-  .feat-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--t-muted); margin-top: 5px; flex-shrink: 0; }
-
-  /* ── Lesson cards ── */
-  .lesson-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
-  .lesson-card { border: none; border-radius: 0; padding: 1rem 0; }
-  .lesson-card-title { font-size: 13px; font-weight: 500; color: var(--t-primary); margin-bottom: 0.6rem; }
-  .lesson-card-items { list-style: none; padding: 0; }
-  .lesson-card-items li { font-size: 12px; color: var(--t-secondary); padding: 3px 0; border-bottom: none; line-height: 1.45; }
-  .lesson-card-items li:last-child { border-bottom: none; }
-  .lesson-card-special { border-style: none; }
-  .lesson-card-special .lesson-card-title { color: var(--t-muted); }
-
-  /* ── Materials table ── */
-  .materials-table-wrap {
-    border: none;
-    border-radius: 0;
-    overflow: visible;
-    background: #ffffff !important;
-  }
-  .materials-table {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-    background: #ffffff !important;
-  }
-  .materials-table thead,
-  .materials-table tr,
-  .materials-table tbody {
-    background: #ffffff !important;
-  }
-  .materials-table th,
-  .materials-table td {
-    border-bottom: none;
-    padding: 0.9rem 1rem;
-    vertical-align: top;
-    text-align: left;
-    background: #ffffff !important;
-  }
-  .materials-table tr:last-child th,
-  .materials-table tr:last-child td {
-    border-bottom: none;
-  }
-  .materials-table th {
-    width: 28%;
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--t-primary);
-    background: #ffffff !important;
-  }
-  .materials-table td {
-    font-size: 12px;
-    color: var(--t-secondary);
-    line-height: 1.65;
-  }
-  .materials-table ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .materials-table li + li {
-    margin-top: 0.55rem;
-  }
-
-  /* ── Section photos ── */
-  .section-img { width: 100%; border-radius: 12px; display: block; border: none; margin: 2rem 0; }
-  .section-img-wide { aspect-ratio: 16 / 6; object-fit: cover; object-position: center 40%; }
-  .section-img-dark { aspect-ratio: 16 / 7; object-fit: cover; object-position: center center; }
-
-  /* ── Flow ── */
-  .flow { display: flex; flex-direction: column; }
-  .flow-item { display: flex; gap: 1rem; align-items: flex-start; }
-  .flow-line-wrap { display: flex; flex-direction: column; align-items: center; }
-  .flow-num { width: 24px; height: 24px; border-radius: 50%; border: 0.5px solid var(--t-border); display: flex; align-items: center; justify-content: center; font-size: 11px; color: var(--t-muted); flex-shrink: 0; }
-  .flow-connector { width: 0.5px; height: 28px; background: var(--t-border); }
-  .flow-text { font-size: 14px; color: var(--t-secondary); padding-top: 3px; line-height: 1.55; padding-bottom: 28px; }
-  .flow-item:last-child .flow-text { padding-bottom: 0; }
-
-  /* ── Divider ── */
-  .t-divider { border: none; border-top: 0.5px solid var(--t-border); margin: 2rem 0; }
-
-  /* ── Pricing ── */
-  .pricing-block { border: 0.5px solid var(--t-border); border-radius: 12px; padding: 1.25rem 1.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.75rem; }
-  .price-main { font-size: 26px; font-weight: 500; color: var(--t-primary); }
-  .price-unit { font-size: 14px; font-weight: 400; color: var(--t-faint); }
-  .price-label { font-size: 12px; color: var(--t-faint); margin-top: 2px; }
-  .price-note { font-size: 13px; color: var(--t-secondary); max-width: 300px; line-height: 1.55; }
-  .stripe-badge { display: inline-flex; align-items: center; gap: 5px; border: 0.5px solid var(--t-border); border-radius: 4px; padding: 3px 8px; font-size: 11px; color: var(--t-muted); background: var(--t-surface); }
-
-  /* ── Contact form ── */
-  .contact-form-wrap {
-    margin-top: 1.25rem;
-    border: 0.5px solid var(--t-border);
-    border-radius: 12px;
-    padding: 1.25rem;
-  }
-  .contact-form-intro {
-    font-size: 13px;
-    color: var(--t-secondary);
-    line-height: 1.7;
-    margin-bottom: 1rem;
-  }
-  .contact-form-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-  }
-  .form-field {
-    display: flex;
-    flex-direction: column;
-    gap: 0.45rem;
-  }
-  .form-field-full {
-    grid-column: 1 / -1;
-  }
-  .form-label {
-    font-size: 12px;
-    color: var(--t-primary);
-  }
-  .form-input,
-  .form-select,
-  .form-textarea {
-    width: 100%;
-    border: 0.5px solid var(--t-border);
-    border-radius: 8px;
-    background: transparent;
-    color: var(--t-primary);
-    font-size: 14px;
-    padding: 0.8rem 0.9rem;
-    appearance: none;
-  }
-  .form-input::placeholder,
-  .form-textarea::placeholder {
-    color: var(--t-faint);
-  }
-  .form-textarea {
-    min-height: 132px;
-    resize: vertical;
-    line-height: 1.6;
-  }
-  .form-note {
-    font-size: 12px;
-    color: var(--t-faint);
-    line-height: 1.65;
-    margin-top: 0.9rem;
-  }
-  .contact-form-actions {
-    display: flex;
-    align-items: center;
-    gap: 0.9rem;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-  }
-  .form-status {
-    font-size: 12px;
-    color: var(--t-secondary);
-  }
-
-  /* ── CTA ── */
-  .cta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 2rem; }
-  .btn-primary { padding: 10px 22px; border-radius: 8px; font-size: 14px; font-weight: 500; text-decoration: none; display: inline-block; background: var(--t-btn-bg); color: var(--t-btn-fg); }
-  .btn-secondary { padding: 10px 22px; border-radius: 8px; background: transparent; font-size: 14px; border: 0.5px solid var(--t-border); text-decoration: none; display: inline-block; color: var(--t-secondary); }
-
-  /* ── Profile ── */
-  .profile { display: flex; gap: 1.25rem; align-items: flex-start; }
-  .profile-photo { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; object-position: center top; flex-shrink: 0; border: none; }
-  .profile-name { font-size: 15px; font-weight: 500; color: var(--t-primary); margin-bottom: 2px; }
-  .profile-role { font-size: 12px; color: var(--t-faint); margin-bottom: 0.75rem; }
-  .profile-bio { font-size: 13px; color: var(--t-secondary); line-height: 1.7; }
-  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 1rem; }
-  .tag { font-size: 11px; color: var(--t-secondary); border: 0.5px solid var(--t-border); border-radius: 3px; padding: 3px 8px; background: var(--t-surface); }
-
-  /* ── Q&A ── */
-  .qa-group { margin-bottom: 2rem; }
-  .qa-group-title { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--t-faint); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 0.5px solid var(--t-border); }
-  .qa-item { border-bottom: 0.5px solid var(--t-border); }
-  .qa-item:last-child { border-bottom: none; }
-  .qa-question { width: 100%; text-align: left; background: none; border: none; padding: 0.9rem 0; font-size: 14px; font-weight: 500; color: var(--t-primary); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
-  .qa-icon { font-size: 18px; color: var(--t-muted); flex-shrink: 0; transition: transform 0.2s; line-height: 1; font-weight: 300; }
-.qa-answer {
-  display: none;
-  font-size: 13px;
-  color: var(--t-secondary);
-  line-height: 1.75;
-  padding-bottom: 0;
-}
-  .qa-answer p { margin-bottom: 0.75rem; }
-  .qa-answer p:last-child { margin-bottom: 0; }
-  .qa-answer ul {
-  padding-left: 1.2rem;
-  margin: 0;
-  list-style-position: inside;
-}
-  .qa-answer li { margin-bottom: 0.25rem; }
-  .qa-freq { display: flex; flex-direction: column; gap: 10px; margin: 0.75rem 0; }
-  .qa-freq-item { border: none; border-radius: 0; padding: 0.85rem 0; }
-  .qa-freq-head { font-size: 13px; font-weight: 500; color: var(--t-primary); margin-bottom: 0.35rem; }
-  .qa-freq-body { font-size: 12px; color: var(--t-secondary); line-height: 1.6; }
-  .qa-freq-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 0.5rem; }
-  .qa-freq-tag { font-size: 11px; color: var(--t-muted); border: none; border-radius: 0; padding: 2px 0; background: transparent; }
-  .qa-freq-note { font-size: 12px; color: var(--t-muted); line-height: 1.65; border-top: none; padding-top: 0.75rem; margin-top: 0.25rem; }
-.qa-item.open .qa-answer {
-  display: block;
-  padding-bottom: 1rem;
-}
-  .qa-item.open .qa-icon { transform: rotate(45deg); }
-
-  /* ── Responsive ── */
-  @media (max-width: 540px) {
-    .lesson-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .features-grid { grid-template-columns: 1fr; }
-    .pricing-block { flex-direction: column; }
-    .hero-title { font-size: 20px; }
-    .hero-video,
-    .hero-img { aspect-ratio: 4 / 3.4; object-position: center 20%; }
-    .contact-form-grid { grid-template-columns: 1fr; }
-    .materials-table,
-    .materials-table tbody,
-    .materials-table tr,
-    .materials-table th,
-    .materials-table td {
-      display: block;
-      width: 100%;
-    }
-    .materials-table th,
-    .materials-table td {
-      padding: 0.75rem 0.9rem;
-    }
-    .materials-table th {
-      border-bottom: none;
-      padding-bottom: 0.25rem;
-    }
-    .materials-table td {
-      padding-top: 0;
-    }
-  }
-  @media (max-width: 360px) {
-    .lesson-grid { grid-template-columns: 1fr; }
-  }
-</style>
-
 <!doctype html>
-
 <html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Composition & Sound Design Lessons</title>
+  <meta http-equiv="refresh" content="5; url=https://ateliercompositionson.com/ja/">
+
+  <title>レッスンページ移行のお知らせ｜小林祥恵</title>
 
   <style>
-    *{
-      box-sizing:border-box;
-      margin:0;
-      padding:0;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    body{
-      background:#fff;
-      color:#000;
-      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-      line-height:1.7;
-      -webkit-font-smoothing:antialiased;
+    body {
+      background: #ffffff;
+      color: #000000;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
     }
 
-    a{
-      color:#000;
-      text-decoration:none;
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    .page{
-      max-width:1080px;
-      margin:0 auto;
-      padding:48px 28px 80px;
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 64px 28px 80px;
     }
 
-    header{
-      padding-bottom:52px;
-      border-bottom:1px solid #000;
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
     }
 
-    .eyebrow{
-      font-size:12px;
-      letter-spacing:.16em;
-      text-transform:uppercase;
-      margin-bottom:24px;
+    h1 {
+      font-size: clamp(42px, 7vw, 88px);
+      line-height: .98;
+      letter-spacing: -0.06em;
+      font-weight: 500;
+      margin-bottom: 32px;
     }
 
-    h1{
-      font-size:clamp(42px, 7vw, 96px);
-      line-height:.95;
-      letter-spacing:-0.06em;
-      font-weight:500;
-      margin-bottom:28px;
+    .lead {
+      max-width: 720px;
+      font-size: 18px;
+      line-height: 1.9;
+      margin-bottom: 36px;
     }
 
-    .lead{
-      max-width:720px;
-      font-size:18px;
-      line-height:1.9;
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 64px;
     }
 
-    .buttons{
-      display:flex;
-      flex-wrap:wrap;
-      gap:12px;
-      margin-top:38px;
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 20px;
+      border: 1px solid #000;
+      font-size: 14px;
+      transition: opacity .18s ease;
     }
 
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      padding:13px 18px;
-      border:1px solid #000;
-      font-size:14px;
-      transition:.18s ease;
+    .btn.black {
+      background: #000;
+      color: #fff;
     }
 
-    .btn.black{
-      background:#000;
-      color:#fff;
+    .btn:hover {
+      opacity: .72;
     }
 
-    .btn:hover{
-      opacity:.78;
+    section {
+      padding: 44px 0;
+      border-top: 1px solid #000;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 44px;
     }
 
-    section{
-      padding:54px 0;
-      border-bottom:1px solid #000;
-      display:grid;
-      grid-template-columns:240px 1fr;
-      gap:44px;
+    .label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .16em;
     }
 
-    .label{
-      font-size:12px;
-      text-transform:uppercase;
-      letter-spacing:.16em;
+    h2 {
+      font-size: 28px;
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+      font-weight: 500;
+      margin-bottom: 18px;
     }
 
-    h2{
-      font-size:30px;
-      line-height:1.08;
-      letter-spacing:-0.04em;
-      font-weight:500;
-      margin-bottom:18px;
+    p + p {
+      margin-top: 14px;
     }
 
-    p + p{
-      margin-top:14px;
+    ul {
+      list-style: none;
+      margin-top: 20px;
+      border-top: 1px solid #000;
     }
 
-    ul{
-      list-style:none;
-      margin-top:22px;
-      border-top:1px solid #000;
+    li {
+      padding: 12px 0;
+      border-bottom: 1px solid #000;
     }
 
-    li{
-      padding:12px 0;
-      border-bottom:1px solid #000;
+    .pricing-box {
+      margin-top: 24px;
+      border-top: 1px solid #000;
     }
 
-    .price{
-      margin-top:18px;
-      font-size:42px;
-      line-height:1;
-      letter-spacing:-0.05em;
+    .pricing-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+      border-bottom: 1px solid #000;
+      gap: 20px;
+      flex-wrap: wrap;
     }
 
-    .small{
-      margin-top:10px;
-      font-size:13px;
-      opacity:.68;
+    .pricing-title {
+      font-size: 16px;
     }
 
-    footer{
-      padding-top:42px;
-      font-size:13px;
-      opacity:.6;
+    .pricing-price {
+      font-size: 34px;
+      line-height: 1;
+      letter-spacing: -0.05em;
     }
 
-    @media (max-width:780px){
+    .small {
+      margin-top: 16px;
+      font-size: 13px;
+      opacity: .72;
+    }
 
-      .page{
-        padding:28px 18px 60px;
+    footer {
+      padding-top: 42px;
+      border-top: 1px solid #000;
+      font-size: 13px;
+      opacity: .6;
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        padding: 36px 18px 60px;
       }
 
-      section{
-        grid-template-columns:1fr;
-        gap:20px;
+      section {
+        grid-template-columns: 1fr;
+        gap: 20px;
       }
 
-      .lead{
-        font-size:16px;
+      .lead {
+        font-size: 16px;
       }
 
-      h1{
-        line-height:1;
+      h1 {
+        line-height: 1;
+      }
+
+      .pricing-item {
+        align-items: flex-start;
+        flex-direction: column;
       }
     }
   </style>
-
 </head>
 
 <body>
 
-<div class="page">
+  <main class="page">
 
-<header>
+    <header>
 
-  <div class="eyebrow">
-    Sachie Kobayashi — Composition / Sound Design / Music Creation
-  </div>
+      <div class="eyebrow">
+        Sachie Kobayashi — Composition / Sound Design / Music Creation
+      </div>
 
-  <h1>
-    作曲・音楽制作<br>
-    オンラインレッスン
-  </h1>
+      <h1>
+        レッスンページは<br>
+        新サイトへ移行しました
+      </h1>
 
-  <p class="lead">
-    作曲、DTM、電子音響、サウンドデザイン、AIを用いた創作まで、
-    作家本人によるオンライン個別レッスンを行っています。
-  </p>
+      <p class="lead">
+        作曲・DTM・電子音響・サウンドデザイン・AIを用いた音楽制作のオンラインレッスンは、
+        新しいオンラインアトリエ
+        <strong>Atelier Composition Son</strong>
+        へ移行しました。
+        5秒後に自動的に新しいページへ移動します。
+      </p>
 
-  <div class="buttons">
-    <a class="btn black" href="https://ateliercompositionson.com/ja/" target="_blank" rel="noopener">
-      新しいアトリエページを見る
-    </a>
+      <div class="buttons">
 
-```
-<a class="btn" href="mailto:info@sachiekobayashi.com">
-  メールで相談する
-</a>
-```
+        <a
+          class="btn black"
+          href="https://ateliercompositionson.com/ja/"
+          target="_blank"
+          rel="noopener"
+        >
+          新しいレッスンページを見る
+        </a>
 
-  </div>
+        <a
+          class="btn"
+          href="mailto:info@sachiekobayashi.com"
+        >
+          メールで相談する
+        </a>
 
-</header>
+      </div>
 
-<section>
+    </header>
 
-  <div class="label">
-    about
-  </div>
+    <section>
 
-  <div>
+      <div class="label">
+        about
+      </div>
 
-```
-<h2>
-  Atelier Composition Son
-</h2>
+      <div>
 
-<p>
-  現在、レッスンページは新しいオンラインアトリエ
-  「Atelier Composition Son」へ移行中です。
-</p>
+        <h2>
+          Atelier Composition Son
+        </h2>
 
-<p>
-  作曲・電子音響・サウンドアート・AIと音楽を横断しながら、
-  個人の創作を育てるためのオンラインアトリエとして再構成しています。
-</p>
+        <p>
+          Atelier Composition Son は、
+          作曲・電子音響・サウンドアート・AIと音楽制作を横断する、
+          個人の創作のためのオンラインアトリエです。
+        </p>
 
-<p class="small">
-  ドメイン設定・移行作業中のため、
-  一時的にアクセス状況が不安定になる場合があります。
-</p>
-```
+        <p>
+          初心者の方から、音大受験、作品制作、ポートフォリオ相談、
+          専門的な創作指導まで、目的に応じて個別に対応します。
+        </p>
 
-  </div>
+        <p class="small">
+          ドメイン設定や移行作業の状況により、
+          新サイトへのアクセスが一時的に不安定な場合があります。
+          その場合はメールにてご相談ください。
+        </p>
 
-</section>
+      </div>
 
-<section>
+    </section>
 
-  <div class="label">
-    lessons
-  </div>
+    <section>
 
-  <div>
+      <div class="label">
+        lessons
+      </div>
 
-```
-<h2>
-  レッスン内容
-</h2>
+      <div>
 
-<ul>
-  <li>作曲 / 現代音楽</li>
-  <li>DTM / DAW</li>
-  <li>サウンドデザイン</li>
-  <li>電子音響</li>
-  <li>Max/MSP</li>
-  <li>AIと音楽制作</li>
-  <li>作品講評 / ポートフォリオ</li>
-  <li>個人制作・創作相談</li>
-</ul>
-```
+        <h2>
+          レッスン内容
+        </h2>
 
-  </div>
+        <ul>
+          <li>作曲 / 現代音楽</li>
+          <li>DTM / DAW</li>
+          <li>電子音響 / Musique concrète</li>
+          <li>サウンドデザイン</li>
+          <li>Max/MSP</li>
+          <li>AIと音楽制作</li>
+          <li>作品講評 / ポートフォリオ相談</li>
+          <li>個人制作・創作相談</li>
+        </ul>
 
-</section>
+      </div>
 
-<section>
+    </section>
 
-  <div class="label">
-    pricing
-  </div>
+    <section>
 
-  <div>
+      <div class="label">
+        pricing
+      </div>
 
-```
-<h2>
-  料金
-</h2>
+      <div>
 
-<div class="price">
-  ¥4,800 / 60min
-</div>
+        <h2>
+          料金
+        </h2>
 
-<p class="small">
-  対面レッスン ¥6,000 のところ、
-  オンラインレッスンは 20% OFF で受講可能です。
-</p>
+        <div class="pricing-box">
 
-<p class="small">
-  初回30分相談無料
-</p>
-```
+          <div class="pricing-item">
+            <div class="pricing-title">
+              対面レッスン
+            </div>
 
-  </div>
+            <div class="pricing-price">
+              ¥6,000 / 60min
+            </div>
+          </div>
 
-</section>
+          <div class="pricing-item">
+            <div class="pricing-title">
+              オンラインレッスン（20% OFF）
+            </div>
 
-<footer>
-  © Sachie Kobayashi / Atelier Composition Son
-</footer>
+            <div class="pricing-price">
+              ¥4,800 / 60min
+            </div>
+          </div>
 
-</div>
+        </div>
+
+        <p class="small">
+          初回30分相談無料。
+        </p>
+
+      </div>
+
+    </section>
+
+    <footer>
+      © Sachie Kobayashi / Atelier Composition Son
+    </footer>
+
+  </main>
 
 </body>
 </html>
+```
