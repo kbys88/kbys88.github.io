@@ -19,9 +19,6 @@ navigation:
   - name: Lesson
     url: /teach
     group: secondary
-  - name: STUDIO
-    url: /cucurbits
-    group: secondary
 
 paginate: 8
 

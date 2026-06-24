@@ -1,7 +1,7 @@
 <div class="wrapper-sidebar">
   <header class="sidebar clearfix">
     <div class="site-info">
-      {% if site.avatar %}
+      {% if site.avatar and site.avatar != "" %}
         <a href="{{ site.baseurl }}/" class="site-avatar">
           <img src="{{ site.avatar }}" style="max-width: 100px;" />
         </a>

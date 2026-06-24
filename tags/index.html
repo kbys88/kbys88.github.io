@@ -53,91 +53,123 @@ permalink: /works/
 </div>
 
 <style>
+  .works-page {
+    max-width: 1040px;
+  }
+
   .works-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.45rem 1rem;
+    gap: 0;
     list-style: none;
     padding: 0;
-    margin: 0 0 2rem;
+    margin: 0 0 2.5rem;
+    border-top: 1px solid var(--line-strong);
+    border-left: 1px solid var(--line);
   }
 
   .works-tags li {
     display: inline-flex;
-    gap: 0.35rem;
+    gap: 0.45rem;
     align-items: baseline;
+    margin: 0;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 0.45rem 0.65rem;
+    color: var(--muted);
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
   }
 
   .works-tags .count {
-    font-size: 0.8em;
+    color: var(--ink);
+    font-size: 0.86em;
   }
 
   .works-list {
+    display: grid;
     list-style: none;
     padding: 0;
     margin: 0;
+    border-top: 1px solid var(--line-strong);
   }
 
   .work-item {
-    margin-bottom: 1.15rem;
+    margin: 0;
+    padding: 1.35rem 0;
+    border-bottom: 1px solid var(--line);
   }
 
   .work-link {
-    display: flex;
-    gap: 0.75rem;
-    align-items: center;
+    display: block;
     text-decoration: none;
   }
 
   .work-thumb {
-    width: 42px;
-    height: 42px;
-    flex: 0 0 42px;
+    width: 72px;
+    height: 72px;
     object-fit: cover;
     display: block;
+    filter: grayscale(100%);
   }
 
   .work-text {
-    display: flex;
-    gap: 0.75rem;
-    align-items: baseline;
-    min-width: 0;
+    display: block;
   }
 
   .work-title {
-    text-decoration: underline;
-    text-underline-offset: 0.12em;
+    display: block;
+    max-width: 860px;
+    text-decoration: none;
+    font-size: clamp(1.35rem, 3vw, 2.6rem);
+    line-height: 1.06;
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
   }
 
   .work-text time {
-    font-size: 0.85em;
+    display: block;
+    margin-top: 0.45rem;
+    color: var(--muted);
+    font-size: 0.82rem;
+    letter-spacing: 0.1em;
     white-space: nowrap;
+    text-align: left;
   }
 
   .work-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.35rem 0.65rem;
-    margin-top: 0.25rem;
-    font-size: 0.85em;
+    margin-top: 0.75rem;
+    color: var(--muted);
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
   }
 
   .work-tags.has-thumb {
-    margin-left: 54px;
+    margin-left: 0;
   }
 
-  @media (max-width: 540px) {
+  @media (max-width: 760px) {
     .work-link {
-      align-items: flex-start;
+      grid-template-columns: 1fr;
     }
 
     .work-text {
-      display: block;
+      grid-template-columns: 1fr;
+      gap: 0.35rem;
     }
 
     .work-text time {
       display: block;
-      margin-top: 0.15rem;
+      text-align: left;
+    }
+
+    .work-tags.has-thumb {
+      margin-left: 0;
     }
   }
 </style>

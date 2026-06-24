@@ -1,40 +1,13 @@
 ---
 layout: main
+title: Top
 ---
 
-<style>
-  body {
-    background-color: black !important;
-    color: black;
-    margin: 0;
-    padding: 0;
-  }
+<main class="home-page">
+  <section class="home-hero" aria-label="Sachie Kobayashi">
+    <video class="home-hero__video" autoplay muted loop playsinline poster="{{ '/images/hero_g.png' | relative_url }}">
+      <source src="{{ '/images/sachie_cable.mp4' | relative_url }}" type="video/mp4">
+    </video>
 
-  .layout {
-    background-color: black !important;
-  }
-
-  .wrapper-content {
-    background-color: black !important;
-  }
-
-  .video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-
-  video {
-    width: 80vw;
-    height: auto;
-    max-height: 80vh;
-  }
-</style>
-
-<div class="video-container">
-  <video autoplay muted loop playsinline>
-    <source src="images/sachie_cable.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
+  </section>
+</main>
