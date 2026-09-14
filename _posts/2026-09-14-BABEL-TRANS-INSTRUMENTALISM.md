@@ -9,7 +9,7 @@ comments: false
 ---
 Interactive audiovisual installation (in progress)
 
-<img src="{{ '/images/babel_installation_mockup.jpg' | relative_url }}" alt="Babel / Trans-Instrumentalism — installation mockup: four small screens and near-field speakers" width="100%">
+<img src="{{ '/images/babel_installation_mockup_v2.jpg' | relative_url }}" alt="Babel / Trans-Instrumentalism — installation mockup: four small screens and near-field speakers" width="100%">
 *Installation mockup*
 
 <img src="{{ '/images/babel_canon_sample.jpg' | relative_url }}" alt="Babel / Trans-Instrumentalism — sample image: four mouths behind a membrane, labelled Soprano, Alto, Tenor and Bass" width="100%">
