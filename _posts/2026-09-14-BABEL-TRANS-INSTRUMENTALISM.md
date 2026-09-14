@@ -12,6 +12,9 @@ Interactive audiovisual installation (in progress)
 <img src="{{ '/images/babel_installation_mockup.jpg' | relative_url }}" alt="Babel / Trans-Instrumentalism — installation mockup: four small screens and near-field speakers" width="100%">
 *Installation mockup*
 
+<img src="{{ '/images/babel_canon_sample.jpg' | relative_url }}" alt="Babel / Trans-Instrumentalism — sample image: four mouths behind a membrane, labelled Soprano, Alto, Tenor and Bass" width="100%">
+*Sample image (work in progress, not the final visuals)*
+
 Babel / Trans-Instrumentalism is a new interactive audiovisual installation extending Sachie Kobayashi’s ongoing Trans-Instrumentalism series, which explores shifting relationships between the body, sound, language, instruments and technological systems.
 
 The series began with [Day 0 / Trans-Instrumentalism]({{ '/DAY0TRANS-INSTRUMENTALISM/' | relative_url }}) (2022), developed during the IRCAM Cursus, and continued with RêVeRie (2025), a VR work presented in collaboration with Ensemble Contrechamps at the Geneva International Film Festival. Babel shifts this research toward speech, treating the spoken word itself as a trans-instrumental material: simultaneously acoustic, semantic, visual and synthetic.
