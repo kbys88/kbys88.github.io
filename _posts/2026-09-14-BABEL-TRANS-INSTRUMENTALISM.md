@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Babel / Trans-Instrumentalism
+title: Babel / TRANS-INSTRUMENTALISM
 date: 2026-09-14
 Author: Sachie
 categories: 
@@ -9,15 +9,15 @@ comments: false
 ---
 Interactive audiovisual installation (in progress)
 
-<img src="{{ '/images/babel_installation_mockup_v2.jpg' | relative_url }}" alt="Babel / Trans-Instrumentalism — installation mockup: four small screens and near-field speakers" width="100%">
+<img src="{{ '/images/babel_installation_mockup_v2.jpg' | relative_url }}" alt="Babel / TRANS-INSTRUMENTALISM — installation mockup: four small screens and near-field speakers" width="100%">
 *Installation mockup*
 
-<img src="{{ '/images/babel_canon_sample.jpg' | relative_url }}" alt="Babel / Trans-Instrumentalism — sample image: four mouths behind a membrane, labelled Soprano, Alto, Tenor and Bass" width="100%">
+<img src="{{ '/images/babel_canon_sample.jpg' | relative_url }}" alt="Babel / TRANS-INSTRUMENTALISM — sample image: four mouths behind a membrane, labelled Soprano, Alto, Tenor and Bass" width="100%">
 *Sample image (work in progress, not the final visuals)*
 
-Babel / Trans-Instrumentalism is a new interactive audiovisual installation extending Sachie Kobayashi’s ongoing Trans-Instrumentalism series, which explores shifting relationships between the body, sound, language, instruments and technological systems.
+Babel / TRANS-INSTRUMENTALISM is a new interactive audiovisual installation extending Sachie Kobayashi’s ongoing TRANS-INSTRUMENTALISM series, which explores shifting relationships between the body, sound, language, instruments and technological systems.
 
-The series began with [Day 0 / Trans-Instrumentalism]({{ '/DAY0TRANS-INSTRUMENTALISM/' | relative_url }}) (2022), developed during the IRCAM Cursus, and continued with RêVeRie (2025), a VR work presented in collaboration with Ensemble Contrechamps at the Geneva International Film Festival. Babel shifts this research toward speech, treating the spoken word itself as a trans-instrumental material: simultaneously acoustic, semantic, visual and synthetic.
+The series began with [Day 0 / TRANS-INSTRUMENTALISM]({{ '/DAY0TRANS-INSTRUMENTALISM/' | relative_url }}) (2022), developed during the IRCAM Cursus, and continued with RêVeRie (2025), a VR work presented in collaboration with Ensemble Contrechamps at the Geneva International Film Festival. Babel shifts this research toward speech, treating the spoken word itself as a trans-instrumental material: simultaneously acoustic, semantic, visual and synthetic.
 
 A visitor’s voice passes through processes of machine listening, transcription, semantic transformation, synthetic speech, sound and image. Rather than attempting to overcome language barriers through perfect translation, the work treats recognition, mistranslation, delay, accent, silence and fragmentation as compositional material. The AI and voice-technology layer is developed in collaboration with Frederik Bous, a researcher in sound and AI, and is conceived not as a conversational system but as a means of fragmenting, translating, misrecognizing and re-synthesizing speech as compositional material.
 
