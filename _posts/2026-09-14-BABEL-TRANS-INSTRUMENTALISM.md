@@ -1,5 +1,6 @@
 ---
 layout: post
+description: "Babel / TRANS-INSTRUMENTALISM by Sachie Kobayashi: an interactive audiovisual installation in progress, exploring voice, translation and synthetic speech."
 title: Babel / TRANS-INSTRUMENTALISM
 date: 2026-09-14
 Author: Sachie

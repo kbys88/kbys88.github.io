@@ -1,4 +1,5 @@
 <head>
+  <meta charset="utf-8" />
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CC17VRJ7J6"></script>
@@ -10,9 +11,12 @@
   gtag('config', 'G-CC17VRJ7J6');
 </script>
   
-  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+  {% capture default_title %}{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}{% endcapture %}
+  {% assign seo_title = page.seo_title | default: default_title | strip %}
+  <title>{{ seo_title | escape }}</title>
 
   {% include meta.html %}
+  {% if page.person_schema %}{% include person.html %}{% endif %}
   {% include fonts.html %}
 
   <!--[if lt IE 9]>

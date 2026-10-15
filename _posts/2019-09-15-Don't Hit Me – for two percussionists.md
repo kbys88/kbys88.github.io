@@ -1,5 +1,6 @@
 ---
 layout: post
+description: "Don't Hit Me by Sachie Kobayashi: a theatrical work for two percussionists, premiered by percussion CYTi at the Swiss Chamber Music Festival in 2019."
 title: Don't Hit Me – for two percussionists
 date: 2019-9-15
 tags: [Duo, Percussion]

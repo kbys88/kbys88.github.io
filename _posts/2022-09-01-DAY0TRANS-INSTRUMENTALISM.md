@@ -1,5 +1,6 @@
 ---
 layout: post
+description: "Day 0 / TRANS-INSTRUMENTALISM by Sachie Kobayashi: performer, video, motion capture and electronics. Created during the IRCAM Cursus in 2022."
 title: Day 0 – TRANS-INSTRUMENTALISM
 date: 2022-09-01
 Author: Sachie

@@ -1,5 +1,6 @@
 ---
 layout: post
+description: "The Cosmic Microwaves Background: sound design and music by Sachie Kobayashi for Robin Touchard’s audiovisual installation at Le Fresnoy, Panorama 26 (2024)."
 title: The Cosmic Microwaves Background
 date: 2024-06-01
 Author: Sachie
