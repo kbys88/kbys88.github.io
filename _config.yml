@@ -10,6 +10,8 @@ navigation:
     url: /
   - name: Bio
     url: /bio
+  - name: 日本語プロフィール
+    url: /ja/profile/
   - name: Sound
     url: /sound
   - name: Works
@@ -31,7 +33,9 @@ footer-text: Copyright (c) 2025 Sachie Kobayashi
 
 google_analytics:
 
-url: "https://kbys88.github.io"
+url: "https://www.sachiekobayashi.com"
+baseurl: ""
+lang: en
 
 permalink: /:title/
 paginate_path: /page:num/
@@ -57,6 +61,7 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - scripts
 
 excerpt_separator: ---
 

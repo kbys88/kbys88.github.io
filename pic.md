@@ -1,4 +1,5 @@
 ---
+description: "Images of performances and audiovisual works by Sachie Kobayashi."
 layout: main
 title: Pic
 permalink: /pic/

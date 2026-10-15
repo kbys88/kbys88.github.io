@@ -1,3 +1,11 @@
+---
+layout: page
+title: Archive / Cleanup Manifest
+permalink: /ARCHIVE_MANIFEST/
+sitemap: false
+noindex: true
+---
+
 # Archive / Cleanup Manifest
 
 This file records cleanup candidates without deleting or moving media files.

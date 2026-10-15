@@ -624,3 +624,23 @@ footer p {
 }
 
 @import "highlights";
+
+/* Identity below the existing full-screen film. */
+.home-intro {
+  color: var(--ink);
+  padding: clamp(3rem, 7vw, 6rem) clamp(1.5rem, 6vw, 5.5rem);
+  max-width: 980px;
+}
+.home-intro h1 { font-size: clamp(1.8rem, 3.4vw, 3rem); line-height: 1.4; }
+.home-intro h1 span { display: block; font-size: 0.6em; margin-top: 0.4rem; }
+.home-intro p { max-width: 38rem; line-height: 1.9; }
+.home-intro__role { margin: 1.5rem 0 1rem; color: var(--ink); }
+.profile-links { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; margin: 1.75rem 0; }
+.profile-links a { border-bottom: 1px solid var(--line); font-size: 0.95rem; }
+.profile-ja { max-width: 860px; }
+.profile-ja .entry { line-height: 1.9; }
+.profile-ja h1 { font-size: clamp(2rem, 4vw, 4rem); line-height: 1.35; }
+.profile-ja h2 { font-size: clamp(1.3rem, 2.5vw, 2rem); line-height: 1.5; margin: 2.5rem 0 1rem; }
+.profile-ja h3 { margin: 1.5rem 0 0.5rem; line-height: 1.5; }
+.profile-ja__portrait { width: 100%; max-width: 420px; margin: 2rem 0; }
+.profile-ja .profile-ja__latin { font-size: 1.15rem; letter-spacing: 0.04em; color: var(--ink); }

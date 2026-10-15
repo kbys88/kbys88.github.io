@@ -1,5 +1,6 @@
 ---
 layout: post
+description: "Original sound presets by Sachie Kobayashi for the Sonicware LIVEN Ambient Ø synthesizer: evolving ambient textures and sound design."
 title: Sonicware LIVEN Ambient Ø
 date: 2025-05-01
 Author: Sachie

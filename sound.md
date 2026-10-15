@@ -1,4 +1,5 @@
 ---
+description: "Selected recordings and sound works by Sachie Kobayashi, composer and sound artist."
 layout: page
 title: Sound
 permalink: /sound/

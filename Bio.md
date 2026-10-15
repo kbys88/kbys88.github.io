@@ -1,6 +1,17 @@
 ---
 layout: page
 title: Bio
+seo_title: "Sachie Kobayashi | Biography — Composer & Sound Artist"
+description: "Official biography of Sachie Kobayashi, composer and sound artist: contemporary music, commissions, ensembles, IRCAM Cursus, TRANS-INSTRUMENTALISM, awards and education."
+lang: en
+person_schema: true
+translations:
+  - lang: en
+    url: /bio/
+  - lang: ja
+    url: /ja/profile/
+  - lang: x-default
+    url: /bio/
 permalink: /bio/
 ---
 
@@ -77,6 +88,8 @@ permalink: /bio/
 </style>
 
 <div class="bio-page">
+  <nav class="profile-links" aria-label="Biography languages"><a href="{{ '/bio/' | relative_url }}" lang="en" hreflang="en" aria-current="page">English</a><a href="{{ '/ja/profile/' | relative_url }}" lang="ja" hreflang="ja">日本語</a></nav>
+  <p>Sachie Kobayashi — composer and sound artist. <span lang="ja">小林祥恵</span></p>
   <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/sachie_prof2.png" alt="About">
 
 <p>
@@ -111,19 +124,19 @@ permalink: /bio/
 
   <hr>
 
-  <h2>日本語</h2>
+  <h2>Selected works &amp; commissions</h2>
+  <ul>
+    <li><a href="{{ '/Shifting/' | relative_url }}">Shifting</a> (2022): commissioned by impuls and AVL Cultural Foundation; premiered by Klangforum Wien at impuls Festival, Graz, on 2 August 2023.</li>
+    <li><a href="{{ '/e-tre/' | relative_url }}">être</a> (2022), for clarinet d’amore and seven musicians: commissioned for Ensemble Proton Bern’s Protonwerk No.11.</li>
+    <li><a href="{{ '/DAY0TRANS-INSTRUMENTALISM/' | relative_url }}">Day 0 / TRANS-INSTRUMENTALISM</a> (2022), for performer, video, motion capture and electronics: developed during the IRCAM Cursus; performed by Corentin Marillier at Centre Pompidou on 24 September 2022.</li>
+    <li><a href="{{ '/RÊVERIE-TRANS-INSTRUMENTALISM-(Création)/' | relative_url }}">RêVeRie / TRANS-INSTRUMENTALISM</a> (2025): a VR work presented with Ensemble Contrechamps at the Geneva International Film Festival.</li>
+    <li><a href="{{ '/BABEL-TRANS-INSTRUMENTALISM/' | relative_url }}">Babel / TRANS-INSTRUMENTALISM</a> (in progress): an interactive audiovisual installation exploring voice, language and technological systems.</li>
+  </ul>
+  <p><a href="{{ '/works/' | relative_url }}">All works</a></p>
 
-  <p>神奈川県生まれ。20歳より作曲を学び、その後フランスでアーティストビザを取得。ヨーロッパを中心に音楽教育現場からクリエーションまで幅広く活動。</p>
-
-  <p>令和元年度文化庁新進芸術家海外研修制度研修員。スイス政府優秀奨学金奨学生。公益財団法人野村財団、かけはし芸術文化振興財団、Fondation Hans Wilsdorf、Ville de Genève、Fondation Simon I. Patiñoなどから助成を受ける。</p>
-
-  <p>impuls International Composition Competition 2023受賞。Ars Electronica Forum Wallis Selection 2020 Highly commended。2021年ISCM World Music Days最終選考。2022年IRCAM作曲研究課程修了。</p>
-
-  <p>Klangforum Wien、Ensemble Modern、Ensemble Reconcil、Ensemble Proton Bern、mdi Ensemble、percussion CYTi、Orchestre de la HEM、Ensemble 21、The Geidai Philharmonia Orchestraなどと共演。</p>
-
-  <p>スイスの映像作家Daniel Kunziのドキュメンタリー『pomme de discorde』音楽提供、ヴィデオアーティストエカテリーナ・コステルスカヤとのコラボ。2023年にはパリ国立高等美術学校でのマルチメディアやダンスとのコラボ、2024年はLe FresnoyとIRCAMのコラボに参加。</p>
-
-  <p>ジュネーブ高等音楽院作曲修士、音楽教育修士課程修了。Conseil d'État賞、Prix Tremplin Leenaards/HEM受賞。青山学院大学、東京藝術大学作曲科卒。アカンサス賞、台東区長賞受賞。Pierre Jodlowski、Michael Jarrell、Luis Naon、Gilbert Nouno、安良岡章夫、寺嶋陸也に師事。</p>
+  <h2>IRCAM &amp; artistic research</h2>
+  <p>During the IRCAM Cursus (2021–2022), she explored the relationship between movement, sound and video through <em>Day 0 / TRANS-INSTRUMENTALISM</em>, using the R-IoT motion sensor. The series continued with <em>RêVeRie</em> and the ongoing <em>Babel</em> installation. In 2023 she collaborated on multimedia and dance projects at Beaux-Arts de Paris; in 2024 she participated in a collaboration between Le Fresnoy and IRCAM.</p>
+  <p><a href="https://brahms.ircam.fr/en/composer/sachie-kobayashi">IRCAM composer profile</a> · <a href="https://brahms.ircam.fr/en/work/day-0-trans-instrumentalism">IRCAM work record</a></p>
 
   <hr>
 

@@ -1,5 +1,6 @@
 ---
 layout: post
+description: "RêVeRie / TRANS-INSTRUMENTALISM by Sachie Kobayashi: a VR work presented with Ensemble Contrechamps at the Geneva International Film Festival in 2025."
 title: RÊVERIE - TRANS-INSTRUMENTALISM (Création)
 date: 2025-10-01
 author: Sachie
