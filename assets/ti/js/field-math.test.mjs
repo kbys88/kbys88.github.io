@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {
   decodePoints, subsample, ensemble, glyphPoints, stagger, blendPoints,
   fitGlyph, centreXZ, packTrail, camera, rotation,
+  decodeNormals, ensembleNormals, blendNormals,
   pickLang, revealProgress, reducedMotion,
 } from './field-math.js';
 
@@ -206,6 +207,53 @@ test('blendPoints: out may be from (in place), and the result matches', () => {
   const same = blendPoints(from, from, to, seed, .63, .25);
   assert.equal(same, from);
   for (let j = 0; j < 6; j++) close(same[j], ref[j], 1e-6);
+});
+
+/* ---------- normals ---------- */
+
+test('decodeNormals: Int8 +-127 maps to +-1', () => {
+  const out = decodeNormals(new Int8Array([127, -127, 0, 64, -1, 127]).buffer);
+  assert.ok(out instanceof Float32Array);
+  assert.equal(out.length, 6);
+  close(out[0], 1); close(out[1], -1); close(out[2], 0); close(out[3], 64 / 127); close(out[4], -1 / 127);
+});
+
+test('ensembleNormals: point i takes sets[i % k] at index i, unscaled', () => {
+  const k = 3, count = 12;
+  const sets = Array.from({ length: k }, (_, s) => Float32Array.from({ length: count * 3 }, (_, j) => (j % 3 === 0 ? s : 0)));
+  const out = ensembleNormals(sets, k, count);
+  assert.equal(out.length, count * 3);
+  for (let i = 0; i < count; i++) assert.equal(out[i * 3], i % k);
+  const short = ensembleNormals([Float32Array.from([0, 0, 1])], 1, 4); // fewer points than count: wraps
+  assert.deepEqual(Array.from(short), [0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1]);
+});
+
+test('blendNormals: from at t=0, to at t=1, unit length, head first like the positions', () => {
+  const from = Float32Array.from([0, 1, 0, 0, -1, 0]);           // a head and a foot
+  const nFrom = Float32Array.from([1, 0, 0, 1, 0, 0]);
+  const nTo = Float32Array.from([0, 1, 0, 0, 1, 0]);
+  const seed = Float32Array.from([.5, .5]);
+  const a = blendNormals(new Float32Array(6), nFrom, nTo, from, seed, 0);
+  const b = blendNormals(new Float32Array(6), nFrom, nTo, from, seed, 1);
+  for (let j = 0; j < 6; j++) { close(a[j], nFrom[j]); close(b[j], nTo[j]); }
+  const m = blendNormals(new Float32Array(6), nFrom, nTo, from, seed, .4);
+  close(Math.hypot(m[0], m[1], m[2]), 1); close(Math.hypot(m[3], m[4], m[5]), 1);
+  assert.ok(m[1] > m[4], 'the head has turned further toward the target');
+});
+
+test('blendNormals: opposite normals stay finite; in place works', () => {
+  const from = Float32Array.from([0, 0, 0]);
+  const seed = Float32Array.from([0]);
+  // seed 0, y 0: the point's delay is .25 * spread, so t = .5 lands near the half-way blend
+  for (const t of [.45, .5, .55, .6]) {
+    const n = blendNormals(new Float32Array(3), Float32Array.from([0, 0, 1]), Float32Array.from([0, 0, -1]), from, seed, t);
+    assert.ok(n.every(Number.isFinite));
+    close(Math.hypot(n[0], n[1], n[2]), 1, 1e-5);
+  }
+  const nFrom = Float32Array.from([1, 0, 0]);
+  const ref = blendNormals(new Float32Array(3), nFrom, Float32Array.from([0, 1, 0]), from, seed, .5);
+  assert.equal(blendNormals(nFrom, nFrom, Float32Array.from([0, 1, 0]), from, seed, .5), nFrom);
+  for (let j = 0; j < 3; j++) close(nFrom[j], ref[j]);
 });
 
 /* ---------- fitGlyph / centreXZ ---------- */

@@ -1,47 +1,69 @@
-// The point field behind /transinstrumentalism/: orchestral performers as white point
-// clouds on one fixed WebGL2 canvas. page.js imports this module and calls initField();
+// The point field behind /transinstrumentalism/: orchestral performers as point clouds of
+// light on one fixed WebGL2 canvas. page.js imports this module and calls initField();
 // the state follows html[data-state] on load, then window 'ti:state' events.
 // html[data-field] = 'gl' while the canvas runs, 'still' when the fallback image stays.
-// Pure maths (decoding, ensemble, glyphs, the CPU morph mirror) lives in field-math.js.
+// Pure maths (decoding, ensemble, glyphs, the CPU morph mirror) lives in field-math.js;
+// the bloom and tone mapping in glow.js.
 
 import {
   decodePoints, subsample, ensemble, glyphPoints, reducedMotion, blendPoints, MORPH_SPREAD,
-  fitGlyph, centreXZ, packTrail, camera, rotation,
+  fitGlyph, centreXZ, packTrail, camera, rotation, decodeNormals, ensembleNormals, blendNormals,
 } from './field-math.js';
+import { createGlow, program } from './glow.js';
+
+const ALPHA = { solo: .24, day0: .24, reverie: .26, babel: .22 }; // light per dot, per state
+// The look. size: in-focus dot (CSS px); dof / fling: extra blur, CSS px per unit off the
+// focal plane / per unit flung; exposure and bloom: glow.js tone curve and halo strength.
+// Shading: ambient floor under the key light, the far side's share, rim strength, feet,
+// and the weight left to surfaces seen edge-on.
+const LOOK = {
+  size: 5.2, dof: 9, fling: 16, exposure: 2.2, bloom: 1,
+  ambient: .06, back: .22, rim: .12, feet: .6, edge: .3,
+};
+const g = (v) => v.toFixed(3); // a GLSL float literal
 
 const VS = `#version 300 es
 precision highp float;
 in vec3 aFrom;           // morph start (a blended snapshot when a morph is interrupted)
 in vec3 aTo;             // morph target
 in float aSeed;          // per-point random 0..1
+in vec3 aNFrom;          // surface normal at the start (glyphs face the camera)
+in vec3 aNTo;            // surface normal at the target
 uniform float uMix;      // morph time 0..1 (1 = settled on aTo)
 uniform float uLift;     // mid-flight lift off the path, units (0 under reduced motion)
 uniform float uTime;     // seconds (frozen under reduced motion)
-uniform float uIdle;     // breathing + dust weight (0 under reduced motion)
+uniform float uIdle;     // breathing, dust and grain weight (0 under reduced motion)
 uniform mat3 uRot;       // turn about y, then the parallax tilt
 uniform mat4 uProj;      // perspective * camera offset (figure centre at z = -uDist)
-uniform float uDist;     // camera distance to the figure centre, units
+uniform float uDist;     // camera distance to the figure centre = the focal plane, units
 uniform vec4 uTrail[8];  // pointer trail, newest first: xy figure-plane units, z strength, w 1 = joined to the next
 uniform float uTrailOn;  // 0 = the trail pushes points away, 1 = it pulls them onto the path (day0)
-uniform float uSize;     // dot diameter in device px at the figure centre
-uniform float uAlpha;    // dot alpha
+uniform float uSize;     // in-focus dot diameter in device px at the figure centre
+uniform float uAlpha;    // light per dot
 uniform float uFade;     // depth fade (reverie): far points dimmer
+uniform float uDof;      // depth of field: extra blur, device px per unit off the focal plane
+uniform float uFling;    // extra blur, device px per unit a point is flung (gesture, morph lift)
 out float vAlpha;
 const float SPREAD = ${MORPH_SPREAD.toFixed(3)};
+const vec3 KEY = vec3(-.544, .593, .593); // key light from the upper front-left (unit)
+const float AMBIENT = ${g(LOOK.ambient)}, BACK = ${g(LOOK.back)}, RIM = ${g(LOOK.rim)}, FEET = ${g(LOOK.feet)}, EDGE = ${g(LOOK.edge)};
 void main() {
-  // morph; blendPoints() in field-math.js mirrors these lines on the CPU
+  // morph; blendPoints() / blendNormals() in field-math.js mirror these lines on the CPU
   float h = clamp((aFrom.y + 1.) * .5, 0., 1.);
   float u = clamp((uMix - (.5 * aSeed + .5 * (1. - h)) * SPREAD) / (1. - SPREAD), 0., 1.);
   float e = u * u * (3. - 2. * u);
   vec3 p = aFrom + (aTo - aFrom) * e;
+  vec3 n = aNFrom + (aNTo - aNFrom) * e;
+  n = dot(n, n) > 1e-8 ? normalize(n) : vec3(0., 0., 1.);
   float l = sin(3.14159265 * e) * uLift * (.5 + aSeed);
   p += vec3(p.x * .6 + cos(aSeed * 81.7) * .4, .55 + .45 * sin(aSeed * 53.1), p.z * .6 + sin(aSeed * 81.7) * .4) * l;
   // always mid-process: breathing, and ~2.5% of the points lifting off like dust
   float t = uTime;
   p += uIdle * .006 * sin(vec3(t * .7 + aSeed * 91. + p.y * 4., t * .9 + aSeed * 57. + p.z * 4., t * .8 + aSeed * 23. + p.x * 4.));
-  float dust = step(fract(aSeed * 37.31), .025) * pow(max(0., sin(t * (.45 + .4 * fract(aSeed * 13.7)) + aSeed * 40.)), 3.);
-  p += uIdle * dust * .15 * vec3(p.x * 1.2, 1., p.z * 1.2);
+  float dust = uIdle * step(fract(aSeed * 37.31), .025) * pow(max(0., sin(t * (.45 + .4 * fract(aSeed * 13.7)) + aSeed * 40.)), 3.);
+  p += dust * .15 * vec3(p.x * 1.2, 1., p.z * 1.2);
   vec3 q = uRot * p;
+  vec3 nw = uRot * n;
   // gesture: distance to each trail segment, in the plane through the figure centre
   vec2 d = vec2(0.);
   float F = 0.;
@@ -57,21 +79,35 @@ void main() {
     d += mix(normalize(v + 1e-5) * .34 * (.6 + .8 * aSeed), -v * .9, uTrailOn) * f;
     F += f;
   }
-  q.xy += d / max(F, 1.);
+  d /= max(F, 1.);
+  q.xy += d;
   q.z *= 1. - .7 * uTrailOn * min(F, 1.);
   gl_Position = uProj * vec4(q, 1.);
+  // light: wrapped key so shadows never go black, a faint rim on grazing surfaces; the far
+  // side of the body (no depth test) and the feet read darker. Surfaces seen edge-on pile
+  // their points up on screen, so each point is weighted by its projected area (|n.z|):
+  // a lit surface then reads as an even surface, not as a glowing outline.
+  float key = max(dot(nw, KEY) + .5, 0.) / 1.5;
+  float lit = (AMBIENT + (1. - AMBIENT) * key) * mix(BACK, 1., smoothstep(-.5, .35, nw.z)) + RIM * pow(1. - abs(nw.z), 3.);
+  lit *= mix(FEET, 1., smoothstep(-1., .15, p.y)) * mix(EDGE, 1., abs(nw.z));
+  // depth of field: blur grows the dot and spreads the same light over its area
   float depth = uDist - q.z;
-  gl_PointSize = uSize * uDist / depth;
-  vAlpha = uAlpha * (1. - uFade * clamp((depth - uDist + .8) / 3., 0., .75));
+  float s = uSize * uDist / depth * (.8 + .35 * lit);
+  float coc = abs(depth - uDist) * uDof + (length(d) + l + dust * .15) * uFling;
+  float S = min(sqrt(s * s + coc * coc), 48.);
+  gl_PointSize = S;
+  float grain = 1. + uIdle * .14 * (fract(aSeed * 7919.13 + floor(t * 18.) * .618034) - .5);
+  vAlpha = uAlpha * lit * grain * s * s / (S * S) * (1. - uFade * clamp((depth - uDist + .8) / 3., 0., .75));
 }`;
 
 const FS = `#version 300 es
 precision mediump float;
 in float vAlpha;
-uniform vec3 uColor;     // dot colour (#EDEDED)
+uniform vec3 uColor;     // light colour: white into the glow target, #EDEDED drawn straight
 out vec4 o;
 void main() {
-  float a = vAlpha * (1. - smoothstep(.35, 1., length(gl_PointCoord - .5) * 2.));
+  vec2 c = gl_PointCoord * 2. - 1.;
+  float a = vAlpha * exp(-4. * dot(c, c)); // Gaussian dot
   o = vec4(uColor * a, a);
 }`;
 
@@ -85,7 +121,8 @@ const WORD_S = 4.5;     // babel: a new word every ...
 const WORDS = ['BABEL', 'バベル', '/ˈbeɪbəl/', 'bable?'];
 const ENSEMBLE = ['violin', 'cello', 'flute', 'clarinet', 'harp'];
 const INERT = 'a, button, input, select, textarea, label, summary, iframe, video, [data-yt]';
-const ALPHA = { solo: .55, day0: .55, reverie: .5, babel: .5 };
+const BG = [10 / 255, 10 / 255, 10 / 255];
+const INK = [237 / 255, 237 / 255, 237 / 255];
 const noop = () => {};
 const ease = (cur, target, dt, tau) => cur + (target - cur) * (1 - Math.exp(-dt / tau));
 const hash = (i) => { // integer -> 0..1
@@ -93,25 +130,6 @@ const hash = (i) => { // integer -> 0..1
   x = Math.imul(x ^ (x >>> 13), 0xc2b2ae35);
   return ((x ^ (x >>> 16)) >>> 0) / 4294967296;
 };
-
-// The program, or null after one console.warn with the compile / link info logs.
-function link(gl) {
-  const p = gl.createProgram();
-  const logs = [];
-  for (const [type, src] of [[gl.VERTEX_SHADER, VS], [gl.FRAGMENT_SHADER, FS]]) {
-    const s = gl.createShader(type);
-    gl.shaderSource(s, src);
-    gl.compileShader(s);
-    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) logs.push(gl.getShaderInfoLog(s));
-    gl.attachShader(p, s);
-  }
-  ['aFrom', 'aTo', 'aSeed'].forEach((name, i) => gl.bindAttribLocation(p, i, name));
-  gl.linkProgram(p);
-  if (gl.getProgramParameter(p, gl.LINK_STATUS)) return p;
-  logs.push(gl.getProgramInfoLog(p));
-  console.warn('field.js: shader failed, keeping the still image.', logs.filter(Boolean).join(' / '));
-  return null;
-}
 
 // readoutEl is unused (the hero readout was removed); the parameter stays for page.js (R4).
 export function initField(canvas, readoutEl, stillImg) {
@@ -129,7 +147,12 @@ export function initField(canvas, readoutEl, stillImg) {
   try {
     gl = canvas.getContext('webgl2', { alpha: false, antialias: false, depth: false, stencil: false });
   } catch { /* no WebGL2 */ }
-  const prog = gl && link(gl);
+  let prog = null;
+  try {
+    prog = gl && program(gl, VS, FS, ['aFrom', 'aTo', 'aSeed', 'aNFrom', 'aNTo']);
+  } catch (e) {
+    console.warn('field.js: shader failed, keeping the still image.', e.message);
+  }
   if (!prog) return fallback();
   canvas.addEventListener('webglcontextlost', fallback);
   gl.clearColor(10 / 255, 10 / 255, 10 / 255, 1);
@@ -139,11 +162,13 @@ export function initField(canvas, readoutEl, stillImg) {
     || reducedMotion(location.search, matchMedia('(prefers-reduced-motion: reduce)').matches);
   const coarse = matchMedia('(pointer: coarse)').matches;
   const small = coarse || innerWidth < 760;
+  // bloom: three blurred half-size levels; small screens blur a single quarter-size one
+  let glow = createGlow(gl, small ? { mips: 2, blurFrom: 1 } : { mips: 3, blurFrom: 0 });
 
   let want = html.dataset.state || 'solo'; // what the page asks for
   let shown = null;                        // {state, id, word} of the current morph target
   let performers = [], scale = 2, N = 0;
-  let from, to, seed, bFrom, bTo, U;
+  let from, to, nFrom, nTo, seed, facing, bufs, vao, U;
   let soloId = 'violin', nextId = null, word = 0, wordAt = 0, req = 0;
   let mixT = 1;            // morph time 0..1
   let rot = .35;           // yaw of the still image, so the hand-over from it is quiet
@@ -161,21 +186,24 @@ export function initField(canvas, readoutEl, stillImg) {
 
   /* ---------- data ---------- */
 
+  // a target is {p, n}: positions and unit normals, N points each
   const cache = new Map();
+  const bytes = (url) => fetch(url).then((r) => { if (!r.ok) throw new Error(r.status); return r.arrayBuffer(); });
   const load = (id) => {
     if (!cache.has(id)) {
-      cache.set(id, fetch(new URL(`${id}.bin`, POINTS))
-        .then((r) => { if (!r.ok) throw new Error(r.status); return r.arrayBuffer(); })
-        .then((b) => { const p = decodePoints(b, scale); return small ? subsample(p, 2) : p; })
+      const thin = (a) => (small ? subsample(a, 2) : a);
+      cache.set(id, Promise.all([bytes(new URL(`${id}.bin`, POINTS)), bytes(new URL(`${id}.nrm`, POINTS))])
+        .then(([b, n]) => ({ p: thin(decodePoints(b, scale)), n: thin(decodeNormals(n)) }))
         .catch((e) => { cache.delete(id); throw e; }));
     }
     return cache.get(id);
   };
 
   let ens = null;
-  const ensembleSet = () => (ens ??= Promise.all(ENSEMBLE.map(load))
-    .then((sets) => centreXZ(ensemble(sets, sets.length, N))) // turn about the group's centre
-    .catch((e) => { ens = null; throw e; }));
+  const ensembleSet = () => (ens ??= Promise.all(ENSEMBLE.map(load)).then((sets) => ({
+    p: centreXZ(ensemble(sets.map((x) => x.p), sets.length, N)), // turn about the group's centre
+    n: ensembleNormals(sets.map((x) => x.n), sets.length, N),
+  })).catch((e) => { ens = null; throw e; }));
 
   const glyphs = new Map();
   let fonts = null;
@@ -208,8 +236,8 @@ export function initField(canvas, readoutEl, stillImg) {
     const px = x.getImageData(0, 0, c.width, c.height).data;
     const a = new Uint8Array(c.width * c.height);
     for (let i = 0; i < a.length; i++) a[i] = px[i * 4 + 3];
-    // .9 units tall (at most 3.4 wide), centred, a little depth so it stays volumetric
-    return fitGlyph(glyphPoints(a, c.width, c.height, N, 11 + WORDS.indexOf(w)), .9, 3.4, 5);
+    // .9 units tall (at most 3.4 wide), centred, a little depth so it stays volumetric; facing the camera
+    return { p: fitGlyph(glyphPoints(a, c.width, c.height, N, 11 + WORDS.indexOf(w)), .9, 3.4, 5), n: facing };
   }
 
   const pick = (not) => {
@@ -223,7 +251,7 @@ export function initField(canvas, readoutEl, stillImg) {
     const my = ++req;
     const meta = { state, id: soloId, word };
     try {
-      const pts = await (state === 'day0' ? load('conductor')
+      const tgt = await (state === 'day0' ? load('conductor')
         : state === 'reverie' ? ensembleSet()
           : state === 'babel' ? glyph(WORDS[word])
             : load(soloId));
@@ -231,14 +259,14 @@ export function initField(canvas, readoutEl, stillImg) {
       // already showing this target (e.g. solo -> day0 -> solo before the conductor arrived)
       const same = shown && shown.state === state && (state !== 'solo' || shown.id === meta.id)
         && (state !== 'babel' || shown.word === meta.word);
-      if (!same) morphTo(pts, meta);
+      if (!same) morphTo(tgt, meta);
     } catch {
       // network or font failure: stay where we are; with nothing shown yet, keep the still
       if (!shown && my === req) fallback();
     }
   }
 
-  function morphTo(pts, meta) {
+  function morphTo({ p: pts, n: nrm }, meta) {
     if (!shown) { // first target: condense out of a scattered cloud
       for (let i = 0; i < N; i++) {
         const j = i * 3, a = hash(i + N) * 6.2832, r = .3 + .9 * hash(i + 2 * N);
@@ -246,10 +274,17 @@ export function initField(canvas, readoutEl, stillImg) {
         from[j + 1] = pts[j + 1] + (hash(i + 3 * N) - .5) * 1.2;
         from[j + 2] = pts[j + 2] + Math.sin(a) * r;
       }
-    } else if (mixT < 1) blendPoints(from, from, to, seed, mixT, reduce ? 0 : LIFT);
-    else from.set(to);
+      nFrom.set(nrm.subarray(0, N * 3));
+    } else if (mixT < 1) { // normals first: their progress reads the start positions
+      blendNormals(nFrom, nFrom, nTo, from, seed, mixT);
+      blendPoints(from, from, to, seed, mixT, reduce ? 0 : LIFT);
+    } else {
+      from.set(to);
+      nFrom.set(nTo);
+    }
     to.set(pts.subarray(0, N * 3));
-    for (const [b, data] of [[bFrom, from], [bTo, to]]) {
+    nTo.set(nrm.subarray(0, N * 3));
+    for (const [b, data] of [[bufs.from, from], [bufs.to, to], [bufs.nFrom, nFrom], [bufs.nTo, nTo]]) {
       gl.bindBuffer(gl.ARRAY_BUFFER, b);
       gl.bufferSubData(gl.ARRAY_BUFFER, 0, data);
     }
@@ -278,8 +313,11 @@ export function initField(canvas, readoutEl, stillImg) {
     vh = canvas.clientHeight || innerHeight;
     canvas.width = Math.round(vw * dpr);
     canvas.height = Math.round(vh * dpr);
+    gl.bindFramebuffer(gl.FRAMEBUFFER, null);
     gl.viewport(0, 0, canvas.width, canvas.height);
+    gl.clearColor(...BG, 1);
     gl.clear(gl.COLOR_BUFFER_BIT); // a resized buffer is black, not the page colour
+    if (glow && !glow.resize(canvas.width, canvas.height)) glow = null; // no render target: draw straight
     // hero: feet on the top of the title box, head 12% of the viewport below the header
     const box = document.querySelector('.hero__titlebox');
     const head = (document.querySelector('.top')?.getBoundingClientRect().bottom ?? 0) + vh * .12;
@@ -346,16 +384,30 @@ export function initField(canvas, readoutEl, stillImg) {
   function draw() {
     const D = camera(proj, vw, vh, view.cy, view.ppu, view.offX, TAN);
     rotation(rotM, rot + tiltY, tiltX);
-    gl.clear(gl.COLOR_BUFFER_BIT);
+    if (glow) glow.begin();
+    else {
+      gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+      gl.clearColor(...BG, 1);
+      gl.clear(gl.COLOR_BUFFER_BIT);
+    }
+    gl.useProgram(prog);
+    gl.bindVertexArray(vao);
+    gl.enable(gl.BLEND);
+    gl.blendFunc(gl.ONE, gl.ONE);
+    const k = Math.min(1, Math.max(.7, view.ppu / 180)); // small framings: smaller, brighter dots
     const floats = {
       uMix: mixT, uLift: reduce ? 0 : LIFT, uTime: t, uIdle: reduce ? 0 : 1, uDist: D,
-      uTrailOn: mode.attract, uSize: 1.6 * dpr, uAlpha: mode.alpha, uFade: mode.fade,
+      // without the glow there is no tone curve: its slope at low light is the exposure
+      uTrailOn: mode.attract, uSize: LOOK.size * dpr * k, uAlpha: mode.alpha / k * (glow ? 1 : LOOK.exposure * .8), uFade: mode.fade,
+      uDof: LOOK.dof * dpr * k, uFling: LOOK.fling * dpr * k,
     };
     for (const k in floats) gl.uniform1f(U[k], floats[k]);
+    gl.uniform3fv(U.uColor, glow ? [1, 1, 1] : INK); // the glow composite applies the ink colour
     gl.uniformMatrix3fv(U.uRot, false, rotM);
     gl.uniformMatrix4fv(U.uProj, false, proj);
     gl.uniform4fv(U.uTrail, trail);
     gl.drawArrays(gl.POINTS, 0, N);
+    glow?.end({ exposure: LOOK.exposure, strength: LOOK.bloom, bg: BG, ink: INK });
     if (html.dataset.field !== 'gl') {
       html.dataset.field = 'gl';
       setTimeout(() => { if (alive && stillImg) stillImg.hidden = true; }, 1500); // after the CSS fade
@@ -425,10 +477,11 @@ export function initField(canvas, readoutEl, stillImg) {
       performers = index.performers;
       scale = index.scale;
       N = small ? Math.ceil(index.count / 2) : index.count;
-      [from, to] = [new Float32Array(N * 3), new Float32Array(N * 3)];
+      [from, to, nFrom, nTo] = [0, 0, 0, 0].map(() => new Float32Array(N * 3));
       seed = Float32Array.from({ length: N }, (_, i) => hash(i));
-      gl.useProgram(prog);
-      gl.bindVertexArray(gl.createVertexArray());
+      facing = Float32Array.from({ length: N * 3 }, (_, j) => (j % 3 === 2 ? 1 : 0)); // glyph normals
+      vao = gl.createVertexArray();
+      gl.bindVertexArray(vao);
       const buf = (loc, size, data, usage) => {
         const b = gl.createBuffer();
         gl.bindBuffer(gl.ARRAY_BUFFER, b);
@@ -437,14 +490,12 @@ export function initField(canvas, readoutEl, stillImg) {
         gl.vertexAttribPointer(loc, size, gl.FLOAT, false, 0, 0);
         return b;
       };
-      bFrom = buf(0, 3, from, gl.DYNAMIC_DRAW);
-      bTo = buf(1, 3, to, gl.DYNAMIC_DRAW);
-      buf(2, 1, seed, gl.STATIC_DRAW);
-      U = Object.fromEntries(['uMix', 'uLift', 'uTime', 'uIdle', 'uRot', 'uProj', 'uDist', 'uTrail', 'uTrailOn', 'uSize', 'uAlpha', 'uFade', 'uColor']
-        .map((name) => [name, gl.getUniformLocation(prog, name)]));
-      gl.uniform3f(U.uColor, 237 / 255, 237 / 255, 237 / 255);
-      gl.enable(gl.BLEND);
-      gl.blendFunc(gl.ONE, gl.ONE);
+      bufs = {
+        from: buf(0, 3, from, gl.DYNAMIC_DRAW), to: buf(1, 3, to, gl.DYNAMIC_DRAW), seed: buf(2, 1, seed, gl.STATIC_DRAW),
+        nFrom: buf(3, 3, nFrom, gl.DYNAMIC_DRAW), nTo: buf(4, 3, nTo, gl.DYNAMIC_DRAW),
+      };
+      U = Object.fromEntries(['uMix', 'uLift', 'uTime', 'uIdle', 'uRot', 'uProj', 'uDist', 'uTrail', 'uTrailOn',
+        'uSize', 'uAlpha', 'uFade', 'uDof', 'uFling', 'uColor'].map((name) => [name, gl.getUniformLocation(prog, name)]));
       measure();
       soloId = performers[0]?.id ?? soloId;
       nextId = pick(soloId);

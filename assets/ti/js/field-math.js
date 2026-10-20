@@ -128,6 +128,47 @@ export function stagger(t, i, n, spread = .45) {
 /** Share of a morph over which point departures are staggered (field.js shader uses it too). */
 export const MORPH_SPREAD = .45;
 
+// one point's eased morph progress: delay = (seed + head-first bias from its start height) * spread
+const morphProgress = (t, fromY, s, spread) => stagger(t, .5 * s + .5 * (1 - clamp01((fromY + 1) / 2)), 2, spread);
+
+/** Decode an Int8 normal file (nx ny nz interleaved, +-127 = +-1). */
+export function decodeNormals(buf) {
+  const q = new Int8Array(buf);
+  const out = new Float32Array(q.length);
+  for (let i = 0; i < q.length; i++) out[i] = q[i] / 127;
+  return out;
+}
+
+/** Normals for ensemble(): point i takes sets[i % k] at index i, like the positions (no scaling). */
+export function ensembleNormals(sets, k, count) {
+  const out = new Float32Array(count * 3);
+  for (let i = 0; i < count; i++) {
+    const src = sets[i % k];
+    const j = (i % Math.floor(src.length / 3)) * 3;
+    out.set(src.subarray(j, j + 3), i * 3);
+  }
+  return out;
+}
+
+/**
+ * Normals of a morph at time t: the CPU mirror of the shader's normal mix, normalised
+ * ((0, 0, 1) where opposite normals cancel). The progress comes from `from` (positions),
+ * so call it before blendPoints() overwrites them. `out` may be `nFrom`. Returns `out`.
+ */
+export function blendNormals(out, nFrom, nTo, from, seed, t, spread = MORPH_SPREAD) {
+  const n = Math.floor(Math.min(out.length, nFrom.length, nTo.length, from.length) / 3);
+  for (let i = 0; i < n; i++) {
+    const j = i * 3;
+    const e = morphProgress(t, from[j + 1], seed[i], spread);
+    const x = nFrom[j] + (nTo[j] - nFrom[j]) * e;
+    const y = nFrom[j + 1] + (nTo[j + 1] - nFrom[j + 1]) * e;
+    const z = nFrom[j + 2] + (nTo[j + 2] - nFrom[j + 2]) * e;
+    const len = Math.hypot(x, y, z);
+    out.set(len > 1e-4 ? [x / len, y / len, z / len] : [0, 0, 1], j);
+  }
+  return out;
+}
+
 /**
  * Point positions of a morph at time t (0..1): the CPU mirror of the vertex shader in
  * field.js, used to start a new morph from where an interrupted one is. Point delay =
@@ -141,7 +182,7 @@ export function blendPoints(out, from, to, seed, t, lift, spread = MORPH_SPREAD)
     const j = i * 3;
     const s = seed[i];
     const fx = from[j], fy = from[j + 1], fz = from[j + 2];
-    const e = stagger(t, .5 * s + .5 * (1 - clamp01((fy + 1) / 2)), 2, spread);
+    const e = morphProgress(t, fy, s, spread);
     const x = fx + (to[j] - fx) * e;
     const y = fy + (to[j + 1] - fy) * e;
     const z = fz + (to[j + 2] - fz) * e;
