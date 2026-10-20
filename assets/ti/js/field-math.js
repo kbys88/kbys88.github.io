@@ -125,6 +125,132 @@ export function stagger(t, i, n, spread = .45) {
   return u * u * (3 - 2 * u);
 }
 
+/** Share of a morph over which point departures are staggered (field.js shader uses it too). */
+export const MORPH_SPREAD = .45;
+
+/**
+ * Point positions of a morph at time t (0..1): the CPU mirror of the vertex shader in
+ * field.js, used to start a new morph from where an interrupted one is. Point delay =
+ * (seed + head-first bias from from.y) * spread, smoothstep travel (stagger), plus a lift
+ * off the path (outward/upward) of sin(pi * progress) * lift * (.5 + seed).
+ * `out` may be `from`. Returns `out`.
+ */
+export function blendPoints(out, from, to, seed, t, lift, spread = MORPH_SPREAD) {
+  const n = Math.floor(Math.min(out.length, from.length, to.length) / 3);
+  for (let i = 0; i < n; i++) {
+    const j = i * 3;
+    const s = seed[i];
+    const fx = from[j], fy = from[j + 1], fz = from[j + 2];
+    const e = stagger(t, .5 * s + .5 * (1 - clamp01((fy + 1) / 2)), 2, spread);
+    const x = fx + (to[j] - fx) * e;
+    const y = fy + (to[j + 1] - fy) * e;
+    const z = fz + (to[j + 2] - fz) * e;
+    const l = Math.sin(Math.PI * e) * lift * (.5 + s);
+    out[j] = x + (x * .6 + Math.cos(s * 81.7) * .4) * l;
+    out[j + 1] = y + (.55 + .45 * Math.sin(s * 53.1)) * l;
+    out[j + 2] = z + (z * .6 + Math.sin(s * 81.7) * .4) * l;
+  }
+  return out;
+}
+
+/**
+ * Fit glyph points in place: centred on the origin, `height` units tall unless that would
+ * make them wider than `maxWidth`, z multiplied by `zScale`. Returns `points`.
+ */
+export function fitGlyph(points, height, maxWidth, zScale = 1) {
+  let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
+  for (let j = 0; j < points.length; j += 3) {
+    x0 = Math.min(x0, points[j]); x1 = Math.max(x1, points[j]);
+    y0 = Math.min(y0, points[j + 1]); y1 = Math.max(y1, points[j + 1]);
+  }
+  if (!(x1 >= x0)) return points;
+  const k = Math.min(height / Math.max(y1 - y0, 1e-6), maxWidth / Math.max(x1 - x0, 1e-6));
+  const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
+  for (let j = 0; j < points.length; j += 3) {
+    points[j] = (points[j] - cx) * k;
+    points[j + 1] = (points[j + 1] - cy) * k;
+    points[j + 2] *= zScale;
+  }
+  return points;
+}
+
+/** Shift a point set in place so its mean x and z are 0 (y untouched). Returns it. */
+export function centreXZ(points) {
+  const n = Math.floor(points.length / 3);
+  let mx = 0, mz = 0;
+  for (let j = 0; j < n * 3; j += 3) { mx += points[j]; mz += points[j + 2]; }
+  for (let j = 0; j < n * 3; j += 3) { points[j] -= mx / n; points[j + 2] -= mz / n; }
+  return points;
+}
+
+/**
+ * Pack the pointer trail for the shader into `out` (8 vec4, newest first): slot 0 is the
+ * cursor {x, y, s, j}, then up to 7 samples {x, y, at, s, j}. xy = toPlane(x, y) (figure-
+ * plane units); z = strength: the cursor's s, a sample's s * (1 - age / life)^2 (0 past
+ * life or when missing); w = 1 if joined to the next, older entry. Returns the strongest
+ * sample strength.
+ */
+export function packTrail(out, cursor, samples, now, life, toPlane) {
+  let top = 0;
+  for (let k = 0; k < 8; k++) {
+    const e = k ? samples[k - 1] : cursor;
+    const age = !e ? life : k ? now - e.at : 0;
+    const s = age < life ? e.s * (k ? (1 - age / life) ** 2 : 1) : 0;
+    const [x, y] = e ? toPlane(e.x, e.y) : [0, 0];
+    out.set([x, y, s, e?.j ? 1 : 0], k * 4);
+    if (k) top = Math.max(top, s);
+  }
+  return top;
+}
+
+/**
+ * Field camera: fills `proj` (column-major mat4: perspective with tan(fov / 2) = tanHalf,
+ * times a shift that puts the figure centre at screen y = cy CSS px and x offset offX
+ * units) and returns the camera distance at which one unit there spans ppu CSS px.
+ */
+export function camera(proj, vw, vh, cy, ppu, offX, tanHalf) {
+  const D = vh / 2 / (ppu * tanHalf);
+  const ty = (vh / 2 - cy) / ppu;
+  const fy = 1 / tanHalf, fx = fy * vh / vw, n = .1, far = 100;
+  const A = (far + n) / (n - far), B = 2 * far * n / (n - far);
+  proj.set([fx, 0, 0, 0, 0, fy, 0, 0, 0, 0, A, -1, fx * offX, fy * ty, -D * A + B, D]);
+  return D;
+}
+
+/** Rx(tiltX) * Ry(yaw) into `out` (column-major mat3). Returns `out`. */
+export function rotation(out, yaw, tiltX) {
+  const ca = Math.cos(tiltX), sa = Math.sin(tiltX), cb = Math.cos(yaw), sb = Math.sin(yaw);
+  out.set([cb, sa * sb, -ca * sb, 0, ca, sa, sb, -sa * cb, ca * cb]);
+  return out;
+}
+
+const fmt = (v) => clamp01(v).toFixed(2).replace(/^0/, ''); // .62, 1.00
+const pad2 = (n) => String(n).padStart(2, '0');
+
+/**
+ * The field readout as [en, ja] for a state. `v` (values 0..1, clamped):
+ * solo {no, total, en, ja, morph, scatter}; day0 {gesture, trail};
+ * reverie {count, drift}; babel {word, misrec}.
+ */
+export function readoutText(state, v) {
+  const n = (k) => fmt(v[k] ?? 0);
+  if (state === 'day0') {
+    return [`NO INSTRUMENT · GESTURE ${n('gesture')} · TRAIL ${n('trail')}`, `楽器なし · ジェスチャー ${n('gesture')} · 軌跡 ${n('trail')}`];
+  }
+  if (state === 'reverie') {
+    const c = pad2(v.count ?? 5);
+    return [`ENSEMBLE ${c} · SPACE VR · DRIFT ${n('drift')}`, `アンサンブル ${c} · 空間 VR · 漂流 ${n('drift')}`];
+  }
+  if (state === 'babel') {
+    return [`VOICE "${v.word}" · MISRECOGNITION ${n('misrec')}`, `声「${v.word}」 · 誤認 ${n('misrec')}`];
+  }
+  const no = `${pad2(v.no)}/${pad2(v.total)}`;
+  return [
+    `PERFORMER ${no} ${String(v.en).toUpperCase()} · MORPH ${n('morph')} · SCATTER ${n('scatter')}`,
+    `奏者 ${no} ${v.ja} · モーフ ${n('morph')} · 散乱 ${n('scatter')}`,
+  ];
+}
+
 /* ---------- page ---------- */
 
 /** 'ja' or 'en': ?lang= wins, then the stored choice, then English. */

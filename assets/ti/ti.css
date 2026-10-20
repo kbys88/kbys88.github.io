@@ -116,6 +116,11 @@ h1 .l-ja, h2 .l-ja, h3 .l-ja, .st-text .l-ja, .next-big .l-ja, .idx-c-format .l-
 #field { display: block; }
 .field-still { object-fit: contain; object-position: 50% 50%; }
 
+/* field.js sets html[data-field]: "gl" = the canvas runs (the still fades out),
+   "still" = fallback image only (no gesture, so the hint would be untrue) */
+html[data-field="gl"] .field-still { opacity: 0; transition: opacity .9s var(--ease); }
+html[data-field="still"] .hero__hint { visibility: hidden; }
+
 main, .foot { position: relative; z-index: 1; }
 
 /* ---------- 0 · Header ---------- */

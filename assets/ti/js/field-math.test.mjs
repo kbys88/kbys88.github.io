@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  decodePoints, subsample, ensemble, glyphPoints, stagger,
+  decodePoints, subsample, ensemble, glyphPoints, stagger, blendPoints,
+  fitGlyph, centreXZ, readoutText, packTrail, camera, rotation,
   pickLang, revealProgress, reducedMotion,
 } from './field-math.js';
 
@@ -158,6 +159,154 @@ test('stagger: monotonic in t, later points start later', () => {
   }
   assert.ok(stagger(.3, 0, n) > stagger(.3, 99, n));
   assert.equal(stagger(.2, 99, n, .45) <= stagger(.2, 0, n, .45), true);
+});
+
+/* ---------- blendPoints ---------- */
+
+// two points: a head (y = 1) and a foot (y = -1), both travelling +2 in x, same seed
+const pair = () => ({
+  from: Float32Array.from([0, 1, 0, 0, -1, 0]),
+  to: Float32Array.from([2, 1, 0, 2, -1, 0]),
+  seed: Float32Array.from([.5, .5]),
+});
+
+test('blendPoints: from at t=0, to at t=1, with or without lift', () => {
+  const { from, to, seed } = pair();
+  for (const lift of [0, .25]) {
+    const a = blendPoints(new Float32Array(6), from, to, seed, 0, lift);
+    const b = blendPoints(new Float32Array(6), from, to, seed, 1, lift);
+    for (let j = 0; j < 6; j++) {
+      close(a[j], from[j], 1e-6);
+      close(b[j], to[j], 1e-6);
+    }
+  }
+});
+
+test('blendPoints: the head leaves first; no lift keeps points on the straight path', () => {
+  const { from, to, seed } = pair();
+  const out = blendPoints(new Float32Array(6), from, to, seed, .4, 0);
+  assert.ok(out[0] > out[3], 'head is further along x than the foot');
+  close(out[1], 1, 1e-6);
+  close(out[4], -1, 1e-6);
+  assert.ok(out[0] > 0 && out[0] < 2);
+});
+
+test('blendPoints: mid-flight lift raises points off the path, by at most 1.5 * lift', () => {
+  const { from, to, seed } = pair();
+  const flat = blendPoints(new Float32Array(6), from, to, seed, .5, 0);
+  const lifted = blendPoints(new Float32Array(6), from, to, seed, .5, .25);
+  assert.ok(lifted[1] - flat[1] > .01, 'lifted upward');
+  // |direction| <= sqrt(1.6^2 + 1 + 1.6^2) with |x|, |z| <= 2 here; amplitude <= 1.5 * lift
+  for (let j = 0; j < 6; j++) assert.ok(Math.abs(lifted[j] - flat[j]) <= .25 * 1.5 * 1.6 + 1e-6);
+});
+
+test('blendPoints: out may be from (in place), and the result matches', () => {
+  const { from, to, seed } = pair();
+  const ref = blendPoints(new Float32Array(6), from, to, seed, .63, .25);
+  const same = blendPoints(from, from, to, seed, .63, .25);
+  assert.equal(same, from);
+  for (let j = 0; j < 6; j++) close(same[j], ref[j], 1e-6);
+});
+
+/* ---------- fitGlyph / centreXZ ---------- */
+
+test('fitGlyph: centred, scaled to the height, z scaled, in place', () => {
+  const p = Float32Array.from([-2, -1, .01, 2, 1, -.01, 0, 0, 0]); // 4 wide, 2 tall
+  const out = fitGlyph(p, .9, 10, 5);
+  assert.equal(out, p);
+  close(p[0], -.9); close(p[1], -.45); close(p[2], .05);
+  close(p[3], .9); close(p[4], .45); close(p[5], -.05);
+});
+
+test('fitGlyph: a wide word is capped at maxWidth instead', () => {
+  const p = Float32Array.from([0, 0, 0, 10, 1, 0]); // 10 wide, 1 tall, off-centre
+  fitGlyph(p, .9, 3.4);
+  close(p[0], -1.7, 1e-5); close(p[3], 1.7, 1e-5);
+  close(p[4] - p[1], .34, 1e-5);
+});
+
+test('fitGlyph: empty and all-zero sets stay finite', () => {
+  assert.equal(fitGlyph(new Float32Array(0), .9, 3.4).length, 0);
+  const z = fitGlyph(new Float32Array(9), .9, 3.4, 5);
+  assert.ok(z.every((v) => v === 0));
+});
+
+test('centreXZ: mean x and z go to 0, y untouched', () => {
+  const p = Float32Array.from([1, 5, 2, 3, -5, 4]);
+  centreXZ(p);
+  assert.deepEqual(Array.from(p), [-1, 5, -1, 1, -5, 1]);
+});
+
+/* ---------- packTrail ---------- */
+
+test('packTrail: cursor first, samples decay to 0 at life, join flags, strongest returned', () => {
+  const out = new Float32Array(32).fill(9);
+  const samples = [
+    { x: 10, y: 20, at: 9.5, s: .8, j: true },  // age .5
+    { x: 30, y: 40, at: 9.0, s: 1, j: false },  // age 1
+    { x: 50, y: 60, at: 8.0, s: 1, j: true },   // age 2: dead
+  ];
+  const plane = (x, y) => [x / 10, -y / 10];
+  const top = packTrail(out, { x: 5, y: 6, s: .3, j: true }, samples, 10, 1.2, plane);
+  close(out[0], .5); close(out[1], -.6); close(out[2], .3); assert.equal(out[3], 1);
+  close(out[4], 1); close(out[5], -2); close(out[6], .8 * (1 - .5 / 1.2) ** 2); assert.equal(out[7], 1);
+  close(out[10], (1 - 1 / 1.2) ** 2); assert.equal(out[11], 0);
+  assert.equal(out[14], 0);
+  for (let k = 4; k < 8; k++) assert.equal(out[k * 4 + 2], 0, 'missing samples have no strength');
+  close(top, .8 * (1 - .5 / 1.2) ** 2);
+});
+
+/* ---------- camera / rotation ---------- */
+
+test('camera: the figure centre lands on cy, one unit spans ppu px', () => {
+  const proj = new Float32Array(16);
+  const vw = 1000, vh = 800, cy = 300, ppu = 150, tan = Math.tan(17.5 * Math.PI / 180);
+  const D = camera(proj, vw, vh, cy, ppu, 0, tan);
+  const screenY = (x, y, z) => {
+    const cyc = proj[1] * x + proj[5] * y + proj[9] * z + proj[13];
+    const w = proj[3] * x + proj[7] * y + proj[11] * z + proj[15];
+    return (1 - cyc / w) / 2 * vh;
+  };
+  close(screenY(0, 0, 0), cy, 1e-3);
+  close(screenY(0, 1, 0), cy - ppu, 1e-3);
+  close(D, vh / 2 / (ppu * tan), 1e-9);
+});
+
+test('rotation: yaw turns +z toward +x, tilt turns +z toward -y', () => {
+  const m = rotation(new Float32Array(9), Math.PI / 2, 0);
+  const apply = (v) => [0, 1, 2].map((r) => m[r] * v[0] + m[3 + r] * v[1] + m[6 + r] * v[2]);
+  apply([0, 0, 1]).forEach((v, i) => close(v, [1, 0, 0][i], 1e-6));
+  const t = rotation(m, 0, Math.PI / 2);
+  assert.equal(t, m);
+  apply([0, 0, 1]).forEach((v, i) => close(v, [0, -1, 0][i], 1e-6));
+});
+
+/* ---------- readoutText ---------- */
+
+test('readoutText: solo, with .62-style numbers and 1.00 at the top', () => {
+  const v = { no: 7, total: 28, en: 'Clarinet', ja: 'クラリネット', morph: .624, scatter: .08 };
+  assert.deepEqual(readoutText('solo', v), [
+    'PERFORMER 07/28 CLARINET · MORPH .62 · SCATTER .08',
+    '奏者 07/28 クラリネット · モーフ .62 · 散乱 .08',
+  ]);
+  const [en] = readoutText('solo', { ...v, morph: 1, scatter: 1.7 });
+  assert.equal(en, 'PERFORMER 07/28 CLARINET · MORPH 1.00 · SCATTER 1.00');
+  assert.ok(readoutText('solo', { ...v, morph: -.2 })[0].includes('MORPH .00'));
+});
+
+test('readoutText: day0, reverie, babel', () => {
+  assert.deepEqual(readoutText('day0', { gesture: .42, trail: .8 }), [
+    'NO INSTRUMENT · GESTURE .42 · TRAIL .80',
+    '楽器なし · ジェスチャー .42 · 軌跡 .80',
+  ]);
+  assert.deepEqual(readoutText('reverie', { count: 5, drift: .31 }), [
+    'ENSEMBLE 05 · SPACE VR · DRIFT .31',
+    'アンサンブル 05 · 空間 VR · 漂流 .31',
+  ]);
+  assert.deepEqual(readoutText('babel', { word: 'バベル', misrec: .57 }), [
+    'VOICE "バベル" · MISRECOGNITION .57',
+    '声「バベル」 · 誤認 .57',
+  ]);
 });
 
 /* ---------- pickLang ---------- */
