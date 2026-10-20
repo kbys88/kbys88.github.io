@@ -224,33 +224,6 @@ export function rotation(out, yaw, tiltX) {
   return out;
 }
 
-const fmt = (v) => clamp01(v).toFixed(2).replace(/^0/, ''); // .62, 1.00
-const pad2 = (n) => String(n).padStart(2, '0');
-
-/**
- * The field readout as [en, ja] for a state. `v` (values 0..1, clamped):
- * solo {no, total, en, ja, morph, scatter}; day0 {gesture, trail};
- * reverie {count, drift}; babel {word, misrec}.
- */
-export function readoutText(state, v) {
-  const n = (k) => fmt(v[k] ?? 0);
-  if (state === 'day0') {
-    return [`NO INSTRUMENT · GESTURE ${n('gesture')} · TRAIL ${n('trail')}`, `楽器なし · ジェスチャー ${n('gesture')} · 軌跡 ${n('trail')}`];
-  }
-  if (state === 'reverie') {
-    const c = pad2(v.count ?? 5);
-    return [`ENSEMBLE ${c} · SPACE VR · DRIFT ${n('drift')}`, `アンサンブル ${c} · 空間 VR · 漂流 ${n('drift')}`];
-  }
-  if (state === 'babel') {
-    return [`VOICE "${v.word}" · MISRECOGNITION ${n('misrec')}`, `声「${v.word}」 · 誤認 ${n('misrec')}`];
-  }
-  const no = `${pad2(v.no)}/${pad2(v.total)}`;
-  return [
-    `PERFORMER ${no} ${String(v.en).toUpperCase()} · MORPH ${n('morph')} · SCATTER ${n('scatter')}`,
-    `奏者 ${no} ${v.ja} · モーフ ${n('morph')} · 散乱 ${n('scatter')}`,
-  ];
-}
-
 /* ---------- page ---------- */
 
 /** 'ja' or 'en': ?lang= wins, then the stored choice, then English. */

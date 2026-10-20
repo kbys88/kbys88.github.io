@@ -6,7 +6,7 @@
 
 import {
   decodePoints, subsample, ensemble, glyphPoints, reducedMotion, blendPoints, MORPH_SPREAD,
-  fitGlyph, centreXZ, readoutText, packTrail, camera, rotation,
+  fitGlyph, centreXZ, packTrail, camera, rotation,
 } from './field-math.js';
 
 const VS = `#version 300 es
@@ -94,19 +94,26 @@ const hash = (i) => { // integer -> 0..1
   return ((x ^ (x >>> 16)) >>> 0) / 4294967296;
 };
 
+// The program, or null after one console.warn with the compile / link info logs.
 function link(gl) {
   const p = gl.createProgram();
+  const logs = [];
   for (const [type, src] of [[gl.VERTEX_SHADER, VS], [gl.FRAGMENT_SHADER, FS]]) {
     const s = gl.createShader(type);
     gl.shaderSource(s, src);
     gl.compileShader(s);
+    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) logs.push(gl.getShaderInfoLog(s));
     gl.attachShader(p, s);
   }
   ['aFrom', 'aTo', 'aSeed'].forEach((name, i) => gl.bindAttribLocation(p, i, name));
   gl.linkProgram(p);
-  return gl.getProgramParameter(p, gl.LINK_STATUS) ? p : null;
+  if (gl.getProgramParameter(p, gl.LINK_STATUS)) return p;
+  logs.push(gl.getProgramInfoLog(p));
+  console.warn('field.js: shader failed, keeping the still image.', logs.filter(Boolean).join(' / '));
+  return null;
 }
 
+// readoutEl is unused (the hero readout was removed); the parameter stays for page.js (R4).
 export function initField(canvas, readoutEl, stillImg) {
   const html = document.documentElement;
   let alive = true;
@@ -132,7 +139,6 @@ export function initField(canvas, readoutEl, stillImg) {
     || reducedMotion(location.search, matchMedia('(prefers-reduced-motion: reduce)').matches);
   const coarse = matchMedia('(pointer: coarse)').matches;
   const small = coarse || innerWidth < 760;
-  const [outEn, outJa] = ['.l-en', '.l-ja'].map((q) => readoutEl?.querySelector(q));
 
   let want = html.dataset.state || 'solo'; // what the page asks for
   let shown = null;                        // {state, id, word} of the current morph target
@@ -152,7 +158,6 @@ export function initField(canvas, readoutEl, stillImg) {
   const ptr = { x: 0, y: 0, px: 0, py: 0, on: false, touch: false };
   const samples = [];      // pointer trail, newest first: {x, y, at, s, j}
   const trail = new Float32Array(32), proj = new Float32Array(16), rotM = new Float32Array(9);
-  let readAt = 0, readText = '';
 
   /* ---------- data ---------- */
 
@@ -222,8 +227,15 @@ export function initField(canvas, readoutEl, stillImg) {
         : state === 'reverie' ? ensembleSet()
           : state === 'babel' ? glyph(WORDS[word])
             : load(soloId));
-      if (my === req && alive) morphTo(pts, meta);
-    } catch { /* network or font failure: stay where we are */ }
+      if (my !== req || !alive) return;
+      // already showing this target (e.g. solo -> day0 -> solo before the conductor arrived)
+      const same = shown && shown.state === state && (state !== 'solo' || shown.id === meta.id)
+        && (state !== 'babel' || shown.word === meta.word);
+      if (!same) morphTo(pts, meta);
+    } catch {
+      // network or font failure: stay where we are; with nothing shown yet, keep the still
+      if (!shown && my === req) fallback();
+    }
   }
 
   function morphTo(pts, meta) {
@@ -268,11 +280,10 @@ export function initField(canvas, readoutEl, stillImg) {
     canvas.height = Math.round(vh * dpr);
     gl.viewport(0, 0, canvas.width, canvas.height);
     gl.clear(gl.COLOR_BUFFER_BIT); // a resized buffer is black, not the page colour
-    // hero: feet on the top of the title box (narrow screens: of the readout, which then
-    // spans the width under the figure), head 12% of the viewport below the header
-    const box = document.querySelector(vw < 760 ? '.hero__meta' : '.hero__titlebox');
+    // hero: feet on the top of the title box, head 12% of the viewport below the header
+    const box = document.querySelector('.hero__titlebox');
     const head = (document.querySelector('.top')?.getBoundingClientRect().bottom ?? 0) + vh * .12;
-    const feet = Math.min(box ? box.getBoundingClientRect().top + scrollY - (vw < 760 ? 10 : 0) : vh * .8, vh * .92);
+    const feet = Math.min(box ? box.getBoundingClientRect().top + scrollY : vh * .8, vh * .92);
     const hpx = Math.min(Math.max(feet - head, vh * .3), vw * 1.6);
     hero = { cy: feet - hpx / 2, ppu: hpx / 2 };
   }
@@ -351,25 +362,6 @@ export function initField(canvas, readoutEl, stillImg) {
     }
   }
 
-  function readout(now, force) {
-    if (!readoutEl || (!force && now - readAt < 100)) return;
-    readAt = now;
-    const i = performers.findIndex((p) => p.id === shown.id), p = performers[i] ?? { en: '', ja: '' };
-    const [en, ja] = readoutText(shown.state, {
-      no: i + 1, total: performers.length, en: p.en, ja: p.ja,
-      morph: 1 - mixT,     // counts down: 1.00 as a morph starts, .00 when settled
-      scatter: speed, gesture: speed, trail: trailE,
-      count: ENSEMBLE.length, drift: .5 + .5 * Math.sin(t * 2 * Math.PI / 26) * mode.drift,
-      word: WORDS[shown.word], misrec: Math.sin(Math.PI * mixT), // break-apart amount
-    });
-    if (en + ja === readText) return;
-    readText = en + ja;
-    if (outEn && outJa) {
-      outEn.textContent = en;
-      outJa.textContent = ja;
-    } else readoutEl.textContent = html.dataset.lang === 'ja' ? ja : en;
-  }
-
   function tick(now) {
     raf = 0;
     if (!alive || document.hidden || !shown) return;
@@ -378,9 +370,7 @@ export function initField(canvas, readoutEl, stillImg) {
     clock = now / 1000;
     const busy = step(dt);
     draw();
-    const more = !reduce || busy;
-    readout(now, !more);
-    if (more) raf = requestAnimationFrame(tick);
+    if (!reduce || busy) raf = requestAnimationFrame(tick);
   }
   function kick() {
     if (raf || !alive || document.hidden || !shown) return;

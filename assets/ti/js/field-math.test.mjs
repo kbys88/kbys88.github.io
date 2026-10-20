@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   decodePoints, subsample, ensemble, glyphPoints, stagger, blendPoints,
-  fitGlyph, centreXZ, readoutText, packTrail, camera, rotation,
+  fitGlyph, centreXZ, packTrail, camera, rotation,
   pickLang, revealProgress, reducedMotion,
 } from './field-math.js';
 
@@ -279,34 +279,6 @@ test('rotation: yaw turns +z toward +x, tilt turns +z toward -y', () => {
   const t = rotation(m, 0, Math.PI / 2);
   assert.equal(t, m);
   apply([0, 0, 1]).forEach((v, i) => close(v, [0, -1, 0][i], 1e-6));
-});
-
-/* ---------- readoutText ---------- */
-
-test('readoutText: solo, with .62-style numbers and 1.00 at the top', () => {
-  const v = { no: 7, total: 28, en: 'Clarinet', ja: 'クラリネット', morph: .624, scatter: .08 };
-  assert.deepEqual(readoutText('solo', v), [
-    'PERFORMER 07/28 CLARINET · MORPH .62 · SCATTER .08',
-    '奏者 07/28 クラリネット · モーフ .62 · 散乱 .08',
-  ]);
-  const [en] = readoutText('solo', { ...v, morph: 1, scatter: 1.7 });
-  assert.equal(en, 'PERFORMER 07/28 CLARINET · MORPH 1.00 · SCATTER 1.00');
-  assert.ok(readoutText('solo', { ...v, morph: -.2 })[0].includes('MORPH .00'));
-});
-
-test('readoutText: day0, reverie, babel', () => {
-  assert.deepEqual(readoutText('day0', { gesture: .42, trail: .8 }), [
-    'NO INSTRUMENT · GESTURE .42 · TRAIL .80',
-    '楽器なし · ジェスチャー .42 · 軌跡 .80',
-  ]);
-  assert.deepEqual(readoutText('reverie', { count: 5, drift: .31 }), [
-    'ENSEMBLE 05 · SPACE VR · DRIFT .31',
-    'アンサンブル 05 · 空間 VR · 漂流 .31',
-  ]);
-  assert.deepEqual(readoutText('babel', { word: 'バベル', misrec: .57 }), [
-    'VOICE "バベル" · MISRECOGNITION .57',
-    '声「バベル」 · 誤認 .57',
-  ]);
 });
 
 /* ---------- pickLang ---------- */
