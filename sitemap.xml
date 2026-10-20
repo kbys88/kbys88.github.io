@@ -15,5 +15,6 @@ sitemap: false
 {% unless page.url == pagination_url and page_number > 1 %}
   <url><loc>{{ page.url | absolute_url | xml_escape }}</loc></url>
 {% endunless %}{% endunless %}{% endif %}{% endfor %}
+  <url><loc>{{ '/transinstrumentalism/' | absolute_url | xml_escape }}</loc></url>
   <url><loc>{{ '/images/Sachie_Kobayashi_Portofolio_EN_2025_COMP.pdf' | absolute_url | xml_escape }}</loc></url>
 </urlset>
