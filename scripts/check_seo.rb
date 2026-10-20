@@ -5,6 +5,7 @@ require 'cgi'
 root = ARGV.fetch(0)
 baseline = ARGV[1]
 origin = 'https://www.sachiekobayashi.com'
+canonical_aliases = { '/all-TRANS-INSTRUMENTALISM/' => '/transinstrumentalism/' }
 errors = []
 check = ->(ok, message) { errors << message unless ok }
 pages = Dir.glob("#{root}/**/*.html")
@@ -17,7 +18,7 @@ pages.each do |file|
   check.call(doc.css('title').length == 1, "#{path}: duplicate title")
   check.call(doc.at_css('meta[name=\"description\"]')['content'].to_s.length <= 220, "#{path}: overly long description")
   canonical = doc.css('link[rel="canonical"]')
-  check.call(canonical.length == 1 && URI::DEFAULT_PARSER.unescape(canonical.first&.[]('href').to_s) == origin + path, "#{path}: canonical mismatch")
+  check.call(canonical.length == 1 && URI::DEFAULT_PARSER.unescape(canonical.first&.[]('href').to_s) == origin + canonical_aliases.fetch(path, path), "#{path}: canonical mismatch")
   check.call(doc.css('meta[name="description"]').length == 1 && !doc.at_css('meta[name="description"]')['content'].to_s.strip.empty?, "#{path}: missing description")
   check.call(!doc.css('meta[name="robots"]').any? { |m| m['content'].to_s.include?('noindex') }, "#{path}: noindex")
 end
@@ -42,6 +43,9 @@ end
 sitemap = Nokogiri::XML(File.read("#{root}/sitemap.xml"))
 locs = sitemap.xpath('//*[local-name()="loc"]').map(&:text)
 check.call(locs.include?(origin + '/ja/profile/') && locs.include?(origin + '/bio/'), 'Sitemap: profiles')
+check.call(locs.include?(origin + '/transinstrumentalism/') && !locs.include?(origin + '/all-TRANS-INSTRUMENTALISM/'), 'Sitemap: series canonical only')
+work_link = docs['/works/']&.css('a.work-link')&.find { |a| a.text.include?('TRANS-INSTRUMENTALISM PROJECT') }
+check.call(work_link && work_link['href'] == '/transinstrumentalism/', 'Works: direct series link')
 check.call(locs.all? { |u| u.start_with?(origin + '/') } && !locs.any? { |u| u.end_with?('/404.html', '/404/', '/robots.txt') }, 'Sitemap: canonical host / exclusions')
 check.call(File.read("#{root}/robots.txt").include?("Sitemap: #{origin}/sitemap.xml"), 'Robots: sitemap host')
 if baseline
