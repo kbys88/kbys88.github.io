@@ -2,6 +2,8 @@ import tempfile, unittest
 from pathlib import Path
 
 import numpy as np
+from PIL import Image
+import ti_media as tm
 import ti_points as tp
 
 TRI = (np.array([[0,0,0],[1,0,0],[0,1,0],[0,0,1]], np.float32), np.array([[0,1,2],[0,1,3]], np.int32))
@@ -83,6 +85,41 @@ class Still(unittest.TestCase):
                 self.assertAlmostEqual((cols[0] + cols[-1]) / 2 / w, 0.5, delta=0.02)
                 # greyscale dots: no tint
                 self.assertTrue(np.all(a[..., 0] == a[..., 1]) and np.all(a[..., 1] == a[..., 2]))
+
+
+class Media(unittest.TestCase):
+    def test_dither_is_two_tone_and_same_size(self):
+        g = Image.linear_gradient('L').resize((300, 200))
+        d = tm.dither(g)
+        self.assertEqual(d.size, (300, 200))
+        # Image.getdata() is deprecated in Pillow 13 and the suite runs with -W error
+        self.assertLessEqual(len(np.unique(np.asarray(d))), 2)
+
+    def test_dither_dots_are_2x2_blocks_and_white_is_light(self):
+        g = Image.linear_gradient('L').resize((301, 203))  # odd size: the 2x upscale must be cropped back
+        d = tm.dither(g)
+        self.assertEqual(d.size, (301, 203))
+        a = np.asarray(d.convert('L')) > 0
+        blocks = a[:202, :300].reshape(101, 2, 150, 2)
+        self.assertTrue(np.all(blocks == blocks[:, :1, :, :1]))  # every 2x2 block is uniform
+        self.assertGreater(a[-40:].mean(), 0.8)  # gradient runs black (top) to white (bottom)
+        self.assertLess(a[:40].mean(), 0.2)
+
+    def test_dither_stretches_dark_photos(self):
+        dark = Image.linear_gradient('L').resize((200, 200)).point(lambda v: v // 6)  # all values 0..42
+        self.assertGreater((np.asarray(tm.dither(dark).convert('L')) > 0).mean(), 0.3)
+
+    def test_prepare_writes_pair_never_upscales_and_caps_long_edge(self):
+        with tempfile.TemporaryDirectory() as d:
+            big, small = Path(d) / "big.png", Path(d) / "small.png"
+            Image.new('RGB', (3200, 1000), (200, 40, 40)).save(big)
+            Image.new('RGB', (400, 300), (40, 40, 200)).save(small)
+            for src, name, size in [(big, "a", (1600, 500)), (small, "b", (400, 300))]:
+                jpg, png = tm.prepare(src, name, Path(d) / "out")
+                self.assertEqual((jpg.name, png.name), (f"{name}.jpg", f"{name}-d.png"))
+                with Image.open(jpg) as j, Image.open(png) as p:
+                    self.assertEqual((j.size, j.mode), (size, "L"))
+                    self.assertEqual((p.size, p.mode), (size, "1"))
 
 
 if __name__ == "__main__":
