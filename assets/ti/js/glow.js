@@ -92,7 +92,7 @@ export function createGlow(gl, { mips = 3, blurFrom = 0 } = {}) {
     w: loc(comp, 'uW'), exposure: loc(comp, 'uExposure'), bg: loc(comp, 'uBg'), ink: loc(comp, 'uInk'),
   };
   const vao = gl.createVertexArray(); // no attributes: the quad comes from gl_VertexID
-  let fmt = gl.getExtension('EXT_color_buffer_float') ? [gl.R16F, gl.HALF_FLOAT] : [gl.R8, gl.UNSIGNED_BYTE];
+  let fmt = (gl.getExtension('EXT_color_buffer_float') || gl.getExtension('EXT_color_buffer_half_float')) ? [gl.R16F, gl.HALF_FLOAT] : [gl.R8, gl.UNSIGNED_BYTE];
   let scene = null;
   let levels = []; // [{a, b}] ping-pong targets per level
 
@@ -121,6 +121,7 @@ export function createGlow(gl, { mips = 3, blurFrom = 0 } = {}) {
   return {
     /** (Re)allocate for a w x h canvas; false when no usable render target exists. */
     resize(w, h) {
+      if (w <= 0 || h <= 0) return true; // transient empty buffer: keep the current targets
       free(scene);
       levels.forEach((l) => { free(l.a); free(l.b); });
       scene = target(w, h);
@@ -134,6 +135,12 @@ export function createGlow(gl, { mips = 3, blurFrom = 0 } = {}) {
         const lw = Math.max(1, Math.ceil(w / 2 ** (i + 1))), lh = Math.max(1, Math.ceil(h / 2 ** (i + 1)));
         return { a: target(lw, lh), b: target(lw, lh) };
       });
+      if (!ok) {
+        free(scene);
+        levels.forEach((l) => { free(l.a); free(l.b); });
+        scene = null;
+        levels = [];
+      }
       gl.bindFramebuffer(gl.FRAMEBUFFER, null);
       return ok;
     },

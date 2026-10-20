@@ -195,7 +195,6 @@ function initFacades() {
       frame.dataset.ytName = name;
       frame.title = ytTitle(name, html.dataset.lang);
       frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
-      frame.allowFullscreen = true;
       frame.referrerPolicy = 'strict-origin-when-cross-origin';
       btn.replaceWith(frame);
       frame.focus();

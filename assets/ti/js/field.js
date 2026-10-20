@@ -175,9 +175,10 @@ export function initField(canvas, readoutEl, stillImg) {
   let t = 0;               // idle clock (stops under reduced motion)
   let clock = 0, last = 0; // wall clock, s; last frame, ms
   let vw = 1, vh = 1, dpr = 1;
+  let laidOut = false;
   let hero = { cy: .5, ppu: 100 };
   const view = { cy: 0, ppu: 0, offX: 0 }; // figure centre on screen (CSS px), CSS px per unit, drift
-  const mode = { attract: 0, fade: 0, drift: 0, alpha: .55 };
+  const mode = { attract: 0, fade: 0, drift: 0, alpha: ALPHA[want] ?? ALPHA.solo };
   let speed = 0, trailE = 0; // smoothed gesture strength, strongest live trail sample (0..1)
   const ptr = { x: 0, y: 0, px: 0, py: 0, on: false, touch: false };
   const samples = [];      // pointer trail, newest first: {x, y, at, s, j}
@@ -297,22 +298,25 @@ export function initField(canvas, readoutEl, stillImg) {
   /* ---------- layout ---------- */
 
   function measure() {
+    if (!canvas.clientWidth || !canvas.clientHeight) return;
     dpr = Math.min(devicePixelRatio || 1, coarse ? 1.5 : 2);
     vw = canvas.clientWidth || innerWidth;
     vh = canvas.clientHeight || innerHeight;
     canvas.width = Math.round(vw * dpr);
     canvas.height = Math.round(vh * dpr);
+    if (!gl.drawingBufferWidth || !gl.drawingBufferHeight) return;
     gl.bindFramebuffer(gl.FRAMEBUFFER, null);
-    gl.viewport(0, 0, canvas.width, canvas.height);
+    gl.viewport(0, 0, gl.drawingBufferWidth, gl.drawingBufferHeight);
     gl.clearColor(...BG, 1);
     gl.clear(gl.COLOR_BUFFER_BIT); // a resized buffer is black, not the page colour
-    if (glow && !glow.resize(canvas.width, canvas.height)) glow = null; // no render target: draw straight
+    if (glow && !glow.resize(gl.drawingBufferWidth, gl.drawingBufferHeight)) glow = null; // no render target: draw straight
     // hero: feet on the top of the title box, head 12% of the viewport below the header
     const box = document.querySelector('.hero__titlebox');
     const head = (document.querySelector('.top')?.getBoundingClientRect().bottom ?? 0) + vh * .12;
     const feet = Math.min(box ? box.getBoundingClientRect().top + scrollY : vh * .8, vh * .92);
     const hpx = Math.min(Math.max(feet - head, vh * .3), vw * 1.6);
     hero = { cy: feet - hpx / 2, ppu: hpx / 2 };
+    laidOut = true;
   }
 
   // where the figure centre sits on screen (cy, CSS px) and how many CSS px one unit spans
@@ -349,7 +353,7 @@ export function initField(canvas, readoutEl, stillImg) {
     mode.drift = E(mode.drift, st === 'reverie' && !reduce ? 1 : 0, 1.2);
     mode.attract = E(mode.attract, st === 'day0' ? 1 : 0, .4);
     mode.fade = E(mode.fade, st === 'reverie' ? 1 : 0, .8);
-    mode.alpha = E(mode.alpha, ALPHA[st] ?? .55, .8);
+    mode.alpha = E(mode.alpha, ALPHA[st] ?? ALPHA.solo, .8);
     view.offX = mode.drift * .3 * Math.sin(t * 2 * Math.PI / 26);
     const sway = { babel: .3, reverie: .5 }[st]; // words and all five players stay readable:
     if (reduce) rot = sway ? 0 : .35;             // sway about the nearest front-facing turn
@@ -370,6 +374,8 @@ export function initField(canvas, readoutEl, stillImg) {
   }
 
   function draw() {
+    if (!laidOut || !canvas.clientWidth || !canvas.clientHeight
+      || !gl.drawingBufferWidth || !gl.drawingBufferHeight) return;
     const D = camera(proj, vw, vh, view.cy, view.ppu, view.offX, TAN);
     rotation(rotM, rot + tiltY, tiltX);
     if (glow) glow.begin();
@@ -405,7 +411,7 @@ export function initField(canvas, readoutEl, stillImg) {
   function tick(now) {
     raf = 0;
     if (!alive || document.hidden || !shown) return;
-    const dt = Math.min((now - last) / 1000, .05);
+    const dt = Math.max(0, Math.min((now - last) / 1000, .05));
     last = now;
     clock = now / 1000;
     const busy = step(dt);

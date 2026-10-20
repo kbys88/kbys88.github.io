@@ -164,7 +164,9 @@ export function blendNormals(out, nFrom, nTo, from, seed, t, spread = MORPH_SPRE
     const y = nFrom[j + 1] + (nTo[j + 1] - nFrom[j + 1]) * e;
     const z = nFrom[j + 2] + (nTo[j + 2] - nFrom[j + 2]) * e;
     const len = Math.hypot(x, y, z);
-    out.set(len > 1e-4 ? [x / len, y / len, z / len] : [0, 0, 1], j);
+    out[j] = len > 1e-4 ? x / len : 0;
+    out[j + 1] = len > 1e-4 ? y / len : 0;
+    out[j + 2] = len > 1e-4 ? z / len : 1;
   }
   return out;
 }
