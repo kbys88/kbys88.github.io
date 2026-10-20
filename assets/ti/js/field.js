@@ -1,5 +1,6 @@
 // The point field behind /transinstrumentalism/: orchestral performers as point clouds of
-// light on one fixed WebGL2 canvas. page.js imports this module and calls initField();
+// ink on one fixed WebGL2 canvas (the maths still speaks of light: more light, darker ink).
+// page.js imports this module and calls initField();
 // the state follows html[data-state] on load, then window 'ti:state' events.
 // html[data-field] = 'gl' while the canvas runs, 'still' when the fallback image stays.
 // Pure maths (decoding, ensemble, glyphs, the CPU morph mirror) lives in field-math.js;
@@ -13,11 +14,12 @@ import { createGlow, program } from './glow.js';
 
 const ALPHA = { solo: .24, day0: .24, reverie: .26, babel: .22 }; // light per dot, per state
 // The look. size: in-focus dot (CSS px); dof / fling: extra blur, CSS px per unit off the
-// focal plane / per unit flung; exposure and bloom: glow.js tone curve and halo strength.
+// focal plane / per unit flung; exposure and bloom: glow.js tone curve and halo strength
+// (the halo kept low: on paper it reads as a grey smudge round the figure).
 // Shading: ambient floor under the key light, the far side's share, rim strength, feet,
 // and the weight left to surfaces seen edge-on.
 const LOOK = {
-  size: 5.2, dof: 9, fling: 16, exposure: 2.2, bloom: 1,
+  size: 5.2, dof: 9, fling: 16, exposure: 2.2, bloom: .7,
   ambient: .06, back: .22, rim: .12, feet: .6, edge: .3,
 };
 const g = (v) => v.toFixed(3); // a GLSL float literal
@@ -103,7 +105,7 @@ void main() {
 const FS = `#version 300 es
 precision mediump float;
 in float vAlpha;
-uniform vec3 uColor;     // light colour: white into the glow target, #EDEDED drawn straight
+uniform vec3 uColor;     // white light into the glow target; drawn straight, paper minus ink
 out vec4 o;
 void main() {
   vec2 c = gl_PointCoord * 2. - 1.;
@@ -120,8 +122,9 @@ const TILT = .12;       // parallax tilt toward the pointer, rad
 const WORD = 'BABEL';   // babel: the one word the particles form
 const ENSEMBLE = ['violin', 'cello', 'flute', 'clarinet', 'harp'];
 const INERT = 'a, button, input, select, textarea, label, summary, iframe, video, [data-yt]';
-const BG = [10 / 255, 10 / 255, 10 / 255];
-const INK = [237 / 255, 237 / 255, 237 / 255];
+const BG = [1, 1, 1];                       // paper: ti.css --bg
+const INK = [10 / 255, 10 / 255, 10 / 255]; // ti.css --ink
+const DARKEN = BG.map((b, i) => b - INK[i]); // what one full dot takes off the paper
 const noop = () => {};
 const ease = (cur, target, dt, tau) => cur + (target - cur) * (1 - Math.exp(-dt / tau));
 const hash = (i) => { // integer -> 0..1
@@ -154,7 +157,7 @@ export function initField(canvas, readoutEl, stillImg) {
   }
   if (!prog) return fallback();
   canvas.addEventListener('webglcontextlost', fallback);
-  gl.clearColor(10 / 255, 10 / 255, 10 / 255, 1);
+  gl.clearColor(...BG, 1);
   gl.clear(gl.COLOR_BUFFER_BIT); // page colour behind the still until the first frame
 
   const reduce = html.dataset.motion === 'reduce'
@@ -387,6 +390,8 @@ export function initField(canvas, readoutEl, stillImg) {
     gl.useProgram(prog);
     gl.bindVertexArray(vao);
     gl.enable(gl.BLEND);
+    // light adds up in the glow target; drawn straight, each dot takes light off the paper
+    gl.blendEquation(glow ? gl.FUNC_ADD : gl.FUNC_REVERSE_SUBTRACT);
     gl.blendFunc(gl.ONE, gl.ONE);
     const k = Math.min(1, Math.max(.7, view.ppu / 180)); // small framings: smaller, brighter dots
     const floats = {
@@ -396,7 +401,7 @@ export function initField(canvas, readoutEl, stillImg) {
       uDof: LOOK.dof * dpr * k, uFling: LOOK.fling * dpr * k,
     };
     for (const k in floats) gl.uniform1f(U[k], floats[k]);
-    gl.uniform3fv(U.uColor, glow ? [1, 1, 1] : INK); // the glow composite applies the ink colour
+    gl.uniform3fv(U.uColor, glow ? [1, 1, 1] : DARKEN); // the glow composite applies the ink colour
     gl.uniformMatrix3fv(U.uRot, false, rotM);
     gl.uniformMatrix4fv(U.uProj, false, proj);
     gl.uniform4fv(U.uTrail, trail);
