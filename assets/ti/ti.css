@@ -165,7 +165,8 @@ main, .foot { position: relative; z-index: 1; }
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: calc(var(--head-h) + 24px) var(--gut) 0;
+  padding: calc(var(--head-h) + 24px) var(--gut) 2vh;
+  padding-bottom: 2svh;               /* keep the title's glyphs off the bottom edge */
   overflow: clip;
 }
 
@@ -204,8 +205,9 @@ main, .foot { position: relative; z-index: 1; }
   letter-spacing: -.02em;
   text-transform: uppercase;
   white-space: nowrap;
-  /* pull the caps down onto the bottom edge, keep the left stems on the gutter */
-  margin: 0 0 calc(var(--title-fs) * -.035) calc(var(--title-fs) * -.05);
+  /* baseline sits .05em above the line box bottom: pull it onto the padding edge
+     (round-letter overshoot ~.01em stays inside); keep the left stems on the gutter */
+  margin: 0 0 calc(var(--title-fs) * -.04) calc(var(--title-fs) * -.05);
 }
 .hero-title > span { display: block; }
 
@@ -493,12 +495,18 @@ figure.dither {
 }
 figure.dither.is-active { --rr: 160px; }
 
+/* no single bright block may dominate a screen: cap media height, crop to fill.
+   Both layers share box + object-fit, so the original stays registered. */
+.dither__d,
+.dither__o { max-height: 70vh; object-fit: cover; }
+
 .dither__d {
   display: block;
   width: 100%;
   height: auto;
   image-rendering: pixelated;
   mix-blend-mode: screen;
+  opacity: .7;                        /* the dither stays quieter than text and field */
 }
 .dither__o {
   position: absolute;
@@ -517,6 +525,7 @@ figure.dither.is-active { --rr: 160px; }
 .yt-wrap {
   position: relative;
   aspect-ratio: 16 / 9;
+  max-height: 70vh;
   background: var(--black);
 }
 .yt-wrap iframe {
@@ -547,7 +556,7 @@ figure.dither.is-active { --rr: 160px; }
   height: 100%;
   object-fit: cover;
 }
-.yt__d { image-rendering: pixelated; mix-blend-mode: screen; }
+.yt__d { image-rendering: pixelated; mix-blend-mode: screen; opacity: .7; }
 .yt__o { opacity: 0; filter: grayscale(1); transition: opacity .4s var(--ease); }
 .yt:hover .yt__o,
 .yt:focus-visible .yt__o { opacity: 1; }
@@ -580,10 +589,15 @@ figure.dither.is-active { --rr: 160px; }
   display: block;
   width: 100%;
   height: auto;
+  max-height: 70vh;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   opacity: .8;
   mix-blend-mode: screen;             /* softens the dark→bright wrap of the loop */
+  /* the clip's light-grey ground (~0.70) sits above contrast()'s 0.5 pivot, so darken
+     first, then steepen: ground → dark grey, glass highlights stay light, the dark-room
+     half drops to near black. Applies to the poster frame too. */
+  filter: grayscale(1) brightness(.6) contrast(3);
 }
 
 /* ---------- 5 · Next ---------- */
