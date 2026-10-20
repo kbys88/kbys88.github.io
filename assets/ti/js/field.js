@@ -117,8 +117,7 @@ const MORPH_S = 1.8;    // morph duration, s
 const LIFT = .25;       // mid-morph lift, units
 const TURN_S = 60;      // one turn about y, s
 const TILT = .12;       // parallax tilt toward the pointer, rad
-const WORD_S = 4.5;     // babel: a new word every ...
-const WORDS = ['BABEL', 'バベル', '/ˈbeɪbəl/', 'bable?'];
+const WORD = 'BABEL';   // babel: the one word the particles form
 const ENSEMBLE = ['violin', 'cello', 'flute', 'clarinet', 'harp'];
 const INERT = 'a, button, input, select, textarea, label, summary, iframe, video, [data-yt]';
 const BG = [10 / 255, 10 / 255, 10 / 255];
@@ -166,10 +165,10 @@ export function initField(canvas, readoutEl, stillImg) {
   let glow = createGlow(gl, small ? { mips: 2, blurFrom: 1 } : { mips: 3, blurFrom: 0 });
 
   let want = html.dataset.state || 'solo'; // what the page asks for
-  let shown = null;                        // {state, id, word} of the current morph target
+  let shown = null;                        // {state, id} of the current morph target
   let performers = [], scale = 2, N = 0;
   let from, to, nFrom, nTo, seed, facing, bufs, vao, U;
-  let soloId = 'violin', nextId = null, word = 0, wordAt = 0, req = 0;
+  let soloId = 'violin', nextId = null, req = 0;
   let mixT = 1;            // morph time 0..1
   let rot = .35;           // yaw of the still image, so the hand-over from it is quiet
   let tiltX = 0, tiltY = 0;
@@ -211,8 +210,7 @@ export function initField(canvas, readoutEl, stillImg) {
     fonts ??= Promise.race([
       Promise.all([
         document.fonts?.ready,
-        document.fonts?.load('600 200px "Figtree"', 'BABEL bable? /ˈbeɪbəl/'),
-        document.fonts?.load('500 200px "IBM Plex Sans JP"', 'バベル'),
+        document.fonts?.load('600 200px "Figtree"', WORD),
       ]).catch(noop),
       new Promise((r) => setTimeout(r, 3000)), // then whatever sans-serif there is
     ]);
@@ -221,8 +219,7 @@ export function initField(canvas, readoutEl, stillImg) {
   };
   function rasterise(w) {
     const fs = 220;
-    const kana = [...w].some((ch) => ch.codePointAt(0) >= 0x3040 && ch.codePointAt(0) <= 0x30ff);
-    const font = kana ? `500 ${fs}px "IBM Plex Sans JP", sans-serif` : `600 ${fs}px "Figtree", sans-serif`;
+    const font = `600 ${fs}px "Figtree", sans-serif`;
     const c = document.createElement('canvas');
     const x = c.getContext('2d', { willReadFrequently: true });
     x.font = font;
@@ -237,7 +234,7 @@ export function initField(canvas, readoutEl, stillImg) {
     const a = new Uint8Array(c.width * c.height);
     for (let i = 0; i < a.length; i++) a[i] = px[i * 4 + 3];
     // .9 units tall (at most 3.4 wide), centred, a little depth so it stays volumetric; facing the camera
-    return { p: fitGlyph(glyphPoints(a, c.width, c.height, N, 11 + WORDS.indexOf(w)), .9, 3.4, 5), n: facing };
+    return { p: fitGlyph(glyphPoints(a, c.width, c.height, N, 11), .9, 3.4, 5), n: facing };
   }
 
   const pick = (not) => {
@@ -249,16 +246,15 @@ export function initField(canvas, readoutEl, stillImg) {
 
   async function go(state) {
     const my = ++req;
-    const meta = { state, id: soloId, word };
+    const meta = { state, id: soloId };
     try {
       const tgt = await (state === 'day0' ? load('conductor')
         : state === 'reverie' ? ensembleSet()
-          : state === 'babel' ? glyph(WORDS[word])
+          : state === 'babel' ? glyph(WORD)
             : load(soloId));
       if (my !== req || !alive) return;
       // already showing this target (e.g. solo -> day0 -> solo before the conductor arrived)
-      const same = shown && shown.state === state && (state !== 'solo' || shown.id === meta.id)
-        && (state !== 'babel' || shown.word === meta.word);
+      const same = shown && shown.state === state && (state !== 'solo' || shown.id === meta.id);
       if (!same) morphTo(tgt, meta);
     } catch {
       // network or font failure: stay where we are; with nothing shown yet, keep the still
@@ -291,18 +287,11 @@ export function initField(canvas, readoutEl, stillImg) {
     mixT = reduce ? 1 : 0;
     const first = !shown;
     shown = meta;
-    if (meta.state === 'babel') wordAt = clock;
     // warm what comes next
     if (meta.state === 'day0') ensembleSet().catch(noop);
-    if (meta.state === 'reverie' || meta.state === 'babel') glyph(WORDS[(meta.word + (meta.state === 'babel')) % WORDS.length]).catch(noop);
+    if (meta.state === 'reverie') glyph(WORD).catch(noop);
     if (first) Object.assign(view, framing(meta.state));
     kick();
-  }
-
-  function nextWord() {
-    word = (word + 1) % WORDS.length;
-    wordAt = clock;
-    go('babel');
   }
 
   /* ---------- layout ---------- */
@@ -377,7 +366,6 @@ export function initField(canvas, readoutEl, stillImg) {
     trailE = packTrail(trail, cursor, samples, clock, st === 'day0' ? 2 : 1.2,
       (x, y) => [(x - vw / 2) / view.ppu - view.offX, (view.cy - y) / view.ppu]);
 
-    if (!reduce && st === 'babel' && want === 'babel' && clock - wordAt > WORD_S) nextWord();
     return speed > .003 || trailE > .003; // still settling (matters only under reduced motion)
   }
 
@@ -459,7 +447,7 @@ export function initField(canvas, readoutEl, stillImg) {
       nextId = pick(soloId);
       load(nextId).catch(noop); // prefetch the one after
       go('solo');
-    } else if (want === 'babel' && shown.state === 'babel') nextWord();
+    }
   });
   let rt = 0;
   const relayout = () => { measure(); if (shown && reduce) Object.assign(view, framing(shown.state)); kick(); };
