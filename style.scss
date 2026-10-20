@@ -634,6 +634,7 @@ footer p {
 .home-intro h1 { font-size: clamp(1.8rem, 3.4vw, 3rem); line-height: 1.4; }
 .home-intro h1 span { display: block; font-size: 0.6em; margin-top: 0.4rem; }
 .home-intro p { max-width: 38rem; line-height: 1.9; }
+.home-intro p a { border-bottom: 1px solid var(--line); }
 .home-intro__role { margin: 1.5rem 0 1rem; color: var(--ink); }
 .profile-links { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; margin: 1.75rem 0; }
 .profile-links a { border-bottom: 1px solid var(--line); font-size: 0.95rem; }
