@@ -688,3 +688,12 @@ figure.dither.is-active { --rr: 160px; }
     animation: none !important;
   }
 }
+
+/* ?motion=reduce: page.js sets html[data-motion], same effect as the media query */
+html[data-motion="reduce"] { scroll-behavior: auto; }
+html[data-motion="reduce"] *,
+html[data-motion="reduce"] *::before,
+html[data-motion="reduce"] *::after {
+  transition: none !important;
+  animation: none !important;
+}
