@@ -14,8 +14,8 @@ Outputs, under --out (default assets/ti/):
                        value = round(n * 127); same order as the .bin
   points/index.json    {"count", "scale", "performers": [{id, en, ja, section}]}
                        in manifest order
-  img/still.png        1200x1500 white-dot render of one performer on #0A0A0A
-                       (shown when WebGL is unavailable)
+  img/still.png        1200x1500 soft, shaded render of one performer on #0A0A0A,
+                       in the page field's look (shown when WebGL is unavailable)
   img/og.jpg           1200x630 social image from the same render
 
 `scale` is 2.0 unless some performer reaches further than that from the origin
@@ -122,23 +122,68 @@ def en_label(performer_id):
     return performer_id.replace("_", " ").capitalize()
 
 
-def render_still(pts, size, yaw=0.35, fill=0.70):
-    """Orthographic view, turned `yaw` rad about y: additive white dots on #0A0A0A, figure centred and `fill` of the height."""
+def _blur(a, r):
+    """Approximate Gaussian blur (sigma ~ r): three box blurs of radius r along each axis."""
+    r = max(1, int(round(r)))
+    for axis in (0, 1):
+        for _ in range(3):
+            c = np.cumsum(np.pad(a, [(r + 1, r) if ax == axis else (0, 0) for ax in (0, 1)]), axis=axis)
+            a = (np.take(c, range(2 * r + 1, c.shape[axis]), axis=axis) - np.take(c, range(0, c.shape[axis] - 2 * r - 1), axis=axis)) / (2 * r + 1)
+    return a
+
+
+def shade(nrm, y):
+    """field.js's point light (keep in step with its LOOK): wrapped key from the upper
+    front-left, darker far side and feet, faint rim, edge-on surfaces weighted by |n.z|."""
+    key = np.maximum(nrm @ np.array([-0.544, 0.593, 0.593]) + 0.5, 0) / 1.5
+    nz = nrm[:, 2]
+    step = lambda e0, e1, x: (lambda t: t * t * (3 - 2 * t))(np.clip((x - e0) / (e1 - e0), 0, 1))
+    lit = (0.06 + 0.94 * key) * (0.22 + 0.78 * step(-0.5, 0.35, nz)) + 0.12 * (1 - np.abs(nz)) ** 3
+    return lit * (0.6 + 0.4 * step(-1, 0.15, y)) * (0.3 + 0.7 * np.abs(nz))
+
+
+def render_still(pts, size, yaw=0.35, fill=0.70, normals=None):
+    """Orthographic view turned `yaw` rad about y, in field.js's look: Gaussian dots of light
+    sized with the figure, shaded by `normals` when given, with depth of field, a faint halo
+    and the page's tone curve from #0A0A0A up to #EDEDED. Figure centred, `fill` of the height."""
     w, h = size
-    x = pts[:, 0] * math.cos(yaw) + pts[:, 2] * math.sin(yaw)
-    s = fill * h / 2  # y spans -1..+1
-    ix = np.rint((x - (x.min() + x.max()) / 2) * s + w / 2).astype(int)
-    iy = np.rint(h / 2 - pts[:, 1] * s).astype(int)
-    # large renders get a 3x3 soft dot; small ones (og.jpg) single pixels, or the figure clots
-    kernel, gain = (((-1, 0.5), (0, 1.0), (1, 0.5)), 0.5) if h >= 1000 else (((0, 1.0),), 0.85)
+    c, sn = math.cos(yaw), math.sin(yaw)
+    x, z = pts[:, 0] * c + pts[:, 2] * sn, -pts[:, 0] * sn + pts[:, 2] * c
+    s = fill * h / 2  # px per unit: y spans -1..+1
+    k = s / 220       # this figure against the page's hero (~220 px per unit)
+    fx = (x - (x.min() + x.max()) / 2) * s + w / 2
+    fy = h / 2 - pts[:, 1] * s
+    lit = np.ones(len(pts))
+    if normals is not None:
+        n = np.asarray(normals, dtype=np.float64)
+        lit = shade(np.stack([n[:, 0] * c + n[:, 2] * sn, n[:, 1], -n[:, 0] * sn + n[:, 2] * c], axis=1), pts[:, 1])
+    # the page's dot: 5.2 px x (.8 + .35 lit), grown by depth of field (9 px per unit off the
+    # centre plane) with the same light spread over it; Gaussian with sigma = .177 x diameter
+    d0 = 5.2 * k * (0.8 + 0.35 * lit)
+    dia = np.hypot(d0, 9 * k * np.abs(z))
+    peak = 0.24 * lit * (d0 / dia) ** 2
+    ix, iy = np.floor(fx).astype(int), np.floor(fy).astype(int)
+    ox, oy = fx - ix, fy - iy
     acc = np.zeros(w * h)
-    for dy, wy in kernel:
-        for dx, wx in kernel:
-            xx, yy = ix + dx, iy + dy
-            ok = (xx >= 0) & (xx < w) & (yy >= 0) & (yy < h)
-            acc += np.bincount(yy[ok] * w + xx[ok], minlength=w * h) * (wx * wy)
-    grey = np.minimum(BG + 255 * gain * acc, 255).astype(np.uint8)
-    return Image.fromarray(grey.reshape(h, w))
+    edges = np.quantile(dia, [0, 0.3, 0.6, 0.85, 1])  # a few blur sizes instead of one per point
+    band = np.clip(np.searchsorted(edges, dia, side="right") - 1, 0, len(edges) - 2)
+    for b in range(len(edges) - 1):
+        sel = band == b
+        if not sel.any():
+            continue
+        sigma = max(0.45, 0.177 * float(dia[sel].mean()))
+        r = int(np.ceil(3 * sigma))
+        for dy in range(-r, r + 1):
+            for dx in range(-r, r + 1):
+                g = np.exp(-((dx + 0.5 - ox[sel]) ** 2 + (dy + 0.5 - oy[sel]) ** 2) / (2 * sigma * sigma))
+                xx, yy = ix[sel] + dx, iy[sel] + dy
+                ok = (xx >= 0) & (xx < w) & (yy >= 0) & (yy < h)
+                acc += np.bincount(yy[ok] * w + xx[ok], weights=(peak[sel] * g)[ok], minlength=w * h)
+    light = acc.reshape(h, w)
+    # the page's halo (glow.js): blurred copies at about 3, 6 and 13 px, scaled to this figure
+    light = light + sum(wt * _blur(light, rad * k) for wt, rad in ((0.5, 3.2), (0.32, 6.4), (0.22, 12.8)))
+    grey = BG + (237 - BG) * (1 - np.exp(-2.2 * light))
+    return Image.fromarray(np.rint(grey).astype(np.uint8))
 
 
 def main():
@@ -180,9 +225,10 @@ def main():
     }
     (points / "index.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
-    still = clouds[args.still if args.still in clouds else performers[0]["id"]]
-    render_still(still, STILL_SIZE).save(img / "still.png", optimize=True)
-    render_still(still, OG_SIZE).convert("RGB").save(img / "og.jpg", quality=85, optimize=True)
+    sid = args.still if args.still in clouds else performers[0]["id"]
+    still, still_n = clouds[sid], normals[sid]
+    render_still(still, STILL_SIZE, normals=still_n).save(img / "still.png", optimize=True)
+    render_still(still, OG_SIZE, normals=still_n).convert("RGB").save(img / "og.jpg", quality=85, optimize=True)
     print(f"{len(clouds)} performers x {args.count} points, scale {scale} -> {args.out}")
 
 

@@ -112,7 +112,7 @@ class Still(unittest.TestCase):
         # a tall thin figure: x/z within 0.2, y from -1 to +1
         rng = np.random.default_rng(2)
         pts = tp.normalise((rng.random((4000, 3)) * [0.2, 1.0, 0.2]).astype(np.float32))
-        for w, h in [(300, 400), (1200, 1500)]:  # small renders use 1px dots, large ones a soft 3x3 dot
+        for w, h in [(300, 400), (1200, 1500)]:  # soft dots scale with the figure; halo stays faint
             with self.subTest(size=(w, h)):
                 img = tp.render_still(pts, (w, h))
                 self.assertEqual(img.size, (w, h))
@@ -126,6 +126,15 @@ class Still(unittest.TestCase):
                 self.assertAlmostEqual((cols[0] + cols[-1]) / 2 / w, 0.5, delta=0.02)
                 # greyscale dots: no tint
                 self.assertTrue(np.all(a[..., 0] == a[..., 1]) and np.all(a[..., 1] == a[..., 2]))
+
+    def test_shading_lights_surfaces_facing_the_key(self):
+        # the same flat card twice: normals toward the key light (upper front-left) vs away
+        rng = np.random.default_rng(3)
+        pts = tp.normalise((rng.random((6000, 3)) * [0.4, 1.0, 0.0]).astype(np.float32))
+        lit_n = np.tile(np.array([-0.55, 0.6, 0.6], np.float32) / 1.011, (6000, 1))
+        mean = lambda n: np.asarray(tp.render_still(pts, (300, 400), yaw=0, normals=n), dtype=np.float64).mean()
+        self.assertGreater(mean(lit_n), 1.5 * mean(-lit_n))
+        self.assertGreater(mean(-lit_n), 10.05)  # shadows never go fully black
 
 
 class Media(unittest.TestCase):
