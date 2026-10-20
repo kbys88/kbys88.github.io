@@ -118,52 +118,6 @@ function initReveal() {
   update();
 }
 
-/* ---------- hero title: width follows the pointer ---------- */
-
-// The title is fitted to the page at wdth 88, so 88 (left of the screen) is the widest it
-// gets and 75 (right) the narrowest.
-function initTitle() {
-  const title = $('.hero-title');
-  const hero = $('.hero');
-  if (!title || !hero || reduce || !finePointer) return;
-  const WIDE = 88;
-  const NARROW = 75;
-  const TAU = 140; // ms: ease time constant
-  let cur = WIDE;
-  let target = WIDE;
-  let inView = true;
-  let running = false;
-  let last = 0;
-
-  const tick = (now) => {
-    const dt = Math.max(0, Math.min(now - last, 64));
-    last = now;
-    const d = target - cur;
-    cur = Math.abs(d) < .02 ? target : cur + d * (1 - Math.exp(-dt / TAU));
-    title.style.setProperty('--wdth', cur.toFixed(2));
-    if (cur !== target && inView) requestAnimationFrame(tick);
-    else running = false;
-  };
-  const kick = () => {
-    if (running || !inView || cur === target) return;
-    running = true;
-    last = performance.now();
-    requestAnimationFrame(tick);
-  };
-
-  addEventListener('pointermove', (e) => {
-    if (e.pointerType === 'touch') return;
-    target = WIDE - (e.clientX / innerWidth) * (WIDE - NARROW);
-    kick();
-  }, { passive: true });
-  if ('IntersectionObserver' in window) {
-    new IntersectionObserver(([e]) => {
-      inView = e.isIntersecting;
-      kick();
-    }).observe(hero);
-  }
-}
-
 /* ---------- series index: thumbnail follows the pointer ---------- */
 
 function initThumb() {
@@ -264,7 +218,6 @@ function initLoop() {
 
 initState();
 initReveal();
-initTitle();
 initThumb();
 initFacades();
 initLoop();

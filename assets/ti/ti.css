@@ -17,15 +17,13 @@
   --ink: #EDEDED;
   --muted: #7A7A7A;
   --hair: rgba(255, 255, 255, .14);
-  --accent: #FF3B2F;                     /* signal red: labels and small text only */
   --glass: rgba(10, 10, 10, .8);
   --black: #000000;
 
-  --sans: "Instrument Sans", "IBM Plex Sans JP", system-ui, sans-serif;
-  /* Martian Mono has no Japanese: kana/kanji fall through to Plex Sans JP.
-     Mono text is always set "semi-condensed" (= wdth 87.5) in its font shorthand. */
-  --mono: "Martian Mono", "IBM Plex Sans JP", ui-monospace, monospace;
-  --jp: "IBM Plex Sans JP", "Instrument Sans", system-ui, sans-serif;
+  /* Figtree (Avenir-like) for all Latin text; it has no Japanese, so kana and
+     kanji fall through to Plex Sans JP */
+  --sans: "Figtree", "IBM Plex Sans JP", system-ui, sans-serif;
+  --jp: "IBM Plex Sans JP", "Figtree", system-ui, sans-serif;
 
   --gut: clamp(16px, 1.7vw, 24px);       /* page side gutter = tile padding */
   --head-h: 44px;
@@ -83,7 +81,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 h1, h2, h3, p, ul, ol, dl, dd, figure { margin: 0; }
 
 :focus-visible {
-  outline: 1px solid var(--accent);
+  outline: 1px solid var(--ink);
   outline-offset: 3px;
 }
 
@@ -95,8 +93,8 @@ h1, h2, h3, p, ul, ol, dl, dd, figure { margin: 0; }
   padding: 8px 12px;
   background: var(--bg);
   border: 1px solid var(--hair);
-  font: 400 semi-condensed 10px/1.2 var(--mono);
-  letter-spacing: .06em;
+  font: 500 11px/1.2 var(--sans);
+  letter-spacing: .1em;
   text-transform: uppercase;
   text-decoration: none;
   transform: translateY(-200%);
@@ -150,8 +148,8 @@ main, .foot { position: relative; z-index: 1; }
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--hair);
-  font: 300 semi-condensed 10px/1 var(--mono);  /* ink small text at 300: Martian's 400 reads heavy */
-  letter-spacing: .06em;
+  font: 500 11px/1 var(--sans);
+  letter-spacing: .1em;
   text-transform: uppercase;
 }
 .top__brand { justify-self: start; text-decoration: none; white-space: nowrap; }
@@ -190,32 +188,33 @@ main, .foot { position: relative; z-index: 1; }
   user-select: none;
 }
 
-/* The title fills the content width at the default wdth 88:
-   INSTRUMENTALISM: advance 7.84em, ink ~7.75em at wdth 88 / wght 600 /
-   tracking -0.02em (left side bearing ~.05em, cancelled by margin-left). */
+/* The title fills the content width: INSTRUMENTALISM in Figtree 600 at -.036em tracking
+   has an ink width of 8.620em (canvas measureText), so font-size = width / 8.625. */
 .hero__titlebox {
   position: relative;
   container-type: inline-size;
-  --title-fs: calc((100vw - 2 * var(--gut)) / 7.75);
+  --title-fs: calc((100vw - 2 * var(--gut)) / 8.625);
 }
 @supports (width: 1cqi) {
-  .hero__titlebox { --title-fs: calc(100cqi / 7.75); }
+  .hero__titlebox { --title-fs: calc(100cqi / 8.625); }
 }
 
 .hero-title {
   font-family: var(--sans);
   font-weight: 600;
   font-size: var(--title-fs);
-  font-variation-settings: "wdth" var(--wdth, 88);
   line-height: .82;
-  letter-spacing: -.02em;
+  letter-spacing: -.036em;            /* visible glyph gaps at 90% of -.03em's (measured) */
   text-transform: uppercase;
   white-space: nowrap;
-  /* baseline sits .05em above the line box bottom: pull it onto the padding edge
-     (round-letter overshoot ~.01em stays inside); keep the left stems on the gutter */
-  margin: 0 0 calc(var(--title-fs) * -.04) calc(var(--title-fs) * -.05);
+  /* the baseline sits .06em above the line box bottom: pull it down so the round-letter
+     overshoot (.02em) lands on the padding edge */
+  margin: 0 0 calc(var(--title-fs) * -.04);
 }
 .hero-title > span { display: block; }
+/* cancel each line's own left side bearing so both stems sit on the gutter */
+.hero-title > span:first-child { margin-left: -.01em; }   /* T */
+.hero-title > span:last-child { margin-left: -.08em; }    /* I */
 
 /* ---------- Grid + tiles ---------- */
 
@@ -272,15 +271,16 @@ main, .foot { position: relative; z-index: 1; }
 /* ---------- Labels, prose, meta, links, captions ---------- */
 
 .label {
-  font: 400 semi-condensed 10px/1.4 var(--mono);
-  letter-spacing: .06em;
+  font: 600 13px/1.35 var(--sans);
+  letter-spacing: .07em;
   text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 1.6em;
+  color: var(--ink);
+  margin-bottom: 1.4em;
 }
+.label .l-ja { font-weight: 500; letter-spacing: .04em; }
 .note {
-  font: 400 semi-condensed 10px/1.5 var(--mono);
-  letter-spacing: .02em;
+  font: 400 12px/1.5 var(--sans);
+  letter-spacing: .01em;
   color: var(--muted);
 }
 .tile--label .label { margin-bottom: .6em; }
@@ -291,20 +291,20 @@ main, .foot { position: relative; z-index: 1; }
 .prose .l-ja, .prose [lang="ja"] { font-family: var(--jp); line-height: 1.9; }
 .prose .l-ja p, .prose p.l-ja { font-size: .94em; }
 
-.meta { font: 300 semi-condensed 12px/1.5 var(--mono); }
+.meta { font: 400 14px/1.45 var(--sans); }
 .meta > div { padding: 10px 0; border-top: 1px solid var(--hair); }
 .meta > div:last-child { padding-bottom: 0; }
 .meta dt {
-  font-size: 10px;
-  font-weight: 400;                   /* muted labels keep 400 to stay legible */
-  letter-spacing: .06em;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .1em;
   text-transform: uppercase;
   color: var(--muted);
   margin-bottom: 2px;
 }
 .meta dd { color: var(--ink); }
 
-.links, .plain { list-style: none; padding: 0; font: 300 semi-condensed 12px/1.5 var(--mono); }
+.links, .plain { list-style: none; padding: 0; font: 400 14px/1.5 var(--sans); }
 .links li, .plain li { padding: 9px 0; border-top: 1px solid var(--hair); }
 .links a { text-decoration: none; }
 .links a:hover { text-decoration: underline; }
@@ -314,17 +314,19 @@ main, .foot { position: relative; z-index: 1; }
 .cap {
   margin-top: auto;                   /* captions sit at the bottom of a stretched tile */
   padding: 12px var(--gut) 14px;
-  font: 400 semi-condensed 10px/1.5 var(--mono);
-  letter-spacing: .02em;
+  font: 400 12px/1.5 var(--sans);
+  letter-spacing: .01em;
   color: var(--muted);
 }
-.wip {
+.wip {                                /* white badge; stays caption-sized inside the caption */
   display: inline-block;
   margin-right: .6em;
   padding: 1px 6px;
-  border: 1px solid var(--accent);
-  color: var(--accent);
-  letter-spacing: .06em;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .07em;
   text-transform: uppercase;
 }
 
@@ -369,8 +371,8 @@ main, .foot { position: relative; z-index: 1; }
   padding-bottom: 10px;
   border-top: 1px solid var(--hair);
   border-bottom: 1px solid var(--hair);
-  font: 400 semi-condensed 10px/1.4 var(--mono);
-  letter-spacing: .06em;
+  font: 500 11px/1.4 var(--sans);
+  letter-spacing: .1em;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -383,31 +385,28 @@ main, .foot { position: relative; z-index: 1; }
   color: var(--ink);
   transition: color .25s var(--ease);
 }
-.idx-c-title { grid-column: span 3; }
+.idx-c-title { grid-column: span 4; }
 .idx-c-year { grid-column: span 1; }
 .idx-c-format { grid-column: span 4; }
 .idx-c-venue { grid-column: span 3; }
-.idx-c-arrow { grid-column: span 1; justify-self: end; }
 
 .idx-row .idx-c-year,
 .idx-row .idx-c-format,
-.idx-row .idx-c-venue,
-.idx-row .idx-c-arrow {
-  font: 300 semi-condensed 11px/1.45 var(--mono);
-  letter-spacing: .01em;
+.idx-row .idx-c-venue {
+  font: 400 14px/1.4 var(--sans);
+  letter-spacing: 0;
+  font-variant-numeric: tabular-nums;
 }
 .idx-row .idx-c-title {
   font-size: clamp(28px, 4vw, 56px);
   font-weight: 500;
   line-height: 1;
-  letter-spacing: -.02em;
+  letter-spacing: -.024em;
 }
-.idx-row .idx-c-arrow { font-size: 18px; transition: transform .3s var(--ease); }
 
 /* hovered / focused row stays ink, the others dim */
 @media (hover: hover) {
   .idx:has(.idx-row:hover) .idx-row:not(:hover) { color: var(--muted); }
-  .idx-row:hover .idx-c-arrow { transform: translateX(4px); }
 }
 .idx:has(.idx-row:focus-visible) .idx-row:not(:focus-visible) { color: var(--muted); }
 .idx-row:focus-visible { outline-offset: -4px; }
@@ -440,26 +439,27 @@ main, .foot { position: relative; z-index: 1; }
   font-size: clamp(48px, 8.5vw, 136px);
   font-weight: 500;
   line-height: .86;
-  letter-spacing: -.035em;
+  letter-spacing: -.038em;
 }
 .ch-series {
   display: block;
   margin-top: 1.1rem;
-  font: 400 semi-condensed 11px/1.4 var(--mono);
-  letter-spacing: .06em;
+  font: 500 11px/1.4 var(--sans);
+  letter-spacing: .1em;
   color: var(--muted);
 }
 .ch-meta { gap: 10px; }
 .ch-format {
-  font: 300 semi-condensed 11px/1.5 var(--mono);
-  letter-spacing: .02em;
+  font: 500 11px/1.5 var(--sans);
+  letter-spacing: .08em;
   text-transform: uppercase;
 }
 .ch-format .l-ja { text-transform: none; }
 .ch-year {
-  font: 400 semi-condensed 11px/1.4 var(--mono);
-  letter-spacing: .06em;
-  color: var(--accent);
+  font: 600 13px/1.35 var(--sans);
+  letter-spacing: .07em;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
 }
 .ch-tag {
   margin-left: .8em;
@@ -547,22 +547,13 @@ figure.dither.is-active { --rr: 160px; }
   position: absolute;
   left: var(--gut);
   bottom: var(--gut);
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+  display: inline-block;
   padding: 8px 12px;
   background: var(--bg);
   border: 1px solid var(--hair);
-  font: 400 semi-condensed 10px/1.2 var(--mono);
-  letter-spacing: .06em;
+  font: 500 11px/1.2 var(--sans);
+  letter-spacing: .1em;
   text-transform: uppercase;
-}
-.yt__play {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 5px 0 5px 8px;
-  border-color: transparent transparent transparent currentColor;
 }
 .yt__src { color: var(--muted); }
 
@@ -576,9 +567,9 @@ figure.dither.is-active { --rr: 160px; }
   aspect-ratio: 16 / 9;
   object-fit: cover;
   opacity: .8;
-  mix-blend-mode: screen;             /* softens the dark→bright wrap of the loop */
+  mix-blend-mode: screen;             /* softens the dark-to-bright wrap of the loop */
   /* the clip's light-grey ground (~0.70) sits above contrast()'s 0.5 pivot, so darken
-     first, then steepen: ground → dark grey, glass highlights stay light, the dark-room
+     first, then steepen: the ground turns dark grey, glass highlights stay light, the dark-room
      half drops to near black. Applies to the poster frame too. */
   filter: grayscale(1) brightness(.6) contrast(3);
 }
@@ -591,7 +582,7 @@ figure.dither.is-active { --rr: 160px; }
   font-size: clamp(26px, 3.6vw, 54px);
   font-weight: 500;
   line-height: 1.08;
-  letter-spacing: -.018em;
+  letter-spacing: -.0225em;
 }
 .next-big .l-ja { font-family: var(--jp); }
 .next-sub { margin-top: 1em; color: var(--muted); }
@@ -613,8 +604,8 @@ figure.dither.is-active { --rr: 160px; }
 .copy {
   margin-top: auto;
   padding-top: 32px;
-  font: 400 semi-condensed 10px/1.4 var(--mono);
-  letter-spacing: .06em;
+  font: 500 11px/1.4 var(--sans);
+  letter-spacing: .1em;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -628,20 +619,15 @@ figure.dither.is-active { --rr: 160px; }
   .top { grid-template-columns: 1fr auto; }
   .top__title { display: none; }
 
-  /* index rows: title | arrow, then year / format / venue stacked */
+  /* index rows: title, then year / format / venue stacked */
   .idx-head { display: none; }
   .idx { border-top: 1px solid var(--hair); }
   .idx-row {
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr);
     row-gap: 4px;
   }
-  .idx-row .idx-c-title { grid-column: 1; grid-row: 1; }
-  .idx-row .idx-c-arrow { grid-column: 2; grid-row: 1; }
-  .idx-row .idx-c-year,
-  .idx-row .idx-c-format,
-  .idx-row .idx-c-venue { grid-column: 1 / -1; }
-  .idx-row .idx-c-year { margin-top: 8px; color: var(--accent); }
-  .idx:has(.idx-row:focus-visible) .idx-row:not(:focus-visible) .idx-c-year { color: inherit; }
+  .idx-row > * { grid-column: 1; }
+  .idx-row .idx-c-year { margin-top: 8px; font: 600 13px/1.35 var(--sans); letter-spacing: .07em; font-variant-numeric: tabular-nums; }
 
   .tile--win-tall { min-height: 52vh; }
 }

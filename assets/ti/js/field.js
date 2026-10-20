@@ -183,7 +183,7 @@ export function initField(canvas, readoutEl, stillImg) {
     fonts ??= Promise.race([
       Promise.all([
         document.fonts?.ready,
-        document.fonts?.load('600 200px "Instrument Sans"', 'BABEL bable? /ˈbeɪbəl/'),
+        document.fonts?.load('600 200px "Figtree"', 'BABEL bable? /ˈbeɪbəl/'),
         document.fonts?.load('500 200px "IBM Plex Sans JP"', 'バベル'),
       ]).catch(noop),
       new Promise((r) => setTimeout(r, 3000)), // then whatever sans-serif there is
@@ -194,7 +194,7 @@ export function initField(canvas, readoutEl, stillImg) {
   function rasterise(w) {
     const fs = 220;
     const kana = [...w].some((ch) => ch.codePointAt(0) >= 0x3040 && ch.codePointAt(0) <= 0x30ff);
-    const font = kana ? `500 ${fs}px "IBM Plex Sans JP", sans-serif` : `600 ${fs}px "Instrument Sans", sans-serif`;
+    const font = kana ? `500 ${fs}px "IBM Plex Sans JP", sans-serif` : `600 ${fs}px "Figtree", sans-serif`;
     const c = document.createElement('canvas');
     const x = c.getContext('2d', { willReadFrequently: true });
     x.font = font;
