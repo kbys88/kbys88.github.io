@@ -135,7 +135,7 @@ permalink: /bio/
   <p><a href="{{ '/works/' | relative_url }}">All works</a></p>
 
   <h2>IRCAM &amp; artistic research</h2>
-  <p>During the IRCAM Cursus (2021–2022), she explored the relationship between movement, sound and video through <em>Day 0 / TRANS-INSTRUMENTALISM</em>, using the R-IoT motion sensor. The series continued with <em>RêVeRie</em> and the ongoing <em>Babel</em> installation. In 2023 she collaborated on multimedia and dance projects at Beaux-Arts de Paris; in 2024 she participated in a collaboration between Le Fresnoy and IRCAM.</p>
+  <p>During the IRCAM Cursus (2021–2022), she explored the relationship between movement, sound and video through <em>Day 0 / TRANS-INSTRUMENTALISM</em>, using the R-IoT motion sensor. The <a href="{{ '/transinstrumentalism/' | relative_url }}">TRANS-INSTRUMENTALISM series</a> continued with <em>RêVeRie</em> and the ongoing <em>Babel</em> installation. In 2023 she collaborated on multimedia and dance projects at Beaux-Arts de Paris; in 2024 she participated in a collaboration between Le Fresnoy and IRCAM.</p>
   <p><a href="https://brahms.ircam.fr/en/composer/sachie-kobayashi">IRCAM composer profile</a> · <a href="https://brahms.ircam.fr/en/work/day-0-trans-instrumentalism">IRCAM work record</a></p>
 
   <hr>

@@ -1,5 +1,8 @@
 ---
 layout: post
+link: /transinstrumentalism/
+canonical_path: /transinstrumentalism/
+sitemap: false
 description: "TRANS-INSTRUMENTALISM, an ongoing artistic project by Sachie Kobayashi exploring relationships between the body, sound, instruments and technology."
 title: TRANS-INSTRUMENTALISM PROJECT
 date: 2025-07-28

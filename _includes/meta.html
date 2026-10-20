@@ -3,7 +3,7 @@
 {% assign seo_description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | strip %}
 <meta name="description" content="{{ seo_description | escape }}" />
 <meta name="author" content="Sachie Kobayashi" />
-{% assign canonical_path = page.url %}
+{% assign canonical_path = page.canonical_path | default: page.url %}
 {% if paginator.page > 1 %}{% assign canonical_path = '/' %}{% endif %}
 <link rel="canonical" href="{{ canonical_path | absolute_url }}" />
 {% if page.translations %}
