@@ -307,12 +307,8 @@ main, .foot { position: relative; z-index: 1; }
 
 .links, .plain { list-style: none; padding: 0; font: 400 14px/1.5 var(--sans); }
 .links li, .plain li { padding: 9px 0; border-top: 1px solid var(--hair); }
-.links a { position: relative; display: block; padding-right: 1.6em; text-decoration: none; }
+.links a { text-decoration: none; }
 .links a:hover { text-decoration: underline; }
-/* arrow at the end of the row; out of flow, so the hover underline skips it */
-.links a::after { content: "\2192"; position: absolute; top: 0; right: 0; }  /* → */
-.links a[target="_blank"]::after { content: "\2197"; }                   /* ↗ leaves the site */
-.links a[href^="#"]::after { content: "\2191"; }                         /* ↑ */
 .plain a { text-decoration: none; }
 .plain a:hover { text-decoration: underline; }
 
@@ -381,8 +377,7 @@ main, .foot { position: relative; z-index: 1; }
   text-transform: uppercase;
   color: var(--muted);
 }
-.idx { list-style: none; padding: 0; counter-reset: work; }
-.idx > li { counter-increment: work; }
+.idx { list-style: none; padding: 0; }
 .idx-row {
   padding-top: clamp(14px, 1.8vw, 26px);
   padding-bottom: clamp(14px, 1.8vw, 26px);
@@ -408,17 +403,6 @@ main, .foot { position: relative; z-index: 1; }
   font-weight: 400;
   line-height: 1;
   letter-spacing: -.026em;
-}
-/* catalogue number, hung at the cap height of the title */
-.idx-row .idx-c-title::before {
-  content: counter(work, decimal-leading-zero);
-  display: inline-block;
-  min-width: 3.4em;
-  vertical-align: top;
-  margin-top: .3em;
-  font: 500 12px/1 var(--sans);
-  letter-spacing: .08em;
-  font-variant-numeric: tabular-nums;
 }
 
 /* hovered / focused row stays ink, the others dim */
@@ -449,19 +433,9 @@ main, .foot { position: relative; z-index: 1; }
 
 /* ---------- 4 · Chapters ---------- */
 
-main { counter-reset: chapter; }
-.chapter { padding-top: var(--section-gap); counter-increment: chapter; }
+.chapter { padding-top: var(--section-gap); }
 
 .ch-head .tile { display: flex; flex-direction: column; justify-content: flex-end; }
-/* chapter number, top left; it matches the index's catalogue number */
-.ch-name::before {
-  content: counter(chapter, decimal-leading-zero);
-  margin-bottom: auto;
-  padding-bottom: clamp(40px, 7vw, 112px);
-  font: 500 12px/1 var(--sans);
-  letter-spacing: .08em;
-  font-variant-numeric: tabular-nums;
-}
 .ch-title {
   font-family: var(--sans);
   font-size: clamp(48px, 8.5vw, 136px);
