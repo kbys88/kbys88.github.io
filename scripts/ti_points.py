@@ -9,6 +9,9 @@ can then morph between performers with a plain per-point mix on the GPU.
 Outputs, under --out (default assets/ti/):
   points/<id>.bin      little-endian Int16, count*3 values (x y z interleaved),
                        value = round(p / scale * 32767); feet y=-1, head y=+1
+  points/<id>.nrm      Int8, count*3 values (nx ny nz interleaved), the outward
+                       normal of the triangle each point was sampled from,
+                       value = round(n * 127); same order as the .bin
   points/index.json    {"count", "scale", "performers": [{id, en, ja, section}]}
                        in manifest order
   img/still.png        1200x1500 white-dot render of one performer on #0A0A0A
@@ -52,15 +55,24 @@ def load_obj(path):
     return np.array(verts, dtype=np.float32), np.array(faces, dtype=np.int32)
 
 
-def sample_surface(verts, faces, count, seed=0):
-    """`count` points uniformly over the surface: area-weighted face choice, then uniform barycentric."""
+def sample_surface(verts, faces, count, seed=0, with_normals=False):
+    """`count` points uniformly over the surface: area-weighted face choice, then uniform barycentric.
+
+    with_normals: also return each point's unit triangle normal (from the winding, which
+    is outward on the shadow meshes). The positions are the same either way.
+    """
     rng = np.random.default_rng(seed)
     tri = verts[faces].astype(np.float64)
-    area = np.linalg.norm(np.cross(tri[:, 1] - tri[:, 0], tri[:, 2] - tri[:, 0]), axis=1)
-    tri = tri[rng.choice(len(faces), count, p=area / area.sum())]
+    cross = np.cross(tri[:, 1] - tri[:, 0], tri[:, 2] - tri[:, 0])
+    area = np.linalg.norm(cross, axis=1)
+    pick = rng.choice(len(faces), count, p=area / area.sum())
+    tri = tri[pick]
     r1, r2 = np.sqrt(rng.random(count)), rng.random(count)
     w = np.stack([1 - r1, r1 * (1 - r2), r1 * r2], axis=1)
-    return np.einsum("nk,nkd->nd", w, tri).astype(np.float32)
+    pts = np.einsum("nk,nkd->nd", w, tri).astype(np.float32)
+    if not with_normals:
+        return pts
+    return pts, (cross[pick] / area[pick, None]).astype(np.float32)  # picked faces have area > 0
 
 
 def normalise(pts):
@@ -78,6 +90,17 @@ def order(pts, bands=HEIGHT_BANDS):
     return np.lexsort((angle, band))
 
 
+def build_cloud(verts, faces, count, seed=0):
+    """Sampled, normalised and ordered points of one mesh, with their normals in the same order.
+
+    normalise() is a uniform scale plus a shift, so normals keep their direction.
+    """
+    pts, nrm = sample_surface(verts, faces, count, seed, with_normals=True)
+    pts = normalise(pts)
+    idx = order(pts)
+    return pts[idx], nrm[idx]
+
+
 def pick_scale(clouds):
     """Smallest 0.1 step, at least 2.0, that holds every coordinate of every performer."""
     reach = max(float(np.abs(c).max()) for c in clouds)
@@ -88,6 +111,11 @@ def quantise(pts, scale):
     """Little-endian Int16 with +-scale mapped to +-32767."""
     q = np.rint(np.asarray(pts, dtype=np.float64) / scale * 32767)
     return np.clip(q, -32767, 32767).astype("<i2")
+
+
+def quantise_normals(nrm):
+    """Int8 with +-1 mapped to +-127."""
+    return np.clip(np.rint(np.asarray(nrm, dtype=np.float64) * 127), -127, 127).astype("i1")
 
 
 def en_label(performer_id):
@@ -118,7 +146,7 @@ def main():
     p.add_argument("--src", type=Path, required=True, help="folder of <id>.obj meshes (transinst/models/shadow)")
     p.add_argument("--out", type=Path, default=ROOT / "assets" / "ti")
     p.add_argument("--manifest", type=Path, help="default: <src>/../manifest.json")
-    p.add_argument("--count", type=int, default=20480)
+    p.add_argument("--count", type=int, default=28672)
     p.add_argument("--seed", type=int, default=1)
     p.add_argument("--still", default="violin", help="performer drawn for still.png / og.jpg")
     args = p.parse_args()
@@ -131,11 +159,10 @@ def main():
     if not performers:
         raise SystemExit(f"no <id>.obj meshes found in {args.src}")
 
-    clouds = {}
+    clouds, normals = {}, {}
     for m in performers:
         verts, faces = load_obj(args.src / f"{m['id']}.obj")
-        pts = normalise(sample_surface(verts, faces, args.count, args.seed))
-        clouds[m["id"]] = pts[order(pts)]
+        clouds[m["id"]], normals[m["id"]] = build_cloud(verts, faces, args.count, args.seed)
         reach = np.abs(clouds[m["id"]]).max(0)
         print(f"{m['id']}: {len(verts)} verts, {len(faces)} faces, max |coord| {reach.max():.3f} (x {reach[0]:.3f}, z {reach[2]:.3f})")
 
@@ -145,6 +172,7 @@ def main():
     img.mkdir(parents=True, exist_ok=True)
     for pid, pts in clouds.items():
         (points / f"{pid}.bin").write_bytes(quantise(pts, scale).tobytes())
+        (points / f"{pid}.nrm").write_bytes(quantise_normals(normals[pid]).tobytes())
     index = {
         "count": args.count,
         "scale": scale,

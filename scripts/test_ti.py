@@ -40,6 +40,47 @@ class Points(unittest.TestCase):
         self.assertLess(np.abs(q.reshape(-1,3) / 32767 * 2.0 - p).max(), 1e-4)
 
 
+class Normals(unittest.TestCase):
+    def test_flat_triangle_gives_its_plane_normal(self):
+        # TRI: face 0 lies on z=0 (normal +z), face 1 on y=0 (normal -y, from its winding)
+        p, n = tp.sample_surface(*TRI, 2000, seed=1, with_normals=True)
+        self.assertEqual(n.shape, (2000, 3))
+        on_z0 = (np.abs(p[:, 2]) < 1e-6) & (p[:, 1] > 1e-4)
+        on_y0 = (np.abs(p[:, 1]) < 1e-6) & (p[:, 2] > 1e-4)
+        self.assertGreater(on_z0.sum(), 500); self.assertGreater(on_y0.sum(), 500)
+        np.testing.assert_allclose(n[on_z0], np.tile([0, 0, 1], (on_z0.sum(), 1)), atol=1e-6)
+        np.testing.assert_allclose(n[on_y0], np.tile([0, -1, 0], (on_y0.sum(), 1)), atol=1e-6)
+
+    def test_same_positions_with_or_without_normals(self):
+        a = tp.sample_surface(*TRI, 300, seed=4)
+        b, _ = tp.sample_surface(*TRI, 300, seed=4, with_normals=True)
+        np.testing.assert_array_equal(a, b)
+
+    def test_normals_unit_length_after_decode(self):
+        v = np.random.default_rng(5).normal(size=(500, 3))
+        v /= np.linalg.norm(v, axis=1, keepdims=True)
+        q = tp.quantise_normals(v)
+        self.assertEqual(q.dtype, np.dtype('i1'))
+        self.assertLessEqual(int(np.abs(q.astype(int)).max()), 127)
+        d = q.astype(np.float64) / 127
+        self.assertLess(np.abs(np.linalg.norm(d, axis=1) - 1).max(), 0.01)
+        u = d / np.linalg.norm(d, axis=1, keepdims=True)
+        self.assertGreater(np.einsum('ij,ij->i', u, v).min(), 0.9999)  # direction within ~0.8 deg
+
+    def test_ordering_is_applied_to_normals(self):
+        # after normalising, face 0 is the plane at the lowest z (normal +z) and face 1 the
+        # plane at the lowest y, the feet (normal -y)
+        p, n = tp.build_cloud(*TRI, 2000, seed=2)
+        band = np.minimum((np.argsort(np.argsort(p[:, 1], kind='stable'), kind='stable') * tp.HEIGHT_BANDS) // len(p), tp.HEIGHT_BANDS - 1)
+        self.assertTrue(np.all(np.diff(band) >= 0), 'points come out in height-band order')
+        z0, y0 = p[:, 2].min(), p[:, 1].min()
+        face0 = (np.abs(p[:, 2] - z0) < 1e-5) & (p[:, 1] > y0 + 1e-3)
+        face1 = (np.abs(p[:, 1] - y0) < 1e-5) & (p[:, 2] > z0 + 1e-3)
+        self.assertGreater(face0.sum(), 500); self.assertGreater(face1.sum(), 500)
+        np.testing.assert_allclose(n[face0], np.tile([0, 0, 1], (face0.sum(), 1)), atol=1e-6)
+        np.testing.assert_allclose(n[face1], np.tile([0, -1, 0], (face1.sum(), 1)), atol=1e-6)
+
+
 class Files(unittest.TestCase):
     def test_load_obj_reads_vertices_and_zero_based_faces(self):
         obj = "# comment\nv 0 0 0\nv 1 0 0\nv 0 1 0\nv 0 0 1\nvn 0 0 1\nvn 0 1 0\nvn 1 0 0\nvn 0 0 1\nf 1//1 2//2 3//3\nf 1//1 4//4 3//3\n"
