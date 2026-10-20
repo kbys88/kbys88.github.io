@@ -17,12 +17,14 @@
   --ink: #EDEDED;
   --muted: #7A7A7A;
   --hair: rgba(255, 255, 255, .14);
-  --sand: #C8B48C;
+  --accent: #FF3B2F;                     /* signal red: labels and small text only */
   --glass: rgba(10, 10, 10, .8);
   --black: #000000;
 
   --sans: "Instrument Sans", "IBM Plex Sans JP", system-ui, sans-serif;
-  --mono: "IBM Plex Mono", "IBM Plex Sans JP", ui-monospace, monospace;
+  /* Martian Mono has no Japanese: kana/kanji fall through to Plex Sans JP.
+     Mono text is always set "semi-condensed" (= wdth 87.5) in its font shorthand. */
+  --mono: "Martian Mono", "IBM Plex Sans JP", ui-monospace, monospace;
   --jp: "IBM Plex Sans JP", "Instrument Sans", system-ui, sans-serif;
 
   --gut: clamp(16px, 1.7vw, 24px);       /* page side gutter = tile padding */
@@ -69,7 +71,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 h1, h2, h3, p, ul, ol, dl, dd, figure { margin: 0; }
 
 :focus-visible {
-  outline: 1px solid var(--sand);
+  outline: 1px solid var(--accent);
   outline-offset: 3px;
 }
 
@@ -81,8 +83,8 @@ h1, h2, h3, p, ul, ol, dl, dd, figure { margin: 0; }
   padding: 8px 12px;
   background: var(--bg);
   border: 1px solid var(--hair);
-  font: 500 11px/1.2 var(--mono);
-  letter-spacing: .08em;
+  font: 400 semi-condensed 10px/1.2 var(--mono);
+  letter-spacing: .06em;
   text-transform: uppercase;
   text-decoration: none;
   transform: translateY(-200%);
@@ -95,7 +97,7 @@ html[data-lang="en"] .l-ja,
 html[data-lang="ja"] .l-en { display: none !important; }
 
 /* Japanese headings: proportional kana; phrase-aware line breaks */
-h1 .l-ja, h2 .l-ja, h3 .l-ja, .st-text .l-ja, .next-big .l-ja, .idx-c-format .l-ja {
+h1 .l-ja, h2 .l-ja, h3 .l-ja, .st-text .l-ja, .next-big .l-ja, .idx-c-format .l-ja, .idx-c-venue .l-ja {
   font-feature-settings: "palt";
   word-break: auto-phrase;
 }
@@ -132,8 +134,8 @@ main, .foot { position: relative; z-index: 1; }
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--hair);
-  font: 500 11px/1 var(--mono);
-  letter-spacing: .08em;
+  font: 300 semi-condensed 10px/1 var(--mono);  /* ink small text at 300: Martian's 400 reads heavy */
+  letter-spacing: .06em;
   text-transform: uppercase;
 }
 .top__brand { justify-self: start; text-decoration: none; white-space: nowrap; }
@@ -177,12 +179,12 @@ main, .foot { position: relative; z-index: 1; }
   align-items: flex-end;
   gap: 8px 32px;
   margin-bottom: clamp(14px, 2.2vw, 32px);
-  font: 400 11px/1.5 var(--mono);
-  letter-spacing: .08em;
+  font: 400 semi-condensed 10px/1.5 var(--mono);
+  letter-spacing: .06em;
   text-transform: uppercase;
 }
-.readout { color: var(--sand); font-variant-numeric: tabular-nums; }
-.hero__hint { color: var(--muted); text-transform: none; letter-spacing: .04em; }
+.readout { color: var(--accent); font-variant-numeric: tabular-nums; }
+.hero__hint { color: var(--muted); text-transform: none; letter-spacing: .02em; }
 
 /* The title fills the content width at the default wdth 88:
    INSTRUMENTALISM: advance 7.84em, ink ~7.75em at wdth 88 / wght 600 /
@@ -276,15 +278,15 @@ main, .foot { position: relative; z-index: 1; }
 /* ---------- Labels, prose, meta, links, captions ---------- */
 
 .label {
-  font: 500 11px/1.4 var(--mono);
-  letter-spacing: .08em;
+  font: 400 semi-condensed 10px/1.4 var(--mono);
+  letter-spacing: .06em;
   text-transform: uppercase;
-  color: var(--sand);
+  color: var(--accent);
   margin-bottom: 1.6em;
 }
 .note {
-  font: 400 11px/1.5 var(--mono);
-  letter-spacing: .04em;
+  font: 400 semi-condensed 10px/1.5 var(--mono);
+  letter-spacing: .02em;
   color: var(--muted);
 }
 .tile--label .label { margin-bottom: .6em; }
@@ -295,19 +297,20 @@ main, .foot { position: relative; z-index: 1; }
 .prose .l-ja, .prose [lang="ja"] { font-family: var(--jp); line-height: 1.9; }
 .prose .l-ja p, .prose p.l-ja { font-size: .94em; }
 
-.meta { font: 400 13px/1.5 var(--mono); }
+.meta { font: 300 semi-condensed 12px/1.5 var(--mono); }
 .meta > div { padding: 10px 0; border-top: 1px solid var(--hair); }
 .meta > div:last-child { padding-bottom: 0; }
 .meta dt {
-  font-size: 11px;
-  letter-spacing: .08em;
+  font-size: 10px;
+  font-weight: 400;                   /* muted labels keep 400 to stay legible */
+  letter-spacing: .06em;
   text-transform: uppercase;
   color: var(--muted);
   margin-bottom: 2px;
 }
 .meta dd { color: var(--ink); }
 
-.links, .plain { list-style: none; padding: 0; font: 400 13px/1.5 var(--mono); }
+.links, .plain { list-style: none; padding: 0; font: 300 semi-condensed 12px/1.5 var(--mono); }
 .links li, .plain li { padding: 9px 0; border-top: 1px solid var(--hair); }
 .links a { text-decoration: none; }
 .links a:hover { text-decoration: underline; }
@@ -317,17 +320,17 @@ main, .foot { position: relative; z-index: 1; }
 .cap {
   margin-top: auto;                   /* captions sit at the bottom of a stretched tile */
   padding: 12px var(--gut) 14px;
-  font: 400 11px/1.5 var(--mono);
-  letter-spacing: .03em;
+  font: 400 semi-condensed 10px/1.5 var(--mono);
+  letter-spacing: .02em;
   color: var(--muted);
 }
 .wip {
   display: inline-block;
   margin-right: .6em;
   padding: 1px 6px;
-  border: 1px solid var(--sand);
-  color: var(--sand);
-  letter-spacing: .08em;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  letter-spacing: .06em;
   text-transform: uppercase;
 }
 
@@ -382,8 +385,8 @@ main, .foot { position: relative; z-index: 1; }
 .idx-head {
   padding-bottom: 10px;
   border-bottom: 1px solid var(--hair);
-  font: 400 11px/1.4 var(--mono);
-  letter-spacing: .08em;
+  font: 400 semi-condensed 10px/1.4 var(--mono);
+  letter-spacing: .06em;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -408,8 +411,8 @@ main, .foot { position: relative; z-index: 1; }
 .idx-row .idx-c-format,
 .idx-row .idx-c-venue,
 .idx-row .idx-c-arrow {
-  font: 400 12px/1.45 var(--mono);
-  letter-spacing: .03em;
+  font: 300 semi-condensed 11px/1.45 var(--mono);
+  letter-spacing: .01em;
 }
 .idx-row .idx-c-title {
   font-size: clamp(28px, 4vw, 56px);
@@ -462,21 +465,21 @@ main, .foot { position: relative; z-index: 1; }
 .ch-series {
   display: block;
   margin-top: 1.1rem;
-  font: 400 12px/1.4 var(--mono);
-  letter-spacing: .08em;
+  font: 400 semi-condensed 11px/1.4 var(--mono);
+  letter-spacing: .06em;
   color: var(--muted);
 }
 .ch-meta { gap: 10px; }
 .ch-format {
-  font: 400 12px/1.5 var(--mono);
-  letter-spacing: .04em;
+  font: 300 semi-condensed 11px/1.5 var(--mono);
+  letter-spacing: .02em;
   text-transform: uppercase;
 }
 .ch-format .l-ja { text-transform: none; }
 .ch-year {
-  font: 500 12px/1.4 var(--mono);
-  letter-spacing: .08em;
-  color: var(--sand);
+  font: 400 semi-condensed 11px/1.4 var(--mono);
+  letter-spacing: .06em;
+  color: var(--accent);
 }
 .ch-tag {
   margin-left: .8em;
@@ -570,8 +573,8 @@ figure.dither.is-active { --rr: 160px; }
   padding: 8px 12px;
   background: var(--bg);
   border: 1px solid var(--hair);
-  font: 500 11px/1.2 var(--mono);
-  letter-spacing: .08em;
+  font: 400 semi-condensed 10px/1.2 var(--mono);
+  letter-spacing: .06em;
   text-transform: uppercase;
 }
 .yt__play {
@@ -630,8 +633,8 @@ figure.dither.is-active { --rr: 160px; }
 .copy {
   margin-top: auto;
   padding-top: 32px;
-  font: 400 11px/1.4 var(--mono);
-  letter-spacing: .08em;
+  font: 400 semi-condensed 10px/1.4 var(--mono);
+  letter-spacing: .06em;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -646,7 +649,7 @@ figure.dither.is-active { --rr: 160px; }
   .top__title { display: none; }
 
   .hero__meta { flex-direction: column; align-items: flex-start; gap: 4px; }
-  .readout { font-size: 10px; letter-spacing: .03em; }
+  .readout { font-size: 9.5px; letter-spacing: .02em; }
   .hero__sub {
     position: static;
     max-width: none;
@@ -670,7 +673,7 @@ figure.dither.is-active { --rr: 160px; }
   .idx-row .idx-c-year,
   .idx-row .idx-c-format,
   .idx-row .idx-c-venue { grid-column: 2 / 4; }
-  .idx-row .idx-c-year { margin-top: 8px; color: var(--sand); }
+  .idx-row .idx-c-year { margin-top: 8px; color: var(--accent); }
   .idx:has(.idx-row:focus-visible) .idx-row:not(:focus-visible) .idx-c-year { color: inherit; }
 
   .tile--win-tall { min-height: 52vh; }
