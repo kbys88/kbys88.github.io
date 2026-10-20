@@ -8,4 +8,4 @@ tags: [Project-On-Going]
 comments: false
 ---
 
-under construction...
+[TRANS-INSTRUMENTALISM]({{ '/transinstrumentalism/' | relative_url }})
