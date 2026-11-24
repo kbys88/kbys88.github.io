@@ -130,12 +130,12 @@ permalink: /bio/
     <li><a href="{{ '/e-tre/' | relative_url }}">être</a> (2022), for clarinet d’amore and seven musicians: commissioned for Ensemble Proton Bern’s Protonwerk No.11.</li>
     <li><a href="{{ '/DAY0TRANS-INSTRUMENTALISM/' | relative_url }}">Day 0 / TRANS-INSTRUMENTALISM</a> (2022), for performer, video, motion capture and electronics: developed during the IRCAM Cursus; performed by Corentin Marillier at Centre Pompidou on 24 September 2022.</li>
     <li><a href="{{ '/RÊVERIE-TRANS-INSTRUMENTALISM-(Création)/' | relative_url }}">RêVeRie / TRANS-INSTRUMENTALISM</a> (2025): a VR work presented with Ensemble Contrechamps at the Geneva International Film Festival.</li>
-    <li><a href="{{ '/BABEL-TRANS-INSTRUMENTALISM/' | relative_url }}">Babel / TRANS-INSTRUMENTALISM</a> (in progress): an interactive audiovisual installation exploring voice, language and technological systems.</li>
+    <li><a href="{{ '/BABEL-TRANS-INSTRUMENTALISM/' | relative_url }}">Babel / TRANS-INSTRUMENTALISM</a> (2026): an interactive audiovisual installation for the visitor’s voice, three machine listeners and four screens; presented at IRCAM Forum Workshops TOKYO 2026.</li>
   </ul>
   <p><a href="{{ '/works/' | relative_url }}">All works</a></p>
 
   <h2>IRCAM &amp; artistic research</h2>
-  <p>During the IRCAM Cursus (2021–2022), she explored the relationship between movement, sound and video through <em>Day 0 / TRANS-INSTRUMENTALISM</em>, using the R-IoT motion sensor. The <a href="{{ '/transinstrumentalism/' | relative_url }}">TRANS-INSTRUMENTALISM series</a> continued with <em>RêVeRie</em> and the ongoing <em>Babel</em> installation. In 2023 she collaborated on multimedia and dance projects at Beaux-Arts de Paris; in 2024 she participated in a collaboration between Le Fresnoy and IRCAM.</p>
+  <p>During the IRCAM Cursus (2021–2022), she explored the relationship between movement, sound and video through <em>Day 0 / TRANS-INSTRUMENTALISM</em>, using the R-IoT motion sensor. The <a href="{{ '/transinstrumentalism/' | relative_url }}">TRANS-INSTRUMENTALISM series</a> continued with <em>RêVeRie</em> and the <em>Babel</em> installation (IRCAM Forum Workshops TOKYO, 2026). In 2023 she collaborated on multimedia and dance projects at Beaux-Arts de Paris; in 2024 she participated in a collaboration between Le Fresnoy and IRCAM.</p>
   <p><a href="https://brahms.ircam.fr/en/composer/sachie-kobayashi">IRCAM composer profile</a> · <a href="https://brahms.ircam.fr/en/work/day-0-trans-instrumentalism">IRCAM work record</a></p>
 
   <hr>

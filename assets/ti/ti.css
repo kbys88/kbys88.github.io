@@ -577,6 +577,8 @@ figure.dither.is-active { --rr: 160px; }
   filter: grayscale(1) brightness(1.08) contrast(2.2);
 }
 
+/* Babel: a vertical screen render, already pale and greyscale; no steep contrast */
+
 /* ---------- 5 · Next ---------- */
 
 .next { padding-top: var(--section-gap); }
