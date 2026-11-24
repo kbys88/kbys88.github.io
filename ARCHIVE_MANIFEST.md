@@ -22,7 +22,8 @@ Recommended policy:
 
 ## Currently Used Media
 
-- `images/Sachie_Kobayashi_Portofolio_EN_2025_COMP.pdf` - `Bio.md`
+- `images/Sachie_Kobayashi_Portfolio_EN_2026.pdf` - `Bio.md`, `ja/profile.html`
+- `images/Sachie_Kobayashi_Portofolio_EN_2025_COMP.pdf` - kept for old external links
 - `images/about.jpeg` - `Bio.md`
 - `images/cable_play.png` - `sound.md`
 - `images/cucurbits001.png` - `cucurbits.md`
