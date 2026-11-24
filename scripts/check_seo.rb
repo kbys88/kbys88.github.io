@@ -23,7 +23,7 @@ pages.each do |file|
   check.call(!doc.css('meta[name="robots"]').any? { |m| m['content'].to_s.include?('noindex') }, "#{path}: noindex")
 end
 check.call(docs['/'].at_css('title').text == '小林祥恵 | Sachie Kobayashi — 作曲家・サウンドアーティスト', 'Home: title')
-check.call(docs['/'].at_css('.home-intro')&.text.to_s.include?('小林祥恵'), 'Home: visible Japanese identity')
+check.call(docs['/'].at_css('.home-intro')&.text.to_s.include?('小林祥恵'), 'Home: Japanese identity in the page (h1, visually hidden)')
 pair = {'en' => '/bio/', 'ja' => '/ja/profile/', 'x-default' => '/bio/'}
 ['/bio/', '/ja/profile/'].each do |path|
   doc = docs[path]
