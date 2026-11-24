@@ -202,15 +202,16 @@ function initFacades() {
   }
 }
 
-/* ---------- RêVeRie loop: plays only near the viewport ---------- */
+/* ---------- Loops (RêVeRie, Babel): each plays only near the viewport ---------- */
 
 function initLoop() {
-  const video = $('.loop__v');
-  if (!video || reduce || !('IntersectionObserver' in window)) return; // reduced: poster only
-  new IntersectionObserver((entries) => {
-    if (entries[entries.length - 1].isIntersecting) video.play()?.catch(noop);
-    else video.pause();
-  }, { rootMargin: '200px 0px' }).observe(video);
+  if (reduce || !('IntersectionObserver' in window)) return; // reduced: poster only
+  for (const video of $$('.loop__v')) {
+    new IntersectionObserver((entries) => {
+      if (entries[entries.length - 1].isIntersecting) video.play()?.catch(noop);
+      else video.pause();
+    }, { rootMargin: '200px 0px' }).observe(video);
+  }
 }
 
 /* ---------- go ---------- */
