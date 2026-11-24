@@ -93,7 +93,7 @@ permalink: /bio/
   <img src="https://raw.githubusercontent.com/kbys88/kbys88.github.io/main/images/sachie_prof2.png" alt="About">
 
 <p>
-  <a href="{{ '/images/Sachie_Kobayashi_Portofolio_EN_2025_COMP.pdf' | relative_url }}" target="_blank" rel="noopener">
+  <a href="{{ '/images/Sachie_Kobayashi_Portfolio_EN_2026.pdf' | relative_url }}" target="_blank" rel="noopener">
     View Portfolio PDF
   </a>
 </p>
